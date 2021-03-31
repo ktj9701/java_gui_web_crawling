@@ -38,7 +38,8 @@ public class Loginpage extends JFrame {
 		PW.setVisible(true);
 
 		ID_.setBounds(463, 355, 200, 20); // --------------------------ID & PW 텍스트필드
-		PW_.setBounds(463, 398, 200, 20);
+		PW_.setBounds(463, 398, 200, 20);  
+		
 		ID_.setVisible(true);
 		PW_.setVisible(true);
 
