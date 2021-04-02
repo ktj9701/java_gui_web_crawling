@@ -1,3 +1,4 @@
+// 웹 크롤링 구현
 
 import java.io.IOException;
 import java.util.Iterator;
@@ -9,15 +10,16 @@ import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 public class crolling {
+	static String area="";
 	public Vector<Albatext> crolling() {
 		Vector<Albatext> arr = new Vector<>();
 
-		String url;
+		String url;	
 		int page = 1;
 		Document doc = null;
 		while (page != 4) { // 3페이지까지 출력
 			url = "https://www.albamon.com/list/gi/mon_gi_tot_list.asp?page=" + page + "&ps=20&ob=6&lvtype=1&rArea=,"
-					+ "I000" + "&rWDate=1&Empmnt_Type=";
+					+ area + "&rWDate=1&Empmnt_Type=";
 			try {
 				doc = Jsoup.connect(url).get();
 			} catch (IOException e) {
