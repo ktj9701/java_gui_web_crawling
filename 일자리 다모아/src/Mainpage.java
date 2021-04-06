@@ -42,8 +42,6 @@ public class Mainpage extends JFrame {
 	
 	
 	
-	
-	
 	public Mainpage() {
 		setTitle("일자리 다모아");
 		setSize(1500, 800);

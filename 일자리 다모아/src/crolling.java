@@ -11,6 +11,7 @@ import org.jsoup.select.Elements;
 
 public class crolling {
 	static String area="";
+	
 	public Vector<Albatext> crolling() {
 		Vector<Albatext> arr = new Vector<>();
 
@@ -33,7 +34,7 @@ public class crolling {
 			Iterator<Element> ie4 = element.select("p.cTit").iterator();// 한마디
 			Iterator<Element> ie5 = element.select("td.recently").iterator();// 올라온 시간
 
-			while (ie1.hasNext()) {
+			while (ie1.hasNext()) {	
 				arr.add(new Albatext(ie1.next().text().substring(3), ie2.next().text(), ie3.next().text(),
 						ie4.next().text(), ie5.next().text()));
 			}
