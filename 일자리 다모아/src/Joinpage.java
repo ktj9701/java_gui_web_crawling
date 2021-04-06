@@ -27,7 +27,7 @@ public class Joinpage extends JFrame {
 
 	public Joinpage() {
 		setTitle("회원가입");
-		setSize(main.SCREEN_WIDTH, main.SCREEN_HEIGHT);
+		setSize(dirver.SCREEN_WIDTH, dirver.SCREEN_HEIGHT);
 		this.setLayout(null);
 		setVisible(true);
 		setResizable(false); // 프로그램 크기 조절 불가 설정
