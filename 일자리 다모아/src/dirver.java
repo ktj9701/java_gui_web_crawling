@@ -4,5 +4,5 @@ public class dirver {
 	public static final int SCREEN_HEIGHT=720; // 세로길이
 	public static void main(String[] args) {
 		new Loginpage();
-	}
+	} 
 }
