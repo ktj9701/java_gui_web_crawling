@@ -118,13 +118,13 @@ public class Mainpage extends JFrame {
 		public void actionPerformed(ActionEvent e) {
 			JComboBox cb = (JComboBox) e.getSource();
 			Detail_Area.setVisible(true);
-			Detail.changeComboBox(e); // 콤보박스에 맞는 리스트 출력
+			Detail.changeComboBox(e); // 콤보박스에 맞는 리스트 출력 
 			Detail_Area.setSelectedIndex(0);
 			Search_Alba();
 			
 		}
 	}
-	
+
 
 	
 	public void Search_Alba() {  //광고 검색
