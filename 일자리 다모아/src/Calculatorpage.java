@@ -45,7 +45,7 @@ public class Calculatorpage extends JFrame {
 		setVisible(true);
 		setResizable(false); // 프로그램 크기 조절 불가 설정
 		setLocationRelativeTo(null); // 화면 중앙에 오도록 하는 설정
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		dispose();
 
 		// ----------------------- 콤보 박스 ----------------------------------
 		String[] kinds = { "시급", "일급", "월급", "연봉" };
@@ -194,6 +194,8 @@ public class Calculatorpage extends JFrame {
 		Tex[1].addItemListener(radiolistener);
 	}
 
+	
+	
 	class Buttonlistener implements ActionListener { // 계산 및 리셋 버튼 이벤트
 		public void actionPerformed(ActionEvent e) {
 			if (e.getSource() == Reset) { // 리셋 버튼
