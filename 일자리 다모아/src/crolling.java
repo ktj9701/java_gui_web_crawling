@@ -2,6 +2,7 @@
 
 import java.io.IOException;
 import java.util.Iterator;
+import java.util.NoSuchElementException;
 import java.util.Vector;
 
 import org.jsoup.Jsoup;
@@ -19,8 +20,8 @@ public class crolling {
 		int page = 1;
 		Document doc = null;
 		while (page != 4) { // 3페이지까지 출력
-			url = "https://www.albamon.com/list/gi/mon_gi_tot_list.asp?page=" + page + "&ps=20&ob=6&lvtype=1&rArea=,"
-					+ area + "&rWDate=1&Empmnt_Type=";
+			url = "https://www.albamon.com/list/gi/mon_gi_tot_list.asp?page=" + page + "&ps=20&ob=6&lvtype=1&rArea="
+					+ area + "&rWDate=1&Empmnt_Type=&ob=0";
 			try {
 				doc = Jsoup.connect(url).get();
 			} catch (IOException e) {
@@ -35,8 +36,13 @@ public class crolling {
 			Iterator<Element> ie5 = element.select("td.recently").iterator();// 올라온 시간
 
 			while (ie1.hasNext()) {	
+				try {
 				arr.add(new Albatext(ie1.next().text().substring(3), ie2.next().text(), ie3.next().text(),
 						ie4.next().text(), ie5.next().text()));
+				}
+				catch(NoSuchElementException e) {
+					
+				}
 			}
 			page++;
 		}
