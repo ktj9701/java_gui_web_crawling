@@ -100,7 +100,7 @@ public class Calculatorpage extends JFrame {
 		add(week_num);
 
 		JLabel weeklabel = new JLabel("ÁÖ°£ ±Ù¹« ÀÏ¼ö");
-		weeklabel.setBounds(110, 170, 100, 30);
+		weeklabel.setBounds(110, 170, 150, 30);
 		weeklabel.setFont(new Font("¸¼Àº °íµñ", Font.BOLD, 15));
 		add(weeklabel);
 
@@ -152,7 +152,7 @@ public class Calculatorpage extends JFrame {
 		add(Result_pay__Integer_label);
 
 		JLabel Extra_pay_label = new JLabel("¿¹»ó ÁÖÈÞ ¼ö´ç(+)");
-		Extra_pay_label.setBounds(30, 430, 100, 30);
+		Extra_pay_label.setBounds(30, 430, 150, 30);
 		Extra_pay_label.setFont(new Font("¸¼Àº °íµñ", Font.BOLD, 15));
 		add(Extra_pay_label);
 
