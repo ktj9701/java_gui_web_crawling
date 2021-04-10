@@ -17,8 +17,14 @@ import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
 
 public class Mainpage extends JFrame {
+	Object temp, temp2;
+
 	Detail_Area Detail = new Detail_Area(); // 세부적인 지역 모음 클래스
 	City city = new City();
+	Seoul 서울1도시 = new Seoul();
+	Seoul2 서울2도시 = new Seoul2();
+	static int index = 0;
+
 	static Button Serch = new Button("검색");
 	static Button Calculator = new Button("월급 계산기");
 
@@ -38,7 +44,7 @@ public class Mainpage extends JFrame {
 	// 적용된 필터링 확인 및 필터리 삭제 버튼-----------------------------------------------
 	static JLabel[] Filtering = new JLabel[5];
 	static JButton[] delete = new JButton[5];
-	
+
 //-------------------------------------이벤트 ---------------------------
 	Buttonlistener listener = new Buttonlistener();
 
@@ -66,6 +72,7 @@ public class Mainpage extends JFrame {
 		Serch.setBounds(900, 30, 60, 60);
 		Serch.setVisible(true);
 		add(Serch);
+		Serch.addActionListener(listener);
 
 		SerchField.setBounds(30, 40, 850, 40);
 		SerchField.setFont(new Font("맑은 고딕", Font.BOLD, 30));
@@ -83,7 +90,7 @@ public class Mainpage extends JFrame {
 		Province.setBounds(40, 90, 50, 30);
 		Province.setFont(new Font("맑은 고딕", Font.BOLD, 15));
 		add(Province);
-		String[] Korea_Province = { "선택", "서울", "경기", "인천", "강원", "대전", "세종", "충남", "충복", "부산", "울산", "경남", "경북", "대구",
+		String[] Korea_Province = { "선택", "서울", "경기", "인천", "강원", "대전", "세종", "충남", "충북", "부산", "울산", "경남", "경북", "대구",
 				"광주", "전남", "전북", "제주" };
 		Area = new JComboBox(Korea_Province);
 		Area.setSelectedIndex(0);
@@ -108,12 +115,12 @@ public class Mainpage extends JFrame {
 		City.setFont(new Font("맑은 고딕", Font.BOLD, 15));
 		City.setVisible(false);
 		add(City);
-
+		City.addActionListener(Combolistener);
 		// -------------------------------필터링 레이블과 필터링 삭제
 		// 버튼----------------------------------------
-		for(int i=0;i<5;i++) {
-			Filtering[i]=new JLabel();
-			delete[i]=new JButton();
+		for (int i = 0; i < 5; i++) {
+			Filtering[i] = new JLabel();
+			delete[i] = new JButton();
 		}
 		Filtering[0].setBounds(20, 150, 100, 20);
 		Filtering[0].setVisible(false);
@@ -156,24 +163,66 @@ public class Mainpage extends JFrame {
 				Calculatorpage calculator = new Calculatorpage();
 				calculator.setVisible(true);
 			}
+			if (e.getSource() == Serch) {
+				index = 0;
+				for (int i = 0; i < 5; i++) {
+					Filtering[i].setText("");
+					Filtering[i].setVisible(false);
+					delete[i].setText("");
+					delete[i].setVisible(false);
+				}
+				crolling.area = "";
+				Search_Alba();
+			}
 		}
 	}
 
 	public class combolistener implements ActionListener { // 콤보박스 선택시 이벤트 발생 클래스
 		public void actionPerformed(ActionEvent e) {
-			if (e.getSource() == Area) {
-				Detail_Area.setVisible(true);
-				Detail.changeComboBox(e); // 콤보박스에 맞는 리스트 출력
-				Search_Alba();
-				Filtering[0].setText("됨?");
-				Filtering[0].setVisible(true);
-				delete[0].setVisible(true);
-			}
-			else if (e.getSource() == Detail_Area) {
-				City.setVisible(true);
-				city.changeComboBox(e);
-				 Search_Alba();
-
+			if (index != 5) {
+				if (e.getSource() == Area) {
+					for (int i = 0; i < 5; i++) {
+						Filtering[i].setText("");
+						Filtering[i].setVisible(false);
+						delete[i].setText("");
+						delete[i].setVisible(false);
+					}
+					Detail_Area.setVisible(true);
+					Detail.changeComboBox(e); // 콤보박스에 맞는 리스트 출력
+					Search_Alba();
+					temp = Area.getSelectedItem();
+				} 
+				else if (e.getSource() == Detail_Area) {
+					index=0;
+					for (int i = 0; i < 5; i++) {
+						Filtering[i].setText("");
+						Filtering[i].setVisible(false);
+						delete[i].setText("");
+						delete[i].setVisible(false);
+					}
+					City.setVisible(true);
+					city.changeComboBox(e);
+					Search_Alba();
+					temp2 = Detail_Area.getSelectedItem();
+				} 
+				else if (e.getSource() == City) {
+					if (temp2.equals("강남구") || temp2.equals("강동구") || temp2.equals("강북구") || temp2.equals("강서구")
+							|| temp2.equals("관악구") || temp2.equals("광진구") || temp2.equals("구로구") || temp2.equals("금천구")
+							|| temp2.equals("노원구") || temp2.equals("도봉구") || temp2.equals("동대문구") || temp2.equals("동작구")
+							|| temp2.equals("마포구") || temp2.equals("서대문구") || temp2.equals("서초구") || temp2.equals("성동구")
+							|| temp2.equals("성북구")) {
+						서울1도시.SeoulCity(e);
+						if (서울1도시.flag != true)
+							Search_Alba();
+					} else if (temp2.equals("송파구") || temp2.equals("양천구") || temp2.equals("영등포구") || temp2.equals("용산구")
+							|| temp2.equals("은평구") || temp2.equals("종로구") || temp2.equals("중구")
+							|| temp2.equals("중랑구")) {
+						서울2도시.Seoul2City(e);
+						if (서울2도시.flag != true)
+							Search_Alba();
+					}
+				}
+				System.out.println(crolling.area);
 			}
 		}
 	}
