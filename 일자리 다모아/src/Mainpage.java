@@ -23,6 +23,8 @@ public class Mainpage extends JFrame {
 	City city = new City();
 	Seoul 서울1도시 = new Seoul();
 	Seoul2 서울2도시 = new Seoul2();
+	Gyeonggi 경기1도시 = new Gyeonggi();
+	Gyeonggi2 경기2도시 = new Gyeonggi2();
 	static int index = 0;
 
 	static Button Serch = new Button("검색");
@@ -63,7 +65,7 @@ public class Mainpage extends JFrame {
 		JTable table = new JTable(TableModel);
 		scroll = new JScrollPane(table);
 		table.setFont(new Font("맑은 고딕", Font.BOLD, 25)); // 글자 크기 설정
-		table.setRowHeight(25);
+		table.setRowHeight(35);
 		scroll.setBounds(160, 130, 1325, 633);
 		scroll.setVisible(true);
 		add(scroll);
@@ -213,13 +215,35 @@ public class Mainpage extends JFrame {
 							|| temp2.equals("성북구")) {
 						서울1도시.SeoulCity(e);
 						if (서울1도시.flag != true)
-							Search_Alba();
-					} else if (temp2.equals("송파구") || temp2.equals("양천구") || temp2.equals("영등포구") || temp2.equals("용산구")
+							Search_Alba();						
+					} 
+					
+					else if (temp2.equals("송파구") || temp2.equals("양천구") || temp2.equals("영등포구") || temp2.equals("용산구")
 							|| temp2.equals("은평구") || temp2.equals("종로구") || temp2.equals("중구")
 							|| temp2.equals("중랑구")) {
 						서울2도시.Seoul2City(e);
 						if (서울2도시.flag != true)
-							Search_Alba();
+							Search_Alba();						
+					}
+					
+					else if (temp2.equals("가평군") || temp2.equals("고양시 덕양구") || temp2.equals("고양시 일산동구") || temp2.equals("고양시 일산서구")
+							|| temp2.equals("과천시") || temp2.equals("광명시") || temp2.equals("광주시")	|| temp2.equals("구리시")
+						|| temp2.equals("구리시")|| temp2.equals("군포시")|| temp2.equals("김포시")|| temp2.equals("남양주시")|| temp2.equals("동두천시")
+						|| temp2.equals("부천시")|| temp2.equals("성남시 분당구")|| temp2.equals("성남시 수정구")|| temp2.equals("수정시 중원구")|| temp2.equals("수원시 권선구")
+						|| temp2.equals("수원시 영통구")|| temp2.equals("수원시 장안구")|| temp2.equals("수원시 팔달구")|| temp2.equals("시흥시")|| temp2.equals("안산시 단원구")
+						|| temp2.equals("안산시 상록구")){
+						경기1도시.GyeonggiCity(e);
+						if (경기1도시.flag != true)
+							Search_Alba();						
+					}
+					
+					else if(temp2.equals("안성시") ||temp2.equals("안양시 동안구") ||temp2.equals("안양시 만안구") ||temp2.equals("양주시") ||temp2.equals("양평군") ||
+							temp2.equals("여주시") ||temp2.equals("연천군") ||temp2.equals("오산시") ||temp2.equals("용인시 기흥구") ||temp2.equals("용인시 수지구") ||
+							temp2.equals("용인시 처인구") ||temp2.equals("의왕시") ||temp2.equals("의정부시") ||temp2.equals("이천시") ||temp2.equals("파주시") ||temp2.equals("평택시") ||
+							temp2.equals("포천시") ||temp2.equals("하남시") ||temp2.equals("화성시")) {
+						경기2도시.Gyeonggi2City(e);
+						if (경기2도시.flag != true)
+							Search_Alba();	
 					}
 				}
 				System.out.println(crolling.area);
