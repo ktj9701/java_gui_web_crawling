@@ -2532,8 +2532,6 @@ public class Seoul {
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
-			
-
 		}
 	}
 }
