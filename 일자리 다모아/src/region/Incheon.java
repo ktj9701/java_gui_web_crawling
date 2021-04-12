@@ -120,7 +120,7 @@ public class Incheon {
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "계산2동":
-			crolling.area += "K0200030";
+			crolling.area += ",K0200030";
 			Mainpage.Filtering[Mainpage.index].setText("계산2동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
@@ -306,7 +306,7 @@ public class Incheon {
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "간석1동":
-			crolling.area += "K0400010";
+			crolling.area += ",K0400010";
 			Mainpage.Filtering[Mainpage.index].setText("간석1동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
@@ -330,7 +330,7 @@ public class Incheon {
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "고잔동":
-			crolling.area += "K0400060";
+			crolling.area += ",K0400060";
 			Mainpage.Filtering[Mainpage.index].setText("고잔동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
@@ -360,7 +360,7 @@ public class Incheon {
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "구월4동":
-			crolling.area += "K0400100";
+			crolling.area += ",K0400100";
 			Mainpage.Filtering[Mainpage.index].setText("구월4동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
@@ -384,7 +384,7 @@ public class Incheon {
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "만수동":
-			crolling.area += "K0400210";
+			crolling.area += ",K0400210";
 			Mainpage.Filtering[Mainpage.index].setText("만수동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
@@ -648,7 +648,7 @@ public class Incheon {
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "주안동":
-			crolling.area += "K0300260";
+			crolling.area += ",K0300260";
 			Mainpage.Filtering[Mainpage.index].setText("주안동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
@@ -702,7 +702,7 @@ public class Incheon {
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "학익동":
-			crolling.area += "K0300290";
+			crolling.area += ",K0300290";
 			Mainpage.Filtering[Mainpage.index].setText("학익동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
@@ -726,7 +726,7 @@ public class Incheon {
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "갈산1동":
-			crolling.area += "K0600010";
+			crolling.area += ",K0600010";
 			Mainpage.Filtering[Mainpage.index].setText("갈산1동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
@@ -912,7 +912,7 @@ public class Incheon {
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "가정2동":
-			crolling.area += "K0700020";
+			crolling.area += ",K0700020";
 			Mainpage.Filtering[Mainpage.index].setText("가정2동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
