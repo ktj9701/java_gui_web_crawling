@@ -1,13 +1,21 @@
 package GUI;
-import javax.swing.event.*;
+import java.awt.Button;
+import java.awt.Color;
+import java.awt.Font;
+import java.awt.TextField;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.sql.SQLException;
 
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+import Function.DB;
+import Function.DB_Method;
 import Function.dirver;
 
-import java.awt.*;
-import javax.swing.*;
-import java.awt.event.*;
-
 public class Loginpage extends JFrame {
+	private DB_Method db_method=new DB_Method();
 	Buttonlistener Loginlistener = new Buttonlistener();
 
 	Font Title_Font = new Font("맑은 고딕", Font.BOLD, 30);
@@ -69,26 +77,28 @@ public class Loginpage extends JFrame {
 		Login.addActionListener(Loginlistener); // -------------------------이벤트처리
 		Join.addActionListener(Loginlistener);
 	}
-
+	public boolean LoginAction(ActionEvent e) throws SQLException {
+		if(db_method.Login(ID_.getText(),PW_.getText())) {
+			setVisible(false);
+			return true;
+		}
+		return false;
+	}
 	class Buttonlistener implements ActionListener { // 버튼 이벤트
 		public void actionPerformed(ActionEvent event) {
 			if (event.getSource() == Login) { // 로그인 버튼 클릭
-				
-				if (ID_.getText().equals("admin") && (PW_.getText().equals("1234"))) {
-					System.out.println("로그인 중");
-					Mainpage mainPage = new Mainpage();
-					dispose(); // 프레임삭제
-					mainPage.setVisible(true); // 새로운 프레임
-				}
-				if (ID_.getText().equals(name) && (PW_.getText().equals("1234"))) { // -----------회원가입 시험을 위한 테스트 나중에
-																					// 삭제해야함
-					Mainpage mainPage = new Mainpage();
-					dispose(); // 프레임삭제
-					mainPage.setVisible(true); // 새로운 프레임
-				} else { // ---------------------------------로그인 실패
-					ID_.setText("");
-					PW_.setText("");
-					fail.setVisible(true);
+				try {
+					if(LoginAction(event)) {
+						dispose(); // 프레임삭제
+						Mainpage mainPage = new Mainpage();				
+					}
+					else { // ---------------------------------로그인 실패
+						ID_.setText("");
+						PW_.setText("");
+						fail.setVisible(true);
+					}
+				} catch (SQLException e) {
+					e.printStackTrace();
 				}
 			} else if (event.getSource() == Join) { // 회원 가입 버튼 클릭
 				ID_.setText("");
@@ -100,4 +110,20 @@ public class Loginpage extends JFrame {
 
 		}
 	}
+
 }
+/*if (ID_.getText().equals("admin") && (PW_.getText().equals("1234"))) {
+System.out.println("로그인 중");
+Mainpage mainPage = new Mainpage();
+dispose(); // 프레임삭제
+mainPage.setVisible(true); // 새로운 프레임
+}
+if (ID_.getText().equals(name) && (PW_.getText().equals("1234"))) { // -----------회원가입 시험을 위한 테스트 나중에
+																// 삭제해야함
+Mainpage mainPage = new Mainpage();
+dispose(); // 프레임삭제
+mainPage.setVisible(true); // 새로운 프레임
+} else { // ---------------------------------로그인 실패
+ID_.setText("");
+PW_.setText("");
+fail.setVisible(true);*/
