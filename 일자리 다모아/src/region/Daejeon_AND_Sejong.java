@@ -10,7 +10,7 @@ import GUI.Mainpage;
 public class Daejeon_AND_Sejong {
 	public boolean flag;
 
-	public void DaejeonCity(ActionEvent e) {
+	public void Daejeon_AND_SejongCity(ActionEvent e) {
 		if (Mainpage.index == 0)
 			crolling.area = "";
 
@@ -121,7 +121,7 @@ public class Daejeon_AND_Sejong {
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "신일동":
-			crolling.area += "G0100170";
+			crolling.area += ",G0100170";
 			Mainpage.Filtering[Mainpage.index].setText("신일동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
@@ -199,7 +199,7 @@ public class Daejeon_AND_Sejong {
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "가양1동":
-			crolling.area += "G0200010";
+			crolling.area += ",G0200010";
 			Mainpage.Filtering[Mainpage.index].setText("가양1동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
@@ -385,7 +385,7 @@ public class Daejeon_AND_Sejong {
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "인동":
-			crolling.area += "G0200390";
+			crolling.area += ",G0200390";
 			Mainpage.Filtering[Mainpage.index].setText("인동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
@@ -463,7 +463,7 @@ public class Daejeon_AND_Sejong {
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "하소동":
-			crolling.area += "G0200520";
+			crolling.area += ",G0200520";
 			Mainpage.Filtering[Mainpage.index].setText("하소동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
@@ -649,7 +649,7 @@ public class Daejeon_AND_Sejong {
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "용촌동":
-			crolling.area += "G0300280";
+			crolling.area += ",G0300280";
 			Mainpage.Filtering[Mainpage.index].setText("용촌동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
@@ -703,7 +703,7 @@ public class Daejeon_AND_Sejong {
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "탄방동":
-			crolling.area += "G0300370";
+			crolling.area += ",G0300370";
 			Mainpage.Filtering[Mainpage.index].setText("탄방동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
