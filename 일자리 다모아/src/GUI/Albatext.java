@@ -1,20 +1,21 @@
 package GUI;
 
+import javax.swing.JButton;
+
 public class Albatext {
 	private String area;
 	private String pay;
 	private String office;
 	private String text;
 	private String time;
-
+	private String a;
 	public Albatext(String _area, String _pay, String _office, String _text, String _time) {
 			this.area = _area;
 			this.pay = _pay;
 			this.office = _office;
 			this.text = _text;
-			this.time = _time;
-			
-			
+			this.time = _time;	
+
 		}
 
 	public String getArea() {
@@ -55,5 +56,12 @@ public class Albatext {
 
 	public void setTime(String time) {
 		this.time = time;
+	}
+	public String getA() {
+		return a;
+	}
+
+	public void setA(String a) {
+		this.a = a;
 	}
 }
