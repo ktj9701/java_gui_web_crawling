@@ -283,19 +283,19 @@ public class City {
 		static String[] 부여군 = {"전체", "구룡면", "규암면", "남면", "내산면", "부여읍", "석성면", "세도면", "양화면", "옥산면", "외산면", "은산면", "임천면", 
 				"장암면", "초촌면", "충화면", "홍산면"};		
 		static String[] 서산시 = {"전체", "갈산동", "고북면", "대산읍", "덕지천동", "동문동", "부석면", "석남동", "석림동", "성연면", "수석동", "양대동", 
-				"예천동", "오남동", "온석동", "운산면", "음암면", "읍내동", "인지면", "잠홍동", "장동", "죽성동", "지곡면", "팔봉면", "해미면"};		
+				"예천동", "오남동", "온석동", "운산면", "음암면", "서산시읍내동", "인지면", "잠홍동", "장동", "죽성동", "지곡면", "팔봉면", "해미면"};		
 		static String[] 서천군 = {"전체", "기산면", "마산면", "마서면", "문산면", "비인면", "서면", "서천읍", "시초면", "장항읍", "종천면", "판교면","한산면", "화양면"};		
 		static String[] 아산시 = {"전체", "권곡동", "기산동", "남동", "도고면", "둔포면", "득산동", "모종동", "방축동", "배미동", "배방읍", "법곡동", "선장면", 
-				"송악면", "신동", "신인동", "신창면", "실옥동", "염치읍", "영인면", "온양1동", "온양2동", "온천동", "용화동", "음봉면", "읍내동", "인주면", "장존동", 
+				"송악면", "신동", "신인동", "신창면", "실옥동", "염치읍", "영인면", "온양1동", "온양2동", "온천동", "용화동", "음봉면", "아산시읍내동", "인주면", "장존동", 
 				"점양동", "좌부동", "초시동", "탕정면", "풍기동"};
 		static String[] 예산군 = {"전체", "고덕면", "광시면", "대술면", "대흥면", "덕산면", "봉산면", "삽교읍", "신암면", "신양면", "예산읍", "오가면", "응봉면"};
-		static String[] 천안시동남구 = {"전체", "광덕면", "구룡동", "구성동", "다가동", "대흥동", "동면", "목천읍", "문화동", "병천면", "봉명동", "북면", 
+		static String[] 천안시동남구 = {"전체", "광덕면", "천안시구룡동", "구성동", "다가동", "대흥동", "동면", "목천읍", "문화동", "병천면", "봉명동", "북면", 
 				"사직동", "삼룡동", "성남면", "성황동", "수신면", "신방동", "신부동", "안서동", "영성동", "오룡동", "용곡동", "원성동", "원성1동", "원성2동", "유량동", 
 				"청당동", "청수동", "풍세면"};		
 		static String[] 천안시서북구 = {"전체", "두정동", "백석동", "부대동", "부성1동", "부성2동", "불당동", "성거읍", "성성동", "성정동", "성정1동", 
 				"성정2동", "성환읍", "신당동", "쌍용동", "쌍용1동", "쌍용2동", "쌍용3동", "업성동", "와촌동", "입장면", "직산읍", "차암동"};		
 		static String[] 청양군 = {"전체", "남양면", "대치면", "목면", "비봉면", "운곡면", "장평면", "정산면", "청남면", "청양읍", "화성면"};		
-		static String[] 태안군 = {"전체", "고남면", "근흥면", "남면", "소원면", "안면읍", "원북면", "이원면", "태안읍"};		
+		static String[] 태안군 = {"전체", "고남면", "근흥면", "태안군남면", "소원면", "안면읍", "원북면", "이원면", "태안읍"};		
 		static String[] 홍성군 = {"전체", "갈산면", "결성면", "광천읍", "구향면", "금마면", "서부면", "은하면", "장곡면", "홍동면", "홍북읍", "홍성읍"};
 
 		
@@ -310,7 +310,7 @@ public class City {
 				"모산동", "백운면", "봉양읍", "산곡동", "서부동", "송학면", "수산면", "신동", "신백동", "신월동", "영천동", "왕암동", "의림동", "자작동", "장락동", "중앙로1가", 
 				"중앙로2가", "천남동", "청전동", "청풍면", "하소동", "한수면", "화산동", "흑석동"};		
 		static String[] 증평군 = {"전체", "도안면", "증평읍"};		
-		static String[] 진천군 = {"전체", "광혜원면", "덕산면", "문백면", "백곡면", "이월면", "진천읍", "초평면"};		
+		static String[] 진천군 = {"전체", "광혜원면", "진천군덕산면", "문백면", "백곡면", "이월면", "진천읍", "초평면"};		
 		static String[] 청주시상당구 = {"전체", "가덕면", "금천동", "남문로1가", "남문로2가", "남일면", "남주동", "낭성면", "대성동", "명암동", "문의면", "문화동", "미원면", 
 				"방서동", "북문로1가", "북문로2가", "북문로3가", "산성동", "서문동", "서운동", "석교동", "성안동", "수동", "영동", "영운동", "용담.명암.산성동", "용담동", "용암동", "용암1동", 
 				"용암2동", "용정동", "운동동", "월오동", "중앙동", "지북동", "탑.대성동", "탑동", "평촌동"};		
@@ -321,7 +321,7 @@ public class City {
 		static String[] 청주시흥덕구 = {"전체", "가경동", "강내면", "강서동", "강서1동", "강서2동", "오송읍", "남촌동", "내곡동", "동막동", "문암동", "복대동", "복대1동", "복대2동", 
 				"봉명동", "봉명1동", "봉명2.송정동", "비하동", "상신동", "서촌동", "석곡동", "석소동", "송절동", "송정동", "수의동", "신대동", "신봉동", "신성동", "신전동", "신촌동", "옥산면", "외북동",
 				"운천.신봉동", "운천동", "원평동", "정봉동", "지동동", "평동", "향정동", "현암동", "화계동", "휴암동"};		
-		static String[] 충주시 = {"전체", "가주동", "교현동", "교현1동", "교현2동", "금가면", "금능동", "노은면", "단월동", "달천동", "대소원면", "동량면", "목벌동", "목행동", "문화동", "봉방동", 
+		static String[] 충주시 = {"전체", "가주동", "교현동", "교현1동", "교현2동", "금가면", "금능동", "노은면", "단월동", "달천동", "대소원면", "동량면", "목벌동", "목행동", "충주시문화동", "봉방동", 
 				"산척면", "살미면", "성남동", "성내동", "성서동", "소태면", "수안보면", "신니면", "안림동", "앙성면", "엄정면", "연수동", "용관동", "용두동", "용산동", "용탄동", "종민동", "주덕읍", "중앙탑면", 
 				"지현동", "직동", "충의동", "충인동", "칠금동", "풍동", "호암동"};
 		
@@ -351,7 +351,7 @@ public class City {
 				"대청동", "대청동1가", "대청동2가", "대청동3가", "대청동4가", "동광동", "동광동1가", "동광동2가", "동광동3가", "동광동4가", "동광동5가", "보수동", "보수동1가", "보수동2가", "보수동3가", "부평동", 
 				"부평동1가", "부평동2가", "부평동3가", "부평동4가", "신창동1가", "신창동2가", "신창동3가", "신창동4가", "영주동", "영주1동", "영주2동", "중앙동", "중앙동1가", "중앙동2가", "중앙동3가", "중앙동4가", 
 				"중앙동5가", "중앙동6가", "중앙동7가", "창선동1가", "창선동2가"};
-		static String[] 해운대구 = {"전체", "반송동", "산송1동", "반송2동", "반송3동", "반여동", "반여1동", "반여2동", "반여3동", "반여4동", "석대동", "송정동", "우동", "우1동", "우2동", "우3동", "재송동", 
+		static String[] 해운대구 = {"전체", "반송동", "산송1동", "반송2동", "반송3동", "반여동", "반여1동", "반여2동", "반여3동", "반여4동", "석대동", "해운대구송정동", "우동", "우1동", "우2동", "우3동", "재송동", 
 			"재송1동", "재송2동", "좌동", "좌1동", "좌2동", "좌3동", "좌4동", "중동", "중1동", "중2동"};
 		
 //------------------------------------------------------울산---------------------------------------------------------
@@ -372,12 +372,12 @@ public class City {
 		static String[] 김해시 = {"전체", "강동", "관동동", "구산동", "내덕동", "내동", "내외동", "대동면", "대성동", "대청동", "동상동", "명법동", "무계동", "봉황동", "부곡동", "부원동",
 				"북부동", "불암동", "삼계동", "삼문동", "삼방동", "삼안동", "삼정동", "상동면", "생림면", "서상동", "수가동", "신문동", "아농", "어방동", "외동", "유하동", "율하동", "응달동", "이동", "장유1동", "장유2동", "장유3동", "장유동", "전하동", "주촌면", "지내동", "진례면", "진영읍", "칠산서부동", "풍유동", "한림면", "화목동", "활천동", "회현동", "흥동"};
 		static String[] 남해군 = {"전체", "고현면", "남면", "남해읍", "미조면", "삼동면", "상주면", "서면", "설천면", "이동면", "창선면"};
-		static String[] 밀양시 = {"전체", "가곡동", "교동", "남포동", "내이동", "내일동", "단장면", "무안면", "부북면", "산내면", "산외면", "삼랑진읍", "삼문동", "상남면", "상동면", 
+		static String[] 밀양시 = {"전체", "가곡동", "교동", "남포동", "내이동", "내일동", "단장면", "무안면", "부북면", "산내면", "산외면", "삼랑진읍", "밀양시삼문동", "상남면", "밀양시상동면", 
 				"용평동", "청도면", "초동면", "하남읍", "활성동"};
 		static String[] 사천시 = {"전체", "곤명면", "곤양면", "궁지동", "노룡동", "늑도동", "대방동", "대포동", "동금동", "동동", "동림동", "마도동", "백천동", "벌리동", "봉남동", "사남면", 
 				"사등동", "사천읍", "서금동", "서동", "서포면", "선구동", "송포동", "신벽동", "신수도", "실안동", "와룡동", "용강동", "용현면", "이금동", "이홀동", "정동면", "좌룡동", "죽림동", "축동면", "향촌동"};
 		static String[] 산청군 = {"전체", "금서면", "단성면", "산청읍", "삼장면", "생비량면", "생초면", "시천면", "신등면", "신안면", "오부면", "차황면"};
-		static String[] 양산시 = {"전체", "교동", "남부동", "다방동", "덕계동", "동면", "매곡동", "명곡동", "명동", "물금읍", "북부동", "북정동", "산막동", "삼호동", "상북면", "소주동", 
+		static String[] 양산시 = {"전체", "양산시교동", "남부동", "다방동", "덕계동", "동면", "매곡동", "명곡동", "명동", "물금읍", "양산시북부동", "북정동", "산막동", "삼호동", "상북면", "소주동", 
 				"신기동", "어곡동", "용당동", "웅상읍", "원동면", "유산동", "주남동", "주진동", "중부동", "평산동", "하북면", "호계동"};
 		static String[] 의령군 = {"전체", "가례면", "궁류면", "낙서면", "대의면", "봉수면", "부림면", "용덕면", "유곡면", "의령읍", "정곡면", "지정면", "칠곡면", "화정면"};
 		static String[] 진주시 = {"전체", "가좌동", "강남동", "계동", "귀곡동", "금곡면", "금산면", "남성동", "내동면", "대곡면", "대안동", "대평면", "동성동", "망경동", "명석면", "문산읍", "미천면", 
@@ -393,15 +393,15 @@ public class City {
 		static String[] 창원시성산구 = {"전체", "가음동", "가음정동", "귀곡동", "귀산동", "귀현동", "남산동", "남양동", "남지동", "내동", "대방동", "반림동", "반송동", "반지동", "불모산동", 
 				"사파동", "사파정동", "삼정자동", "상남동", "상복동", "성산동", "성주동", "신촌동", "안민동", "양곡동", "완암동", "외동", "웅남동", "월림동", "적현동", "중앙동", "창곡동", "천선동", "토월동"};
 		static String[] 창원시의창구 = {"전체", "내리동", "대산면", "대원동", "덕정동", "도계동", "동읍", "동정동", "두대동", "명곡동", "명서동", "반계동", "봉곡동", "봉림동", "북동", "북면", 
-				"사림동", "사화동", "삼동동", "서곡동", "서상동", "소계동", "소답동", "신월동", "용동", "용지동", "용호동", "중동", "지귀동", "차룡동", "퇴촌동", "팔용동"};
-		static String[] 창원시진해구 = {"전체", "가주동", "경화동", "광화동", "근화동", "남문동", "남빈동", "남양동", "대영동", "대장동", "대죽동", "대천동", "대흥동", "덕산동", "도만동", 
+				"사림동", "사화동", "삼동동", "서곡동", "서상동", "소계동", "소답동", "의창구신월동", "용동", "용지동", "용호동", "중동", "지귀동", "차룡동", "퇴촌동", "팔용동"};
+		static String[] 창원시진해구 = {"전체", "가주동", "경화동", "광화동", "근화동", "남문동", "남빈동", "진해구남양동", "대영동", "대장동", "대죽동", "대천동", "대흥동", "덕산동", "도만동", 
 				"도천동", "동상동", "두동", "마천동", "명동", "무송동", "부흥동", "북부동", "비봉동", "서중동", "석동", "성내동", "소사동", "속천동", "송죽동", "송학동", "수도동", "수송동", "숭인동", 
-				"신흥동", "안곡동", "안골동", "앵곡동", "여좌동", "연도동", "용원동", "원포동", "이동", "익선동", "인사동", "인의동", "자은동", "장천동", "제덕동", "제황산동", "죽곡동", "중앙동", "중평동",
-				"창선동", "청안동", "충무동", "충의동", "태백동", "태평동", "통신동", "평안동", "풍호동", "행암동", "현동", "화천동", "회현동"};
-		static String[] 통영시 = {"전체", "광도면", "당동", "도남동", "도산면", "도천동", "동호동", "명정동", "무전동", "문화동", "미수1동", "미수2동", "미수동", "봉평동", "북신동", 
-				"사량면", "산양읍", "서호동", "욕지면", "용남면", "인평동", "정량동", "중앙동", "태평동", "평림동", "한산면", "항남동"};
+				"진해구신흥동", "안곡동", "안골동", "앵곡동", "여좌동", "연도동", "용원동", "원포동", "이동", "익선동", "인사동", "인의동", "자은동", "장천동", "제덕동", "제황산동", "죽곡동", "진해구중앙동", "중평동",
+				"창선동", "청안동", "충무동", "충의동", "태백동", "태평동", "통신동", "평안동", "풍호동", "행암동", "진해구현동", "화천동", "회현동"};
+		static String[] 통영시 = {"전체", "광도면", "당동", "도남동", "도산면", "통영시도천동", "동호동", "명정동", "무전동", "통영시문화동", "미수1동", "미수2동", "미수동", "봉평동", "북신동", 
+				"사량면", "산양읍", "서호동", "욕지면", "용남면", "인평동", "정량동", "통영시중앙동", "통영시태평동", "평림동", "한산면", "항남동"};
 		static String[] 하동군 = {"전체", "고전면", "금남면", "금성면", "북천면", "악양면", "양보면", "옥종면", "적량면", "진교면", "청암면", "하동읍", "화개면", "횡천면"};
-		static String[] 함안군 = {"전체", "가야읍", "군북면", "대산면", "법수면", "산인면", "여항면", "칠북면", "칠서면", "칠원면", "함안면"};
+		static String[] 함안군 = {"전체", "가야읍", "군북면", "함안군대산면", "법수면", "산인면", "여항면", "칠북면", "칠서면", "칠원면", "함안면"};
 		static String[] 함양군 = {"전체", "마천면", "백전면", "병곡면", "서상면", "서하면", "수동면", "안의면", "유림면", "지곡면", "함양읍", "휴천면"};
 		static String[] 합천군 = {"전체", "가야면", "가회면", "대병면", "대양면", "덕곡면", "묘산면", "봉산면", "삼가면", "쌍백면", "쌍책면", "야로면", "용주면", "율곡면", "적중면", "청덕면", "초계면", "합천읍"};
 	
@@ -413,7 +413,7 @@ public class City {
 	
 	static String[] 경주시 = {"전체", "감포읍", "강동면", "건전읍", "광명동", "교동", "구정동", "구황동",
 			"남산동", "내남면", "노동동", "노서동", "덕동", "도지동", "동방동", "동부동", "동천동", "마동", "배동", "배반동",
-			"보문동", "북군동", "북부동", "사정동", "산내면", "서면", "서부동", "서약동", "석장동", "성건동", "성동동", "손곡동",
+			"보문동", "북군동", "북부동", "경주시사정동", "산내면", "서면", "서부동", "서약동", "석장동", "성건동", "성동동", "손곡동",
 			"시동", "시래동", "신평동", "안강읍", "암곡동", "양남면", "양북면", "외동읍", "용강동", "율동", "인왕동", "조양동",
 			"진현동", "천군동", "천북면", "충효동", "탑동", "평도", "하동", "현곡면", "황남동", "황성동", "황오동", "화용동", "효현동"};
 	
@@ -422,20 +422,20 @@ public class City {
 	
 	static String[] 구미시  = {"전체", "거의동", "고아읍", "공단동", "공단1동", "공단2동", "광평동", "구평동",
 			"구포동", "금전동", "남통동", "도개면", "도량동", "무을면", "봉곡동", "부곡동", "비산동", "사곡동", "산동면", "상모동",
-			"선기동", "선산읍", "송정동", "수점동", "시미면", "신동", "신평동", "신평1동", "신평2동", "양호동", "오태동", "옥계동",
+			"선기동", "선산읍", "송정동", "수점동", "시미면", "신동", "구미시신평동", "신평1동", "신평2동", "양호동", "오태동", "옥계동",
 			"옥성면", "원평동", "원평1동", "원평2동", "인의동", "임수동", "임은동", "장천면", "지산동", "진평동", "해평면", "형곡동",
 			"형곡1동", "형곡2동", "황상동"};
 	
 	static String[] 군위군 = {"전체", "고로면", "군위읍", "부계면", "산성면", "소보면", "우보면", "의흥면",
 			"효령면"};
 	
-	static String[] 김천시 = {"전체", "김문면", "감천면", "감호동", "개령면", "교동", "구성면", "남면",
-			"남산동", "농소면", "다수동", "대광동", "대덕면", "대항면", "덕곡동", "모암동", "문당동", "백옥동", "봉산면", "부곡동",
+	static String[] 김천시 = {"전체", "김문면", "감천면", "감호동", "개령면", "김천시교동", "구성면", "남면",
+			"김천시남산동", "농소면", "다수동", "대광동", "대덕면", "대항면", "덕곡동", "모암동", "문당동", "백옥동", "봉산면", "김천시부곡동",
 			"부항면", "삼락동", "성내동", "신음동", "아포읍", "양천동", "어모면", "용두동", "율곡동", "응명동", "조마면", "증산면",
 			"지례면", "지좌동", "평화동", "황금동"};
 	
 	static String[] 문경시  = {"전체", "가은읍", "공평동", "농암면", "동료면", "마성면", "모전동", "문경읍",
-			"불정동", "산북면", "산양면", "신기동", "영순면", "영신동", "우지동", "유곡동", "윤직동", "점촌동", "창동", "호계면",
+			"불정동", "산북면", "산양면", "신기동", "영순면", "영신동", "우지동", "문경시유곡동", "윤직동", "문경시점촌동", "창동", "호계면",
 			"선기동", "선산읍", "송정동", "수점동", "시미면", "신동", "신평동", "신평1동", "신평2동", "양호동", "오태동", "옥계동",
 			"흥덕동"};
 	
@@ -444,7 +444,7 @@ public class City {
 	
 	static String[] 상주시  = {"전체", "가장동", "개운동", "거동동", "계산동", "공검면", "공성면", "낙동면",
 			"낙상동", "낙양동", "남성동", "남장동", "남적동", "내서면", "냉림동", "도남동", "만산동", "모동면", "모서면", "무양동",
-			"병성동", "복룡동", "부원동"," 사벌면", "서곡동", "서문동", "서성동", "성동동", "성하동", "신봉동", "양촌동", "연원동",
+			"병성동", "복룡동", "부원동"," 사벌면", "서곡동", "서문동", "서성동", "상주시성동동", "성하동", "신봉동", "양촌동", "연원동",
 			"오대동", "외남면", "외답동", "외서면", "은척면", "이안면", "인봉동", "인평동", "죽전동", "중덕동", "중동면", "지천동",
 			"청리면", "초산동", "함창읍", "헌신동", "화개동", "화남면", "화동면", "화북면", "화산동", "화서면", "흥각동"};
 	
@@ -478,7 +478,7 @@ public class City {
 	
 	String[] 울릉군  = {"전체", "북면", "서면", "울릉읍"};
 	
-	static String[] 울진군  = {"전체", "근남면", "금강송면", "기성면", "북면", "온정면", "울진읍", "원남면",
+	static String[] 울진군  = {"전체", "근남면", "금강송면", "기성면", "울진군북면", "온정면", "울진읍", "원남면",
 			"죽변면", "지보면", "풍양면", "호명면", "효자면"};
 	
 	static String[] 의성군  = {"전체", "가음면", "구천면", "금성면", "다인면", "단밀면", "단북면", "단촌면",
@@ -523,7 +523,7 @@ public class City {
 	
 	static String[] 대구북구 = {"전체", "검단동", "고성동1가", "고성동2가", "고성동3가", "관음동", "구암동", "국우동",
 			"금호동", "노곡동", "노원동1가", "노원동2가", "노원동3가", "대현동", "대현1동", "대현2동", "도남동", "동변동", "동천동",
-			"동호동", "매천동", "복현동", "복현1동", "복현2동", "사수동", "산격동", "산격1동", "산격2동", "산격3동", "산격4동",
+			"북구동호동", "매천동", "복현동", "복현1동", "복현2동", "사수동", "산격동", "산격1동", "산격2동", "산격3동", "산격4동",
 			"서변동", "연경동", "읍내동", "조아동", "칠성동1가", "칠성동2가", "침산동", "침산1동", "침산2동", "침산3동",
 			"태전동", "태전1동", "태전2동", "팔달동", "학정동"};
 	
@@ -535,11 +535,11 @@ public class City {
 	static String[] 수성구  = {"전체", "가천동", "고모동", "노변동", "대흥동", "두산동", "만촌동", "만촌1동",
 			"만촌2동", "만촌3동", "범물동", "범물1동", "범물2동", "범어동", "범어1동", "범어2동", "범어3동", "범어3동", "범어4동",
 			"사월동", "삼덕동", "상동", "성동", "수성동1가", "수성동2가", "수성동3가", "수성동4가", "시지동", "신매동", "연호동",
-			"욱수동", "이천동", "중동", "지산동", "지산1동", "지산2동", "파동", "황금동", "황금1동", "황금2동"};
+			"욱수동", "수성구이천동", "중동", "지산동", "지산1동", "지산2동", "파동", "황금동", "황금1동", "황금2동"};
 	
 	static String[] 대구중구 = {"전체", "계산동1가", "계산동2가", "공평동", "교동", "남산동", "남산1동", "남산2동",
 			"남산3동", "남산4동", "남성로", "남일동", "달성동", "대봉동", "대봉1동", "대봉2동", "대신동", "대안동", "덕산동",
-			"도원동", "동문동", "동산동", "동성로1가", "동성로2가", "동성로3가", "문화동", "봉산동", "북내동", "북성로1가", "북성로2가",
+			"중구도원동", "동문동", "동산동", "동성로1가", "동성로2가", "동성로3가", "문화동", "봉산동", "북내동", "북성로1가", "북성로2가",
 			"사일동", "삼덕1가동", "삼덕동3가", "상덕동", "상서동", "서내동", "서문로1가", "서문로2가", "서성로1가", "서성로2가",
 			"서야동", "수동", "수창동", "시장북로", "완전동", "용덕동", "인교동", "장관동", "전동", "종로1가", "종로2가", "태평로1가",
 			"태평로2가", "태평로3가", "포정동", "하서동", "향촌동", "화전동"};
@@ -560,19 +560,19 @@ public class City {
 			"송하동", "승촌동", "신장동", "압촌동", "양과동", "양림동", "양촌동", "원산동", "월산동", "월산4동", "월산5동", "월성동",
 			"이장동", "임암동", "주월동", "주월1동", "주월2동", "지석동", "진월동", "칠석동", "행암동", "화장동"};
 	
-	static String[] 광주동구 = {"전체", "계림1동", "계림2동", "계림동", "광산동", "궁동", "금남로1가", "금남로2가", 
-			"금남로3가", "금남로4가", "금남로5가", "금동", "남동", "내남동", "대의동", "대인동", "동명동", "불로동", "산수동", 
-			"산수1동", "산수2동", "서석동", "선교동", "소태동", "수기동", "용산동", "용연동", "운림동", "월남동", "장동", "지산동"
+	static String[] 광주동구 = {"전체", "계림1동", "계림2동", "계림동", "동구광산동", "궁동", "금남로1가", "금남로2가", 
+			"금남로3가", "금남로4가", "금남로5가", "금동", "남동", "내남동", "대의동", "대인동", "동명동", "불로동", "동구산수동", 
+			"산수1동", "산수2동", "서석동", "선교동", "소태동", "수기동", "용산동", "용연동", "운림동", "월남동", "장동", "동구지산동"
 			, "지산1동", "지산2동", "충장로1가", "충장로2가", "충장로3가", "충장로4가", "충장로5가", "학동", "호남동", "황금동"};
 	
-	static String[] 광주북구 = {"전체", "각화동", "금곡동", "누문동", "대촌동", "덕의동", "동림동", "두암동", "두암1동",
+	static String[] 광주북구 = {"전체", "각화동", "금곡동", "누문동", "대촌동", "덕의동", "북구동림동", "두암동", "두암1동",
 			"두암2동", "두암3동", "망월동", "매곡동", "문흥동", "문흥1동", "문흥2동", "본촌동", "북동", "삼각동", "생용동", "수곡동",
-			"신안동", "신용동", "양산동", "연제동", "오룡동", "오치동", "오치1동", "오치2동", "용강동", "용두동", "용봉동", "용전동",
-			"우산동", "운암동", "운암1동", "운암2동", "운암3동", "운정동", "월출동", "유동", "일곡동", "임동", "장등동", "중흥동",
+			"신안동", "신용동", "북구양산동", "연제동", "오룡동", "오치동", "오치1동", "오치2동", "용강동", "용두동", "북구용봉동", "용전동",
+			"북구우산동", "운암동", "운암1동", "운암2동", "운암3동", "운정동", "월출동", "유동", "일곡동", "임동", "장등동", "중흥동",
 			"중흥1동", "중흥2동", "중흥3동", "지야동", "청풍동", "충효동", "태령동", "풍향동", "화암동", "효령동"};
 	
 	static String[] 광주서구 = {"전체", "광천동", "금호동", "내방동", "농성동", "농성1동", "농성2동", "덕흥동", "동천동",
-			"마륵동", "매월동", "벽진동", "상무동", "상무1동", "상무2동", "서창동", "세하동", "쌍촌동", "양동", "양3동", "용두동",
+			"마륵동", "매월동", "벽진동", "상무동", "상무1동", "상무2동", "서창동", "세하동", "쌍촌동", "서구양동", "양3동", "서구용두동",
 			"유촌동", "치평동", "풍암동", "화정동", "화정1동", "화정2동", "화정3동", "화정4동"};
 	
 	
@@ -581,7 +581,7 @@ public class City {
 			"신전면", "옴천면", "작천면", "칠량면"};
 	
 	static String[] 고흥군  = {"전체", "고흥읍", "과역면", "금산면", "남양면", "대서면", "도덕면", "도양읍",
-			"도화면", "동강면", "동일면", "두원면", "봉래면", "영남면", "점암면", "포두면", "풍양면"};
+			"도화면", "고흥군동강면", "동일면", "두원면", "봉래면", "영남면", "점암면", "포두면", "풍양면"};
 	
 	static String[] 곡성군  = {"전체", "겸면", "고달면", "곡성읍", "목사동면", "삼기면", "석곡면", "오곡면",
 			"오산면", "옥과면", "입면", "죽곡면"};
@@ -602,8 +602,8 @@ public class City {
 	
 	static String[] 목포시  = {"전체", "경동1가", "경동2가", "광동1가", "광동2가", "광동3가", "금동1가", "금동2가",
 			"금화동", "남교동", "달동", "대성동", "대안동", "대양동", "대의동1가", "대의동2가", "대의동3가", "동명동", "만호동", "명륜동",
-			"무안동", "보광동1가", "보광동2가", "보광동3가", "복만동", "부주동", "부흥동", "북교동", "북항동", "산정동", "산정1동",
-			"산정2동", "산정3동", "삼학동", "상동", "상락동1가", "상락동2가", "서산동", "석현동", "수강동1가", "수강동2가", "신흥동",
+			"무안동", "보광동1가", "보광동2가", "보광동3가", "복만동", "부주동", "부흥동", "북교동", "북항동", "목포시산정동", "산정1동",
+			"산정2동", "산정3동", "삼학동", "상동", "상락동1가", "상락동2가", "서산동", "목포시석현동", "수강동1가", "수강동2가", "신흥동",
 			"양동", "연산동", "영해동1가", "영해동2가", "옥암동", "온금동", "용당동", "용당1동", "용당2동", "용해동", "원산동", "유달동",
 			"유동", "율도동", "죽교동", "죽동", "중동1가", "중동2가", "중앙동1가", "중앙동2가", "중앙동3가", "창평동", "축복동1가",
 			"축복동2가", "축복동3가", "측후동", "하당동", "항동", "해안동1가", "해안동2가", "해안동3가", "해안동4가", "행복동1가",
@@ -615,31 +615,31 @@ public class City {
 	static String[] 보성군  = {"전체", "겸백면", "노동면", "득량면", "문덕면", "미력면", "벌교읍", "보성읍", "복내면",
 			"웅치면", "율어면", "조성면", "회천면"};
 	
-	static String[] 순천시  = {"전체", "가곡동", "교량동", "금곡동", "낙안면", "남내동", "남정동", "대대동", "대룡동",
-			"덕암동", "덕월동", "동외동", "매곡동", "별량면", "삼거동", "상사면", "생목동", "서면", "석현동", "송광면", "승주읍", "안풍동",
-			"야흥동", "연향동", "영동", "오천동", "옥천동", "와룡동", "왕지동", "외서면", "용당동", "월등면", "인월동", "인제동", "장천동",
-			"저전동", "조곡동", "조례동", "주암면", "중앙동", "풍덕동", "해룡면", "행동홍", "내동", "황전면"};
+	static String[] 순천시  = {"전체", "가곡동", "교량동", "금곡동", "낙안면", "순천시남내동", "남정동", "대대동", "대룡동",
+			"덕암동", "덕월동", "동외동", "매곡동", "별량면", "삼거동", "상사면", "생목동", "서면", "순천시석현동", "송광면", "승주읍", "안풍동",
+			"야흥동", "연향동", "영동", "오천동", "옥천동", "와룡동", "왕지동", "외서면", "순천시용당동", "월등면", "인월동", "인제동", "장천동",
+			"저전동", "조곡동", "조례동", "주암면", "순천시중앙동", "풍덕동", "해룡면", "행동홍", "내동", "황전면"};
 	
 	static String[] 신안군  = {"전체", "도초면", "비금면", "신의면", "안좌면", "암태면", "압해면", "임자면", "자은면",
 			"장산면", "증도면", "지도읍", "팔금면", "하의면", "흑산면"};
 	
-	static String[] 여수시  = {"전체", "경호동", "고소동", "공화동", "관문동", "광무동", "교동", "국동", "군자동",
-			"낙포동", "남면", "남산동", "덕충동", "돌산읍", "동산동", "둔덕동", "만흥동", "묘도동", "문수동", "미평동", "봉강동", 
+	static String[] 여수시  = {"전체", "경호동", "고소동", "공화동", "관문동", "광무동", "여수시교동", "국동", "군자동",
+			"낙포동", "여수시남면", "남산동", "덕충동", "돌산읍", "동산동", "둔덕동", "만흥동", "묘도동", "문수동", "미평동", "봉강동", 
 			"봉계동", "봉산동", "삼산면", "상암동", "서교동", "선원동", "소라면", "소호동", "수정동", "시전동", "신기동", "신덕동",
-			"신월동", "안산동", "여서동", "여천동", "연등동", "오림동", "오천동", "웅천동", "월내동", "월하동", "율촌면", "적량동",
-			"종화동", "주삼동", "중앙동", "중흥동", "충무동", "평려동", "학동", "학용동", "해산동", "호명동", "화양면", "화장동",
+			"신월동", "안산동", "여서동", "여천동", "연등동", "오림동", "여수시오천동", "웅천동", "월내동", "월하동", "율촌면", "적량동",
+			"종화동", "주삼동", "여수시중앙동", "중흥동", "충무동", "평려동", "학동", "학용동", "해산동", "호명동", "화양면", "화장동",
 			"화정면", "화치동"};
 	
 	static String[] 영광군  = {"전체", "군남면", "군서면", "낙월면", "대마면", "묘량면", "백수읍", "법성면",
 			"불갑면", "염산면", "영광읍", "홍농읍"};
 	
-	static String[] 영암군  = {"전체", "군서면", "금정면", "덕진면", "도포면", "미암면", "삼호읍", "서호면", 
+	static String[] 영암군  = {"전체", "영암군군서면", "금정면", "덕진면", "도포면", "미암면", "삼호읍", "서호면", 
 			"시종면", "신북면", "영암읍", "학산면"};
 	
 	static String[] 완도군  = {"전체", "고금면", "군외면", "금당면", "금일읍", "노화읍", "보길면", "생일면",
 			"소안면", "신지면", "약산면", "완도읍", "청산면"};
 	
-	static String[] 장성군  = {"전체", "남면동", "화면", "북이면", "북일면", "북하면", "삼계면", "삼서면",
+	static String[] 장성군  = {"전체", "장성군남면", "동화면", "북이면", "북일면", "북하면", "삼계면", "삼서면",
 			"서삼면", "장성읍", "진원면", "황룡면"};
 	
 	static String[] 장흥군  = {"전체", "관산읍", "대덕읍", "부산면", "안양면", "용산면", "유치면", "장동면",
@@ -650,10 +650,10 @@ public class City {
 	static String[] 함평군  = {"전체", "나산면", "대동면", "손불면", "신광면", "엄다면", "월야면", "학교면",
 			"함평읍", "해보면"};
 	
-	static String[] 해남군  = {"전체", "계곡면", "마산면", "문내면", "북일면", "북평면", "산이면", "삼산면",
+	static String[] 해남군  = {"전체", "계곡면", "해남군마산면", "문내면", "해남군북일면", "북평면", "산이면", "해남군삼산면",
 			"송지면", "옥천면", "해남읍", "현산면", "화산면", "화원면", "황산면"};
 	
-	static String[] 화순군  = {"전체", "남면", "능주면", "도곡면", "도암면", "동면", "동복면", "북면", "이서면",
+	static String[] 화순군  = {"전체", "화순군남면", "능주면", "도곡면", "화순군도암면", "동면", "동복면", "북면", "이서면",
 			"이양면", "청풍면", "춘양면", "한천면", "화순읍"};
 	
 	
@@ -671,17 +671,17 @@ public class City {
 	
 	static String[] 김제시  = {"전체", "갈공동", "검산동", "공덕면", "광활면","교동","금구면","금산면","난봉동",
 			"도장동","만경읍","명덕동","백구면","백산면","백학동","복죽동","봉남면","부량면","상동동","서암동","서정동","성덕면",
-			"순동","신곡동","신덕동","신월동","신풍동","양전동","연정동","오정동","옥산동","요촌동","용동","용지면","월봉동",
+			"순동","신곡동","신덕동","신월동","김제시신풍동","양전동","연정동","오정동","옥산동","요촌동","용동","용지면","월봉동",
 			"월성동","입석동","장화동","제월동","죽산면","진봉면","청하면","하동","황산동","황산면","흥사동"};
 	
-	static String[] 남원시  = {"전체","갈치동","고죽동","광치동","금동","금지면","내척동","노암동",
-			"대강면","대산면","덕과면","도통동","동충동","보절면","사매면","산곡동","산내면","산동면","송동면","수지면",
+	static String[] 남원시  = {"전체","갈치동","고죽동","광치동","남원시금동","금지면","내척동","노암동",
+			"대강면","남원시대산면","덕과면","도통동","동충동","보절면","사매면","산곡동","산내면","산동면","송동면","수지면",
 			"식정동","신정동","신촌동","쌍교동","아영면","어현동","왕정동","용정동","운봉읍","월락동","이백면","인월면",
 			"조산동","주생면","주천면","죽항동","천거동","하정동","향교동","화정동"};
 	
 	static String[] 무주군  = {"전체","무주읍","무풍면","부남면","설천면","안성면","적상면"};
 	
-	static String[] 부안군  = {"전체","계화면","동진면","백산면","변산면","보안면","부안읍","상서면",
+	static String[] 부안군  = {"전체","계화면","동진면","부안군백산면","변산면","보안면","부안읍","상서면",
 			"위도면","주산면","줄포면","진서면","하서면","행안면"};
 	
 	static String[] 순창군  = {"전체","구림면","금과면","동계면","복흥면","순창읍","쌍치면","유등면",
@@ -692,8 +692,8 @@ public class City {
 	
 	static String[] 익산시  = {"전체","갈산동","금강동","금마면","남중동","낭산면","덕기동","동산동",
 			"마동","만석동","망성면","모현동1가","모현동2가","목천동","부송동","삼기면","석암동","석왕동","석탄동",
-			"성당면","송학동","신동","신용동","신흥동","어양동","여산면","영등동","오산면","왕궁면","용동면","용안면",
-			"용제동","웅포면","월성동","은기동","인화동","인화동1가","인화동2가","임상동","정족동","주현동","중앙동",
+			"성당면","송학동","신동","신용동","익산시신흥동","어양동","여산면","영등동","오산면","왕궁면","용동면","용안면",
+			"용제동","웅포면","익산시월성동","은기동","인화동","인화동1가","인화동2가","임상동","정족동","주현동","중앙동",
 			"중앙동1가","중앙동2가","중앙동3가","창인동1가","창인동2가","춘포면","팔봉동","평화동","함라면","함열읍",
 			"현영동","황등면"};
 	
@@ -734,7 +734,7 @@ public class City {
 			"도두2동", "도련1동", "도련2동", "도평동", "봉개동", "삼도1동", "삼도2동", "삼양동", "삼양1동", "삼양2동",
 			"삼양3동", "아라동", "아라1동", "아라2동", "애월읍", "연동", "영평동", "오등동", "오라동", "오라1동",
 			"오라2동", "오라3동", "외도동", "외도1동", "외도2동", "용강동", "용담1동", "용담2동", "용담3동",
-			"우도면", "월평동", "이도1동", "이도2동", "이호동", "이호1동", "이호2동", "일도1동", "일도2동",
+			"우도면", "제주시월평동", "이도1동", "이도2동", "이호동", "이호1동", "이호2동", "일도1동", "일도2동",
 			"조천읍", "추자면", "한경면", "한림읍", "해안동", "화북동", "화북1동", "화북2동", "회천동"};
 	public void changeComboBox(ActionEvent e) {
 
@@ -744,1042 +744,1047 @@ public class City {
 		//----------------서울 세부 지역--------------------------------------
 		case "강남구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(강남구);
-			crolling.area = "I010";
+			crolling.area = ",I010";
 			break;
 		case "강동구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(강동구);
-			crolling.area = "I020";
+			crolling.area = ",I020";
 			break;
 		case "강북구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(강북구);
-			crolling.area = "I030";
+			crolling.area = ",I030";
 			break;
 		case "강서구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(강서구);
-			crolling.area = "I040";
+			crolling.area = ",I040";
 			break;
 		case "관악구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(관악구);
-			crolling.area = "I050";
+			crolling.area = ",I050";
 			break;
 		case "광진구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(광진구);
-			crolling.area = "I060";
+			crolling.area = ",I060";
 			break;
 		case "구로구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(구로구);
-			crolling.area = "I070";
+			crolling.area = ",I070";
 			break;
 		case "금천구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(금천구);
-			crolling.area = "I080";
+			crolling.area = ",I080";
 			break;
 		case "노원구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(노원구);
-			crolling.area = "I090";
+			crolling.area = ",I090";
 			break;
 		case "도봉구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(도봉구);
-			crolling.area = "I100";
+			crolling.area = ",I100";
 			break;
 		case "동대문구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(동대문구);
-			crolling.area = "I110";
+			crolling.area = ",I110";
 			break;
 		case "동작구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(동작구);
-			crolling.area = "I120";
+			crolling.area = ",I120";
 			break;
 		case "마포구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(마포구);
-			crolling.area = "I130";
+			crolling.area = ",I130";
 			break;
 		case "서대문구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(서대문구);
-			crolling.area = "I140";
+			crolling.area = ",I140";
 			break;
 		case "서초구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(서초구);
-			crolling.area = "I150";
+			crolling.area = ",I150";
 			break;
 		case "성동구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(성동구);
-			crolling.area = "I160";
+			crolling.area = ",I160";
 			break;
 		case "성북구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(성북구);
-			crolling.area = "I170";
+			crolling.area = ",I170";
 			break;
 		case "송파구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(송파구);
-			crolling.area = "I180";
+			crolling.area = ",I180";
 			break;
 		case "양천구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(양천구);
-			crolling.area = "I190";
+			crolling.area = ",I190";
 			break;
 		case "영등포구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(영등포구);
-			crolling.area = "I200";
+			crolling.area = ",I200";
 			break;
 		case "용산구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(용산구);
-			crolling.area = "I210";
+			crolling.area = ",I210";
 			break;
 		case "은평구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(은평구);
-			crolling.area = "I220";
+			crolling.area = ",I220";
 			break;
 		case "종로구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(종로구);
-			crolling.area = "I230";
+			crolling.area = ",I230";
 			break;
 		case "중구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(중구);
-			crolling.area = "I240";
+			crolling.area = ",I240";
 			break;
 		case "중랑구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(중랑구);
-			crolling.area = "I250";
+			crolling.area = ",I250";
 			break;
 			
 			//------------------경기 세부 지역---------------------------------
 		case "가평군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(가평군);
-			crolling.area = "B010";
+			crolling.area = ",B010";
 			break;
 		case "고양시 덕양구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(고양시덕양구);
-			crolling.area = "B020";
+			crolling.area = ",B020";
 			break;
 		case "고양시 일산동구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(고양시일산동구);
-			crolling.area = "B030";
+			crolling.area = ",B030";
 			break;
 		case "고양시 일산서구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(고양시일산서구);
-			crolling.area = "B031";
+			crolling.area = ",B031";
 			break;
 		case "과천시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(과천시);
-			crolling.area = "B040";
+			crolling.area = ",B040";
 			break;
 		case "광명시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(광명시);
-			crolling.area = "B050";
+			crolling.area = ",B050";
 			break;
 		case "광주시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(광주시);
-			crolling.area = "B060";
+			crolling.area = ",B060";
 			break;
 		case "구리시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(구리시);
-			crolling.area = "B070";
+			crolling.area = ",B070";
 			break;
 		case "군포시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(군포시);
-			crolling.area = "B080";
+			crolling.area = ",B080";
 			break;
 		case "김포시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(김포시);
-			crolling.area = "B090";
+			crolling.area = ",B090";
 			break;
 		case "남양주시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(남양주시);
-			crolling.area = "B100";
+			crolling.area = ",B100";
 			break;
 		case "동두천시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(동두천시);
-			crolling.area = "B110";
+			crolling.area = ",B110";
 			break;
 		case "부천시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(부천시);
-			crolling.area = "B125";
+			crolling.area = ",B125";
 			break;
 		case "성남시 분당구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(성남시분당구);
-			crolling.area = "B150";
+			crolling.area = ",B150";
 			break;
 		case "성남시 수정구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(성남시수정구);
-			crolling.area = "B160";
+			crolling.area = ",B160";
 			break;
 		case "성남시 중원구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(성남시중원구);
-			crolling.area = "B170";
+			crolling.area = ",B170";
 			break;
 		case "수원시 권선구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(수원시권선구);
-			crolling.area = "B180";
+			crolling.area = ",B180";
 			break;
 		case "수원시 영통구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(수원시영통구);
-			crolling.area = "B201";
+			crolling.area = ",B201";
 			break;
 		case "수원시 장안구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(수원시장안구);
-			crolling.area = "B190";
+			crolling.area = ",B190";
 			break;
 		case "수원시 팔달구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(수원시팔달구);
-			crolling.area = "B200";
+			crolling.area = ",B200";
 			break;
 		case "시흥시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(시흥시);
-			crolling.area = "B210";
+			crolling.area = ",B210";
 			break;
 		case "안산시 단원구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(안산시단원구);
-			crolling.area = "B220";
+			crolling.area = ",B220";
 			break;
 		case "안산시 상록구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(안산시상록구);
-			crolling.area = "B221";
+			crolling.area = ",B221";
 			break;
 		case "안성시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(안성시);
-			crolling.area = "B230";
+			crolling.area = ",B230";
 			break;
 		case "안양시 동안구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(안양시동안구);
-			crolling.area = "B240";
+			crolling.area = ",B240";
 			break;
 		case "안양시 만안구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(안양시만안구);
-			crolling.area = "B250";
+			crolling.area = ",B250";
 			break;
 		case "양주시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(양주시);
-			crolling.area = "B260";
+			crolling.area = ",B260";
 			break;
 		case "양평군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(양평군);
-			crolling.area = "B270";
+			crolling.area = ",B270";
 			break;
 		case "여주시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(여주시);
-			crolling.area = "B280";
+			crolling.area = ",B280";
 			break;
 		case "연천군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(연천군);
-			crolling.area = "B290";
+			crolling.area = ",B290";
 			break;
 		case "오산시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(오산시);
-			crolling.area = "B300";
+			crolling.area = ",B300";
 			break;
 		case "용인시 기흥구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(용인시기흥구);
-			crolling.area = "B310";
+			crolling.area = ",B310";
 			break;
 		case "용인시 수지구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(용인시수지구);
-			crolling.area = "B311";
+			crolling.area = ",B311";
 			break;
 		case "용인시 처인구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(용인시처인구);
-			crolling.area = "B312";
+			crolling.area = ",B312";
 			break;
 		case "의왕시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(의왕시);
-			crolling.area = "B320";
+			crolling.area = ",B320";
 			break;
 		case "의정부시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(의정부시);
-			crolling.area = "B330";
+			crolling.area = ",B330";
 			break;
 		case "이천시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(이천시);
-			crolling.area = "B340";
+			crolling.area = ",B340";
 			break;
 		case "파주시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(파주시);
-			crolling.area = "B350";
+			crolling.area = ",B350";
 			break;
 		case "평택시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(평택시);
-			crolling.area = "B360";
+			crolling.area = ",B360";
 			break;
 		case "포천시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(포천시);
-			crolling.area = "B370";
+			crolling.area = ",B370";
 			break;
 		case "하남시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(하남시);
-			crolling.area = "B380";
+			crolling.area = ",B380";
 			break;
 		case "화성시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(화성시);
-			crolling.area = "B390";
+			crolling.area = ",B390";
 			break;
 			
 			//---------------인천 세부 지역---------------------
 		case "강화군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(강화군);
-			crolling.area = "K010";
+			crolling.area = ",K010";
 			break;
 		case "계양구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(계양구);
-			crolling.area = "K020";
+			crolling.area = ",K020";
 			break;
 		case "남동구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(남동구);
-			crolling.area = "K040";
+			crolling.area = ",K040";
 			break;
 		case "인천동구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(인천동구);
-			crolling.area = "K050";
+			crolling.area = ",K050";
 			break;
 		case "미추홀구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(미추홀구);
-			crolling.area = "K030";
+			crolling.area = ",K030";
 			break;
 		case "부평구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(부평구);
-			crolling.area = "K060";
+			crolling.area = ",K060";
 			break;
 		case "인천서구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(인천서구);
-			crolling.area = "K070";
+			crolling.area = ",K070";
 			break;
 		case "연수구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(연수구);
-			crolling.area = "K080";
+			crolling.area = ",K080";
 			break;
 		case "옹진군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(옹진군);
-			crolling.area = "K090";
+			crolling.area = ",K090";
 			break;
 		case "인천중구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(인천중구);
-			crolling.area = "K100";
+			crolling.area = ",K100";
 			break;
 			
 			//---------------강원 세부 지역-------------------
 		case "강릉시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(강릉시);
-			crolling.area = "A010";
+			crolling.area = ",A010";
 			break;
 		case "고성군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(고성군);
-			crolling.area = "A020";
+			crolling.area = ",A020";
 			break;
 		case "동해시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(동해시);
-			crolling.area = "A030";
+			crolling.area = ",A030";
 			break;
 		case "삼척시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(삼척시);
-			crolling.area = "A040";
+			crolling.area = ",A040";
 			break;
 		case "속초시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(속초시);
-			crolling.area = "A050";
+			crolling.area = ",A050";
 			break;
 		case "양구군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(양구군);
-			crolling.area = "A060";
+			crolling.area = ",A060";
 			break;
 		case "양양군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(양양군);
-			crolling.area = "A070";
+			crolling.area = ",A070";
 			break;
 		case "영월군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(영월군);
-			crolling.area = "A080";
+			crolling.area = ",A080";
 			break;
 		case "원주시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(원주시);
-			crolling.area = "A090";
+			crolling.area = ",A090";
 			break;
 		case "인제군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(인제군);
-			crolling.area = "A100";
+			crolling.area = ",A100";
 			break;
 		case "정선군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(정선군);
-			crolling.area = "A110";
+			crolling.area = ",A110";
 			break;
 		case "철원군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(철원군);
-			crolling.area = "A120";
+			crolling.area = ",A120";
 			break;
 		case "춘천시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(춘천시);
-			crolling.area = "A130";
+			crolling.area = ",A130";
 			break;
 		case "태백시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(태백시);
-			crolling.area = "A140";
+			crolling.area = ",A140";
 			break;
 		case "평창군":
 			Mainpage.ComboModel= new DefaultComboBoxModel(평창군);
-			crolling.area = "A150";
+			crolling.area = ",A150";
 			break;
 		case "홍천군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(홍천군);
-			crolling.area = "A160";
+			crolling.area = ",A160";
 			break;
 		case "화천군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(화천군);
-			crolling.area = "A170";
+			crolling.area = ",A170";
 			break;
 		case "횡성군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(횡성군);
-			crolling.area = "A180";
+			crolling.area = ",A180";
 			break;
 			
 			//-------------대전 세부 지역---------------------------------
 		case "대덕구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(대덕구);
-			crolling.area = "G010";
+			crolling.area = ",G010";
 			break;
 		case "대전동구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(대전동구);
-			crolling.area = "G020";
+			crolling.area = ",G020";
 			break;
 		case "대전서구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(대전서구);
-			crolling.area = "G030";
+			crolling.area = ",G030";
 			break;
 		case "유성구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(유성구);
-			crolling.area = "G040";
+			crolling.area = ",G040";
 			break;
 		case "대전중구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(대전중구);
-			crolling.area = "G050";
+			crolling.area = ",G050";
 			break;
 			
 			//----------------세종 세부 지역 ----------------
 		case "세종시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(세종시);
-			crolling.area = "1010";
+			crolling.area = ",1010";
 			break;
 			
 			//-----------------충남 세부 지역 ----------------------
 		case "계룡시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(계룡시);
-			crolling.area = "O160";
+			crolling.area = ",O160";
 			break;
 		case "공주시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(공주시);
-			crolling.area = "O010";
+			crolling.area = ",O010";
 			break;
 		case "금산군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(금산군);
-			crolling.area = "O020";
+			crolling.area = ",O020";
 			break;
 		case "논산시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(논산시);
-			crolling.area = "O030";
+			crolling.area = ",O030";
 			break;
 		case "당진시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(당진시);
-			crolling.area = "O040";
+			crolling.area = ",O040";
 			break;
 		case "보령시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(보령시);
-			crolling.area = "O050";
+			crolling.area = ",O050";
 			break;
 		case "부여군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(부여군);
-			crolling.area = "O060";
+			crolling.area = ",O060";
 			break;
 		case "서산시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(서산시);
-			crolling.area = "O070";
+			crolling.area = ",O070";
 			break;
 		case "서천군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(서천군);
-			crolling.area = "O080";
+			crolling.area = ",O080";
 			break;
 		case "아산시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(아산시);
-			crolling.area = "O090";
+			crolling.area = ",O090";
 			break;
 		case "예산군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(예산군);
-			crolling.area = "O110";
+			crolling.area = ",O110";
 			break;
 		case "천안시 동남구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(천안시동남구);
-			crolling.area = "O120";
+			crolling.area = ",O120";
 			break;
 		case "천안시 서북구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(천안시서북구);
-			crolling.area = "O121";
+			crolling.area = ",O121";
 			break;
 		case "청양군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(청양군);
-			crolling.area = "O130";
+			crolling.area = ",O130";
 			break;
 		case "태안군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(태안군);
-			crolling.area = "O140";
+			crolling.area = ",O140";
 			break;
 		case "홍성군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(홍성군);
-			crolling.area = "O150";
+			crolling.area = ",O150";
 			break;
 			
 			//---------------------충북 세부 지역--------------------
 		case "괴산군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(괴산군);
-			crolling.area = "P010";
+			crolling.area = ",P010";
 			break;
 		case "단양군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(단양군);
-			crolling.area = "P020";
+			crolling.area = ",P020";
 			break;
 		case "보은군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(보은군);
-			crolling.area = "P030";
+			crolling.area = ",P030";
 			break;
 		case "영동군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(영동군);
-			crolling.area = "P040";
+			crolling.area = ",P040";
 			break;
 		case "옥천군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(옥천군);
-			crolling.area = "P050";
+			crolling.area = ",P050";
 			break;
 		case "음성군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(음성군);
-			crolling.area = "P060";
+			crolling.area = ",P060";
 			break;
 		case "제천시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(제천시);
-			crolling.area = "P070";
+			crolling.area = ",P070";
 			break;
 		case "증평군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(증평군);
-			crolling.area = "P130";
+			crolling.area = ",P130";
 			break;
 		case "진천군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(진천군);
-			crolling.area = "P080";
+			crolling.area = ",P080";
 			break;
 		case "청주시 상당구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(청주시상당구);
-			crolling.area = "P100";
+			crolling.area = ",P100";
 			break;
 		case "청주시 서원구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(청주시서원구);
-			crolling.area = "P140";
+			crolling.area = ",P140";
 			break;
 		case "청주시 청원구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(청주시청원구);
-			crolling.area = "P090";
+			crolling.area = ",P090";
 			break;
 		case "청주시 흥덕구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(청주시흥덕구);
-			crolling.area = "P110";
+			crolling.area = ",P110";
 			break;
 		case "충주시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(충주시);
-			crolling.area = "P120";
+			crolling.area = ",P120";
 			break;
 			
 			//-----------부산 세부 지역--------------------------
 		case "부산강서구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(부산강서구);
-			crolling.area = "H010";
+			crolling.area = ",H010";
 			break;
 		case "금정구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(금정구);
-			crolling.area = "H020";
+			crolling.area = ",H020";
 			break;
 		case "기장군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(기장군);
-			crolling.area = "H030";
+			crolling.area = ",H030";
 			break;
 		case "부산남구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(부산남구);
-			crolling.area = "H040";
+			crolling.area = ",H040";
 			break;
 		case "부산동구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(부산동구);
-			crolling.area = "H050";
+			crolling.area = ",H050";
 			break;
 		case "동래구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(동래구);
-			crolling.area = "H060";
+			crolling.area = ",H060";
 			break;
 		case "부산진구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(부산진구);
-			crolling.area = "H070";
+			crolling.area = ",H070";
 			break;
 		case "부산북구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(부산북구);
-			crolling.area = "H080";
+			crolling.area = ",H080";
 			break;
 		case "사상구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(사상구);
-			crolling.area = "H090";
+			crolling.area = ",H090";
 			break;
 		case "사하구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(사하구);
-			crolling.area = "H100";
+			crolling.area = ",H100";
 			break;
 		case "부산서구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(부산서구);
-			crolling.area = "H110";
+			crolling.area = ",H110";
 			break;
 		case "수영구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(수영구);
-			crolling.area = "H120";
+			crolling.area = ",H120";
 			break;
 		case "연제구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(연제구);
-			crolling.area = "H130";
+			crolling.area = ",H130";
 			break;
 		case "영도구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(영도구);
-			crolling.area = "H140";
+			crolling.area = ",H140";
 			break;
 		case "부산중구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(부산중구);
-			crolling.area = "H150";
+			crolling.area = ",H150";
 			break;
 		case "해운대구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(해운대구);
-			crolling.area = "H160";
+			crolling.area = ",H160";
 			break;
 			
 			//--------------울산 세부 지역-----------------------
 		case "울산남구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(울산남구);
-			crolling.area = "J010";
+			crolling.area = ",J010";
 			break;
 		case "울산동구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(울산동구);
-			crolling.area = "J020";
+			crolling.area = ",J020";
 			break;
 		case "울산북구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(울산북구);
-			crolling.area = "J030";
+			crolling.area = ",J030";
 			break;
 		case "울주군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(울주군);
-			crolling.area = "J040";
+			crolling.area = ",J040";
 			break;
 		case "울산중구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(울산중구);
-			crolling.area = "J050";
+			crolling.area = ",J050";
 			break;
 			
 			//-----------------경남 세부 지역 ---------------------
 		case "거제시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(거제시);
-			crolling.area = "C010";
+			crolling.area = ",C010";
 			break;
 		case "거창군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(거창군);
-			crolling.area = "C020";
+			crolling.area = ",C020";
 			break;
 		case "경남고성군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(경남고성군);
-			crolling.area = "C030";
+			crolling.area = ",C030";
 			break;
 		case "김해시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(김해시);
-			crolling.area = "C040";
+			crolling.area = ",C040";
 			break;
 		case "남해군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(남해군);
-			crolling.area = "C050";
+			crolling.area = ",C050";
 			break;
 		case "밀양시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(밀양시);
-			crolling.area = "C080";
+			crolling.area = ",C080";
 			break;
 		case "사천시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(사천시);
-			crolling.area = "C090";
+			crolling.area = ",C090";
 			break;
 		case "산청군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(산청군);
-			crolling.area = "C100";
+			crolling.area = ",C100";
 			break;
 		case "양산시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(양산시);
-			crolling.area = "C110";
+			crolling.area = ",C110";
 			break;
 		case "의령군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(의령군);
-			crolling.area = "C120";
+			crolling.area = ",C120";
 			break;
 		case "진주시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(진주시);
-			crolling.area = "C130";
+			crolling.area = ",C130";
 			break;
 		case "창녕군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(창녕군);
-			crolling.area = "C150";
+			crolling.area = ",C150";
 			break;
 		case "창원시 마산합포구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(창원시마산합포구);
-			crolling.area = "C160";
+			crolling.area = ",C160";
 			break;
 		case "창원시 마산회원구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(창원시마산회원구);
-			crolling.area = "C162";
+			crolling.area = ",C162";
 			break;
 		case "창원시 성산구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(창원시성산구);
-			crolling.area = "C164";
+			crolling.area = ",C164";
 			break;
 		case "창원시 의창구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(창원시의창구);
-			crolling.area = "C166";
+			crolling.area = ",C166";
 			break;
 		case "창원시 진해구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(창원시진해구);
-			crolling.area = "C168";
+			crolling.area = ",C168";
 			break;
 		case "통영시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(통영시);
-			crolling.area = "C170";
+			crolling.area = ",C170";
 			break;
 		case "하동군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(하동군);
-			crolling.area = "C180";
+			crolling.area = ",C180";
 			break;
 		case "함안군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(함안군);
-			crolling.area = "C190";
+			crolling.area = ",C190";
 			break;
 		case "함양군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(함양군);
-			crolling.area = "C200";
+			crolling.area = ",C200";
 			break;
 		case "합천군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(합천군);
-			crolling.area = "C210";
+			crolling.area = ",C210";
 			break;
 			
 			//-------------------경북 세부 지역-------------------------
 		case "경산시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(경산시);
-			crolling.area = "D010";
+			crolling.area = ",D010";
 			break;
 		case "경주시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(경주시);
-			crolling.area = "D020";
+			crolling.area = ",D020";
 			break;
 		case "고령군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(고령군);
-			crolling.area = "D030";
+			crolling.area = ",D030";
 			break;
 		case "구미시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(구미시);
-			crolling.area = "D040";
+			crolling.area = ",D040";
 			break;
 		case "군위군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(군위군);
-			crolling.area = "D050";
+			crolling.area = ",D050";
 			break;
 		case "김천시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(김천시);
-			crolling.area = "D060";
+			crolling.area = ",D060";
 			break;
 		case "문경시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(문경시);
-			crolling.area = "D070";
+			crolling.area = ",D070";
 			break;
 		case "봉화군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(봉화군);
-			crolling.area = "D080";
+			crolling.area = ",D080";
 			break;
 		case "상주시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(상주시);
-			crolling.area = "D090";
+			crolling.area = ",D090";
 			break;
 		case "성주군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(성주군);
-			crolling.area = "D100";
+			crolling.area = ",D100";
 			break;
 		case "안동시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(안동시);
-			crolling.area = "D110";
+			crolling.area = ",D110";
 			break;
 		case "영덕군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(영덕군);
-			crolling.area = "D120";
+			crolling.area = ",D120";
 			break;
 		case "영양군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(영양군);
-			crolling.area = "D130";
+			crolling.area = ",D130";
 			break;
 		case "영주시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(영주시);
-			crolling.area = "D140";
+			crolling.area = ",D140";
 			break;
 		case "영천시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(영천시);
-			crolling.area = "D150";
+			crolling.area = ",D150";
 			break;
 		case "예천군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(예천군);
-			crolling.area = "D160";
+			crolling.area = ",D160";
 			break;
 		case "울릉군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(울릉군);
-			crolling.area = "D170";
+			crolling.area = ",D170";
 			break;
 		case "울진군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(울진군);
-			crolling.area = "D180";
+			crolling.area = ",D180";
 			break;
 		case "의성군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(의성군);
-			crolling.area = "D190";
+			crolling.area = ",D190";
 			break;
 		case "청도군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(청도군);
-			crolling.area = "D200";
+			crolling.area = ",D200";
 			break;
 		case "청송군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(청송군);
-			crolling.area = "D210";
+			crolling.area = ",D210";
 			break;
 		case "칠곡군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(칠곡군);
-			crolling.area = "D220";
+			crolling.area = ",D220";
 			break;
 		case "포항시 남구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(포항시남구);
-			crolling.area = "D230";
+			crolling.area = ",D230";
 			break;
 		case "포항시 북구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(포항시북구);
-			crolling.area = "D240";
+			crolling.area = ",D240";
 			break;
 			
 			//-----------------대구 세부 지역------------------------------
 		case "대구남구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(대구남구);
-			crolling.area = "F010";
+			crolling.area = ",F010";
 			break;
 		case "달서구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(달서구);
-			crolling.area = "F020";
+			crolling.area = ",F020";
 			break;
 		case "달성군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(달성군);
-			crolling.area = "F030";
+			crolling.area = ",F030";
 			break;
 		case "대구동구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(대구동구);
-			crolling.area = "F040";
+			crolling.area = ",F040";
 			break;
 		case "대구북구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(대구북구);
-			crolling.area = "F050";
+			crolling.area = ",F050";
 			break;
 		case "대구서구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(대구서구);
-			crolling.area = "F060";
+			crolling.area = ",F060";
 			break;
 		case "수성구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(수성구);
-			crolling.area = "F070";
+			crolling.area = ",F070";
 			break;
 		case "대구중구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(대구중구);
-			crolling.area = "F080";
+			crolling.area = ",F080";
 			break;
 
 			//-------------- 광주 세부 지역 -----------------
 		case "광산구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(광산구);
-			crolling.area = "E010";
+			crolling.area = ",E010";
 			break;
 		case "광주남구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(광주남구);
-			crolling.area = "E020";
+			crolling.area = ",E020";
 			break;
 		case "광주동구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(광주동구);
-			crolling.area = "E030";
+			crolling.area = ",E030";
 			break;
 		case "광주북구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(광주북구);
-			crolling.area = "E040";
+			crolling.area = ",E040";
 			break;
 		case "광주서구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(광주서구);
-			crolling.area = "E050";
+			crolling.area = ",E050";
 			break;
 			
 			//----------------전남 세부 지역 ----------------------
 		case "강진군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(강진군);
-			crolling.area = "L010";
+			crolling.area = ",L010";
 			break;
 		case "고흥군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(고흥군);
-			crolling.area = "L020";
+			crolling.area = ",L020";
 			break;
 		case "곡성군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(곡성군);
-			crolling.area = "L030";
+			crolling.area = ",L030";
 			break;
 		case "광양시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(광양시);
-			crolling.area = "L040";
+			crolling.area = ",L040";
 			break;
 		case "구례군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(구례군);
-			crolling.area = "L050";
+			crolling.area = ",L050";
 			break;
 		case "나주시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(나주시);
-			crolling.area = "L060";
+			crolling.area = ",L060";
 			break;
 		case "담양군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(담양군);
-			crolling.area = "L070";
+			crolling.area = ",L070";
 			break;
 		case "목포시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(목포시);
-			crolling.area = "L080";
+			crolling.area = ",L080";
 			break;
 		case "무안군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(무안군);
-			crolling.area = "L090";
+			crolling.area = ",L090";
 			break;
 		case "보성군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(보성군);
-			crolling.area = "L100";
+			crolling.area = ",L100";
 			break;
 		case "순천시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(순천시);
-			crolling.area = "L110";
+			crolling.area = ",L110";
 			break;
 		case "신안군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(신안군);
-			crolling.area = "L120";
+			crolling.area = ",L120";
 			break;
 		case "여수시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(여수시);
-			crolling.area = "L130";
+			crolling.area = ",L130";
 			break;
 		case "영광군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(영광군);
-			crolling.area = "L140";
+			crolling.area = ",L140";
 			break;
 		case "영암군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(영암군);
-			crolling.area = "L150";
+			crolling.area = ",L150";
 			break;
 		case "완도군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(완도군);
-			crolling.area = "L160";
+			crolling.area = ",L160";
 			break;
 		case "장성군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(장성군);
-			crolling.area = "L170";
+			crolling.area = ",L170";
 			break;
 		case "장흥군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(장흥군);
-			crolling.area = "L180";
+			crolling.area = ",L180";
 			break;
 		case "진도군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(진도군);
-			crolling.area = "L190";
+			crolling.area = ",L190";
 			break;
 		case "함평군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(함평군);
-			crolling.area = "L200";
+			crolling.area = ",L200";
 			break;
 		case "해남군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(해남군);
-			crolling.area = "L210";
+			crolling.area = ",L210";
 			break;
 		case "화순군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(화순군);
-			crolling.area = "L220";
+			crolling.area = ",L220";
 			break;
 		
 			//-----------------전북 세부 지역 ------------------------
 		case "고창군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(고창군);
-			crolling.area = "M010";
+			crolling.area = ",M010";
 			break;
 		case "군산시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(군산시);
-			crolling.area = "M020";
+			crolling.area = ",M020";
 			break;
 		case "김제시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(김제시);
-			crolling.area = "M030";
+			crolling.area = ",M030";
 			break;
 		case "남원시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(남원시);
-			crolling.area = "M040";
+			crolling.area = ",M040";
 			break;
 		case "무주군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(무주군);
-			crolling.area = "M050";
+			crolling.area = ",M050";
 			break;
 		case "부안군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(부안군);
-			crolling.area = "M060";
+			crolling.area = ",M060";
 			break;
 		case "순창군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(순창군);
-			crolling.area = "M070";
+			crolling.area = ",M070";
 			break;
 		case "완주군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(완주군);
-			crolling.area = "M080";
+			crolling.area = ",M080";
 			break;
 		case "익산시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(익산시);
-			crolling.area = "M090";
+			crolling.area = ",M090";
 			break;
 		case "임실군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(임실군);
-			crolling.area = "M100";
+			crolling.area = ",M100";
 			break;
 		case "장수군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(장수군);
-			crolling.area = "M110";
+			crolling.area = ",M110";
 			break;
 		case "전주시 덕진구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(전주시덕진구);
-			crolling.area = "M120";
+			crolling.area = ",M120";
 			break;
 		case "전주시 완산구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(전주시완산구);
-			crolling.area = "M130";
+			crolling.area = ",M130";
 			break;
 		case "정읍시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(정읍시);
-			crolling.area = "M140";
+			crolling.area = ",M140";
 			break;
 		case "진안군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(진안군);
-			crolling.area = "M150";
+			crolling.area = ",M150";
 			break;
 			
 			//-----------------------제주 세부 지역---------------
 		case "서귀포시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(서귀포시);
-			crolling.area = "N030";
+			crolling.area = ",N030";
 			break;
 		case "제주시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(제주시);
-			crolling.area = "N040";
+			crolling.area = ",N040";
 			break;
 			
 			
 		default:
 			Mainpage.City.setVisible(false);
-			crolling.area = crolling.area.substring(0,1)+"000";
+			try {
+			crolling.area = crolling.area.substring(0,2)+"000";
 			break;
+			}
+			catch(StringIndexOutOfBoundsException e1) {
+				
+			}		
 		}
 		Mainpage.City.setModel(Mainpage.ComboModel);
 	}
