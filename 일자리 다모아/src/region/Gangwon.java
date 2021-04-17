@@ -121,7 +121,7 @@ public class Gangwon {
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "명주동":
-			crolling.area += "A0100170";
+			crolling.area += ",A0100170";
 			Mainpage.Filtering[Mainpage.index].setText("명주동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
@@ -313,7 +313,7 @@ public class Gangwon {
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "학동":
-			crolling.area += "A0100490";
+			crolling.area += ",A0100490";
 			Mainpage.Filtering[Mainpage.index].setText("학동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
@@ -331,7 +331,7 @@ public class Gangwon {
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "간성읍":
-			crolling.area += "A0200010";
+			crolling.area += ",A0200010";
 			Mainpage.Filtering[Mainpage.index].setText("간성읍");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
@@ -361,7 +361,7 @@ public class Gangwon {
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "괴란동":
-			crolling.area += "A0300010";
+			crolling.area += ",A0300010";
 			Mainpage.Filtering[Mainpage.index].setText("괴란동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
