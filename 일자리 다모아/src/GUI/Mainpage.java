@@ -68,19 +68,18 @@ public class Mainpage extends JFrame {
 	Jeonnam 전남도시 = new Jeonnam();
 	Jeju 제주도시 = new Jeju();
 
-	public static int index = 0;
-	JTable table;
+	public static int index = 0; // 적용된 지역 갯수
+	JTable table; // 테이블
 	static Button Search = new Button("검색");
 	static Button Reset = new Button("리셋");
 	static Button Calculator = new Button("월급 계산기");
-
-	static DefaultTableModel TableModel = new DefaultTableModel() {
-		public boolean isCellEditable(int rowIndex,int mCollndex) {
+	static Button AlbaHeaven = new Button("알바천국");
+	static Button JobKorea = new Button("잡코리아");
+	static DefaultTableModel TableModel = new DefaultTableModel() {// 테이블 내용 수정 불가
+		public boolean isCellEditable(int rowIndex, int mCollndex) {
 			return false;
 		}
-	}; //내용 수정 불가
-	
-	
+	}; // 내용 수정 불가
 	public static DefaultComboBoxModel ComboModel = new DefaultComboBoxModel();
 
 	static String head[] = { "지역", "급여", "회사명", "내용", "등록 시간" };
@@ -104,8 +103,9 @@ public class Mainpage extends JFrame {
 //-------------------------------------이벤트 ---------------------------
 	Buttonlistener listener = new Buttonlistener();
 	MouseListener MouseListener = new MouseListener();
+
 	public Mainpage() {
-		setTitle("일자리 다모아");
+		setTitle("일자리 다모아 - 메인");
 		setSize(1500, 800);
 		this.setLayout(null);
 		setVisible(true);
@@ -114,19 +114,10 @@ public class Mainpage extends JFrame {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
 //----------------------------------------------------------광고 테이블 ------------------------------------------------------
-
-		Search_Alba();
 		table = new JTable(TableModel);
-		table.getColumnModel().getColumn(0).setPreferredWidth(170);
-		table.getColumnModel().getColumn(1).setPreferredWidth(170);
-		table.getColumnModel().getColumn(2).setPreferredWidth(360);
-		table.getColumnModel().getColumn(3).setPreferredWidth(525);
-		table.getColumnModel().getColumn(4).setPreferredWidth(100);
-		table.getTableHeader().setReorderingAllowed(false);
 		table.addMouseListener(MouseListener);
+		Search_Albamon();
 		scroll = new JScrollPane(table);
-		table.setFont(new Font("맑은 고딕", Font.BOLD, 25)); // 글자 크기 설정
-		table.setRowHeight(35);
 		scroll.setBounds(160, 130, 1325, 633);
 		scroll.setVisible(true);
 		add(scroll);
@@ -183,6 +174,19 @@ public class Mainpage extends JFrame {
 		City.setVisible(false);
 		add(City);
 		City.addActionListener(Combolistener);
+
+		// 알바천국과 잡코리아 팝업창
+
+		AlbaHeaven.setBounds(1300, 30, 60, 60);
+		AlbaHeaven.setVisible(true);
+		add(AlbaHeaven);
+		AlbaHeaven.addActionListener(listener);
+
+		JobKorea.setBounds(1400, 30, 60, 60);
+		JobKorea.setVisible(true);
+		add(JobKorea);
+		JobKorea.addActionListener(listener);
+
 		// -------------------------------필터링 레이블과 필터링 삭제
 		// 버튼----------------------------------------
 		for (int i = 0; i < 5; i++) {
@@ -225,6 +229,7 @@ public class Mainpage extends JFrame {
 		delete[4].setVisible(false);
 		add(delete[4]);
 		delete[4].addActionListener(listener);
+
 	}
 
 	// ------------------ 내부 클래스 및 메소드 구현
@@ -236,27 +241,29 @@ public class Mainpage extends JFrame {
 				calculator.setVisible(true);
 			}
 			if (e.getSource() == Search) {
-				Search_Alba();
+				Search_Albamon();
+				AlbaHeavenpage.Search_AlbaHeaven();
 			}
-			if (e.getSource() == Reset) {
+			if (e.getSource() == Reset) {                //리셋 버튼 이벤트---------------------------------
 				index = 0;
 				for (int i = 0; i < 5; i++) {
 					Filtering[i].setText("");
 					Filtering[i].setVisible(false);
 					delete[i].setText("");
-					delete[i].setVisible(false);				
+					delete[i].setVisible(false);
 				}
 				try {
-				Area.setSelectedIndex(0);
-				Detail_Area.setSelectedIndex(0);
-				City.setSelectedIndex(0);			
-				Detail_Area.setVisible(false);
-				City.setVisible(false);
-				crolling.area = "";
-				Search_Alba();
-			}
-				catch(IllegalArgumentException e1){
-					
+					Area.setSelectedIndex(0);
+					Detail_Area.setSelectedIndex(0);
+					City.setSelectedIndex(0);
+					Detail_Area.setVisible(false);
+					City.setVisible(false);
+					crolling.area = "";
+					AlbaHeavenpage.Albaheaven_crolling.area="";
+					Search_Albamon();
+					AlbaHeavenpage.Search_AlbaHeaven();
+				} catch (IllegalArgumentException e1) {
+
 				}
 			}
 			if (e.getSource() == delete[0]) {
@@ -273,7 +280,7 @@ public class Mainpage extends JFrame {
 				delete[index - 1].setVisible(false);
 				index--;
 				crolling.area = crolling.area.substring(9);
-				Search_Alba();
+				Search_Albamon();
 			}
 			if (e.getSource() == delete[1]) {
 				for (int i = 1; i < index; i++) {
@@ -289,7 +296,7 @@ public class Mainpage extends JFrame {
 				delete[index - 1].setVisible(false);
 				index--;
 				crolling.area = crolling.area.substring(0, 9) + crolling.area.substring(18);
-				Search_Alba();
+				Search_Albamon();
 			}
 			if (e.getSource() == delete[2]) {
 				for (int i = 2; i < index; i++) {
@@ -304,7 +311,7 @@ public class Mainpage extends JFrame {
 				delete[index - 1].setVisible(false);
 				index--;
 				crolling.area = crolling.area.substring(0, 18) + crolling.area.substring(27);
-				Search_Alba();
+				Search_Albamon();
 			}
 			if (e.getSource() == delete[3]) {
 				for (int i = 3; i < index; i++) {
@@ -320,7 +327,7 @@ public class Mainpage extends JFrame {
 				delete[index - 1].setVisible(false);
 				index--;
 				crolling.area = crolling.area.substring(0, 27) + crolling.area.substring(36);
-				Search_Alba();
+				Search_Albamon();
 			}
 			if (e.getSource() == delete[4]) {
 				Filtering[index - 1].setText("");
@@ -329,7 +336,13 @@ public class Mainpage extends JFrame {
 				delete[index - 1].setVisible(false);
 				index--;
 				crolling.area = crolling.area.substring(0, 36);
-				Search_Alba();
+				Search_Albamon();
+			}
+			if (e.getSource() == AlbaHeaven) {
+				AlbaHeavenpage popup = new AlbaHeavenpage();
+			}
+			if (e.getSource() == JobKorea) {
+
 			}
 		}
 	}
@@ -346,7 +359,7 @@ public class Mainpage extends JFrame {
 					}
 					Detail_Area.setVisible(true);
 					Detail.changeComboBox(e); // 콤보박스에 맞는 리스트 출력
-					// Search_Alba();
+					// Search_Albamon();
 					temp = Area.getSelectedItem();
 				} else if (e.getSource() == Detail_Area) {
 					index = 0;
@@ -358,7 +371,7 @@ public class Mainpage extends JFrame {
 					}
 					City.setVisible(true);
 					city.changeComboBox(e);
-					// Search_Alba();
+					// Search_Albamon();
 					temp2 = Detail_Area.getSelectedItem();
 				}
 				// ------------------------------서울 1--------------------------------
@@ -370,7 +383,7 @@ public class Mainpage extends JFrame {
 							|| temp2.equals("성북구")) {
 						서울1도시.SeoulCity(e);
 						// f (서울1도시.flag != true)
-						// Search_Alba();
+						// Search_Albamon();
 					}
 					// --------------------------서울 2---------------------------------
 					else if (temp2.equals("송파구") || temp2.equals("양천구") || temp2.equals("영등포구") || temp2.equals("용산구")
@@ -378,7 +391,7 @@ public class Mainpage extends JFrame {
 							|| temp2.equals("중랑구")) {
 						서울2도시.Seoul2City(e);
 						// if (서울2도시.flag != true)
-						// Search_Alba();
+						// Search_Albamon();
 					}
 					// -----------------------------경기1----------------------------
 					else if (temp2.equals("가평군") || temp2.equals("고양시 덕양구") || temp2.equals("고양시 일산동구")
@@ -391,7 +404,7 @@ public class Mainpage extends JFrame {
 							|| temp2.equals("안산시 단원구") || temp2.equals("안산시 상록구")) {
 						경기1도시.GyeonggiCity(e);
 						// if (경기1도시.flag != true)
-						// Search_Alba();
+						// Search_Albamon();
 					}
 					// ----------------------------경기2-----------------------------
 					else if (temp2.equals("안성시") || temp2.equals("안양시 동안구") || temp2.equals("안양시 만안구")
@@ -402,49 +415,49 @@ public class Mainpage extends JFrame {
 							|| temp2.equals("하남시") || temp2.equals("화성시")) {
 						경기2도시.Gyeonggi2City(e);
 						// if (경기2도시.flag != true)
-						// Search_Alba();
+						// Search_Albamon();
 					}
 					// ---------------------------인천----------------------------------
 					else if (temp.equals("인천")) {
 						인천도시.IncheonCity(e);
 						// if (인천도시.flag != true)
-						// Search_Alba();
+						// Search_Albamon();
 					}
 					// ---------------------------강원----------------------------------
 					else if (temp.equals("강원")) {
 						강원도시.GangwonCity(e);
 						// if (강원도시.flag != true)
-						// Search_Alba();
+						// Search_Albamon();
 					}
 					// ---------------------------새전 또는 세종----------------------------------
 					else if (temp.equals("대전") || temp.equals("세종")) {
 						대전_세종도시.Daejeon_AND_SejongCity(e);
 						// if (인천도시.flag != true)
-						// Search_Alba();
+						// Search_Albamon();
 					}
 					// ---------------------------충북----------------------------------
 					else if (temp.equals("충북")) {
 						충북도시.ChungbukCity(e);
 						// if (충북도시.flag != true)
-						// Search_Alba();
+						// Search_Albamon();
 					}
 					// ---------------------------충남----------------------------------
 					else if (temp.equals("충남")) {
 						충남도시.ChungnamCity(e);
 						// if (충남도시.flag != true)
-						// Search_Alba();
+						// Search_Albamon();
 					}
 					// ---------------------------부산----------------------------------
 					else if (temp.equals("부산")) {
 						부산도시.BusanCity(e);
 						// if (부산도시.flag != true)
-						// Search_Alba();
+						// Search_Albamon();
 					}
 					// ---------------------------울산----------------------------------
 					else if (temp.equals("울산")) {
 						울산도시.UlsanCity(e);
 						// if (울산도시.flag != true)
-						// Search_Alba();
+						// Search_Albamon();
 					}
 					// ---------------------------경남1----------------------------------
 					else if (temp2.equals("거제시") || temp2.equals("거창군") || temp2.equals("고성군") || temp2.equals("김해시")
@@ -453,7 +466,7 @@ public class Mainpage extends JFrame {
 							|| temp2.equals("창녕군")) {
 						경남도시.GyeongnamCity(e);
 						// if (충남도시.flag != true)
-						// Search_Alba();
+						// Search_Albamon();
 					}
 					// ---------------------------경남2----------------------------------
 					else if (temp2.equals("창원시 마산합포구") || temp2.equals("창원시 마산회원구") || temp2.equals("창원시 성산구")
@@ -462,14 +475,14 @@ public class Mainpage extends JFrame {
 							|| temp2.equals("합천군")) {
 						경남2도시.Gyeongnam2City(e);
 						// if (경남2도시.flag != true)
-						// Search_Alba();
+						// Search_Albamon();
 					}
 					// ---------------------------경북1----------------------------------
 					else if (temp2.equals("경산시") || temp2.equals("경주시") || temp2.equals("고령군") || temp2.equals("구미시")
 							|| temp2.equals("군위군") || temp2.equals("김천시")) {
 						경북도시.GyeongbukCity(e);
 						// if (경북도시.flag != true)
-						// Search_Alba();
+						// Search_Albamon();
 					}
 					// ---------------------------경북2----------------------------------
 					else if (temp2.equals("문경시") || temp2.equals("봉화군") || temp2.equals("상주시") || temp2.equals("성주군")
@@ -479,35 +492,35 @@ public class Mainpage extends JFrame {
 							|| temp2.equals("포항시 남구") || temp2.equals("포항시 북구")) {
 						경북2도시.Gyeongbuk2City(e);
 						// if (경북2도시.flag != true)
-						// Search_Alba();
+						// Search_Albamon();
 					}
 					// ---------------------------대구----------------------------------
 					else if (temp.equals("대구")) {
 						대구도시.DeaguCity(e);
 						// if (대구도시.flag != true)
-						// Search_Alba();
+						// Search_Albamon();
 					}
 					// ---------------------------광주----------------------------------
 					else if (temp.equals("광주")) {
 						광주도시.GwangjuCity(e);
 						// if (광주도시.flag != true)
-						// Search_Alba();
+						// Search_Albamon();
 					}
 					// ---------------------------전남----------------------------------
 					else if (temp.equals("전남")) {
 						전남도시.JeonnamCity(e);
 						// if (전남도시.flag != true)
-						// Search_Alba();
+						// Search_Albamon();
 					}
 					// ---------------------------제주----------------------------------
 					else if (temp.equals("제주")) {
 						제주도시.JejuCity(e);
 						// if (제주도시.flag != true)
-						// Search_Alba();
+						// Search_Albamon();
 					} else if (temp2.equals("전체")) {
 						if (index != 0) {
 							crolling.area = crolling.area.substring(0, 5);
-							Search_Alba();
+							Search_Albamon();
 						}
 					}
 
@@ -522,20 +535,18 @@ public class Mainpage extends JFrame {
 
 		public void mouseClicked(MouseEvent e) {
 
-
 			if (e.getClickCount() == 2) {
 				try {
-					Function.crolling.explore(Function.crolling.URL.get(table.getSelectedRow()));
+					Function.crolling.explore(Alba.get(table.getSelectedRow()).getURL());
 				} catch (URISyntaxException e1) {
 					e1.printStackTrace();
 				}
 			} // 더블클릭
 
-
 		}
 	}
 
-	public void Search_Alba() { // 광고 검색
+	public void Search_Albamon() { // 광고 검색
 		Alba = crolling.crolling();
 		arr = new Object[Alba.size()][5];
 
@@ -549,5 +560,14 @@ public class Mainpage extends JFrame {
 
 		}
 		TableModel.setDataVector(arr, head);
+		table.getColumnModel().getColumn(0).setPreferredWidth(170);
+		table.getColumnModel().getColumn(1).setPreferredWidth(170);
+		table.getColumnModel().getColumn(2).setPreferredWidth(360);
+		table.getColumnModel().getColumn(3).setPreferredWidth(525);
+		table.getColumnModel().getColumn(4).setPreferredWidth(100);
+		table.getTableHeader().setReorderingAllowed(false);
+
+		table.setRowHeight(35);
+		table.setFont(new Font("맑은 고딕", Font.BOLD, 25)); // 글자 크기 설정
 	}
 }
