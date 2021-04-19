@@ -28,7 +28,6 @@ public class Loginpage extends JFrame {
 	static Button Login = new Button("로그인");
 	static Button Join = new Button("회원가입");
 
-	static String name = "누굴까"; // -----------회원가입 시험을 위한 테스트 나중에 삭제해야함
 
 	public Loginpage() {
 		setTitle("로그인");
@@ -79,7 +78,6 @@ public class Loginpage extends JFrame {
 	}
 	public boolean LoginAction(ActionEvent e) throws SQLException {
 		if(db_method.Login(ID_.getText(),PW_.getText())) {
-			setVisible(false);
 			return true;
 		}
 		return false;
