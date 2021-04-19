@@ -7,6 +7,8 @@ import javax.swing.DefaultComboBoxModel;
 import javax.swing.JComboBox;
 
 import Function.crolling;
+import Function.wewe;
+import GUI.AlbaHeavenpage;
 import GUI.Mainpage;
 public class Detail_Area {
 
@@ -76,91 +78,109 @@ public class Detail_Area {
 			Mainpage.ComboModel= new DefaultComboBoxModel(서울);
 			Mainpage.Detail_Area.setModel(Mainpage.ComboModel);
 			crolling.area = "I000";
+			wewe.area="02%7C%7C%C0%FC%C3%BC%7C%7C";
 			break;
 		case "경기":
 			Mainpage.ComboModel= new DefaultComboBoxModel(경기);
 			Mainpage.Detail_Area.setModel(Mainpage.ComboModel);
 			crolling.area = "B000";
+			wewe.area="031%7C%7C%C0%FC%C3%BC%7C%7C";
 			break;
 		case "인천":
 			Mainpage.ComboModel= new DefaultComboBoxModel(인천);
 			Mainpage.Detail_Area.setModel(Mainpage.ComboModel);
 			crolling.area = "K000";
+			wewe.area="032%7C%7C%C0%FC%C3%BC%7C%7C";
 			break;
 		case "강원":
 			Mainpage.ComboModel= new DefaultComboBoxModel(강원);
 			Mainpage.Detail_Area.setModel(Mainpage.ComboModel);
 			crolling.area = "A000";
+			wewe.area="033%7C%7C%C0%FC%C3%BC%7C%7C";
 			break;
 		case "대전":
 			Mainpage.ComboModel= new DefaultComboBoxModel(대전);
 			Mainpage.Detail_Area.setModel(Mainpage.ComboModel);
 			crolling.area = "G000";
+			wewe.area="042%7C%7C%C0%FC%C3%BC%7C%7C";
 			break;
 		case "세종":
 			Mainpage.ComboModel= new DefaultComboBoxModel(세종);
 			Mainpage.Detail_Area.setModel(Mainpage.ComboModel);
 			crolling.area = "1000";
+			wewe.area="044%7C%7C%C0%FC%C3%BC%7C%7C";
 			break;
 		case "충남":
 			Mainpage.ComboModel= new DefaultComboBoxModel(충남);
 			Mainpage.Detail_Area.setModel(Mainpage.ComboModel);
 			crolling.area = "O000";
+			wewe.area="041%7C%7C%C0%FC%C3%BC%7C%7C";
 			break;
 		case "충북":
 			Mainpage.ComboModel= new DefaultComboBoxModel(충북);
 			Mainpage.Detail_Area.setModel(Mainpage.ComboModel);
 			crolling.area = "P000";
+			wewe.area="043%7C%7C%C0%FC%C3%BC%7C%7C";
 			break;
 		case "부산":
 			Mainpage.ComboModel= new DefaultComboBoxModel(부산);
 			Mainpage.Detail_Area.setModel(Mainpage.ComboModel);
 			crolling.area = "H000";
+			wewe.area="051%7C%7C%C0%FC%C3%BC%7C%7C";
 			break;
 		case "울산":
 			Mainpage.ComboModel= new DefaultComboBoxModel(울산);
 			Mainpage.Detail_Area.setModel(Mainpage.ComboModel);
 			crolling.area = "J000";
+			wewe.area="052%7C%7C%C0%FC%C3%BC%7C%7C";
 			break;
 		case "경남":
 			Mainpage.ComboModel= new DefaultComboBoxModel(경남);
 			Mainpage.Detail_Area.setModel(Mainpage.ComboModel);
 			crolling.area = "C000";
+			wewe.area="055%7C%7C%C0%FC%C3%BC%7C%7C";
 			break;
 		case "경북":
 			Mainpage.ComboModel= new DefaultComboBoxModel(경북);
 			Mainpage.Detail_Area.setModel(Mainpage.ComboModel);
 			crolling.area = "D000";
+			wewe.area="054%7C%7C%C0%FC%C3%BC%7C%7C";
 			break;
 		case "대구":
 			Mainpage.ComboModel= new DefaultComboBoxModel(대구);
 			Mainpage.Detail_Area.setModel(Mainpage.ComboModel);
 			crolling.area = "F000";
+			wewe.area="053%7C%7C%C0%FC%C3%BC%7C%7C";
 			break;
 		case "광주":
 			Mainpage.ComboModel= new DefaultComboBoxModel(광주);
 			Mainpage.Detail_Area.setModel(Mainpage.ComboModel);
 			crolling.area = "E000";
+			wewe.area="062%7C%7C%C0%FC%C3%BC%7C%7C";
 			break;
 		case "전남":
 			Mainpage.ComboModel= new DefaultComboBoxModel(전남);
 			Mainpage.Detail_Area.setModel(Mainpage.ComboModel);
 			crolling.area = "L000";
+			wewe.area="061%7C%7C%C0%FC%C3%BC%7C%7C";
 			break;
 		case "전북":
 			Mainpage.ComboModel= new DefaultComboBoxModel(전북);
 			Mainpage.Detail_Area.setModel(Mainpage.ComboModel);
 			crolling.area = "M000";
+			wewe.area="063%7C%7C%C0%FC%C3%BC%7C%7C";
 			break;
 		case "제주":
 			Mainpage.ComboModel= new DefaultComboBoxModel(제주);
 			Mainpage.Detail_Area.setModel(Mainpage.ComboModel);
 			crolling.area = "N000";
+			wewe.area="064%7C%7C%C0%FC%C3%BC%7C%7C";
 			break;
 		default:
 			Mainpage.Detail_Area.setVisible(false);
 			Mainpage.City.setVisible(false);
 			crolling.area = "";
+			wewe.area="";
 			break;
 
 		}
