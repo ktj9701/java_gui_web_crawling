@@ -1,15 +1,19 @@
 package GUI;
+
 import java.awt.Button;
 import java.awt.Font;
 import java.awt.TextField;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.sql.SQLException;
 
 import javax.swing.*;
 
+import Function.DB_Method;
 import Function.dirver;
 
 public class Joinpage extends JFrame {
+	private DB_Method db_method = new DB_Method();
 	// -----------------------------------------------------------폰토
 	Font Title_Font = new Font("맑은 고딕", Font.BOLD, 30);
 	Font Point15_Font = new Font("맑은 고딕", Font.BOLD, 15);
@@ -86,7 +90,8 @@ public class Joinpage extends JFrame {
 		public void actionPerformed(ActionEvent e) {
 			if (e.getSource() == Join) { // 회원 가입 버튼 클릭
 				if (PW_.getText().equals(PW_Check_.getText())) {
-					Loginpage.name=ID_.getText();  //----------------------회원가입 실험
+					db_method.Join(ID_.getText(), PW_.getText());
+
 					ID_.setText("");
 					PW_.setText("");
 					PW_Check_.setText("");
