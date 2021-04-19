@@ -8,14 +8,14 @@ public class Albatext {
 	private String office;
 	private String text;
 	private String time;
-	private String a;
-	public Albatext(String _area, String _pay, String _office, String _text, String _time) {
+	private String url;
+	public Albatext(String _area, String _pay, String _office, String _text, String _time,String _url) {
 			this.area = _area;
 			this.pay = _pay;
 			this.office = _office;
 			this.text = _text;
 			this.time = _time;	
-
+			this.url = _url;
 		}
 
 	public String getArea() {
@@ -57,11 +57,11 @@ public class Albatext {
 	public void setTime(String time) {
 		this.time = time;
 	}
-	public String getA() {
-		return a;
+	public String getURL() {
+		return url;
 	}
 
-	public void setA(String a) {
-		this.a = a;
+	public void setURL(String url) {
+		this.url = url;
 	}
 }
