@@ -13,7 +13,7 @@ import org.jsoup.select.Elements;
 import GUI.Albatext;
 
 public class wewe {
-	public static String area = "02%7C%7C%C0%FC%C3%BC%7C%7C%2C";
+	public static String area = "";
 
 	public Vector<Albatext> crolling() {//알바천국
 		

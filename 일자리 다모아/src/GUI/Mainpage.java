@@ -392,6 +392,8 @@ public class Mainpage extends JFrame {
 						서울2도시.Seoul2City(e);
 						// if (서울2도시.flag != true)
 						// Search_Albamon();
+						if(index!= 5)
+							AlbaHeavenpage.Albaheaven_crolling.area+="%2C";
 					}
 					// -----------------------------경기1----------------------------
 					else if (temp2.equals("가평군") || temp2.equals("고양시 덕양구") || temp2.equals("고양시 일산동구")
