@@ -26,303 +26,329 @@ public class Seoul {
 		switch ((String) cb.getSelectedItem()) {
 		case "개포동":
 			crolling.area += ",I0100050";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B0%AD%B3%B2%B1%B8%7C%7C%B0%B3%C6%F7%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("개포동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "개포1동":
 			crolling.area += ",I0100010";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B0%AD%B3%B2%B1%B8%7C%7C%B0%B3%C6%F71%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("개포1동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "개포2동":
 			crolling.area += ",I0100020";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B0%AD%B3%B2%B1%B8%7C%7C%B0%B3%C6%F72%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("개포2동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "개포4동":
 			crolling.area += ",I0100040";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B0%AD%B3%B2%B1%B8%7C%7C%B0%B3%C6%F74%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("개포4동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "논현동":
 			crolling.area += ",I0100080";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B0%AD%B3%B2%B1%B8%7C%7C%B3%ED%C7%F6%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("논현동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "논현1동":
 			crolling.area += ",I0100060";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B0%AD%B3%B2%B1%B8%7C%7C%B3%ED%C7%F61%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("논현1동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "논현2동":
 			crolling.area += ",I0100070";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B0%AD%B3%B2%B1%B8%7C%7C%B3%ED%C7%F62%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("논현2동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "대치동":
 			crolling.area += ",I0100130";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B0%AD%B3%B2%B1%B8%7C%7C%B4%EB%C4%A1%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("대치동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "대치1동":
 			crolling.area += ",I0100090";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B0%AD%B3%B2%B1%B8%7C%7C%B4%EB%C4%A11%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("대치1동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "대치2동":
 			crolling.area += ",I0100100";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B0%AD%B3%B2%B1%B8%7C%7C%B4%EB%C4%A12%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("대치2동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "대치4동":
 			crolling.area += ",I0100120";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B0%AD%B3%B2%B1%B8%7C%7C%B4%EB%C4%A14%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("대치4동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "도곡동":
 			crolling.area += ",I0100160";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B0%AD%B3%B2%B1%B8%7C%7C%B5%B5%B0%EE%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("도공동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "도곡1동":
 			crolling.area += ",I0100140";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B0%AD%B3%B2%B1%B8%7C%7C%B5%B5%B0%EE1%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("도곡1동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "도곡2동":
 			crolling.area += ",I0100150";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B0%AD%B3%B2%B1%B8%7C%7C%B5%B5%B0%EE2%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("도곡2동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "삼성동":
 			crolling.area += ",I0100190";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B0%AD%B3%B2%B1%B8%7C%7C%BB%EF%BC%BA%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("삼성동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "삼성1동":
 			crolling.area += ",I0100170";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B0%AD%B3%B2%B1%B8%7C%7C%BB%EF%BC%BA1%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("삼성1동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "삼성2동":
 			crolling.area += "I0100180";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B0%AD%B3%B2%B1%B8%7C%7C%BB%EF%BC%BA2%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("삼성2동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "세곡동":
 			crolling.area += ",I0100200";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B0%AD%B3%B2%B1%B8%7C%7C%BC%BC%B0%EE%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("세곡동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "수서동":
 			crolling.area += ",I0100210";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B0%AD%B3%B2%B1%B8%7C%7C%BC%F6%BC%AD%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("수서동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "신사동":
 			crolling.area += ",I0100220";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B0%AD%B3%B2%B1%B8%7C%7C%BD%C5%BB%E7%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("신사동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "압구정동":
 			crolling.area += ",I0100250";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B0%AD%B3%B2%B1%B8%7C%7C%BE%D0%B1%B8%C1%A4%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("압구정동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "역삼동":
 			crolling.area += ",I0100280";
+			wewe.area = "02%7C%7C%B0%AD%B3%B2%B1%B8%7C%7C%BF%AA%BB%EF%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("역삼동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "역삼1동":
 			crolling.area += ",I0100260";
+			wewe.area = "02%7C%7C%B0%AD%B3%B2%B1%B8%7C%7C%BF%AA%BB%EF1%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("역삼1동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "역삼2동":
 			crolling.area += ",I0100270";
+			wewe.area = "02%7C%7C%B0%AD%B3%B2%B1%B8%7C%7C%BF%AA%BB%EF2%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("역삼2동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "율현동":
 			crolling.area += ",I0100290";
+			wewe.area = "02%7C%7C%B0%AD%B3%B2%B1%B8%7C%7C%C0%B2%C7%F6%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("율현동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "일원동":
 			crolling.area += ",I0100320";
+			wewe.area = "02%7C%7C%B0%AD%B3%B2%B1%B8%7C%7C%C0%CF%BF%F8%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("일원동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "일원1동":
 			crolling.area += ",I0100300";
+			wewe.area = "02%7C%7C%B0%AD%B3%B2%B1%B8%7C%7C%C0%CF%BF%F81%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("일원1동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "일원2동":
 			crolling.area += ",I0100310";
+			wewe.area = "02%7C%7C%B0%AD%B3%B2%B1%B8%7C%7C%C0%CF%BF%F82%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("일원2동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "일원본동":
 			crolling.area += ",I0100330";
+			wewe.area = "02%7C%7C%B0%AD%B3%B2%B1%B8%7C%7C%C0%CF%BF%F8%BA%BB%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("일원본동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "자곡동":
 			crolling.area += ",I0100340";
+			wewe.area = "02%7C%7C%B0%AD%B3%B2%B1%B8%7C%7C%C0%DA%B0%EE%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("자곡동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "청담동":
 			crolling.area += ",I0100370";
+			wewe.area = "02%7C%7C%B0%AD%B3%B2%B1%B8%7C%7C%C3%BB%B4%E3%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("청담동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "강일동":
 			crolling.area += ",I0200010";
+			wewe.area = "02%7C%7C%B0%AD%B5%BF%B1%B8%7C%7C%B0%AD%C0%CF%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("강일동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "고덕동":
 			crolling.area += ",I0200040";
+			wewe.area = "02%7C%7C%B0%AD%B5%BF%B1%B8%7C%7C%B0%ED%B4%F6%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("고덕동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "고덕1동":
 			crolling.area += ",I0200020";
+			wewe.area = "02%7C%7C%B0%AD%B5%BF%B1%B8%7C%7C%B0%ED%B4%F61%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("고덕1동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "고덕2동":
 			crolling.area += ",I0200030";
+			wewe.area = "02%7C%7C%B0%AD%B5%BF%B1%B8%7C%7C%B0%ED%B4%F62%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("고덕2동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "길동":
 			crolling.area += ",I0200070";
+			wewe.area = "02%7C%7C%B0%AD%B5%BF%B1%B8%7C%7C%B1%E6%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("길동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "둔촌동":
 			crolling.area += ",I0200100";
+			wewe.area = "02%7C%7C%B0%AD%B5%BF%B1%B8%7C%7C%B5%D0%C3%CC%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("둔촌동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "둔촌1동":
 			crolling.area += ",I0200080";
+			wewe.area = "02%7C%7C%B0%AD%B5%BF%B1%B8%7C%7C%B5%D0%C3%CC1%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("둔촌1동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "둔촌2동":
 			crolling.area += ",I0200090";
+			wewe.area = "02%7C%7C%B0%AD%B5%BF%B1%B8%7C%7C%B5%D0%C3%CC2%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("둔촌2동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "명일동":
 			crolling.area += ",I0200130";
+			wewe.area = "02%7C%7C%B0%AD%B5%BF%B1%B8%7C%7C%B8%ED%C0%CF%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("명일동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "명일1동":
 			crolling.area += ",I0200110";
+			wewe.area = "02%7C%7C%B0%AD%B5%BF%B1%B8%7C%7C%B8%ED%C0%CF1%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("명일1동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "명일2동":
 			crolling.area += ",I0200120";
+			wewe.area = "02%7C%7C%B0%AD%B5%BF%B1%B8%7C%7C%B8%ED%C0%CF2%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("명일2동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "상일동":
 			crolling.area += ",I0200140";
+			wewe.area = "02%7C%7C%B0%AD%B5%BF%B1%B8%7C%7C%BB%F3%C0%CF%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("상일동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "성내동":
 			crolling.area += ",I0200180";
+			wewe.area = "02%7C%7C%B0%AD%B5%BF%B1%B8%7C%7C%BC%BA%B3%BB%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("성내동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "성내1동":
 			crolling.area += ",I0200150";
+			wewe.area = "02%7C%7C%B0%AD%B5%BF%B1%B8%7C%7C%BC%BA%B3%BB1%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("성내1동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "성내2동":
 			crolling.area += ",I0200160";
+			wewe.area = "02%7C%7C%B0%AD%B5%BF%B1%B8%7C%7C%BC%BA%B3%BB2%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("성내2동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "성내3동":
 			crolling.area += ",I0200170";
+			wewe.area = "02%7C%7C%B0%AD%B5%BF%B1%B8%7C%7C%BC%BA%B3%BB3%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("성내3동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
@@ -330,775 +356,805 @@ public class Seoul {
 
 		case "암사동":
 			crolling.area += ",I0200230";
+			wewe.area = "02%7C%7C%B0%AD%B5%BF%B1%B8%7C%7C%BE%CF%BB%E7%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("암사동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "암사1동":
 			crolling.area += ",I0200190";
+			wewe.area = "02%7C%7C%B0%AD%B5%BF%B1%B8%7C%7C%BE%CF%BB%E71%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("암사1동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "암사2동":
 			crolling.area += ",I0200200";
+			wewe.area = "02%7C%7C%B0%AD%B5%BF%B1%B8%7C%7C%BE%CF%BB%E72%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("암사2동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "암사3동":
 			crolling.area += ",I0200210";
+			wewe.area = "02%7C%7C%B0%AD%B5%BF%B1%B8%7C%7C%BE%CF%BB%E73%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("암사3동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "천호동":
 			crolling.area += ",I0200280";
+			wewe.area = "02%7C%7C%B0%AD%B5%BF%B1%B8%7C%7C%C3%B5%C8%A3%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("천호동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "천호1동":
 			crolling.area += ",I0200240";
+			wewe.area = "02%7C%7C%B0%AD%B5%BF%B1%B8%7C%7C%C3%B5%C8%A31%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("천호1동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "천호2동":
 			crolling.area += ",I0200250";
+			wewe.area = "02%7C%7C%B0%AD%B5%BF%B1%B8%7C%7C%C3%B5%C8%A32%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("천호2동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "천호3동":
 			crolling.area += ",I0200260";
+			wewe.area = "02%7C%7C%B0%AD%B5%BF%B1%B8%7C%7C%C3%B5%C8%A33%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("천호3동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "미아동":
 			crolling.area += ",I0300100";
+			wewe.area = "02%7C%7C%B0%AD%BA%CF%B1%B8%7C%7C%B9%CC%BE%C6%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("암사3동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "번동":
 			crolling.area += ",I0300140";
+			wewe.area = "02%7C%7C%B0%AD%BA%CF%B1%B8%7C%7C%B9%F8%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("번동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "번1동":
 			crolling.area += ",I0300110";
+			wewe.area = "02%7C%7C%B0%AD%BA%CF%B1%B8%7C%7C%B9%F81%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("번1동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "번2동":
 			crolling.area += ",I0300120";
+			wewe.area = "02%7C%7C%B0%AD%BA%CF%B1%B8%7C%7C%B9%F82%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("번2동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "번3동":
 			crolling.area += ",I0300130";
+			wewe.area = "02%7C%7C%B0%AD%BA%CF%B1%B8%7C%7C%B9%F83%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("번3동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "삼각산동":
 			crolling.area += ",I0300060";
+			wewe.area = "02%7C%7C%B0%AD%BA%CF%B1%B8%7C%7C%BB%EF%B0%A2%BB%EA%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("삼각산동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "삼양동":
 			crolling.area += ",I0300010";
+			wewe.area = "02%7C%7C%B0%AD%BA%CF%B1%B8%7C%7C%BB%EF%BE%E7%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("삼양동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "송중동":
 			crolling.area += ",I0300040";
+			wewe.area = "02%7C%7C%B0%AD%BA%CF%B1%B8%7C%7C%BC%DB%C1%DF%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("송중동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "송천동":
 			crolling.area += ",I0300050";
+			wewe.area = "02%7C%7C%B0%AD%BA%CF%B1%B8%7C%7C%BC%DB%C3%B5%B5%BF	";
 			Mainpage.Filtering[Mainpage.index].setText("송천동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "수유동":
 			crolling.area += ",I0300210";
+			wewe.area = "02%7C%7C%B0%AD%BA%CF%B1%B8%7C%7C%BC%F6%C0%AF%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("수유동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "수유1동":
 			crolling.area += ",I0300150";
+			wewe.area = "02%7C%7C%B0%AD%BA%CF%B1%B8%7C%7C%BC%F6%C0%AF1%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("수유1동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "수유2동":
 			crolling.area += ",I0300160";
+			wewe.area = "02%7C%7C%B0%AD%BA%CF%B1%B8%7C%7C%BC%F6%C0%AF2%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("수유2동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "수유3동":
 			crolling.area += ",I0300170";
+			wewe.area = "02%7C%7C%B0%AD%BA%CF%B1%B8%7C%7C%BC%F6%C0%AF3%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("수유3동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "우이동":
 			crolling.area += ",I0300220";
+			wewe.area = "02%7C%7C%B0%AD%BA%CF%B1%B8%7C%7C%BF%EC%C0%CC%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("우이동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "인수동":
 			crolling.area += ",I0300190";
+			wewe.area = "02%7C%7C%B0%AD%BA%CF%B1%B8%7C%7C%C0%CE%BC%F6%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("인수동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "가양동":
 			crolling.area += ",I0400040";
+			wewe.area = "02%7C%7C%B0%AD%BC%AD%B1%B8%7C%7C%B0%A1%BE%E7%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("가양동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "가양1동":
 			crolling.area += ",I0400010";
+			wewe.area = "02%7C%7C%B0%AD%BC%AD%B1%B8%7C%7C%B0%A1%BE%E71%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("가양1동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "가양2동":
 			crolling.area += ",I0400020";
+			wewe.area = "02%7C%7C%B0%AD%BC%AD%B1%B8%7C%7C%B0%A1%BE%E72%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("가양2동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "가양3동":
 			crolling.area += ",I0400030";
+			wewe.area = "02%7C%7C%B0%AD%BC%AD%B1%B8%7C%7C%B0%A1%BE%E73%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("가양3동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "개화동":
 			crolling.area += ",I0400050";
+			wewe.area = "02%7C%7C%B0%AD%BC%AD%B1%B8%7C%7C%B0%B3%C8%AD%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("개화동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "공항동":
 			crolling.area += ",I0400060";
+			wewe.area = "02%7C%7C%B0%AD%BC%AD%B1%B8%7C%7C%B0%F8%C7%D7%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("공항동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "과해동":
 			crolling.area += ",I0400070";
+			wewe.area = "02%7C%7C%B0%AD%BC%AD%B1%B8%7C%7C%B0%FA%C7%D8%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("과해동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "내발산동":
 			crolling.area += ",I0400100";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B0%AD%BC%AD%B1%B8%7C%7C%B3%BB%B9%DF%BB%EA%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("내발산동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "등촌동":
 			crolling.area += ",I0400140";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B0%AD%BC%AD%B1%B8%7C%7C%B5%EE%C3%CC%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("등촌동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "등촌1동":
 			crolling.area += ",I0400110";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B0%AD%BC%AD%B1%B8%7C%7C%B5%EE%C3%CC1%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("등촌1동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "등촌2동":
 			crolling.area += ",I0400120";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B0%AD%BC%AD%B1%B8%7C%7C%B5%EE%C3%CC2%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("등촌2동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "등촌3동":
 			crolling.area += ",I0400130";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B0%AD%BC%AD%B1%B8%7C%7C%B5%EE%C3%CC3%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("등촌3동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "마곡동":
 			crolling.area += ",I0400150";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B0%AD%BC%AD%B1%B8%7C%7C%B8%B6%B0%EE%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("마곡동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "방화동":
 			crolling.area += ",I0400190";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B0%AD%BC%AD%B1%B8%7C%7C%B9%E6%C8%AD%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("방화동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "방화1동":
 			crolling.area += ",I0400160";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B0%AD%BC%AD%B1%B8%7C%7C%B9%E6%C8%AD1%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("방화1동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "방화2동":
 			crolling.area += ",I0400170";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B0%AD%BC%AD%B1%B8%7C%7C%B9%E6%C8%AD2%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("방화2동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "방화3동":
 			crolling.area += ",I0400180";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B0%AD%BC%AD%B1%B8%7C%7C%B9%E6%C8%AD3%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("방화3동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "염창동":
 			crolling.area += ",I0400200";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B0%AD%BC%AD%B1%B8%7C%7C%BF%B0%C3%A2%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("염창동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "오곡동":
 			crolling.area += ",I0400210";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B0%AD%BC%AD%B1%B8%7C%7C%BF%C0%B0%EE%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("오곡동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "오쇠동":
 			crolling.area += ",I0400220";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B0%AD%BC%AD%B1%B8%7C%7C%BF%C0%BC%E8%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("오쇠동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "외발산동":
 			crolling.area += ",I0400230";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B0%AD%BC%AD%B1%B8%7C%7C%BF%DC%B9%DF%BB%EA%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("외발산동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "우장산동":
 			crolling.area += ",I0400280";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B0%AD%BC%AD%B1%B8%7C%7C%BF%EC%C0%E5%BB%EA%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("우장산동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "화곡동":
 			crolling.area += ",I0400320";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B0%AD%BC%AD%B1%B8%7C%7C%C8%AD%B0%EE%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("화곡동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "화곡1동":
 			crolling.area += ",I0400240";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B0%AD%BC%AD%B1%B8%7C%7C%C8%AD%B0%EE1%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("화곡1동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "화곡2동":
 			crolling.area += ",I0400250";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B0%AD%BC%AD%B1%B8%7C%7C%C8%AD%B0%EE2%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("화곡2동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "화곡3동":
 			crolling.area += ",I0400260";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B0%AD%BC%AD%B1%B8%7C%7C%C8%AD%B0%EE3%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("화곡3동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "화곡4동":
 			crolling.area += ",I0400270";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B0%AD%BC%AD%B1%B8%7C%7C%C8%AD%B0%EE4%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("화곡4동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "화곡6동":
 			crolling.area += ",I0400290";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B0%AD%BC%AD%B1%B8%7C%7C%C8%AD%B0%EE6%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("화곡6동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "화곡8동":
 			crolling.area += ",I0400310";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B0%AD%BC%AD%B1%B8%7C%7C%C8%AD%B0%EE8%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("화곡8동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "화곡본동":
 			crolling.area += ",I0400330";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B0%AD%BC%AD%B1%B8%7C%7C%C8%AD%B0%EE%BA%BB%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("화곡본동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "낙성대동":
 			crolling.area += ",I0500100";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B0%FC%BE%C7%B1%B8%7C%7C%B3%AB%BC%BA%B4%EB%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("낙성대동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "난곡동":
 			crolling.area += ",I0500210";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B0%FC%BE%C7%B1%B8%7C%7C%B3%AD%B0%EE%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("난곡동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "난향동":
 			crolling.area += ",I0500250";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B0%FC%BE%C7%B1%B8%7C%7C%B3%AD%C7%E2%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("난향동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "남현동":
 			crolling.area += ",I0500010";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B0%FC%BE%C7%B1%B8%7C%7C%B3%B2%C7%F6%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("남현동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "대학동":
 			crolling.area += ",I0500270";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B0%FC%BE%C7%B1%B8%7C%7C%B4%EB%C7%D0%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("대학동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "미성동":
 			crolling.area += ",I0500160";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B0%FC%BE%C7%B1%B8%7C%7C%B9%CC%BC%BA%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("미성동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "보라매동":
 			crolling.area += ",I0500040";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B0%FC%BE%C7%B1%B8%7C%7C%BA%B8%B6%F3%B8%C5%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("보라매동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "봉천동":
 			crolling.area += ",I0500130";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B0%FC%BE%C7%B1%B8%7C%7C%BA%C0%C3%B5%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("봉천동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "관악구삼성동":
 			crolling.area += ",I0500240";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B0%FC%BE%C7%B1%B8%7C%7C%BB%EF%BC%BA%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("관악구 삼성동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "서림동":
 			crolling.area += ",I0500200";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B0%FC%BE%C7%B1%B8%7C%7C%BC%AD%B8%B2%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("서림동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "서원동":
 			crolling.area += ",I0500290";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B0%FC%BE%C7%B1%B8%7C%7C%BC%AD%BF%F8%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("서원동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "성현동":
 			crolling.area += ",I0500050";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B0%FC%BE%C7%B1%B8%7C%7C%BC%BA%C7%F6%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("성현동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "신림동":
 			crolling.area += ",I0500230";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B0%FC%BE%C7%B1%B8%7C%7C%BD%C5%B8%B2%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("신림동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "관악구신사동":
 			crolling.area += ",I0500220";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B0%FC%BE%C7%B1%B8%7C%7C%BD%C5%BB%E7%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("관악구신사동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "신원동":
 			crolling.area += ",I0500190";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B0%FC%BE%C7%B1%B8%7C%7C%BD%C5%BF%F8%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("신원동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "은천동":
 			crolling.area += ",I0500120";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B0%FC%BE%C7%B1%B8%7C%7C%C0%BA%C3%B5%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("은천동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "인헌동":
 			crolling.area += ",I0500030";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B0%FC%BE%C7%B1%B8%7C%7C%C0%CE%C7%E5%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("인헌동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "조원동":
 			crolling.area += ",I0500260";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B0%FC%BE%C7%B1%B8%7C%7C%C1%B6%BF%F8%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("조원동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "중앙동":
 			crolling.area += ",I0500020";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B0%FC%BE%C7%B1%B8%7C%7C%C1%DF%BE%D3%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("증앙동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "청룡동":
 			crolling.area += ",I0500070";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B0%FC%BE%C7%B1%B8%7C%7C%C3%BB%B7%E6%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("청룡동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "청림동":
 			crolling.area += ",I0500060";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B0%FC%BE%C7%B1%B8%7C%7C%C3%BB%B8%B2%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("청림동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "행운동":
 			crolling.area += ",I0500090";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B0%FC%BE%C7%B1%B8%7C%7C%C7%E0%BF%EE%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("행운동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "광장동":
 			crolling.area += ",I0600010";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B1%A4%C1%F8%B1%B8%7C%7C%B1%A4%C0%E5%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("광장동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "구의동":
 			crolling.area += ",I0600050";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B1%A4%C1%F8%B1%B8%7C%7C%B1%B8%C0%C7%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("구의동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "구의1동":
 			crolling.area += ",I0600020";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B1%A4%C1%F8%B1%B8%7C%7C%B1%B8%C0%C71%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("구의1동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "구의2동":
 			crolling.area += ",I0600030";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B1%A4%C1%F8%B1%B8%7C%7C%B1%B8%C0%C72%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("구의2동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "구의3동":
 			crolling.area += ",I0600040";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B1%A4%C1%F8%B1%B8%7C%7C%B1%B8%C0%C73%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("구의3동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "군자동":
 			crolling.area += ",I0600060";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B1%A4%C1%F8%B1%B8%7C%7C%B1%BA%C0%DA%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("군자동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "능동":
 			crolling.area += ",I0600100";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B1%A4%C1%F8%B1%B8%7C%7C%B4%C9%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("능동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "자양동":
 			crolling.area += ",I0600150";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B1%A4%C1%F8%B1%B8%7C%7C%C0%DA%BE%E7%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("자양동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "자양1동":
 			crolling.area += ",I0600120";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B1%A4%C1%F8%B1%B8%7C%7C%C0%DA%BE%E71%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("자양1동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "자양2동":
 			crolling.area += ",I0600130";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B1%A4%C1%F8%B1%B8%7C%7C%C0%DA%BE%E72%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("자양2동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "자양3동":
 			crolling.area += ",I0600140";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B1%A4%C1%F8%B1%B8%7C%7C%C0%DA%BE%E73%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("자양3동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "자양4동":
 			crolling.area += ",I0600070";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B1%A4%C1%F8%B1%B8%7C%7C%C0%DA%BE%E74%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("자양4동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "중곡동":
 			crolling.area += ",I0600200";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B1%A4%C1%F8%B1%B8%7C%7C%C1%DF%B0%EE%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("중곡동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "중곡1동":
 			crolling.area += ",I0600160";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B1%A4%C1%F8%B1%B8%7C%7C%C1%DF%B0%EE1%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("중곡1동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "중곡2동":
 			crolling.area += ",I0600170";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B1%A4%C1%F8%B1%B8%7C%7C%C1%DF%B0%EE2%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("중곡2동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "중곡3동":
 			crolling.area += ",I0600180";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B1%A4%C1%F8%B1%B8%7C%7C%C1%DF%B0%EE3%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("중곡3동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "중곡4동":
 			crolling.area += ",I0600190";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B1%A4%C1%F8%B1%B8%7C%7C%C1%DF%B0%EE4%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("중곡4동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "화양동":
 			crolling.area += ",I0600210";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B1%A4%C1%F8%B1%B8%7C%7C%C8%AD%BE%E7%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("화양동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "가리봉동":
 			crolling.area += ",I0700030";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B1%B8%B7%CE%B1%B8%7C%7C%B0%A1%B8%AE%BA%C0%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("가리봉동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "개봉동":
 			crolling.area += ",I0700070";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B1%B8%B7%CE%B1%B8%7C%7C%B0%B3%BA%C0%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("개봉동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "개봉1동":
 			crolling.area += ",I0700040";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B1%B8%B7%CE%B1%B8%7C%7C%B0%B3%BA%C01%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("개봉1동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "개봉2동":
 			crolling.area += ",I0700050";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B1%B8%B7%CE%B1%B8%7C%7C%B0%B3%BA%C02%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("개봉2동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "개봉3동":
 			crolling.area += ",I0700060";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B1%B8%B7%CE%B1%B8%7C%7C%B0%B3%BA%C03%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("개봉3동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "고척동":
 			crolling.area += ",I0700110";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B1%B8%B7%CE%B1%B8%7C%7C%B0%ED%C3%B4%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("고척동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "고척1동":
 			crolling.area += ",I0700090";
-			wewe.area = "";
+			wewe.area="02%7C%7C%B1%B8%B7%CE%B1%B8%7C%7C%B0%ED%C3%B41%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("고척1동동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "고척2동":
 			crolling.area += ",I0700100";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B1%B8%B7%CE%B1%B8%7C%7C%B0%ED%C3%B42%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("고척2동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "구로동":
 			crolling.area += ",I0700180";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B1%B8%B7%CE%B1%B8%7C%7C%B1%B8%B7%CE%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("구로동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "구로1동":
 			crolling.area += ",I0700120";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B1%B8%B7%CE%B1%B8%7C%7C%B1%B8%B7%CE1%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("구로1동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "구로2동":
 			crolling.area += ",I0700130";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B1%B8%B7%CE%B1%B8%7C%7C%B1%B8%B7%CE2%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("구로2동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "구로3동":
 			crolling.area += ",I0700140";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B1%B8%B7%CE%B1%B8%7C%7C%B1%B8%B7%CE3%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("구로3동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "구로4동":
 			crolling.area += ",I0700150";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B1%B8%B7%CE%B1%B8%7C%7C%B1%B8%B7%CE4%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("구로4동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "구로5동":
 			crolling.area += ",I0700160";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B1%B8%B7%CE%B1%B8%7C%7C%B1%B8%B7%CE5%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("구로5동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "궁동":
 			crolling.area += ",I0700200";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B1%B8%B7%CE%B1%B8%7C%7C%B1%C3%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("궁동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "신도림동":
 			crolling.area += ",I0700210";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B1%B8%B7%CE%B1%B8%7C%7C%BD%C5%B5%B5%B8%B2%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("신도림동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "오류동":
 			crolling.area += ",I0700240";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B1%B8%B7%CE%B1%B8%7C%7C%BF%C0%B7%F9%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("오류동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "오류1동":
 			crolling.area += ",I0700220";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B1%B8%B7%CE%B1%B8%7C%7C%BF%C0%B7%F91%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("오류1동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "오류2동":
 			crolling.area += ",I0700230";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B1%B8%B7%CE%B1%B8%7C%7C%BF%C0%B7%F92%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("오류2동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "온수동":
 			crolling.area += ",I0700250";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B1%B8%B7%CE%B1%B8%7C%7C%BF%C2%BC%F6%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("온수동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "천왕동":
 			crolling.area += ",I0700260";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B1%B8%B7%CE%B1%B8%7C%7C%C3%B5%BF%D5%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("천왕동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
 			break;
 		case "항동":
 			crolling.area += ",I0700270";
-			wewe.area = "";
+			wewe.area = "02%7C%7C%B1%B8%B7%CE%B1%B8%7C%7C%C7%D7%B5%BF";
 			Mainpage.Filtering[Mainpage.index].setText("항동");
 			Mainpage.Filtering[Mainpage.index].setVisible(true);
 			Mainpage.delete[Mainpage.index++].setVisible(true);
