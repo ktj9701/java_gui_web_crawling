@@ -21,6 +21,7 @@ import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
 
 import Function.crolling;
+import Function.wewe;
 import region.Busan;
 import region.Chungbuk;
 import region.Chungnam;
@@ -38,6 +39,7 @@ import region.Gyeongnam;
 import region.Gyeongnam2;
 import region.Incheon;
 import region.Jeju;
+import region.Jeonbuk;
 import region.Seoul;
 import region.Seoul2;
 import region.Ulsan;
@@ -65,6 +67,7 @@ public class Mainpage extends JFrame {
 	Gyeongbuk2 경북2도시 = new Gyeongbuk2();
 	Deagu 대구도시 = new Deagu();
 	Gwangju 광주도시 = new Gwangju();
+	Jeonbuk 전북도시 = new Jeonbuk();
 	Jeonnam 전남도시 = new Jeonnam();
 	Jeju 제주도시 = new Jeju();
 
@@ -259,7 +262,7 @@ public class Mainpage extends JFrame {
 					Detail_Area.setVisible(false);
 					City.setVisible(false);
 					crolling.area = "";
-					AlbaHeavenpage.Albaheaven_crolling.area="";
+					wewe.area="";
 					Search_Albamon();
 					AlbaHeavenpage.Search_AlbaHeaven();
 				} catch (IllegalArgumentException e1) {
@@ -384,6 +387,8 @@ public class Mainpage extends JFrame {
 						서울1도시.SeoulCity(e);
 						// f (서울1도시.flag != true)
 						// Search_Albamon();
+						if(index!= 5)
+						AlbaHeavenpage.Albaheaven_crolling.area+="%2C";
 					}
 					// --------------------------서울 2---------------------------------
 					else if (temp2.equals("송파구") || temp2.equals("양천구") || temp2.equals("영등포구") || temp2.equals("용산구")
@@ -407,6 +412,8 @@ public class Mainpage extends JFrame {
 						경기1도시.GyeonggiCity(e);
 						// if (경기1도시.flag != true)
 						// Search_Albamon();
+						if(index!= 5)
+							AlbaHeavenpage.Albaheaven_crolling.area+="%2C";
 					}
 					// ----------------------------경기2-----------------------------
 					else if (temp2.equals("안성시") || temp2.equals("안양시 동안구") || temp2.equals("안양시 만안구")
@@ -418,48 +425,64 @@ public class Mainpage extends JFrame {
 						경기2도시.Gyeonggi2City(e);
 						// if (경기2도시.flag != true)
 						// Search_Albamon();
+						if(index!= 5)
+							AlbaHeavenpage.Albaheaven_crolling.area+="%2C";
 					}
 					// ---------------------------인천----------------------------------
 					else if (temp.equals("인천")) {
 						인천도시.IncheonCity(e);
 						// if (인천도시.flag != true)
 						// Search_Albamon();
+						if(index!= 5)
+							AlbaHeavenpage.Albaheaven_crolling.area+="%2C";
 					}
 					// ---------------------------강원----------------------------------
 					else if (temp.equals("강원")) {
 						강원도시.GangwonCity(e);
 						// if (강원도시.flag != true)
 						// Search_Albamon();
+						if(index!= 5)
+							AlbaHeavenpage.Albaheaven_crolling.area+="%2C";
 					}
 					// ---------------------------새전 또는 세종----------------------------------
 					else if (temp.equals("대전") || temp.equals("세종")) {
 						대전_세종도시.Daejeon_AND_SejongCity(e);
 						// if (인천도시.flag != true)
 						// Search_Albamon();
+						if(index!= 5)
+							AlbaHeavenpage.Albaheaven_crolling.area+="%2C";
 					}
 					// ---------------------------충북----------------------------------
 					else if (temp.equals("충북")) {
 						충북도시.ChungbukCity(e);
 						// if (충북도시.flag != true)
 						// Search_Albamon();
+						if(index!= 5)
+							AlbaHeavenpage.Albaheaven_crolling.area+="%2C";
 					}
 					// ---------------------------충남----------------------------------
 					else if (temp.equals("충남")) {
 						충남도시.ChungnamCity(e);
 						// if (충남도시.flag != true)
 						// Search_Albamon();
+						if(index!= 5)
+							AlbaHeavenpage.Albaheaven_crolling.area+="%2C";
 					}
 					// ---------------------------부산----------------------------------
 					else if (temp.equals("부산")) {
 						부산도시.BusanCity(e);
 						// if (부산도시.flag != true)
 						// Search_Albamon();
+						if(index!= 5)
+							AlbaHeavenpage.Albaheaven_crolling.area+="%2C";
 					}
 					// ---------------------------울산----------------------------------
 					else if (temp.equals("울산")) {
 						울산도시.UlsanCity(e);
 						// if (울산도시.flag != true)
 						// Search_Albamon();
+						if(index!= 5)
+							AlbaHeavenpage.Albaheaven_crolling.area+="%2C";
 					}
 					// ---------------------------경남1----------------------------------
 					else if (temp2.equals("거제시") || temp2.equals("거창군") || temp2.equals("고성군") || temp2.equals("김해시")
@@ -469,6 +492,8 @@ public class Mainpage extends JFrame {
 						경남도시.GyeongnamCity(e);
 						// if (충남도시.flag != true)
 						// Search_Albamon();
+						if(index!= 5)
+							AlbaHeavenpage.Albaheaven_crolling.area+="%2C";
 					}
 					// ---------------------------경남2----------------------------------
 					else if (temp2.equals("창원시 마산합포구") || temp2.equals("창원시 마산회원구") || temp2.equals("창원시 성산구")
@@ -478,6 +503,8 @@ public class Mainpage extends JFrame {
 						경남2도시.Gyeongnam2City(e);
 						// if (경남2도시.flag != true)
 						// Search_Albamon();
+						if(index!= 5)
+							AlbaHeavenpage.Albaheaven_crolling.area+="%2C";
 					}
 					// ---------------------------경북1----------------------------------
 					else if (temp2.equals("경산시") || temp2.equals("경주시") || temp2.equals("고령군") || temp2.equals("구미시")
@@ -485,6 +512,8 @@ public class Mainpage extends JFrame {
 						경북도시.GyeongbukCity(e);
 						// if (경북도시.flag != true)
 						// Search_Albamon();
+						if(index!= 5)
+							AlbaHeavenpage.Albaheaven_crolling.area+="%2C";
 					}
 					// ---------------------------경북2----------------------------------
 					else if (temp2.equals("문경시") || temp2.equals("봉화군") || temp2.equals("상주시") || temp2.equals("성주군")
@@ -495,30 +524,49 @@ public class Mainpage extends JFrame {
 						경북2도시.Gyeongbuk2City(e);
 						// if (경북2도시.flag != true)
 						// Search_Albamon();
+						if(index!= 5)
+							AlbaHeavenpage.Albaheaven_crolling.area+="%2C";
 					}
 					// ---------------------------대구----------------------------------
 					else if (temp.equals("대구")) {
 						대구도시.DeaguCity(e);
 						// if (대구도시.flag != true)
 						// Search_Albamon();
+						if(index!= 5)
+							AlbaHeavenpage.Albaheaven_crolling.area+="%2C";
 					}
 					// ---------------------------광주----------------------------------
 					else if (temp.equals("광주")) {
 						광주도시.GwangjuCity(e);
 						// if (광주도시.flag != true)
 						// Search_Albamon();
+						if(index!= 5)
+							AlbaHeavenpage.Albaheaven_crolling.area+="%2C";
+					}
+					// ---------------------------전북----------------------------------
+					else if (temp.equals("전북")) {
+						전북도시.JeonbukCity(e);
+						// if (전북도시.flag != true)
+						// Search_Albamon();
+						if(index!= 5)
+							AlbaHeavenpage.Albaheaven_crolling.area+="%2C";
 					}
 					// ---------------------------전남----------------------------------
 					else if (temp.equals("전남")) {
 						전남도시.JeonnamCity(e);
 						// if (전남도시.flag != true)
 						// Search_Albamon();
+						if(index!= 5)
+							AlbaHeavenpage.Albaheaven_crolling.area+="%2C";
 					}
 					// ---------------------------제주----------------------------------
 					else if (temp.equals("제주")) {
 						제주도시.JejuCity(e);
 						// if (제주도시.flag != true)
 						// Search_Albamon();
+						if(index!= 5)
+							AlbaHeavenpage.Albaheaven_crolling.area+="%2C";
+						
 					} else if (temp2.equals("전체")) {
 						if (index != 0) {
 							crolling.area = crolling.area.substring(0, 5);
