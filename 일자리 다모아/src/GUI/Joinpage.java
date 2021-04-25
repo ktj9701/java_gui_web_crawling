@@ -21,6 +21,7 @@ public class Joinpage extends JFrame {
 	static JLabel Title = new JLabel("회원가입");
 	static JLabel ID = new JLabel("아이디");
 	static JLabel PW = new JLabel("패스워드");
+	static JLabel fail = new JLabel("");
 	static JLabel PW_Check = new JLabel("패스워드 확인");
 	static TextField ID_ = new TextField(10);
 	static TextField PW_ = new TextField(10);
@@ -51,7 +52,7 @@ public class Joinpage extends JFrame {
 		ID.setVisible(true);
 		add(ID);
 
-		PW.setBounds(350, 240, 60, 30); // ------------------------패스워드 레이블
+		PW.setBounds(350, 240, 100, 30); // ------------------------패스워드 레이블
 		PW.setFont(Point15_Font);
 		PW.setVisible(true);
 		add(PW);
@@ -60,6 +61,11 @@ public class Joinpage extends JFrame {
 		PW_Check.setFont(Point15_Font);
 		PW_Check.setVisible(true);
 		add(PW_Check);
+
+		fail.setBounds(350, 320, 200, 30);
+		fail.setFont(Point15_Font);
+		fail.setVisible(true);
+		add(fail);
 
 		ID_.setBounds(450, 200, 200, 30); // ---------------------아이디 텍스트필드
 		ID_.setVisible(true);
@@ -73,11 +79,11 @@ public class Joinpage extends JFrame {
 		PW_Check_.setVisible(true);
 		add(PW_Check_);
 
-		Join.setBounds(400, 350, 100, 30); // -----------------------회원 가입 버튼
+		Join.setBounds(400, 370, 100, 30); // -----------------------회원 가입 버튼
 		Join.setVisible(true);
 		add(Join);
 
-		Back.setBounds(550, 350, 100, 30); // -----------------------돌아 가기 버튼
+		Back.setBounds(550, 370, 100, 30); // -----------------------돌아 가기 버튼
 		Back.setVisible(true);
 		add(Back);
 
@@ -90,15 +96,25 @@ public class Joinpage extends JFrame {
 		public void actionPerformed(ActionEvent e) {
 			if (e.getSource() == Join) { // 회원 가입 버튼 클릭
 				if (PW_.getText().equals(PW_Check_.getText())) {
-					db_method.Join(ID_.getText(), PW_.getText());
-
-					ID_.setText("");
-					PW_.setText("");
-					PW_Check_.setText("");
-					Loginpage Loginpage = new Loginpage();
-					dispose(); // 프레임삭제
-					Loginpage.setVisible(true); // 새로운 프레임
-				}
+					try {
+						if (JoinAction(e)) {
+							ID_.setText("");
+							PW_.setText("");
+							PW_Check_.setText("");
+							Loginpage Loginpage = new Loginpage();
+							dispose(); // 프레임삭제
+							Loginpage.setVisible(true); // 새로운 프레임
+						} else {
+							ID_.setText("");
+							PW_.setText("");
+							PW_Check_.setText("");
+							fail.setText("중복된 아이디 입니다.");
+						}
+					} catch (SQLException e1) {
+						e1.printStackTrace();
+					}
+				} else
+					fail.setText("비밀번호가 다릅니다.");
 			} else if (e.getSource() == Back) { // 돌아 가기 버튼 클릭
 				ID_.setText("");
 				PW_.setText("");
@@ -109,5 +125,12 @@ public class Joinpage extends JFrame {
 			}
 
 		}
+	}
+
+	public boolean JoinAction(ActionEvent e) throws SQLException {
+		if (db_method.Join(ID_.getText(), PW_.getText())) {
+			return true;
+		}
+		return false;
 	}
 }
