@@ -15,7 +15,7 @@ import Function.DB_Method;
 import Function.dirver;
 
 public class Loginpage extends JFrame {
-	private DB_Method db_method=new DB_Method();
+	public static DB_Method db_method=new DB_Method();
 	Buttonlistener Loginlistener = new Buttonlistener();
 
 	Font Title_Font = new Font("맑은 고딕", Font.BOLD, 30);
@@ -87,8 +87,9 @@ public class Loginpage extends JFrame {
 			if (event.getSource() == Login) { // 로그인 버튼 클릭
 				try {
 					if(LoginAction(event)) {
+						Mainpage mainPage = new Mainpage();	
 						dispose(); // 프레임삭제
-						Mainpage mainPage = new Mainpage();				
+								
 					}
 					else { // ---------------------------------로그인 실패
 						ID_.setText("");
