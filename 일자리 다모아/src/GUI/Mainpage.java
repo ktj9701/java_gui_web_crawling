@@ -75,7 +75,7 @@ public class Mainpage extends JFrame {
 	JTable table; // 테이블
 	static Button Search = new Button("검색");
 	static Button Reset = new Button("리셋");
-	static Button Calculator = new Button("월급 계산기");
+	static Button Calculator = new Button("급여 계산기");
 	static Button AlbaHeaven = new Button("알바천국");
 	static Button JobKorea = new Button("잡코리아");
 	static DefaultTableModel TableModel = new DefaultTableModel() {// 테이블 내용 수정 불가
