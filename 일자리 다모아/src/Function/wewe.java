@@ -43,7 +43,7 @@ public class wewe {
 				String[] temp=ie6.next().html().split("\"");
 				String temp2= "http://www.alba.co.kr/"+temp[1];
 				try {
-					albaheaven.add(new Albatext(ie1.next().text(), ie2.next().text(), ie3.next().text(),
+					albaheaven.add(new Albatext(ie1.next().text(), ie2.next().text()+"¿ø", ie3.next().text(),
 							ie4.next().text(), ie5.next().text(),temp2));
 				} catch (NoSuchElementException e) {
 				}
