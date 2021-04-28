@@ -13,7 +13,7 @@ import Function.DB_Method;
 import Function.dirver;
 
 public class Joinpage extends JFrame {
-	private DB_Method db_method = new DB_Method();
+	 DB_Method db_method = new DB_Method();
 	// -----------------------------------------------------------폰토
 	Font Title_Font = new Font("맑은 고딕", Font.BOLD, 30);
 	Font Point15_Font = new Font("맑은 고딕", Font.BOLD, 15);
@@ -96,40 +96,44 @@ public class Joinpage extends JFrame {
 		public void actionPerformed(ActionEvent e) {
 			if (e.getSource() == Join) { // 회원 가입 버튼 클릭
 				if (PW_.getText().equals(PW_Check_.getText())) {
-					try {
-						if (JoinAction(e)) {
-							ID_.setText("");
-							PW_.setText("");
-							PW_Check_.setText("");
-							Loginpage Loginpage = new Loginpage();
-							dispose(); // 프레임삭제
-							Loginpage.setVisible(true); // 새로운 프레임
-						} else {
-							ID_.setText("");
-							PW_.setText("");
-							PW_Check_.setText("");
-							fail.setText("중복된 아이디 입니다.");
-						}
-					} catch (SQLException e1) {
-						e1.printStackTrace();
+					if (JoinAction(e)) {
+						ID_.setText("");
+						PW_.setText("");
+						PW_Check_.setText("");
+						//Loginpage Loginpage = new Loginpage();
+						//dispose(); // 프레임삭제
+
+					} else {
+						ID_.setText("");
+						PW_.setText("");
+						PW_Check_.setText("");
+						fail.setText("중복된 아이디 입니다.");
 					}
 				} else
 					fail.setText("비밀번호가 다릅니다.");
-			} else if (e.getSource() == Back) { // 돌아 가기 버튼 클릭
+			}
+
+			else if (e.getSource() == Back) { // 돌아 가기 버튼 클릭
 				ID_.setText("");
 				PW_.setText("");
 				PW_Check_.setText("");
 				Loginpage Loginpage = new Loginpage();
 				dispose(); // 프레임삭제
-				Loginpage.setVisible(true); // 새로운 프레임
+
 			}
 
 		}
+
 	}
 
-	public boolean JoinAction(ActionEvent e) throws SQLException {
-		if (db_method.Join(ID_.getText(), PW_.getText())) {
-			return true;
+	public boolean JoinAction(ActionEvent e) {
+		try {
+			if (Loginpage.db_method.Join(ID_.getText(), PW_.getText())) {
+				return true;
+			}
+		} catch (SQLException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
 		}
 		return false;
 	}
