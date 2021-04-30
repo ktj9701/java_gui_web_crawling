@@ -31,19 +31,18 @@ public class Calculatorpage extends JFrame {
 	static JButton Reset = new JButton("초기화");
 	static JButton Calculation = new JButton("계산");
 
-	
-	static JLabel Result_pay__Integer_label= new JLabel("원");
-	static JLabel Extra_pay_Integer_label= new JLabel("원");
-	static JLabel Total_pay_Integer_label= new JLabel("원");
-	static JLabel Tex_pay__Integer_label= new JLabel("원");
-	
+	static JLabel Result_pay__Integer_label = new JLabel("0원");
+	static JLabel Extra_pay_Integer_label = new JLabel("0원");
+	static JLabel Total_pay_Integer_label = new JLabel("0원");
+	static JLabel Tex_pay__Integer_label = new JLabel("0원");
+
 	Buttonlistener listener = new Buttonlistener();
 	Radiolistener radiolistener = new Radiolistener();
 
 	public static boolean Tex_flag = false; // 세금 적용 여부
 
-	
-	DecimalFormat formatter= new DecimalFormat("###,###");
+	DecimalFormat formatter = new DecimalFormat("###,###");
+
 	public Calculatorpage() {
 		setTitle("월급 계산기");
 		setSize(400, 600);
@@ -146,7 +145,7 @@ public class Calculatorpage extends JFrame {
 		Calculation.setBounds(230, 340, 100, 30); // -----------------------초기화 버튼
 		Calculation.setVisible(true);
 		add(Calculation);
-          // ----------------------------------------결과 레이블-----------------------------
+		// ----------------------------------------결과 레이블-----------------------------
 		JLabel Result_pay_label = new JLabel("예상 급여(+)");
 		Result_pay_label.setBounds(30, 400, 100, 30);
 		Result_pay_label.setFont(new Font("맑은 고딕", Font.BOLD, 15));
@@ -166,7 +165,7 @@ public class Calculatorpage extends JFrame {
 		Extra_pay_Integer_label.setBounds(250, 430, 100, 30);
 		Extra_pay_Integer_label.setFont(new Font("맑은 고딕", Font.BOLD, 15));
 		add(Extra_pay_Integer_label);
-		
+
 		JLabel Tex_pay_label = new JLabel("소득세(-)");
 		Tex_pay_label.setBounds(30, 460, 100, 30);
 		Tex_pay_label.setFont(new Font("맑은 고딕", Font.BOLD, 15));
@@ -176,13 +175,12 @@ public class Calculatorpage extends JFrame {
 		Tex_pay__Integer_label.setBounds(250, 460, 100, 30);
 		Tex_pay__Integer_label.setFont(new Font("맑은 고딕", Font.BOLD, 15));
 		add(Tex_pay__Integer_label);
-		
+
 		JLabel device_label = new JLabel("-------------------------------------------------------");
 		device_label.setBounds(30, 490, 350, 30);
 		device_label.setFont(new Font("맑은 고딕", Font.BOLD, 15));
 		add(device_label);
-		
-		
+
 		JLabel Total_pay_label = new JLabel("최종 급여");
 		Total_pay_label.setBounds(30, 510, 100, 30);
 		Total_pay_label.setFont(new Font("맑은 고딕", Font.BOLD, 15));
@@ -192,16 +190,13 @@ public class Calculatorpage extends JFrame {
 		Total_pay_Integer_label.setBounds(250, 510, 100, 30);
 		Total_pay_Integer_label.setFont(new Font("맑은 고딕", Font.BOLD, 15));
 		add(Total_pay_Integer_label);
-		
-		
+
 		Reset.addActionListener(listener);
 		Calculation.addActionListener(listener);
 		Tex[0].addItemListener(radiolistener);
 		Tex[1].addItemListener(radiolistener);
 	}
 
-	
-	
 	class Buttonlistener implements ActionListener { // 계산 및 리셋 버튼 이벤트
 		public void actionPerformed(ActionEvent e) {
 			if (e.getSource() == Reset) { // 리셋 버튼
@@ -209,6 +204,10 @@ public class Calculatorpage extends JFrame {
 				After.setSelectedIndex(1);
 				Worktime.setSelectedIndex(7);
 				Pay.setText("");
+				Result_pay__Integer_label.setText("0원");
+				Extra_pay_Integer_label.setText("0원");
+				Tex_pay__Integer_label.setText("0원");
+				Total_pay_Integer_label.setText("0원");
 				Tex[1].setSelected(true);
 				Tex_flag = false;
 				errorlabel.setVisible(false);
@@ -218,10 +217,10 @@ public class Calculatorpage extends JFrame {
 					errorlabel.setVisible(true);
 				else {
 					Calculation_function process = new Calculation_function();
-					Result_pay__Integer_label.setText(formatter.format(process.Result_pay_function())+"원");
-					Extra_pay_Integer_label.setText(formatter.format(process.extra_pay_function())+"원");
-					Tex_pay__Integer_label.setText(process.Tex_function()+"원");
-					Total_pay_Integer_label.setText(formatter.format(process.total_function())+"원");
+					Result_pay__Integer_label.setText(formatter.format(process.Result_pay_function()) + "원");
+					Extra_pay_Integer_label.setText(formatter.format(process.extra_pay_function()) + "원");
+					Tex_pay__Integer_label.setText(process.Tex_function() + "원");
+					Total_pay_Integer_label.setText(formatter.format(process.total_function()) + "원");
 				}
 			}
 		}
@@ -230,7 +229,7 @@ public class Calculatorpage extends JFrame {
 	class Radiolistener implements ItemListener { // 소득세 여부 버튼 이벤트
 		public void itemStateChanged(ItemEvent e) {
 			if (Tex[0].isSelected()) {
-				Tex_flag =true;
+				Tex_flag = true;
 			}
 		}
 	}
