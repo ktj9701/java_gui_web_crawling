@@ -10,12 +10,11 @@ import java.sql.SQLException;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 
-import Function.DB;
 import Function.DB_Method;
 import Function.dirver;
 
 public class Loginpage extends JFrame {
-	public static DB_Method db_method=new DB_Method();
+	//public static DB_Method db_method=new DB_Method();
 	Buttonlistener Loginlistener = new Buttonlistener();
 
 	Font Title_Font = new Font("맑은 고딕", Font.BOLD, 30);
@@ -76,20 +75,15 @@ public class Loginpage extends JFrame {
 		Login.addActionListener(Loginlistener); // -------------------------이벤트처리
 		Join.addActionListener(Loginlistener);
 	}
-	public boolean LoginAction(ActionEvent e) throws SQLException {
-		if(db_method.Login(ID_.getText(),PW_.getText())) {
-			return true;
-		}
-		return false;
-	}
 	class Buttonlistener implements ActionListener { // 버튼 이벤트
 		public void actionPerformed(ActionEvent event) {
 			if (event.getSource() == Login) { // 로그인 버튼 클릭
-				try {
-					if(LoginAction(event)) {
+				try {					
+					DB_Method db_method=new DB_Method();
+					int result =db_method.Login(ID_.getText(),PW_.getText());
+					if(result==1) {
 						Mainpage mainPage = new Mainpage();	
-						dispose(); // 프레임삭제
-								
+						dispose(); // 프레임삭제	
 					}
 					else { // ---------------------------------로그인 실패
 						ID_.setText("");
@@ -103,8 +97,7 @@ public class Loginpage extends JFrame {
 				ID_.setText("");
 				PW_.setText("");
 				Joinpage JoinPage = new Joinpage();
-				dispose(); // 프레임삭제
-				JoinPage.setVisible(true); // 새로운 프레임
+				
 			}
 
 		}
