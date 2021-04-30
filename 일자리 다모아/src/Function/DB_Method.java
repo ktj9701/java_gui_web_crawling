@@ -2,6 +2,7 @@ package Function;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -21,7 +22,7 @@ public class DB_Method{
 			}
 	}
 
-	public boolean Login(String ID, String PWD) throws SQLException { // 로그인
+	public int Login(String ID, String PWD) throws SQLException { // 로그인
 		conn=null;
 		String query = "SELECT * FROM Login";
 		conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/Login?useSSL=false", "root", "1234");
@@ -36,7 +37,7 @@ public class DB_Method{
 				rs.close();
 				stmt.close();
 				conn.close();
-				return true;
+				return 1;
 			}
 		}
 		System.out.println("Login Fail");
@@ -44,32 +45,35 @@ public class DB_Method{
 		rs=null;
 		stmt=null;
 
-		return false;
+		return -1;
 	}
 
-	public boolean Join(String ID, String PWD) throws SQLException { // 회원가입
+	public int Join(String ID, String PWD) throws SQLException { // 회원가입
 		conn=null;
 		conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/Login?useSSL=false", "root", "1234");
 		stmt = conn.createStatement();
 		String query = "SELECT * FROM Login";
 		stmt = conn.createStatement();
-		//if (DB.stmt.execute(query)) {
-		//	DB.rs = DB.stmt.getResultSet();
-		//}
 		rs=stmt.executeQuery(query);
 		while (rs.next()) {
 			if (rs.getString("ID").equals(ID)) {
 				System.out.println("Join Fail");
-				return false;
+				return -1;
 			}
 		}
-		 query = "INSERT INTO Login VALUES(" + "'" + ID + "'," + "'" + PWD + "'" + ")";
-		stmt.executeUpdate(query);
-			System.out.println("Join Success");
-			
-			stmt=null;
-			rs=null;
-
-		return true;
+		PreparedStatement pstmt = null;
+		
+		 query = "INSERT INTO Login (ID, PWD)";
+		 query+="values (?,?)";
+		 pstmt = conn.prepareStatement(query);
+		 pstmt.setString(1,ID);
+		 pstmt.setString(2,PWD);
+		 
+		 int result = pstmt.executeUpdate();
+		 rs.close();
+			pstmt.close();
+			stmt.close();
+			conn.close();
+		return 1;
 	}
 }
