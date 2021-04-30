@@ -7,6 +7,7 @@ import javax.swing.JScrollPane;
 import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
 
+import Function.Albatext;
 import Function.wewe;
 
 import java.awt.event.MouseAdapter;
@@ -29,8 +30,6 @@ public class AlbaHeavenpage extends JFrame {
 	public static JScrollPane scroll;
 	static Vector<Albatext> AlbaHeaven;
 	static Object arr[][];
-
-	Buttonlistener listener = new Buttonlistener();
 	MouseListener MouseListener = new MouseListener();
 
 	public AlbaHeavenpage() {
@@ -48,11 +47,6 @@ public class AlbaHeavenpage extends JFrame {
 		scroll.setBounds(160, 130, 1325, 633);
 		scroll.setVisible(true);
 		add(scroll);
-	}
-
-	class Buttonlistener implements ActionListener { // 버튼 이벤트
-		public void actionPerformed(ActionEvent e) {
-		}
 	}
 
 	public class MouseListener extends MouseAdapter {
