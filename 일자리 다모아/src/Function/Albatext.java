@@ -1,4 +1,4 @@
-package GUI;
+package Function;
 
 import javax.swing.JButton;
 
