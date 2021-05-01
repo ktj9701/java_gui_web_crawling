@@ -49,7 +49,8 @@ import region.Jeonnam;
 
 public class Mainpage extends JFrame {
 	Interncrolling ict = new Interncrolling();
-	Object temp, temp2;
+	public static Object temp;
+	static Object temp2;
 
 	Detail_Area Detail = new Detail_Area(); // 세부적인 지역 모음 클래스
 	City city = new City();
@@ -273,12 +274,15 @@ public class Mainpage extends JFrame {
 				}
 			}
 			if (e.getSource() == delete[0]) {
+				String[] temp6 = wewe.area.split("%2C");
+				wewe.area = "";
 				for (int i = 0; i < index; i++) {
-					if ((index == 5) || i == 4)
+					if (i == (index - 1))
 						break;
-
-					else
+					else {
 						Filtering[i].setText(Filtering[i + 1].getText());
+						wewe.area += temp6[i + 1] + "%2C";
+					}
 				}
 				Filtering[index - 1].setText("");
 				Filtering[index - 1].setVisible(false);
@@ -287,14 +291,27 @@ public class Mainpage extends JFrame {
 				index--;
 				crolling.area = crolling.area.substring(9);
 				Search_Albamon();
+				AlbaHeavenpage.Search_AlbaHeaven();
+				
+				if(crolling.area.equals("")) {  //모든 조건이 사라지면 초기화면으로 변경
+					Area.setSelectedIndex(0);
+					Detail_Area.setSelectedIndex(0);
+					City.setSelectedIndex(0);
+					Detail_Area.setVisible(false);
+					City.setVisible(false);
+				}
+					
 			}
 			if (e.getSource() == delete[1]) {
+				String[] temp6 = wewe.area.split("%2C");
+				wewe.area = temp6[0] + "%2C";
 				for (int i = 1; i < index; i++) {
-					if ((index == 5) || i == 4)
+					if (i == (index - 1))
 						break;
-
-					else
+					else {
 						Filtering[i].setText(Filtering[i + 1].getText());
+						wewe.area += temp6[i + 1] + "%2C";
+					}
 				}
 				Filtering[index - 1].setText("");
 				Filtering[index - 1].setVisible(false);
@@ -303,13 +320,18 @@ public class Mainpage extends JFrame {
 				index--;
 				crolling.area = crolling.area.substring(0, 9) + crolling.area.substring(18);
 				Search_Albamon();
+				AlbaHeavenpage.Search_AlbaHeaven();
 			}
 			if (e.getSource() == delete[2]) {
+				String[] temp6 = wewe.area.split("%2C");
+				wewe.area = temp6[0] + "%2C" + temp6[1] + "%2C";
 				for (int i = 2; i < index; i++) {
-					if ((index == 5) || i == 4)
+					if (i == (index - 1))
 						break;
-					else
+					else {
 						Filtering[i].setText(Filtering[i + 1].getText());
+						wewe.area += temp6[i + 1] + "%2C";
+					}
 				}
 				Filtering[index - 1].setText("");
 				Filtering[index - 1].setVisible(false);
@@ -318,14 +340,19 @@ public class Mainpage extends JFrame {
 				index--;
 				crolling.area = crolling.area.substring(0, 18) + crolling.area.substring(27);
 				Search_Albamon();
+				AlbaHeavenpage.Search_AlbaHeaven();
 			}
 			if (e.getSource() == delete[3]) {
-				for (int i = 3; i < index; i++) {
-					if ((index == 5) || i == 4)
-						break;
+				String[] temp6 = wewe.area.split("%2C");
+				wewe.area = temp6[0] + "%2C" + temp6[1] + "%2C" + temp6[2] + "%2C";
 
-					else
+				for (int i = 3; i < index; i++) {
+					if (i == (index - 1))
+						break;
+					else {
 						Filtering[i].setText(Filtering[i + 1].getText());
+						wewe.area += temp6[i + 1] + "%2C";
+					}
 				}
 				Filtering[index - 1].setText("");
 				Filtering[index - 1].setVisible(false);
@@ -334,8 +361,11 @@ public class Mainpage extends JFrame {
 				index--;
 				crolling.area = crolling.area.substring(0, 27) + crolling.area.substring(36);
 				Search_Albamon();
+				AlbaHeavenpage.Search_AlbaHeaven();
 			}
 			if (e.getSource() == delete[4]) {
+				String[] temp6 = wewe.area.split("%2C");
+				wewe.area = temp6[0] + "%2C" + temp6[1] + "%2C" + temp6[2] + "%2C" + temp6[3] + "%2C";
 				Filtering[index - 1].setText("");
 				Filtering[index - 1].setVisible(false);
 				delete[index - 1].setText("");
@@ -343,12 +373,13 @@ public class Mainpage extends JFrame {
 				index--;
 				crolling.area = crolling.area.substring(0, 36);
 				Search_Albamon();
+				AlbaHeavenpage.Search_AlbaHeaven();
 			}
 			if (e.getSource() == AlbaHeaven) {
 				AlbaHeavenpage popup = new AlbaHeavenpage();
 			}
 			if (e.getSource() == ICT) {
-				ICTpage ict = new ICTpage();
+				Internpage ict = new Internpage();
 			}
 		}
 	}
@@ -570,16 +601,13 @@ public class Mainpage extends JFrame {
 						if (index != 5)
 							AlbaHeavenpage.Albaheaven_crolling.area += "%2C";
 
-					} else if (temp2.equals("전체")) {
-						if (index != 0) {
-							crolling.area = crolling.area.substring(0, 5);
-							Search_Albamon();
-						}
 					}
 
 				}
 				System.out.println(index);
 				System.out.println(crolling.area);
+				System.out.println(wewe.area);
+
 			}
 		}
 	}
