@@ -16,7 +16,7 @@ public class City {
 	static String[] 강남구 = { "전체", "개포동", "개포1동", "개포2동", "개포4동", "논현동", "논현1동", "논현2동", "대치동", "대치1동", "대치2동", "대치4동",
 			"도곡동", "도곡1동", "도곡2동", "삼성동", "삼성1동", "삼성2동", "세곡동", "수서동", "신사동", "압구정동", "역삼동", "역삼1동", "역삼2동", "율현동",
 			"일원동", "일원1동", "일원2동", "일원본동", "자곡동", "청담동" };
-	static String[] 강동구 = { "전체", "강일동", "고덕동", "고덕1동", "고동2동", "길동", "둔촌동", "둔촌1동", "둔촌2동", "명일동", "명일1동", "명일2동",
+	static String[] 강동구 = { "전체", "강일동", "고덕동", "고덕1동", "고덕2동", "길동", "둔촌동", "둔촌1동", "둔촌2동", "명일동", "명일1동", "명일2동",
 			"상일동", "성내동", "성내1동", "성내2동", "성내3동", "암사동", "암사1동", "암사2동", "암사3동", "천호동", "천호1동", "천호2동", "천호3동" };
 	static String[] 강북구 = { "전체", "미아동", "번동", "번1동", "번2동", "번3동", "삼각산동", "삼양동", "송중동", "송천동", "수유동", "수유1동", "수유2동",
 			"수유3동", "우이동", "인수동" };
@@ -1997,7 +1997,59 @@ public class City {
 			Mainpage.City.setVisible(false);
 			try {
 				crolling.area = crolling.area.substring(0, 2) + "000";
-				break;
+				switch((String)Mainpage.temp) {
+				case "서울":
+					wewe.area="02%7C%7C%C0%FC%C3%BC%7C%7C";
+					break;
+				case "경기":
+					wewe.area="031%7C%7C%C0%FC%C3%BC%7C%7C";
+					break;
+				case "인천":
+					wewe.area="032%7C%7C%C0%FC%C3%BC%7C%7C";
+					break;
+				case "강원":
+					wewe.area="033%7C%7C%C0%FC%C3%BC%7C%7C";
+					break;
+				case "대전":
+					wewe.area="042%7C%7C%C0%FC%C3%BC%7C%7C";
+					break;
+				case "세종":
+					wewe.area="044%7C%7C%C0%FC%C3%BC%7C%7C";
+					break;
+				case "충남":
+					wewe.area="041%7C%7C%C0%FC%C3%BC%7C%7C";
+					break;
+				case "충북":
+					wewe.area="043%7C%7C%C0%FC%C3%BC%7C%7C";
+					break;
+				case "부산":
+					wewe.area="051%7C%7C%C0%FC%C3%BC%7C%7C";
+					break;
+				case "울산":
+					wewe.area="052%7C%7C%C0%FC%C3%BC%7C%7C";
+					break;
+				case "경남":
+					wewe.area="055%7C%7C%C0%FC%C3%BC%7C%7C";
+					break;
+				case "경북":
+					wewe.area="054%7C%7C%C0%FC%C3%BC%7C%7C";
+					break;
+				case "대구":
+					wewe.area="053%7C%7C%C0%FC%C3%BC%7C%7C";
+					break;
+				case "광주":
+					wewe.area="062%7C%7C%C0%FC%C3%BC%7C%7C";
+					break;
+				case "전남":
+					wewe.area="061%7C%7C%C0%FC%C3%BC%7C%7C";
+					break;
+				case "전북":
+					wewe.area="063%7C%7C%C0%FC%C3%BC%7C%7C";
+					break;
+				case "제주":			
+					wewe.area="064%7C%7C%C0%FC%C3%BC%7C%7C";
+					break;
+				}				
 			} catch (StringIndexOutOfBoundsException e1) {
 
 			}
