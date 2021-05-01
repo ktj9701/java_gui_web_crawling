@@ -53,7 +53,7 @@ public class Interncrolling {
 			rs = stmt.executeQuery(query);
 			while (rs.next()) {
 				ipp.add(new IPP(rs.getString("NAME"), rs.getString("PROJECT"), rs.getString("AREA"),
-						rs.getString("NUM"), rs.getString("STATE"),url));
+						rs.getString("NUM")+"Έν", rs.getString("STATE"),url));
 			}
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
