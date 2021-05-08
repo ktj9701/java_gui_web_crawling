@@ -15,8 +15,9 @@ import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 public class crolling {
-	public static String area = "";
-
+	public static String area = "";  //지역 코드
+	public static String gender = "";//성별 코드
+	public static String period = "";//근무 기간 코드
 	public Vector<Albatext> crolling() {
 		Vector<Albatext> albamon = new Vector<>();
 
@@ -25,7 +26,9 @@ public class crolling {
 		Document doc = null;
 		while (page != 4) { // 3페이지까지 출력
 			url = "https://www.albamon.com/list/gi/mon_gi_tot_list.asp?page=" + page + "&ps=20&ob=6&lvtype=1&rArea="
-					+ area + "&rWDate=1&Empmnt_Type=&ob=0";
+					+ area + "&rWDate=1&Empmnt_Type=&ob=0&gender="+gender+"&sDutyTerm="+period;
+			
+			https://www.albamon.com/list/gi/mon_gi_tot_list.asp?page=2&scd= 
 			try {
 				doc = Jsoup.connect(url).get();
 			} catch (IOException e) {
