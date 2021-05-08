@@ -41,7 +41,7 @@ public class Joinpage extends JFrame {
 		setVisible(true);
 		setResizable(false); // 프로그램 크기 조절 불가 설정
 		setLocationRelativeTo(null); // 화면 중앙에 오도록 하는 설정
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setDefaultCloseOperation(DISPOSE_ON_CLOSE);
 
 		Title.setBounds(220, 50, 300, 30); // ----------------------제목 레이블
 		Title.setFont(Title_Font);
