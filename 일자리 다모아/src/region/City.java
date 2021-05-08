@@ -5,8 +5,8 @@ import java.awt.event.ActionEvent;
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.JComboBox;
 
-import Function.crolling;
-import Function.wewe;
+import Function.Albamoncrolling;
+import Function.AlbaHeavencrolling;
 import GUI.Mainpage;
 
 // 읍,면,리,동 구현 클래스
@@ -712,1342 +712,1342 @@ public class City {
 		// ----------------서울 세부 지역--------------------------------------
 		case "강남구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(강남구);
-			crolling.area = ",I010";
-			wewe.area = "02%7C%7C%B0%AD%B3%B2%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",I010";
+			AlbaHeavencrolling.area = "02%7C%7C%B0%AD%B3%B2%B1%B8%7C%7C%C0%FC%C3%BC";
 			break;
 		case "강동구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(강동구);
-			crolling.area = ",I020";
-			wewe.area = "02%7C%7C%B0%AD%B5%BF%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",I020";
+			AlbaHeavencrolling.area = "02%7C%7C%B0%AD%B5%BF%B1%B8%7C%7C%C0%FC%C3%BC";
 			break;
 		case "강북구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(강북구);
-			crolling.area = ",I030";
-			wewe.area = "02%7C%7C%B0%AD%BA%CF%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",I030";
+			AlbaHeavencrolling.area = "02%7C%7C%B0%AD%BA%CF%B1%B8%7C%7C%C0%FC%C3%BC";
 			break;
 		case "강서구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(강서구);
-			crolling.area = ",I040";
-			wewe.area = "02%7C%7C%B0%AD%BC%AD%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",I040";
+			AlbaHeavencrolling.area = "02%7C%7C%B0%AD%BC%AD%B1%B8%7C%7C%C0%FC%C3%BC";
 			break;
 		case "관악구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(관악구);
-			crolling.area = ",I050";
-			wewe.area = "02%7C%7C%B0%FC%BE%C7%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",I050";
+			AlbaHeavencrolling.area = "02%7C%7C%B0%FC%BE%C7%B1%B8%7C%7C%C0%FC%C3%BC";
 			break;
 		case "광진구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(광진구);
-			crolling.area = ",I060";
-			wewe.area = "02%7C%7C%B1%A4%C1%F8%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",I060";
+			AlbaHeavencrolling.area = "02%7C%7C%B1%A4%C1%F8%B1%B8%7C%7C%C0%FC%C3%BC";
 			break;
 		case "구로구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(구로구);
-			crolling.area = ",I070";
-			wewe.area = "02%7C%7C%B1%B8%B7%CE%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",I070";
+			AlbaHeavencrolling.area = "02%7C%7C%B1%B8%B7%CE%B1%B8%7C%7C%C0%FC%C3%BC";
 			break;
 		case "금천구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(금천구);
-			crolling.area = ",I080";
-			wewe.area = "02%7C%7C%B1%DD%C3%B5%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",I080";
+			AlbaHeavencrolling.area = "02%7C%7C%B1%DD%C3%B5%B1%B8%7C%7C%C0%FC%C3%BC";
 			break;
 		case "노원구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(노원구);
-			crolling.area = ",I090";
-			wewe.area = "02%7C%7C%B3%EB%BF%F8%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",I090";
+			AlbaHeavencrolling.area = "02%7C%7C%B3%EB%BF%F8%B1%B8%7C%7C%C0%FC%C3%BC";
 			break;
 		case "도봉구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(도봉구);
-			crolling.area = ",I100";
-			wewe.area = "02%7C%7C%B5%B5%BA%C0%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",I100";
+			AlbaHeavencrolling.area = "02%7C%7C%B5%B5%BA%C0%B1%B8%7C%7C%C0%FC%C3%BC";
 			break;
 		case "동대문구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(동대문구);
-			crolling.area = ",I110";
-			wewe.area = "02%7C%7C%B5%BF%B4%EB%B9%AE%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",I110";
+			AlbaHeavencrolling.area = "02%7C%7C%B5%BF%B4%EB%B9%AE%B1%B8%7C%7C%C0%FC%C3%BC";
 			break;
 		case "동작구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(동작구);
-			crolling.area = ",I120";
-			wewe.area = "02%7C%7C%B5%BF%C0%DB%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",I120";
+			AlbaHeavencrolling.area = "02%7C%7C%B5%BF%C0%DB%B1%B8%7C%7C%C0%FC%C3%BC";
 			break;
 		case "마포구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(마포구);
-			crolling.area = ",I130";
-			wewe.area = "02%7C%7C%B8%B6%C6%F7%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",I130";
+			AlbaHeavencrolling.area = "02%7C%7C%B8%B6%C6%F7%B1%B8%7C%7C%C0%FC%C3%BC";
 			break;
 		case "서대문구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(서대문구);
-			crolling.area = ",I140";
-			wewe.area = "02%7C%7C%BC%AD%B4%EB%B9%AE%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",I140";
+			AlbaHeavencrolling.area = "02%7C%7C%BC%AD%B4%EB%B9%AE%B1%B8%7C%7C%C0%FC%C3%BC";
 			break;
 		case "서초구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(서초구);
-			crolling.area = ",I150";
-			wewe.area = "02%7C%7C%BC%AD%C3%CA%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",I150";
+			AlbaHeavencrolling.area = "02%7C%7C%BC%AD%C3%CA%B1%B8%7C%7C%C0%FC%C3%BC";
 			break;
 		case "성동구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(성동구);
-			crolling.area = ",I160";
-			wewe.area = "02%7C%7C%BC%BA%B5%BF%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",I160";
+			AlbaHeavencrolling.area = "02%7C%7C%BC%BA%B5%BF%B1%B8%7C%7C%C0%FC%C3%BC";
 			break;
 		case "성북구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(성북구);
-			crolling.area = ",I170";
-			wewe.area = "02%7C%7C%BC%BA%BA%CF%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",I170";
+			AlbaHeavencrolling.area = "02%7C%7C%BC%BA%BA%CF%B1%B8%7C%7C%C0%FC%C3%BC";
 			break;
 		case "송파구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(송파구);
-			crolling.area = ",I180";
-			wewe.area = "02%7C%7C%BC%DB%C6%C4%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",I180";
+			AlbaHeavencrolling.area = "02%7C%7C%BC%DB%C6%C4%B1%B8%7C%7C%C0%FC%C3%BC";
 			break;
 		case "양천구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(양천구);
-			crolling.area = ",I190";
-			wewe.area = "2C02%7C%7C%BE%E7%C3%B5%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",I190";
+			AlbaHeavencrolling.area = "2C02%7C%7C%BE%E7%C3%B5%B1%B8%7C%7C%C0%FC%C3%BC";
 			break;
 		case "영등포구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(영등포구);
-			crolling.area = ",I200";
-			wewe.area = "02%7C%7C%BF%B5%B5%EE%C6%F7%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",I200";
+			AlbaHeavencrolling.area = "02%7C%7C%BF%B5%B5%EE%C6%F7%B1%B8%7C%7C%C0%FC%C3%BC";
 			break;
 		case "용산구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(용산구);
-			crolling.area = ",I210";
-			wewe.area = "02%7C%7C%BF%EB%BB%EA%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",I210";
+			AlbaHeavencrolling.area = "02%7C%7C%BF%EB%BB%EA%B1%B8%7C%7C%C0%FC%C3%BC";
 			break;
 		case "은평구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(은평구);
-			crolling.area = ",I220";
-			wewe.area = "02%7C%7C%C0%BA%C6%F2%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",I220";
+			AlbaHeavencrolling.area = "02%7C%7C%C0%BA%C6%F2%B1%B8%7C%7C%C0%FC%C3%BC";
 			break;
 		case "종로구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(종로구);
-			crolling.area = ",I230";
-			wewe.area = "02%7C%7C%C1%BE%B7%CE%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",I230";
+			AlbaHeavencrolling.area = "02%7C%7C%C1%BE%B7%CE%B1%B8%7C%7C%C0%FC%C3%BC";
 			break;
 		case "중구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(중구);
-			crolling.area = ",I240";
-			wewe.area = "02%7C%7C%C1%DF%B1%B8%7C%7C%C0%FC%C3";
+			Albamoncrolling.area = ",I240";
+			AlbaHeavencrolling.area = "02%7C%7C%C1%DF%B1%B8%7C%7C%C0%FC%C3";
 			break;
 		case "중랑구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(중랑구);
-			crolling.area = ",I250";
-			wewe.area = "02%7C%7C%C1%DF%B6%FB%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",I250";
+			AlbaHeavencrolling.area = "02%7C%7C%C1%DF%B6%FB%B1%B8%7C%7C%C0%FC%C3%BC";
 			break;
 
 		// ------------------경기 세부 지역---------------------------------
 		case "가평군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(가평군);
-			crolling.area = ",B010";
-			wewe.area = "031%7C%7C%B0%A1%C6%F2%B1%BA%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",B010";
+			AlbaHeavencrolling.area = "031%7C%7C%B0%A1%C6%F2%B1%BA%7C%7C%C0%FC%C3%BC";
 			break;
 		case "고양시 덕양구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(고양시덕양구);
-			crolling.area = ",B020";
-			wewe.area = "031%7C%7C%B0%ED%BE%E7%BD%C3+%B4%F6%BE%E7%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",B020";
+			AlbaHeavencrolling.area = "031%7C%7C%B0%ED%BE%E7%BD%C3+%B4%F6%BE%E7%B1%B8%7C%7C%C0%FC%C3%BC";
 			break;
 		case "고양시 일산동구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(고양시일산동구);
-			crolling.area = ",B030";
-			wewe.area = "031%7C%7C%B0%ED%BE%E7%BD%C3+%C0%CF%BB%EA%B5%BF%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",B030";
+			AlbaHeavencrolling.area = "031%7C%7C%B0%ED%BE%E7%BD%C3+%C0%CF%BB%EA%B5%BF%B1%B8%7C%7C%C0%FC%C3%BC";
 			break;
 		case "고양시 일산서구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(고양시일산서구);
-			crolling.area = ",B031";
-			wewe.area = "031%7C%7C%B0%ED%BE%E7%BD%C3+%C0%CF%BB%EA%BC%AD%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",B031";
+			AlbaHeavencrolling.area = "031%7C%7C%B0%ED%BE%E7%BD%C3+%C0%CF%BB%EA%BC%AD%B1%B8%7C%7C%C0%FC%C3%BC";
 			break;
 		case "과천시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(과천시);
-			crolling.area = ",B040";
-			wewe.area = "031%7C%7C%B0%FA%C3%B5%BD%C3%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",B040";
+			AlbaHeavencrolling.area = "031%7C%7C%B0%FA%C3%B5%BD%C3%7C%7C%C0%FC%C3%BC";
 			break;
 		case "광명시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(광명시);
-			crolling.area = ",B050";
-			wewe.area = "031%7C%7C%B1%A4%B8%ED%BD%C3%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",B050";
+			AlbaHeavencrolling.area = "031%7C%7C%B1%A4%B8%ED%BD%C3%7C%7C%C0%FC%C3%BC";
 			break;
 		case "광주시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(광주시);
-			crolling.area = ",B060";
-			wewe.area = "031%7C%7C%B1%A4%C1%D6%BD%C3%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",B060";
+			AlbaHeavencrolling.area = "031%7C%7C%B1%A4%C1%D6%BD%C3%7C%7C%C0%FC%C3%BC";
 			break;
 		case "구리시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(구리시);
-			crolling.area = ",B070";
-			wewe.area = "031%7C%7C%B1%B8%B8%AE%BD%C3%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",B070";
+			AlbaHeavencrolling.area = "031%7C%7C%B1%B8%B8%AE%BD%C3%7C%7C%C0%FC%C3%BC";
 			break;
 		case "군포시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(군포시);
-			wewe.area = "031%7C%7C%B1%BA%C6%F7%BD%C3%7C%7C%C0%FC%C3%BC";
-			crolling.area = ",B080";
+			AlbaHeavencrolling.area = "031%7C%7C%B1%BA%C6%F7%BD%C3%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",B080";
 			break;
 		case "김포시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(김포시);
-			wewe.area = "031%7C%7C%B1%E8%C6%F7%BD%C3%7C%7C%C0%FC%C3%BC";
-			crolling.area = ",B090";
+			AlbaHeavencrolling.area = "031%7C%7C%B1%E8%C6%F7%BD%C3%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",B090";
 			break;
 		case "남양주시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(남양주시);
-			wewe.area = "031%7C%7C%B3%B2%BE%E7%C1%D6%BD%C3%7C%7C%C0%FC%C3%BC";
-			crolling.area = ",B100";
+			AlbaHeavencrolling.area = "031%7C%7C%B3%B2%BE%E7%C1%D6%BD%C3%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",B100";
 			break;
 		case "동두천시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(동두천시);
-			wewe.area = "031%7C%7C%B5%BF%B5%CE%C3%B5%BD%C3%7C%7C%C0%FC%C3%BC";
-			crolling.area = ",B110";
+			AlbaHeavencrolling.area = "031%7C%7C%B5%BF%B5%CE%C3%B5%BD%C3%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",B110";
 			break;
 		case "부천시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(부천시);
-			wewe.area = "031%7C%7C%BA%CE%C3%B5%BD%C3%7C%7C%C0%FC%C3%BC";
-			crolling.area = ",B125";
+			AlbaHeavencrolling.area = "031%7C%7C%BA%CE%C3%B5%BD%C3%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",B125";
 			break;
 		case "성남시 분당구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(성남시분당구);
-			wewe.area = "031%7C%7C%BC%BA%B3%B2%BD%C3+%BA%D0%B4%E7%B1%B8%7C%7C%C0%FC%C3%BC";
-			crolling.area = ",B150";
+			AlbaHeavencrolling.area = "031%7C%7C%BC%BA%B3%B2%BD%C3+%BA%D0%B4%E7%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",B150";
 			break;
 		case "성남시 수정구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(성남시수정구);
-			wewe.area = "031%7C%7C%BC%BA%B3%B2%BD%C3+%BC%F6%C1%A4%B1%B8%7C%7C%C0%FC%C3%BC";
-			crolling.area = ",B160";
+			AlbaHeavencrolling.area = "031%7C%7C%BC%BA%B3%B2%BD%C3+%BC%F6%C1%A4%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",B160";
 			break;
 		case "성남시 중원구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(성남시중원구);
-			wewe.area = "031%7C%7C%BC%BA%B3%B2%BD%C3+%C1%DF%BF%F8%B1%B8%7C%7C%C0%FC%C3%BC";
-			crolling.area = ",B170";
+			AlbaHeavencrolling.area = "031%7C%7C%BC%BA%B3%B2%BD%C3+%C1%DF%BF%F8%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",B170";
 			break;
 		case "수원시 권선구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(수원시권선구);
-			crolling.area = ",B180";
-			wewe.area = "031%7C%7C%BC%F6%BF%F8%BD%C3+%B1%C7%BC%B1%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",B180";
+			AlbaHeavencrolling.area = "031%7C%7C%BC%F6%BF%F8%BD%C3+%B1%C7%BC%B1%B1%B8%7C%7C%C0%FC%C3%BC";
 			break;
 		case "수원시 영통구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(수원시영통구);
-			crolling.area = ",B201";
-			wewe.area = "031%7C%7C%BC%F6%BF%F8%BD%C3+%BF%B5%C5%EB%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",B201";
+			AlbaHeavencrolling.area = "031%7C%7C%BC%F6%BF%F8%BD%C3+%BF%B5%C5%EB%B1%B8%7C%7C%C0%FC%C3%BC";
 			break;
 		case "수원시 장안구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(수원시장안구);
-			crolling.area = ",B190";
-			wewe.area = "031%7C%7C%BC%F6%BF%F8%BD%C3+%C0%E5%BE%C8%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",B190";
+			AlbaHeavencrolling.area = "031%7C%7C%BC%F6%BF%F8%BD%C3+%C0%E5%BE%C8%B1%B8%7C%7C%C0%FC%C3%BC";
 			break;
 		case "수원시 팔달구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(수원시팔달구);
-			crolling.area = ",B200";
-			wewe.area = "031%7C%7C%BC%F6%BF%F8%BD%C3+%C6%C8%B4%DE%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",B200";
+			AlbaHeavencrolling.area = "031%7C%7C%BC%F6%BF%F8%BD%C3+%C6%C8%B4%DE%B1%B8%7C%7C%C0%FC%C3%BC";
 			break;
 		case "시흥시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(시흥시);
-			crolling.area = ",B210";
-			wewe.area = "031%7C%7C%BD%C3%C8%EF%BD%C3%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",B210";
+			AlbaHeavencrolling.area = "031%7C%7C%BD%C3%C8%EF%BD%C3%7C%7C%C0%FC%C3%BC";
 			break;
 		case "안산시 단원구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(안산시단원구);
-			crolling.area = ",B220";
-			wewe.area = "031%7C%7C%BE%C8%BB%EA%BD%C3+%B4%DC%BF%F8%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",B220";
+			AlbaHeavencrolling.area = "031%7C%7C%BE%C8%BB%EA%BD%C3+%B4%DC%BF%F8%B1%B8%7C%7C%C0%FC%C3%BC";
 			break;
 		case "안산시 상록구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(안산시상록구);
-			crolling.area = ",B221";
-			wewe.area = "031%7C%7C%BE%C8%BB%EA%BD%C3+%BB%F3%B7%CF%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",B221";
+			AlbaHeavencrolling.area = "031%7C%7C%BE%C8%BB%EA%BD%C3+%BB%F3%B7%CF%B1%B8%7C%7C%C0%FC%C3%BC";
 			break;
 		case "안성시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(안성시);
-			crolling.area = ",B230";
-			wewe.area = "031%7C%7C%BE%C8%BC%BA%BD%C3%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",B230";
+			AlbaHeavencrolling.area = "031%7C%7C%BE%C8%BC%BA%BD%C3%7C%7C%C0%FC%C3%BC";
 			break;
 		case "안양시 동안구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(안양시동안구);
-			crolling.area = ",B240";
-			wewe.area = "031%7C%7C%BE%C8%BE%E7%BD%C3+%B5%BF%BE%C8%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",B240";
+			AlbaHeavencrolling.area = "031%7C%7C%BE%C8%BE%E7%BD%C3+%B5%BF%BE%C8%B1%B8%7C%7C%C0%FC%C3%BC";
 			break;
 		case "안양시 만안구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(안양시만안구);
-			crolling.area = ",B250";
-			wewe.area = "031%7C%7C%BE%C8%BE%E7%BD%C3+%B8%B8%BE%C8%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",B250";
+			AlbaHeavencrolling.area = "031%7C%7C%BE%C8%BE%E7%BD%C3+%B8%B8%BE%C8%B1%B8%7C%7C%C0%FC%C3%BC";
 			break;
 		case "양주시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(양주시);
-			crolling.area = ",B260";
-			wewe.area = "031%7C%7C%BE%E7%C1%D6%BD%C3%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",B260";
+			AlbaHeavencrolling.area = "031%7C%7C%BE%E7%C1%D6%BD%C3%7C%7C%C0%FC%C3%BC";
 			break;
 		case "양평군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(양평군);
-			crolling.area = ",B270";
-			wewe.area = "031%7C%7C%BE%E7%C6%F2%B1%BA%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",B270";
+			AlbaHeavencrolling.area = "031%7C%7C%BE%E7%C6%F2%B1%BA%7C%7C%C0%FC%C3%BC";
 			break;
 		case "여주시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(여주시);
-			crolling.area = ",B280";
-			wewe.area = "031%7C%7C%BF%A9%C1%D6%BD%C3%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",B280";
+			AlbaHeavencrolling.area = "031%7C%7C%BF%A9%C1%D6%BD%C3%7C%7C%C0%FC%C3%BC";
 			break;
 		case "연천군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(연천군);
-			crolling.area = ",B290";
-			wewe.area = "031%7C%7C%BF%AC%C3%B5%B1%BA%7C%7C%C0%FC%C3";
+			Albamoncrolling.area = ",B290";
+			AlbaHeavencrolling.area = "031%7C%7C%BF%AC%C3%B5%B1%BA%7C%7C%C0%FC%C3";
 			break;
 		case "오산시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(오산시);
-			crolling.area = ",B300";
-			wewe.area = "031%7C%7C%BF%C0%BB%EA%BD%C3%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",B300";
+			AlbaHeavencrolling.area = "031%7C%7C%BF%C0%BB%EA%BD%C3%7C%7C%C0%FC%C3%BC";
 			break;
 		case "용인시 기흥구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(용인시기흥구);
-			crolling.area = ",B310";
-			wewe.area = "031%7C%7C%BF%EB%C0%CE%BD%C3+%B1%E2%C8%EF%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",B310";
+			AlbaHeavencrolling.area = "031%7C%7C%BF%EB%C0%CE%BD%C3+%B1%E2%C8%EF%B1%B8%7C%7C%C0%FC%C3%BC";
 			break;
 		case "용인시 수지구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(용인시수지구);
-			crolling.area = ",B311";
-			wewe.area = "031%7C%7C%BF%EB%C0%CE%BD%C3+%BC%F6%C1%F6%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",B311";
+			AlbaHeavencrolling.area = "031%7C%7C%BF%EB%C0%CE%BD%C3+%BC%F6%C1%F6%B1%B8%7C%7C%C0%FC%C3%BC";
 			break;
 		case "용인시 처인구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(용인시처인구);
-			crolling.area = ",B312";
-			wewe.area = "031%7C%7C%BF%EB%C0%CE%BD%C3+%C3%B3%C0%CE%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",B312";
+			AlbaHeavencrolling.area = "031%7C%7C%BF%EB%C0%CE%BD%C3+%C3%B3%C0%CE%B1%B8%7C%7C%C0%FC%C3%BC";
 			break;
 		case "의왕시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(의왕시);
-			crolling.area = ",B320";
-			wewe.area = "031%7C%7C%C0%C7%BF%D5%BD%C3%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",B320";
+			AlbaHeavencrolling.area = "031%7C%7C%C0%C7%BF%D5%BD%C3%7C%7C%C0%FC%C3%BC";
 			break;
 		case "의정부시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(의정부시);
-			crolling.area = ",B330";
-			wewe.area = "031%7C%7C%C0%C7%C1%A4%BA%CE%BD%C3%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",B330";
+			AlbaHeavencrolling.area = "031%7C%7C%C0%C7%C1%A4%BA%CE%BD%C3%7C%7C%C0%FC%C3%BC";
 			break;
 		case "이천시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(이천시);
-			crolling.area = ",B340";
-			wewe.area = "031%7C%7C%C0%CC%C3%B5%BD%C3%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",B340";
+			AlbaHeavencrolling.area = "031%7C%7C%C0%CC%C3%B5%BD%C3%7C%7C%C0%FC%C3%BC";
 			break;
 		case "파주시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(파주시);
-			crolling.area = ",B350";
-			wewe.area = "031%7C%7C%C6%C4%C1%D6%BD%C3%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",B350";
+			AlbaHeavencrolling.area = "031%7C%7C%C6%C4%C1%D6%BD%C3%7C%7C%C0%FC%C3%BC";
 			break;
 		case "평택시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(평택시);
-			crolling.area = ",B360";
-			wewe.area = "031%7C%7C%C6%F2%C5%C3%BD%C3%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",B360";
+			AlbaHeavencrolling.area = "031%7C%7C%C6%F2%C5%C3%BD%C3%7C%7C%C0%FC%C3%BC";
 			break;
 		case "포천시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(포천시);
-			crolling.area = ",B370";
-			wewe.area = "031%7C%7C%C6%F7%C3%B5%BD%C3%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",B370";
+			AlbaHeavencrolling.area = "031%7C%7C%C6%F7%C3%B5%BD%C3%7C%7C%C0%FC%C3%BC";
 			break;
 		case "하남시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(하남시);
-			crolling.area = ",B380";
-			wewe.area = "031%7C%7C%C7%CF%B3%B2%BD%C3%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",B380";
+			AlbaHeavencrolling.area = "031%7C%7C%C7%CF%B3%B2%BD%C3%7C%7C%C0%FC%C3%BC";
 			break;
 		case "화성시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(화성시);
-			crolling.area = ",B390";
-			wewe.area = "031%7C%7C%C8%AD%BC%BA%BD%C3%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",B390";
+			AlbaHeavencrolling.area = "031%7C%7C%C8%AD%BC%BA%BD%C3%7C%7C%C0%FC%C3%BC";
 			break;
 
 		// ---------------인천 세부 지역---------------------
 		case "강화군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(강화군);
-			crolling.area = ",K010";
-			wewe.area = "032%7C%7C%B0%AD%C8%AD%B1%BA%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",K010";
+			AlbaHeavencrolling.area = "032%7C%7C%B0%AD%C8%AD%B1%BA%7C%7C%C0%FC%C3%BC";
 			break;
 		case "계양구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(계양구);
-			crolling.area = ",K020";
-			wewe.area = "032%7C%7C%B0%E8%BE%E7%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",K020";
+			AlbaHeavencrolling.area = "032%7C%7C%B0%E8%BE%E7%B1%B8%7C%7C%C0%FC%C3%BC";
 			break;
 		case "남동구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(남동구);
-			crolling.area = ",K040";
-			wewe.area = "032%7C%7C%B3%B2%B5%BF%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",K040";
+			AlbaHeavencrolling.area = "032%7C%7C%B3%B2%B5%BF%B1%B8%7C%7C%C0%FC%C3%BC";
 			break;
 		case "인천동구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(인천동구);
-			crolling.area = ",K050";
-			wewe.area = "032%7C%7C%B5%BF%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",K050";
+			AlbaHeavencrolling.area = "032%7C%7C%B5%BF%B1%B8%7C%7C%C0%FC%C3%BC";
 			break;
 		case "미추홀구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(미추홀구);
-			crolling.area = ",K030";
-			wewe.area = "032%7C%7C%B9%CC%C3%DF%C8%A6%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",K030";
+			AlbaHeavencrolling.area = "032%7C%7C%B9%CC%C3%DF%C8%A6%B1%B8%7C%7C%C0%FC%C3%BC";
 			break;
 		case "부평구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(부평구);
-			crolling.area = ",K060";
-			wewe.area = "032%7C%7C%BA%CE%C6%F2%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",K060";
+			AlbaHeavencrolling.area = "032%7C%7C%BA%CE%C6%F2%B1%B8%7C%7C%C0%FC%C3%BC";
 			break;
 		case "인천서구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(인천서구);
-			crolling.area = ",K070";
-			wewe.area = "032%7C%7C%BC%AD%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",K070";
+			AlbaHeavencrolling.area = "032%7C%7C%BC%AD%B1%B8%7C%7C%C0%FC%C3%BC";
 			break;
 		case "연수구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(연수구);
-			crolling.area = ",K080";
-			wewe.area = "032%7C%7C%BF%AC%BC%F6%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",K080";
+			AlbaHeavencrolling.area = "032%7C%7C%BF%AC%BC%F6%B1%B8%7C%7C%C0%FC%C3%BC";
 			break;
 		case "옹진군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(옹진군);
-			crolling.area = ",K090";
-			wewe.area = "032%7C%7C%BF%CB%C1%F8%B1%BA%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",K090";
+			AlbaHeavencrolling.area = "032%7C%7C%BF%CB%C1%F8%B1%BA%7C%7C%C0%FC%C3%BC";
 			break;
 		case "인천중구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(인천중구);
-			crolling.area = ",K100";
-			wewe.area = "032%7C%7C%C1%DF%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",K100";
+			AlbaHeavencrolling.area = "032%7C%7C%C1%DF%B1%B8%7C%7C%C0%FC%C3%BC";
 			break;
 
 		// ---------------강원 세부 지역-------------------
 		case "강릉시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(강릉시);
-			crolling.area = ",A010";
-			wewe.area = "033%7C%7C%B0%AD%B8%AA%BD%C3%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",A010";
+			AlbaHeavencrolling.area = "033%7C%7C%B0%AD%B8%AA%BD%C3%7C%7C%C0%FC%C3%BC";
 			break;
 		case "고성군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(고성군);
-			crolling.area = ",A020";
-			wewe.area = "033%7C%7C%B0%ED%BC%BA%B1%BA%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",A020";
+			AlbaHeavencrolling.area = "033%7C%7C%B0%ED%BC%BA%B1%BA%7C%7C%C0%FC%C3%BC";
 			break;
 		case "동해시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(동해시);
-			crolling.area = ",A030";
-			wewe.area = "033%7C%7C%B5%BF%C7%D8%BD%C3%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",A030";
+			AlbaHeavencrolling.area = "033%7C%7C%B5%BF%C7%D8%BD%C3%7C%7C%C0%FC%C3%BC";
 			break;
 		case "삼척시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(삼척시);
-			crolling.area = ",A040";
-			wewe.area = "033%7C%7C%BB%EF%C3%B4%BD%C3%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",A040";
+			AlbaHeavencrolling.area = "033%7C%7C%BB%EF%C3%B4%BD%C3%7C%7C%C0%FC%C3%BC";
 			break;
 		case "속초시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(속초시);
-			crolling.area = ",A050";
-			wewe.area = "033%7C%7C%BC%D3%C3%CA%BD%C3%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",A050";
+			AlbaHeavencrolling.area = "033%7C%7C%BC%D3%C3%CA%BD%C3%7C%7C%C0%FC%C3%BC";
 			break;
 		case "양구군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(양구군);
-			crolling.area = ",A060";
-			wewe.area = "033%7C%7C%BE%E7%B1%B8%B1%BA%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",A060";
+			AlbaHeavencrolling.area = "033%7C%7C%BE%E7%B1%B8%B1%BA%7C%7C%C0%FC%C3%BC";
 			break;
 		case "양양군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(양양군);
-			crolling.area = ",A070";
-			wewe.area = "033%7C%7C%BE%E7%BE%E7%B1%BA%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",A070";
+			AlbaHeavencrolling.area = "033%7C%7C%BE%E7%BE%E7%B1%BA%7C%7C%C0%FC%C3%BC";
 			break;
 		case "영월군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(영월군);
-			crolling.area = ",A080";
-			wewe.area = "033%7C%7C%BF%B5%BF%F9%B1%BA%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",A080";
+			AlbaHeavencrolling.area = "033%7C%7C%BF%B5%BF%F9%B1%BA%7C%7C%C0%FC%C3%BC";
 			break;
 		case "원주시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(원주시);
-			crolling.area = ",A090";
-			wewe.area = "033%7C%7C%BF%F8%C1%D6%BD%C3%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",A090";
+			AlbaHeavencrolling.area = "033%7C%7C%BF%F8%C1%D6%BD%C3%7C%7C%C0%FC%C3%BC";
 			break;
 		case "인제군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(인제군);
-			crolling.area = ",A100";
-			wewe.area = "033%7C%7C%C0%CE%C1%A6%B1%BA%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",A100";
+			AlbaHeavencrolling.area = "033%7C%7C%C0%CE%C1%A6%B1%BA%7C%7C%C0%FC%C3%BC";
 			break;
 		case "정선군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(정선군);
-			crolling.area = ",A110";
-			wewe.area = "033%7C%7C%C1%A4%BC%B1%B1%BA%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",A110";
+			AlbaHeavencrolling.area = "033%7C%7C%C1%A4%BC%B1%B1%BA%7C%7C%C0%FC%C3%BC";
 			break;
 		case "철원군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(철원군);
-			crolling.area = ",A120";
-			wewe.area = "033%7C%7C%C3%B6%BF%F8%B1%BA%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",A120";
+			AlbaHeavencrolling.area = "033%7C%7C%C3%B6%BF%F8%B1%BA%7C%7C%C0%FC%C3%BC";
 			break;
 		case "춘천시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(춘천시);
-			crolling.area = ",A130";
-			wewe.area = "033%7C%7C%C3%E1%C3%B5%BD%C3%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",A130";
+			AlbaHeavencrolling.area = "033%7C%7C%C3%E1%C3%B5%BD%C3%7C%7C%C0%FC%C3%BC";
 			break;
 		case "태백시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(태백시);
-			crolling.area = ",A140";
-			wewe.area = "033%7C%7C%C5%C2%B9%E9%BD%C3%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",A140";
+			AlbaHeavencrolling.area = "033%7C%7C%C5%C2%B9%E9%BD%C3%7C%7C%C0%FC%C3%BC";
 			break;
 		case "평창군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(평창군);
-			crolling.area = ",A150";
-			wewe.area = "033%7C%7C%C6%F2%C3%A2%B1%BA%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",A150";
+			AlbaHeavencrolling.area = "033%7C%7C%C6%F2%C3%A2%B1%BA%7C%7C%C0%FC%C3%BC";
 			break;
 		case "홍천군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(홍천군);
-			crolling.area = ",A160";
-			wewe.area = "033%7C%7C%C8%AB%C3%B5%B1%BA%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",A160";
+			AlbaHeavencrolling.area = "033%7C%7C%C8%AB%C3%B5%B1%BA%7C%7C%C0%FC%C3%BC";
 			break;
 		case "화천군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(화천군);
-			crolling.area = ",A170";
-			wewe.area = "033%7C%7C%C8%AD%C3%B5%B1%BA%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",A170";
+			AlbaHeavencrolling.area = "033%7C%7C%C8%AD%C3%B5%B1%BA%7C%7C%C0%FC%C3%BC";
 			break;
 		case "횡성군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(횡성군);
-			crolling.area = ",A180";
-			wewe.area = "033%7C%7C%C8%BE%BC%BA%B1%BA%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",A180";
+			AlbaHeavencrolling.area = "033%7C%7C%C8%BE%BC%BA%B1%BA%7C%7C%C0%FC%C3%BC";
 			break;
 
 		// -------------대전 세부 지역---------------------------------
 		case "대덕구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(대덕구);
-			crolling.area = ",G010";
-			wewe.area = "042%7C%7C%B4%EB%B4%F6%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",G010";
+			AlbaHeavencrolling.area = "042%7C%7C%B4%EB%B4%F6%B1%B8%7C%7C%C0%FC%C3%BC";
 			break;
 		case "대전동구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(대전동구);
-			crolling.area = ",G020";
-			wewe.area = "042%7C%7C%B5%BF%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",G020";
+			AlbaHeavencrolling.area = "042%7C%7C%B5%BF%B1%B8%7C%7C%C0%FC%C3%BC";
 			break;
 		case "대전서구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(대전서구);
-			crolling.area = ",G030";
-			wewe.area = "042%7C%7C%BC%AD%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",G030";
+			AlbaHeavencrolling.area = "042%7C%7C%BC%AD%B1%B8%7C%7C%C0%FC%C3%BC";
 			break;
 		case "유성구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(유성구);
-			crolling.area = ",G040";
-			wewe.area = "042%7C%7C%C0%AF%BC%BA%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",G040";
+			AlbaHeavencrolling.area = "042%7C%7C%C0%AF%BC%BA%B1%B8%7C%7C%C0%FC%C3%BC";
 			break;
 		case "대전중구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(대전중구);
-			crolling.area = ",G050";
-			wewe.area = "042%7C%7C%C1%DF%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",G050";
+			AlbaHeavencrolling.area = "042%7C%7C%C1%DF%B1%B8%7C%7C%C0%FC%C3%BC";
 			break;
 
 		// ----------------세종 세부 지역 ----------------
 		case "세종시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(세종시);
-			crolling.area = ",1010";
-			wewe.area = "044%7C%7C%C0%FC%C3%BC%7C%7C";
+			Albamoncrolling.area = ",1010";
+			AlbaHeavencrolling.area = "044%7C%7C%C0%FC%C3%BC%7C%7C";
 			break;
 
 		// -----------------충남 세부 지역 ----------------------
 		case "계룡시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(계룡시);
-			crolling.area = ",O160";
-			wewe.area = "041%7C%7C%B0%E8%B7%E6%BD%C3%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",O160";
+			AlbaHeavencrolling.area = "041%7C%7C%B0%E8%B7%E6%BD%C3%7C%7C%C0%FC%C3%BC";
 			break;
 		case "공주시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(공주시);
-			crolling.area = ",O010";
-			wewe.area = "041%7C%7C%B0%F8%C1%D6%BD%C3%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",O010";
+			AlbaHeavencrolling.area = "041%7C%7C%B0%F8%C1%D6%BD%C3%7C%7C%C0%FC%C3%BC";
 			break;
 		case "금산군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(금산군);
-			crolling.area = ",O020";
-			wewe.area = "041%7C%7C%B1%DD%BB%EA%B1%BA%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",O020";
+			AlbaHeavencrolling.area = "041%7C%7C%B1%DD%BB%EA%B1%BA%7C%7C%C0%FC%C3%BC";
 			break;
 		case "논산시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(논산시);
-			crolling.area = ",O030";
-			wewe.area = "041%7C%7C%B3%ED%BB%EA%BD%C3%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",O030";
+			AlbaHeavencrolling.area = "041%7C%7C%B3%ED%BB%EA%BD%C3%7C%7C%C0%FC%C3%BC";
 			break;
 		case "당진시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(당진시);
-			crolling.area = ",O040";
-			wewe.area = "041%7C%7C%B4%E7%C1%F8%BD%C3%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",O040";
+			AlbaHeavencrolling.area = "041%7C%7C%B4%E7%C1%F8%BD%C3%7C%7C%C0%FC%C3%BC";
 			break;
 		case "보령시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(보령시);
-			crolling.area = ",O050";
-			wewe.area = "041%7C%7C%BA%B8%B7%C9%BD%C3%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",O050";
+			AlbaHeavencrolling.area = "041%7C%7C%BA%B8%B7%C9%BD%C3%7C%7C%C0%FC%C3%BC";
 			break;
 		case "부여군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(부여군);
-			crolling.area = ",O060";
-			wewe.area = "041%7C%7C%BA%CE%BF%A9%B1%BA%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",O060";
+			AlbaHeavencrolling.area = "041%7C%7C%BA%CE%BF%A9%B1%BA%7C%7C%C0%FC%C3%BC";
 			break;
 		case "서산시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(서산시);
-			crolling.area = ",O070";
-			wewe.area = "041%7C%7C%BC%AD%BB%EA%BD%C3%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",O070";
+			AlbaHeavencrolling.area = "041%7C%7C%BC%AD%BB%EA%BD%C3%7C%7C%C0%FC%C3%BC";
 			break;
 		case "서천군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(서천군);
-			crolling.area = ",O080";
-			wewe.area = "041%7C%7C%BC%AD%C3%B5%B1%BA%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",O080";
+			AlbaHeavencrolling.area = "041%7C%7C%BC%AD%C3%B5%B1%BA%7C%7C%C0%FC%C3%BC";
 			break;
 		case "아산시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(아산시);
-			crolling.area = ",O090";
-			wewe.area = "041%7C%7C%BE%C6%BB%EA%BD%C3%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",O090";
+			AlbaHeavencrolling.area = "041%7C%7C%BE%C6%BB%EA%BD%C3%7C%7C%C0%FC%C3%BC";
 			break;
 		case "예산군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(예산군);
-			crolling.area = ",O110";
-			wewe.area = "041%7C%7C%BF%B9%BB%EA%B1%BA%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",O110";
+			AlbaHeavencrolling.area = "041%7C%7C%BF%B9%BB%EA%B1%BA%7C%7C%C0%FC%C3%BC";
 			break;
 		case "천안시 동남구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(천안시동남구);
-			crolling.area = ",O120";
-			wewe.area = "041%7C%7C%C3%B5%BE%C8%BD%C3+%B5%BF%B3%B2%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",O120";
+			AlbaHeavencrolling.area = "041%7C%7C%C3%B5%BE%C8%BD%C3+%B5%BF%B3%B2%B1%B8%7C%7C%C0%FC%C3%BC";
 			break;
 		case "천안시 서북구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(천안시서북구);
-			crolling.area = ",O121";
-			wewe.area = "041%7C%7C%C3%B5%BE%C8%BD%C3+%BC%AD%BA%CF%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",O121";
+			AlbaHeavencrolling.area = "041%7C%7C%C3%B5%BE%C8%BD%C3+%BC%AD%BA%CF%B1%B8%7C%7C%C0%FC%C3%BC";
 			break;
 		case "청양군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(청양군);
-			crolling.area = ",O130";
-			wewe.area = "041%7C%7C%C3%BB%BE%E7%B1%BA%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",O130";
+			AlbaHeavencrolling.area = "041%7C%7C%C3%BB%BE%E7%B1%BA%7C%7C%C0%FC%C3%BC";
 			break;
 		case "태안군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(태안군);
-			crolling.area = ",O140";
-			wewe.area = "041%7C%7C%C5%C2%BE%C8%B1%BA%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",O140";
+			AlbaHeavencrolling.area = "041%7C%7C%C5%C2%BE%C8%B1%BA%7C%7C%C0%FC%C3%BC";
 			break;
 		case "홍성군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(홍성군);
-			crolling.area = ",O150";
-			wewe.area = "041%7C%7C%C8%AB%BC%BA%B1%BA%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",O150";
+			AlbaHeavencrolling.area = "041%7C%7C%C8%AB%BC%BA%B1%BA%7C%7C%C0%FC%C3%BC";
 			break;
 
 		// ---------------------충북 세부 지역--------------------
 		case "괴산군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(괴산군);
-			crolling.area = ",P010";
-			wewe.area = "043%7C%7C%B1%AB%BB%EA%B1%BA%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",P010";
+			AlbaHeavencrolling.area = "043%7C%7C%B1%AB%BB%EA%B1%BA%7C%7C%C0%FC%C3%BC";
 			break;
 		case "단양군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(단양군);
-			crolling.area = ",P020";
-			wewe.area = "043%7C%7C%B4%DC%BE%E7%B1%BA%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",P020";
+			AlbaHeavencrolling.area = "043%7C%7C%B4%DC%BE%E7%B1%BA%7C%7C%C0%FC%C3%BC";
 			break;
 		case "보은군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(보은군);
-			crolling.area = ",P030";
-			wewe.area = "043%7C%7C%BA%B8%C0%BA%B1%BA%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",P030";
+			AlbaHeavencrolling.area = "043%7C%7C%BA%B8%C0%BA%B1%BA%7C%7C%C0%FC%C3%BC";
 			break;
 		case "영동군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(영동군);
-			crolling.area = ",P040";
-			wewe.area = "043%7C%7C%BF%B5%B5%BF%B1%BA%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",P040";
+			AlbaHeavencrolling.area = "043%7C%7C%BF%B5%B5%BF%B1%BA%7C%7C%C0%FC%C3%BC";
 			break;
 		case "옥천군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(옥천군);
-			crolling.area = ",P050";
-			wewe.area = "043%7C%7C%BF%C1%C3%B5%B1%BA%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",P050";
+			AlbaHeavencrolling.area = "043%7C%7C%BF%C1%C3%B5%B1%BA%7C%7C%C0%FC%C3%BC";
 			break;
 		case "음성군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(음성군);
-			crolling.area = ",P060";
-			wewe.area = "043%7C%7C%C0%BD%BC%BA%B1%BA%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",P060";
+			AlbaHeavencrolling.area = "043%7C%7C%C0%BD%BC%BA%B1%BA%7C%7C%C0%FC%C3%BC";
 			break;
 		case "제천시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(제천시);
-			crolling.area = ",P070";
-			wewe.area = "043%7C%7C%C1%A6%C3%B5%BD%C3%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",P070";
+			AlbaHeavencrolling.area = "043%7C%7C%C1%A6%C3%B5%BD%C3%7C%7C%C0%FC%C3%BC";
 			break;
 		case "증평군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(증평군);
-			crolling.area = ",P130";
-			wewe.area = "043%7C%7C%C1%F5%C6%F2%B1%BA%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",P130";
+			AlbaHeavencrolling.area = "043%7C%7C%C1%F5%C6%F2%B1%BA%7C%7C%C0%FC%C3%BC";
 			break;
 		case "진천군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(진천군);
-			crolling.area = ",P080";
-			wewe.area = "043%7C%7C%C1%F8%C3%B5%B1%BA%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",P080";
+			AlbaHeavencrolling.area = "043%7C%7C%C1%F8%C3%B5%B1%BA%7C%7C%C0%FC%C3%BC";
 			break;
 		case "청주시 상당구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(청주시상당구);
-			crolling.area = ",P100";
-			wewe.area = "043%7C%7C%C3%BB%C1%D6%BD%C3+%BB%F3%B4%E7%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",P100";
+			AlbaHeavencrolling.area = "043%7C%7C%C3%BB%C1%D6%BD%C3+%BB%F3%B4%E7%B1%B8%7C%7C%C0%FC%C3%BC";
 			break;
 		case "청주시 서원구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(청주시서원구);
-			crolling.area = ",P140";
-			wewe.area = "043%7C%7C%C3%BB%C1%D6%BD%C3+%BC%AD%BF%F8%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",P140";
+			AlbaHeavencrolling.area = "043%7C%7C%C3%BB%C1%D6%BD%C3+%BC%AD%BF%F8%B1%B8%7C%7C%C0%FC%C3%BC";
 			break;
 		case "청주시 청원구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(청주시청원구);
-			crolling.area = ",P090";
-			wewe.area = "043%7C%7C%C3%BB%C1%D6%BD%C3+%C3%BB%BF%F8%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",P090";
+			AlbaHeavencrolling.area = "043%7C%7C%C3%BB%C1%D6%BD%C3+%C3%BB%BF%F8%B1%B8%7C%7C%C0%FC%C3%BC";
 			break;
 		case "청주시 흥덕구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(청주시흥덕구);
-			crolling.area = ",P110";
-			wewe.area = "043%7C%7C%C3%BB%C1%D6%BD%C3+%C8%EF%B4%F6%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",P110";
+			AlbaHeavencrolling.area = "043%7C%7C%C3%BB%C1%D6%BD%C3+%C8%EF%B4%F6%B1%B8%7C%7C%C0%FC%C3%BC";
 			break;
 		case "충주시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(충주시);
-			crolling.area = ",P120";
-			wewe.area = "043%7C%7C%C3%E6%C1%D6%BD%C3%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",P120";
+			AlbaHeavencrolling.area = "043%7C%7C%C3%E6%C1%D6%BD%C3%7C%7C%C0%FC%C3%BC";
 			break;
 
 		// -----------부산 세부 지역--------------------------
 		case "부산강서구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(부산강서구);
-			crolling.area = ",H010";
-			wewe.area = "051%7C%7C%B0%AD%BC%AD%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",H010";
+			AlbaHeavencrolling.area = "051%7C%7C%B0%AD%BC%AD%B1%B8%7C%7C%C0%FC%C3%BC";
 			break;
 		case "금정구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(금정구);
-			crolling.area = ",H020";
-			wewe.area = "051%7C%7C%B1%DD%C1%A4%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",H020";
+			AlbaHeavencrolling.area = "051%7C%7C%B1%DD%C1%A4%B1%B8%7C%7C%C0%FC%C3%BC";
 			break;
 		case "기장군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(기장군);
-			crolling.area = ",H030";
-			wewe.area = "051%7C%7C%B1%E2%C0%E5%B1%BA%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",H030";
+			AlbaHeavencrolling.area = "051%7C%7C%B1%E2%C0%E5%B1%BA%7C%7C%C0%FC%C3%BC";
 			break;
 		case "부산남구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(부산남구);
-			crolling.area = ",H040";
-			wewe.area = "051%7C%7C%B3%B2%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",H040";
+			AlbaHeavencrolling.area = "051%7C%7C%B3%B2%B1%B8%7C%7C%C0%FC%C3%BC";
 			break;
 		case "부산동구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(부산동구);
-			crolling.area = ",H050";
-			wewe.area = "051%7C%7C%B5%BF%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",H050";
+			AlbaHeavencrolling.area = "051%7C%7C%B5%BF%B1%B8%7C%7C%C0%FC%C3%BC";
 			break;
 		case "동래구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(동래구);
-			crolling.area = ",H060";
-			wewe.area = "051%7C%7C%B5%BF%B7%A1%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",H060";
+			AlbaHeavencrolling.area = "051%7C%7C%B5%BF%B7%A1%B1%B8%7C%7C%C0%FC%C3%BC";
 			break;
 		case "부산진구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(부산진구);
-			crolling.area = ",H070";
-			wewe.area = "051%7C%7C%BA%CE%BB%EA%C1%F8%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",H070";
+			AlbaHeavencrolling.area = "051%7C%7C%BA%CE%BB%EA%C1%F8%B1%B8%7C%7C%C0%FC%C3%BC";
 			break;
 		case "부산북구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(부산북구);
-			crolling.area = ",H080";
-			wewe.area = "051%7C%7C%BA%CF%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",H080";
+			AlbaHeavencrolling.area = "051%7C%7C%BA%CF%B1%B8%7C%7C%C0%FC%C3%BC";
 			break;
 		case "사상구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(사상구);
-			crolling.area = ",H090";
-			wewe.area = "051%7C%7C%BB%E7%BB%F3%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",H090";
+			AlbaHeavencrolling.area = "051%7C%7C%BB%E7%BB%F3%B1%B8%7C%7C%C0%FC%C3%BC";
 			break;
 		case "사하구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(사하구);
-			crolling.area = ",H100";
-			wewe.area = "051%7C%7C%BB%E7%C7%CF%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",H100";
+			AlbaHeavencrolling.area = "051%7C%7C%BB%E7%C7%CF%B1%B8%7C%7C%C0%FC%C3%BC";
 			break;
 		case "부산서구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(부산서구);
-			crolling.area = ",H110";
-			wewe.area = "051%7C%7C%BC%AD%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",H110";
+			AlbaHeavencrolling.area = "051%7C%7C%BC%AD%B1%B8%7C%7C%C0%FC%C3%BC";
 			break;
 		case "수영구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(수영구);
-			crolling.area = ",H120";
-			wewe.area = "051%7C%7C%BC%F6%BF%B5%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",H120";
+			AlbaHeavencrolling.area = "051%7C%7C%BC%F6%BF%B5%B1%B8%7C%7C%C0%FC%C3%BC";
 			break;
 		case "연제구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(연제구);
-			crolling.area = ",H130";
-			wewe.area = "051%7C%7C%BF%AC%C1%A6%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",H130";
+			AlbaHeavencrolling.area = "051%7C%7C%BF%AC%C1%A6%B1%B8%7C%7C%C0%FC%C3%BC";
 			break;
 		case "영도구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(영도구);
-			crolling.area = ",H140";
-			wewe.area = "051%7C%7C%BF%B5%B5%B5%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",H140";
+			AlbaHeavencrolling.area = "051%7C%7C%BF%B5%B5%B5%B1%B8%7C%7C%C0%FC%C3%BC";
 			break;
 		case "부산중구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(부산중구);
-			crolling.area = ",H150";
-			wewe.area = "051%7C%7C%C1%DF%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",H150";
+			AlbaHeavencrolling.area = "051%7C%7C%C1%DF%B1%B8%7C%7C%C0%FC%C3%BC";
 			break;
 		case "해운대구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(해운대구);
-			crolling.area = ",H160";
-			wewe.area = "051%7C%7C%C7%D8%BF%EE%B4%EB%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",H160";
+			AlbaHeavencrolling.area = "051%7C%7C%C7%D8%BF%EE%B4%EB%B1%B8%7C%7C%C0%FC%C3%BC";
 			break;
 
 		// --------------울산 세부 지역-----------------------
 		case "울산남구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(울산남구);
-			crolling.area = ",J010";
-			wewe.area = "052%7C%7C%B3%B2%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",J010";
+			AlbaHeavencrolling.area = "052%7C%7C%B3%B2%B1%B8%7C%7C%C0%FC%C3%BC";
 			break;
 		case "울산동구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(울산동구);
-			crolling.area = ",J020";
-			wewe.area = "052%7C%7C%B5%BF%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",J020";
+			AlbaHeavencrolling.area = "052%7C%7C%B5%BF%B1%B8%7C%7C%C0%FC%C3%BC";
 			break;
 		case "울산북구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(울산북구);
-			crolling.area = ",J030";
-			wewe.area = "052%7C%7C%BA%CF%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",J030";
+			AlbaHeavencrolling.area = "052%7C%7C%BA%CF%B1%B8%7C%7C%C0%FC%C3%BC";
 			break;
 		case "울주군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(울주군);
-			crolling.area = ",J040";
-			wewe.area = "052%7C%7C%BF%EF%C1%D6%B1%BA%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",J040";
+			AlbaHeavencrolling.area = "052%7C%7C%BF%EF%C1%D6%B1%BA%7C%7C%C0%FC%C3%BC";
 			break;
 		case "울산중구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(울산중구);
-			crolling.area = ",J050";
-			wewe.area = "052%7C%7C%C1%DF%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",J050";
+			AlbaHeavencrolling.area = "052%7C%7C%C1%DF%B1%B8%7C%7C%C0%FC%C3%BC";
 			break;
 
 		// -----------------경남 세부 지역 ---------------------
 		case "거제시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(거제시);
-			crolling.area = ",C010";
-			wewe.area = "055%7C%7C%B0%C5%C1%A6%BD%C3%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",C010";
+			AlbaHeavencrolling.area = "055%7C%7C%B0%C5%C1%A6%BD%C3%7C%7C%C0%FC%C3%BC";
 			break;
 		case "거창군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(거창군);
-			crolling.area = ",C020";
-			wewe.area = "055%7C%7C%B0%C5%C3%A2%B1%BA%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",C020";
+			AlbaHeavencrolling.area = "055%7C%7C%B0%C5%C3%A2%B1%BA%7C%7C%C0%FC%C3%BC";
 			break;
 		case "경남고성군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(경남고성군);
-			crolling.area = ",C030";
-			wewe.area = "055%7C%7C%B0%ED%BC%BA%B1%BA%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",C030";
+			AlbaHeavencrolling.area = "055%7C%7C%B0%ED%BC%BA%B1%BA%7C%7C%C0%FC%C3%BC";
 			break;
 		case "김해시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(김해시);
-			crolling.area = ",C040";
-			wewe.area = "055%7C%7C%B1%E8%C7%D8%BD%C3%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",C040";
+			AlbaHeavencrolling.area = "055%7C%7C%B1%E8%C7%D8%BD%C3%7C%7C%C0%FC%C3%BC";
 			break;
 		case "남해군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(남해군);
-			crolling.area = ",C050";
-			wewe.area = "055%7C%7C%B3%B2%C7%D8%B1%BA%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",C050";
+			AlbaHeavencrolling.area = "055%7C%7C%B3%B2%C7%D8%B1%BA%7C%7C%C0%FC%C3%BC";
 			break;
 		case "밀양시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(밀양시);
-			crolling.area = ",C080";
-			wewe.area = "055%7C%7C%B9%D0%BE%E7%BD%C3%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",C080";
+			AlbaHeavencrolling.area = "055%7C%7C%B9%D0%BE%E7%BD%C3%7C%7C%C0%FC%C3%BC";
 			break;
 		case "사천시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(사천시);
-			crolling.area = ",C090";
-			wewe.area = "055%7C%7C%BB%E7%C3%B5%BD%C3%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",C090";
+			AlbaHeavencrolling.area = "055%7C%7C%BB%E7%C3%B5%BD%C3%7C%7C%C0%FC%C3%BC";
 			break;
 		case "산청군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(산청군);
-			crolling.area = ",C100";
-			wewe.area = "055%7C%7C%BB%EA%C3%BB%B1%BA%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",C100";
+			AlbaHeavencrolling.area = "055%7C%7C%BB%EA%C3%BB%B1%BA%7C%7C%C0%FC%C3%BC";
 			break;
 		case "양산시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(양산시);
-			crolling.area = ",C110";
-			wewe.area = "055%7C%7C%BE%E7%BB%EA%BD%C3%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",C110";
+			AlbaHeavencrolling.area = "055%7C%7C%BE%E7%BB%EA%BD%C3%7C%7C%C0%FC%C3%BC";
 			break;
 		case "의령군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(의령군);
-			crolling.area = ",C120";
-			wewe.area = "055%7C%7C%C0%C7%B7%C9%B1%BA%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",C120";
+			AlbaHeavencrolling.area = "055%7C%7C%C0%C7%B7%C9%B1%BA%7C%7C%C0%FC%C3%BC";
 			break;
 		case "진주시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(진주시);
-			crolling.area = ",C130";
-			wewe.area = "055%7C%7C%C1%F8%C1%D6%BD%C3%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",C130";
+			AlbaHeavencrolling.area = "055%7C%7C%C1%F8%C1%D6%BD%C3%7C%7C%C0%FC%C3%BC";
 			break;
 		case "창녕군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(창녕군);
-			crolling.area = ",C150";
-			wewe.area = "055%7C%7C%C3%A2%B3%E7%B1%BA%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",C150";
+			AlbaHeavencrolling.area = "055%7C%7C%C3%A2%B3%E7%B1%BA%7C%7C%C0%FC%C3%BC";
 			break;
 		case "창원시 마산합포구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(창원시마산합포구);
-			crolling.area = ",C160";
-			wewe.area = "055%7C%7C%C3%A2%BF%F8%BD%C3+%B8%B6%BB%EA%C7%D5%C6%F7%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",C160";
+			AlbaHeavencrolling.area = "055%7C%7C%C3%A2%BF%F8%BD%C3+%B8%B6%BB%EA%C7%D5%C6%F7%B1%B8%7C%7C%C0%FC%C3%BC";
 			break;
 		case "창원시 마산회원구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(창원시마산회원구);
-			crolling.area = ",C162";
-			wewe.area = "055%7C%7C%C3%A2%BF%F8%BD%C3+%B8%B6%BB%EA%C8%B8%BF%F8%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",C162";
+			AlbaHeavencrolling.area = "055%7C%7C%C3%A2%BF%F8%BD%C3+%B8%B6%BB%EA%C8%B8%BF%F8%B1%B8%7C%7C%C0%FC%C3%BC";
 			break;
 		case "창원시 성산구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(창원시성산구);
-			crolling.area = ",C164";
-			wewe.area = "055%7C%7C%C3%A2%BF%F8%BD%C3+%BC%BA%BB%EA%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",C164";
+			AlbaHeavencrolling.area = "055%7C%7C%C3%A2%BF%F8%BD%C3+%BC%BA%BB%EA%B1%B8%7C%7C%C0%FC%C3%BC";
 			break;
 		case "창원시 의창구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(창원시의창구);
-			crolling.area = ",C166";
-			wewe.area = "055%7C%7C%C3%A2%BF%F8%BD%C3+%C0%C7%C3%A2%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",C166";
+			AlbaHeavencrolling.area = "055%7C%7C%C3%A2%BF%F8%BD%C3+%C0%C7%C3%A2%B1%B8%7C%7C%C0%FC%C3%BC";
 			break;
 		case "창원시 진해구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(창원시진해구);
-			crolling.area = ",C168";
-			wewe.area = "055%7C%7C%C3%A2%BF%F8%BD%C3+%C1%F8%C7%D8%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",C168";
+			AlbaHeavencrolling.area = "055%7C%7C%C3%A2%BF%F8%BD%C3+%C1%F8%C7%D8%B1%B8%7C%7C%C0%FC%C3%BC";
 			break;
 		case "통영시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(통영시);
-			crolling.area = ",C170";
-			wewe.area = "055%7C%7C%C5%EB%BF%B5%BD%C3%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",C170";
+			AlbaHeavencrolling.area = "055%7C%7C%C5%EB%BF%B5%BD%C3%7C%7C%C0%FC%C3%BC";
 			break;
 		case "하동군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(하동군);
-			crolling.area = ",C180";
-			wewe.area = "055%7C%7C%C7%CF%B5%BF%B1%BA%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",C180";
+			AlbaHeavencrolling.area = "055%7C%7C%C7%CF%B5%BF%B1%BA%7C%7C%C0%FC%C3%BC";
 			break;
 		case "함안군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(함안군);
-			crolling.area = ",C190";
-			wewe.area = "055%7C%7C%C7%D4%BE%C8%B1%BA%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",C190";
+			AlbaHeavencrolling.area = "055%7C%7C%C7%D4%BE%C8%B1%BA%7C%7C%C0%FC%C3%BC";
 			break;
 		case "함양군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(함양군);
-			crolling.area = ",C200";
-			wewe.area = "055%7C%7C%C7%D4%BE%E7%B1%BA%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",C200";
+			AlbaHeavencrolling.area = "055%7C%7C%C7%D4%BE%E7%B1%BA%7C%7C%C0%FC%C3%BC";
 			break;
 		case "합천군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(합천군);
-			crolling.area = ",C210";
-			wewe.area = "055%7C%7C%C7%D5%C3%B5%B1%BA%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",C210";
+			AlbaHeavencrolling.area = "055%7C%7C%C7%D5%C3%B5%B1%BA%7C%7C%C0%FC%C3%BC";
 			break;
 
 		// -------------------경북 세부 지역-------------------------
 		case "경산시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(경산시);
-			crolling.area = ",D010";
-			wewe.area = "054%7C%7C%B0%E6%BB%EA%BD%C3%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",D010";
+			AlbaHeavencrolling.area = "054%7C%7C%B0%E6%BB%EA%BD%C3%7C%7C%C0%FC%C3%BC";
 			break;
 		case "경주시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(경주시);
-			crolling.area = ",D020";
-			wewe.area = "054%7C%7C%B0%E6%C1%D6%BD%C3%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",D020";
+			AlbaHeavencrolling.area = "054%7C%7C%B0%E6%C1%D6%BD%C3%7C%7C%C0%FC%C3%BC";
 			break;
 		case "고령군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(고령군);
-			crolling.area = ",D030";
-			wewe.area = "054%7C%7C%B0%ED%B7%C9%B1%BA%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",D030";
+			AlbaHeavencrolling.area = "054%7C%7C%B0%ED%B7%C9%B1%BA%7C%7C%C0%FC%C3%BC";
 			break;
 		case "구미시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(구미시);
-			crolling.area = ",D040";
-			wewe.area = "054%7C%7C%B1%B8%B9%CC%BD%C3%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",D040";
+			AlbaHeavencrolling.area = "054%7C%7C%B1%B8%B9%CC%BD%C3%7C%7C%C0%FC%C3%BC";
 			break;
 		case "군위군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(군위군);
-			crolling.area = ",D050";
-			wewe.area = "054%7C%7C%B1%BA%C0%A7%B1%BA%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",D050";
+			AlbaHeavencrolling.area = "054%7C%7C%B1%BA%C0%A7%B1%BA%7C%7C%C0%FC%C3%BC";
 			break;
 		case "김천시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(김천시);
-			crolling.area = ",D060";
-			wewe.area = "054%7C%7C%B1%E8%C3%B5%BD%C3%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",D060";
+			AlbaHeavencrolling.area = "054%7C%7C%B1%E8%C3%B5%BD%C3%7C%7C%C0%FC%C3%BC";
 			break;
 		case "문경시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(문경시);
-			crolling.area = ",D070";
-			wewe.area = "054%7C%7C%B9%AE%B0%E6%BD%C3%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",D070";
+			AlbaHeavencrolling.area = "054%7C%7C%B9%AE%B0%E6%BD%C3%7C%7C%C0%FC%C3%BC";
 			break;
 		case "봉화군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(봉화군);
-			crolling.area = ",D080";
-			wewe.area = "054%7C%7C%BA%C0%C8%AD%B1%BA%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",D080";
+			AlbaHeavencrolling.area = "054%7C%7C%BA%C0%C8%AD%B1%BA%7C%7C%C0%FC%C3%BC";
 			break;
 		case "상주시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(상주시);
-			crolling.area = ",D090";
-			wewe.area = "054%7C%7C%BB%F3%C1%D6%BD%C3%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",D090";
+			AlbaHeavencrolling.area = "054%7C%7C%BB%F3%C1%D6%BD%C3%7C%7C%C0%FC%C3%BC";
 			break;
 		case "성주군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(성주군);
-			crolling.area = ",D100";
-			wewe.area = "054%7C%7C%BC%BA%C1%D6%B1%BA%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",D100";
+			AlbaHeavencrolling.area = "054%7C%7C%BC%BA%C1%D6%B1%BA%7C%7C%C0%FC%C3%BC";
 			break;
 		case "안동시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(안동시);
-			crolling.area = ",D110";
-			wewe.area = "054%7C%7C%BE%C8%B5%BF%BD%C3%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",D110";
+			AlbaHeavencrolling.area = "054%7C%7C%BE%C8%B5%BF%BD%C3%7C%7C%C0%FC%C3%BC";
 			break;
 		case "영덕군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(영덕군);
-			crolling.area = ",D120";
-			wewe.area = "054%7C%7C%BF%B5%B4%F6%B1%BA%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",D120";
+			AlbaHeavencrolling.area = "054%7C%7C%BF%B5%B4%F6%B1%BA%7C%7C%C0%FC%C3%BC";
 			break;
 		case "영양군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(영양군);
-			crolling.area = ",D130";
-			wewe.area = "054%7C%7C%BF%B5%BE%E7%B1%BA%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",D130";
+			AlbaHeavencrolling.area = "054%7C%7C%BF%B5%BE%E7%B1%BA%7C%7C%C0%FC%C3%BC";
 			break;
 		case "영주시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(영주시);
-			crolling.area = ",D140";
-			wewe.area = "054%7C%7C%BF%B5%C1%D6%BD%C3%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",D140";
+			AlbaHeavencrolling.area = "054%7C%7C%BF%B5%C1%D6%BD%C3%7C%7C%C0%FC%C3%BC";
 			break;
 		case "영천시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(영천시);
-			crolling.area = ",D150";
-			wewe.area = "054%7C%7C%BF%B5%C3%B5%BD%C3%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",D150";
+			AlbaHeavencrolling.area = "054%7C%7C%BF%B5%C3%B5%BD%C3%7C%7C%C0%FC%C3%BC";
 			break;
 		case "예천군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(예천군);
-			crolling.area = ",D160";
-			wewe.area = "054%7C%7C%BF%B9%C3%B5%B1%BA%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",D160";
+			AlbaHeavencrolling.area = "054%7C%7C%BF%B9%C3%B5%B1%BA%7C%7C%C0%FC%C3%BC";
 			break;
 		case "울릉군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(울릉군);
-			crolling.area = ",D170";
-			wewe.area = "054%7C%7C%BF%EF%B8%AA%B1%BA%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",D170";
+			AlbaHeavencrolling.area = "054%7C%7C%BF%EF%B8%AA%B1%BA%7C%7C%C0%FC%C3%BC";
 			break;
 		case "울진군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(울진군);
-			crolling.area = ",D180";
-			wewe.area = "054%7C%7C%BF%EF%C1%F8%B1%BA%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",D180";
+			AlbaHeavencrolling.area = "054%7C%7C%BF%EF%C1%F8%B1%BA%7C%7C%C0%FC%C3%BC";
 			break;
 		case "의성군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(의성군);
-			crolling.area = ",D190";
-			wewe.area = "054%7C%7C%C0%C7%BC%BA%B1%BA%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",D190";
+			AlbaHeavencrolling.area = "054%7C%7C%C0%C7%BC%BA%B1%BA%7C%7C%C0%FC%C3%BC";
 			break;
 		case "청도군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(청도군);
-			crolling.area = ",D200";
-			wewe.area = "054%7C%7C%C3%BB%B5%B5%B1%BA%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",D200";
+			AlbaHeavencrolling.area = "054%7C%7C%C3%BB%B5%B5%B1%BA%7C%7C%C0%FC%C3%BC";
 			break;
 		case "청송군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(청송군);
-			crolling.area = ",D210";
-			wewe.area = "054%7C%7C%C3%BB%BC%DB%B1%BA%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",D210";
+			AlbaHeavencrolling.area = "054%7C%7C%C3%BB%BC%DB%B1%BA%7C%7C%C0%FC%C3%BC";
 			break;
 		case "칠곡군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(칠곡군);
-			crolling.area = ",D220";
-			wewe.area = "054%7C%7C%C4%A5%B0%EE%B1%BA%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",D220";
+			AlbaHeavencrolling.area = "054%7C%7C%C4%A5%B0%EE%B1%BA%7C%7C%C0%FC%C3%BC";
 			break;
 		case "포항시 남구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(포항시남구);
-			crolling.area = ",D230";
-			wewe.area = "054%7C%7C%C6%F7%C7%D7%BD%C3+%B3%B2%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",D230";
+			AlbaHeavencrolling.area = "054%7C%7C%C6%F7%C7%D7%BD%C3+%B3%B2%B1%B8%7C%7C%C0%FC%C3%BC";
 			break;
 		case "포항시 북구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(포항시북구);
-			crolling.area = ",D240";
-			wewe.area = "054%7C%7C%C6%F7%C7%D7%BD%C3+%BA%CF%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",D240";
+			AlbaHeavencrolling.area = "054%7C%7C%C6%F7%C7%D7%BD%C3+%BA%CF%B1%B8%7C%7C%C0%FC%C3%BC";
 			break;
 
 		// -----------------대구 세부 지역------------------------------
 		case "대구남구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(대구남구);
-			crolling.area = ",F010";
-			wewe.area = "053%7C%7C%B3%B2%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",F010";
+			AlbaHeavencrolling.area = "053%7C%7C%B3%B2%B1%B8%7C%7C%C0%FC%C3%BC";
 			break;
 		case "달서구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(달서구);
-			crolling.area = ",F020";
-			wewe.area = "053%7C%7C%B4%DE%BC%AD%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",F020";
+			AlbaHeavencrolling.area = "053%7C%7C%B4%DE%BC%AD%B1%B8%7C%7C%C0%FC%C3%BC";
 			break;
 		case "달성군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(달성군);
-			crolling.area = ",F030";
-			wewe.area = "053%7C%7C%B4%DE%BC%BA%B1%BA%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",F030";
+			AlbaHeavencrolling.area = "053%7C%7C%B4%DE%BC%BA%B1%BA%7C%7C%C0%FC%C3%BC";
 			break;
 		case "대구동구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(대구동구);
-			crolling.area = ",F040";
-			wewe.area = "053%7C%7C%B5%BF%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",F040";
+			AlbaHeavencrolling.area = "053%7C%7C%B5%BF%B1%B8%7C%7C%C0%FC%C3%BC";
 			break;
 		case "대구북구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(대구북구);
-			crolling.area = ",F050";
-			wewe.area = "053%7C%7C%BA%CF%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",F050";
+			AlbaHeavencrolling.area = "053%7C%7C%BA%CF%B1%B8%7C%7C%C0%FC%C3%BC";
 			break;
 		case "대구서구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(대구서구);
-			crolling.area = ",F060";
-			wewe.area = "053%7C%7C%BC%AD%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",F060";
+			AlbaHeavencrolling.area = "053%7C%7C%BC%AD%B1%B8%7C%7C%C0%FC%C3%BC";
 			break;
 		case "수성구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(수성구);
-			crolling.area = ",F070";
-			wewe.area = "053%7C%7C%BC%F6%BC%BA%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",F070";
+			AlbaHeavencrolling.area = "053%7C%7C%BC%F6%BC%BA%B1%B8%7C%7C%C0%FC%C3%BC";
 			break;
 		case "대구중구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(대구중구);
-			crolling.area = ",F080";
-			wewe.area = "053%7C%7C%C1%DF%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",F080";
+			AlbaHeavencrolling.area = "053%7C%7C%C1%DF%B1%B8%7C%7C%C0%FC%C3%BC";
 			break;
 
 		// -------------- 광주 세부 지역 -----------------
 		case "광산구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(광산구);
-			crolling.area = ",E010";
-			wewe.area = "062%7C%7C%B1%A4%BB%EA%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",E010";
+			AlbaHeavencrolling.area = "062%7C%7C%B1%A4%BB%EA%B1%B8%7C%7C%C0%FC%C3%BC";
 			break;
 		case "광주남구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(광주남구);
-			crolling.area = ",E020";
-			wewe.area = "062%7C%7C%B3%B2%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",E020";
+			AlbaHeavencrolling.area = "062%7C%7C%B3%B2%B1%B8%7C%7C%C0%FC%C3%BC";
 			break;
 		case "광주동구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(광주동구);
-			crolling.area = ",E030";
-			wewe.area = "062%7C%7C%B5%BF%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",E030";
+			AlbaHeavencrolling.area = "062%7C%7C%B5%BF%B1%B8%7C%7C%C0%FC%C3%BC";
 			break;
 		case "광주북구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(광주북구);
-			crolling.area = ",E040";
-			wewe.area = "062%7C%7C%BA%CF%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",E040";
+			AlbaHeavencrolling.area = "062%7C%7C%BA%CF%B1%B8%7C%7C%C0%FC%C3%BC";
 			break;
 		case "광주서구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(광주서구);
-			crolling.area = ",E050";
-			wewe.area = "062%7C%7C%BC%AD%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",E050";
+			AlbaHeavencrolling.area = "062%7C%7C%BC%AD%B1%B8%7C%7C%C0%FC%C3%BC";
 			break;
 
 		// ----------------전남 세부 지역 ----------------------
 		case "강진군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(강진군);
-			crolling.area = ",L010";
-			wewe.area = "061%7C%7C%B0%AD%C1%F8%B1%BA%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",L010";
+			AlbaHeavencrolling.area = "061%7C%7C%B0%AD%C1%F8%B1%BA%7C%7C%C0%FC%C3%BC";
 			break;
 		case "고흥군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(고흥군);
-			crolling.area = ",L020";
-			wewe.area = "061%7C%7C%B0%ED%C8%EF%B1%BA%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",L020";
+			AlbaHeavencrolling.area = "061%7C%7C%B0%ED%C8%EF%B1%BA%7C%7C%C0%FC%C3%BC";
 			break;
 		case "곡성군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(곡성군);
-			crolling.area = ",L030";
-			wewe.area = "061%7C%7C%B0%EE%BC%BA%B1%BA%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",L030";
+			AlbaHeavencrolling.area = "061%7C%7C%B0%EE%BC%BA%B1%BA%7C%7C%C0%FC%C3%BC";
 			break;
 		case "광양시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(광양시);
-			crolling.area = ",L040";
-			wewe.area = "061%7C%7C%B1%A4%BE%E7%BD%C3%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",L040";
+			AlbaHeavencrolling.area = "061%7C%7C%B1%A4%BE%E7%BD%C3%7C%7C%C0%FC%C3%BC";
 			break;
 		case "구례군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(구례군);
-			crolling.area = ",L050";
-			wewe.area = "061%7C%7C%B1%B8%B7%CA%B1%BA%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",L050";
+			AlbaHeavencrolling.area = "061%7C%7C%B1%B8%B7%CA%B1%BA%7C%7C%C0%FC%C3%BC";
 			break;
 		case "나주시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(나주시);
-			crolling.area = ",L060";
-			wewe.area = "061%7C%7C%B3%AA%C1%D6%BD%C3%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",L060";
+			AlbaHeavencrolling.area = "061%7C%7C%B3%AA%C1%D6%BD%C3%7C%7C%C0%FC%C3%BC";
 			break;
 		case "담양군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(담양군);
-			crolling.area = ",L070";
-			wewe.area = "061%7C%7C%B4%E3%BE%E7%B1%BA%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",L070";
+			AlbaHeavencrolling.area = "061%7C%7C%B4%E3%BE%E7%B1%BA%7C%7C%C0%FC%C3%BC";
 			break;
 		case "목포시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(목포시);
-			crolling.area = ",L080";
-			wewe.area = "061%7C%7C%B8%F1%C6%F7%BD%C3%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",L080";
+			AlbaHeavencrolling.area = "061%7C%7C%B8%F1%C6%F7%BD%C3%7C%7C%C0%FC%C3%BC";
 			break;
 		case "무안군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(무안군);
-			crolling.area = ",L090";
-			wewe.area = "061%7C%7C%B9%AB%BE%C8%B1%BA%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",L090";
+			AlbaHeavencrolling.area = "061%7C%7C%B9%AB%BE%C8%B1%BA%7C%7C%C0%FC%C3%BC";
 			break;
 		case "보성군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(보성군);
-			crolling.area = ",L100";
-			wewe.area = "061%7C%7C%BA%B8%BC%BA%B1%BA%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",L100";
+			AlbaHeavencrolling.area = "061%7C%7C%BA%B8%BC%BA%B1%BA%7C%7C%C0%FC%C3%BC";
 			break;
 		case "순천시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(순천시);
-			crolling.area = ",L110";
-			wewe.area = "061%7C%7C%BC%F8%C3%B5%BD%C3%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",L110";
+			AlbaHeavencrolling.area = "061%7C%7C%BC%F8%C3%B5%BD%C3%7C%7C%C0%FC%C3%BC";
 			break;
 		case "신안군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(신안군);
-			crolling.area = ",L120";
-			wewe.area = "061%7C%7C%BD%C5%BE%C8%B1%BA%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",L120";
+			AlbaHeavencrolling.area = "061%7C%7C%BD%C5%BE%C8%B1%BA%7C%7C%C0%FC%C3%BC";
 			break;
 		case "여수시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(여수시);
-			crolling.area = ",L130";
-			wewe.area = "061%7C%7C%BF%A9%BC%F6%BD%C3%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",L130";
+			AlbaHeavencrolling.area = "061%7C%7C%BF%A9%BC%F6%BD%C3%7C%7C%C0%FC%C3%BC";
 			break;
 		case "영광군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(영광군);
-			crolling.area = ",L140";
-			wewe.area = "061%7C%7C%BF%B5%B1%A4%B1%BA%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",L140";
+			AlbaHeavencrolling.area = "061%7C%7C%BF%B5%B1%A4%B1%BA%7C%7C%C0%FC%C3%BC";
 			break;
 		case "영암군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(영암군);
-			crolling.area = ",L150";
-			wewe.area = "061%7C%7C%BF%B5%BE%CF%B1%BA%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",L150";
+			AlbaHeavencrolling.area = "061%7C%7C%BF%B5%BE%CF%B1%BA%7C%7C%C0%FC%C3%BC";
 			break;
 		case "완도군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(완도군);
-			crolling.area = ",L160";
-			wewe.area = "061%7C%7C%BF%CF%B5%B5%B1%BA%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",L160";
+			AlbaHeavencrolling.area = "061%7C%7C%BF%CF%B5%B5%B1%BA%7C%7C%C0%FC%C3%BC";
 			break;
 		case "장성군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(장성군);
-			crolling.area = ",L170";
-			wewe.area = "061%7C%7C%C0%E5%BC%BA%B1%BA%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",L170";
+			AlbaHeavencrolling.area = "061%7C%7C%C0%E5%BC%BA%B1%BA%7C%7C%C0%FC%C3%BC";
 			break;
 		case "장흥군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(장흥군);
-			crolling.area = ",L180";
-			wewe.area = "061%7C%7C%C0%E5%C8%EF%B1%BA%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",L180";
+			AlbaHeavencrolling.area = "061%7C%7C%C0%E5%C8%EF%B1%BA%7C%7C%C0%FC%C3%BC";
 			break;
 		case "진도군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(진도군);
-			crolling.area = ",L190";
-			wewe.area = "061%7C%7C%C1%F8%B5%B5%B1%BA%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",L190";
+			AlbaHeavencrolling.area = "061%7C%7C%C1%F8%B5%B5%B1%BA%7C%7C%C0%FC%C3%BC";
 			break;
 		case "함평군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(함평군);
-			crolling.area = ",L200";
-			wewe.area = "061%7C%7C%C7%D4%C6%F2%B1%BA%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",L200";
+			AlbaHeavencrolling.area = "061%7C%7C%C7%D4%C6%F2%B1%BA%7C%7C%C0%FC%C3%BC";
 			break;
 		case "해남군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(해남군);
-			crolling.area = ",L210";
-			wewe.area = "061%7C%7C%C7%D8%B3%B2%B1%BA%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",L210";
+			AlbaHeavencrolling.area = "061%7C%7C%C7%D8%B3%B2%B1%BA%7C%7C%C0%FC%C3%BC";
 			break;
 		case "화순군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(화순군);
-			crolling.area = ",L220";
-			wewe.area = "061%7C%7C%C8%AD%BC%F8%B1%BA%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",L220";
+			AlbaHeavencrolling.area = "061%7C%7C%C8%AD%BC%F8%B1%BA%7C%7C%C0%FC%C3%BC";
 			break;
 
 		// -----------------전북 세부 지역 ------------------------
 		case "고창군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(고창군);
-			crolling.area = ",M010";
-			wewe.area = "063%7C%7C%B0%ED%C3%A2%B1%BA%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",M010";
+			AlbaHeavencrolling.area = "063%7C%7C%B0%ED%C3%A2%B1%BA%7C%7C%C0%FC%C3%BC";
 			break;
 		case "군산시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(군산시);
-			crolling.area = ",M020";
-			wewe.area = "063%7C%7C%B1%BA%BB%EA%BD%C3%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",M020";
+			AlbaHeavencrolling.area = "063%7C%7C%B1%BA%BB%EA%BD%C3%7C%7C%C0%FC%C3%BC";
 			break;
 		case "김제시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(김제시);
-			crolling.area = ",M030";
-			wewe.area = "063%7C%7C%B1%E8%C1%A6%BD%C3%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",M030";
+			AlbaHeavencrolling.area = "063%7C%7C%B1%E8%C1%A6%BD%C3%7C%7C%C0%FC%C3%BC";
 			break;
 		case "남원시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(남원시);
-			crolling.area = ",M040";
-			wewe.area = "063%7C%7C%B3%B2%BF%F8%BD%C3%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",M040";
+			AlbaHeavencrolling.area = "063%7C%7C%B3%B2%BF%F8%BD%C3%7C%7C%C0%FC%C3%BC";
 			break;
 		case "무주군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(무주군);
-			crolling.area = ",M050";
-			wewe.area = "063%7C%7C%B9%AB%C1%D6%B1%BA%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",M050";
+			AlbaHeavencrolling.area = "063%7C%7C%B9%AB%C1%D6%B1%BA%7C%7C%C0%FC%C3%BC";
 			break;
 		case "부안군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(부안군);
-			crolling.area = ",M060";
-			wewe.area = "063%7C%7C%BA%CE%BE%C8%B1%BA%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",M060";
+			AlbaHeavencrolling.area = "063%7C%7C%BA%CE%BE%C8%B1%BA%7C%7C%C0%FC%C3%BC";
 			break;
 		case "순창군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(순창군);
-			crolling.area = ",M070";
-			wewe.area = "063%7C%7C%BC%F8%C3%A2%B1%BA%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",M070";
+			AlbaHeavencrolling.area = "063%7C%7C%BC%F8%C3%A2%B1%BA%7C%7C%C0%FC%C3%BC";
 			break;
 		case "완주군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(완주군);
-			crolling.area = ",M080";
-			wewe.area = "063%7C%7C%BF%CF%C1%D6%B1%BA%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",M080";
+			AlbaHeavencrolling.area = "063%7C%7C%BF%CF%C1%D6%B1%BA%7C%7C%C0%FC%C3%BC";
 			break;
 		case "익산시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(익산시);
-			crolling.area = ",M090";
-			wewe.area = "063%7C%7C%C0%CD%BB%EA%BD%C3%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",M090";
+			AlbaHeavencrolling.area = "063%7C%7C%C0%CD%BB%EA%BD%C3%7C%7C%C0%FC%C3%BC";
 			break;
 		case "임실군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(임실군);
-			crolling.area = ",M100";
-			wewe.area = "063%7C%7C%C0%D3%BD%C7%B1%BA%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",M100";
+			AlbaHeavencrolling.area = "063%7C%7C%C0%D3%BD%C7%B1%BA%7C%7C%C0%FC%C3%BC";
 			break;
 		case "장수군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(장수군);
-			crolling.area = ",M110";
-			wewe.area = "063%7C%7C%C0%E5%BC%F6%B1%BA%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",M110";
+			AlbaHeavencrolling.area = "063%7C%7C%C0%E5%BC%F6%B1%BA%7C%7C%C0%FC%C3%BC";
 			break;
 		case "전주시 덕진구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(전주시덕진구);
-			crolling.area = ",M120";
-			wewe.area = "063%7C%7C%C0%FC%C1%D6%BD%C3+%B4%F6%C1%F8%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",M120";
+			AlbaHeavencrolling.area = "063%7C%7C%C0%FC%C1%D6%BD%C3+%B4%F6%C1%F8%B1%B8%7C%7C%C0%FC%C3%BC";
 			break;
 		case "전주시 완산구":
 			Mainpage.ComboModel = new DefaultComboBoxModel(전주시완산구);
-			crolling.area = ",M130";
-			wewe.area = "063%7C%7C%C0%FC%C1%D6%BD%C3+%BF%CF%BB%EA%B1%B8%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",M130";
+			AlbaHeavencrolling.area = "063%7C%7C%C0%FC%C1%D6%BD%C3+%BF%CF%BB%EA%B1%B8%7C%7C%C0%FC%C3%BC";
 			break;
 		case "정읍시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(정읍시);
-			crolling.area = ",M140";
-			wewe.area = "063%7C%7C%C1%A4%C0%BE%BD%C3%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",M140";
+			AlbaHeavencrolling.area = "063%7C%7C%C1%A4%C0%BE%BD%C3%7C%7C%C0%FC%C3%BC";
 			break;
 		case "진안군":
 			Mainpage.ComboModel = new DefaultComboBoxModel(진안군);
-			crolling.area = ",M150";
-			wewe.area = "063%7C%7C%C1%F8%BE%C8%B1%BA%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",M150";
+			AlbaHeavencrolling.area = "063%7C%7C%C1%F8%BE%C8%B1%BA%7C%7C%C0%FC%C3%BC";
 			break;
 
 		// -----------------------제주 세부 지역---------------
 		case "서귀포시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(서귀포시);
-			crolling.area = ",N030";
-			wewe.area = "064%7C%7C%BC%AD%B1%CD%C6%F7%BD%C3%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",N030";
+			AlbaHeavencrolling.area = "064%7C%7C%BC%AD%B1%CD%C6%F7%BD%C3%7C%7C%C0%FC%C3%BC";
 			break;
 		case "제주시":
 			Mainpage.ComboModel = new DefaultComboBoxModel(제주시);
-			crolling.area = ",N040";
-			wewe.area = "064%7C%7C%C1%A6%C1%D6%BD%C3%7C%7C%C0%FC%C3%BC";
+			Albamoncrolling.area = ",N040";
+			AlbaHeavencrolling.area = "064%7C%7C%C1%A6%C1%D6%BD%C3%7C%7C%C0%FC%C3%BC";
 			break;
 
 		default:
 			Mainpage.City.setVisible(false);
 			try {
-				crolling.area = crolling.area.substring(0, 2) + "000";
+				Albamoncrolling.area = Albamoncrolling.area.substring(0, 2) + "000";
 				switch((String)Mainpage.temp) {
 				case "서울":
-					wewe.area="02%7C%7C%C0%FC%C3%BC%7C%7C";
+					AlbaHeavencrolling.area="02%7C%7C%C0%FC%C3%BC%7C%7C";
 					break;
 				case "경기":
-					wewe.area="031%7C%7C%C0%FC%C3%BC%7C%7C";
+					AlbaHeavencrolling.area="031%7C%7C%C0%FC%C3%BC%7C%7C";
 					break;
 				case "인천":
-					wewe.area="032%7C%7C%C0%FC%C3%BC%7C%7C";
+					AlbaHeavencrolling.area="032%7C%7C%C0%FC%C3%BC%7C%7C";
 					break;
 				case "강원":
-					wewe.area="033%7C%7C%C0%FC%C3%BC%7C%7C";
+					AlbaHeavencrolling.area="033%7C%7C%C0%FC%C3%BC%7C%7C";
 					break;
 				case "대전":
-					wewe.area="042%7C%7C%C0%FC%C3%BC%7C%7C";
+					AlbaHeavencrolling.area="042%7C%7C%C0%FC%C3%BC%7C%7C";
 					break;
 				case "세종":
-					wewe.area="044%7C%7C%C0%FC%C3%BC%7C%7C";
+					AlbaHeavencrolling.area="044%7C%7C%C0%FC%C3%BC%7C%7C";
 					break;
 				case "충남":
-					wewe.area="041%7C%7C%C0%FC%C3%BC%7C%7C";
+					AlbaHeavencrolling.area="041%7C%7C%C0%FC%C3%BC%7C%7C";
 					break;
 				case "충북":
-					wewe.area="043%7C%7C%C0%FC%C3%BC%7C%7C";
+					AlbaHeavencrolling.area="043%7C%7C%C0%FC%C3%BC%7C%7C";
 					break;
 				case "부산":
-					wewe.area="051%7C%7C%C0%FC%C3%BC%7C%7C";
+					AlbaHeavencrolling.area="051%7C%7C%C0%FC%C3%BC%7C%7C";
 					break;
 				case "울산":
-					wewe.area="052%7C%7C%C0%FC%C3%BC%7C%7C";
+					AlbaHeavencrolling.area="052%7C%7C%C0%FC%C3%BC%7C%7C";
 					break;
 				case "경남":
-					wewe.area="055%7C%7C%C0%FC%C3%BC%7C%7C";
+					AlbaHeavencrolling.area="055%7C%7C%C0%FC%C3%BC%7C%7C";
 					break;
 				case "경북":
-					wewe.area="054%7C%7C%C0%FC%C3%BC%7C%7C";
+					AlbaHeavencrolling.area="054%7C%7C%C0%FC%C3%BC%7C%7C";
 					break;
 				case "대구":
-					wewe.area="053%7C%7C%C0%FC%C3%BC%7C%7C";
+					AlbaHeavencrolling.area="053%7C%7C%C0%FC%C3%BC%7C%7C";
 					break;
 				case "광주":
-					wewe.area="062%7C%7C%C0%FC%C3%BC%7C%7C";
+					AlbaHeavencrolling.area="062%7C%7C%C0%FC%C3%BC%7C%7C";
 					break;
 				case "전남":
-					wewe.area="061%7C%7C%C0%FC%C3%BC%7C%7C";
+					AlbaHeavencrolling.area="061%7C%7C%C0%FC%C3%BC%7C%7C";
 					break;
 				case "전북":
-					wewe.area="063%7C%7C%C0%FC%C3%BC%7C%7C";
+					AlbaHeavencrolling.area="063%7C%7C%C0%FC%C3%BC%7C%7C";
 					break;
 				case "제주":			
-					wewe.area="064%7C%7C%C0%FC%C3%BC%7C%7C";
+					AlbaHeavencrolling.area="064%7C%7C%C0%FC%C3%BC%7C%7C";
 					break;
 				}				
 			} catch (StringIndexOutOfBoundsException e1) {
