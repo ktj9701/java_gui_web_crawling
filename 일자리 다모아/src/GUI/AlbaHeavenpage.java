@@ -8,7 +8,7 @@ import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
 
 import Function.Albatext;
-import Function.wewe;
+import Function.AlbaHeavencrolling;
 
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
@@ -18,7 +18,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class AlbaHeavenpage extends JFrame {
-	static wewe Albaheaven_crolling = new wewe();
+	static AlbaHeavencrolling Albaheaven_crolling = new AlbaHeavencrolling();
 	static JTable table; // 테이블
 	static DefaultTableModel TableModel = new DefaultTableModel() {// 테이블 내용 수정 불가
 		public boolean isCellEditable(int rowIndex, int mCollndex) {
@@ -55,7 +55,7 @@ public class AlbaHeavenpage extends JFrame {
 
 			if (e.getClickCount() == 2) {
 				try {
-					Function.crolling.explore(AlbaHeaven.get(table.getSelectedRow()).getURL());
+					Function.Albamoncrolling.explore(AlbaHeaven.get(table.getSelectedRow()).getURL());
 				} catch (URISyntaxException e1) {
 					e1.printStackTrace();
 				}
