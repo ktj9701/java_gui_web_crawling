@@ -48,7 +48,7 @@ public class DB_Method{
 		return -1;
 	}
 
-	public int Join(String ID, String PWD) throws SQLException { // 회원가입
+	public static int Join(String ID, String PWD) throws SQLException { // 회원가입
 		conn=null;
 		conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/Login?useSSL=false", "root", "1234");
 		stmt = conn.createStatement();
