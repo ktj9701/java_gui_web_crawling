@@ -19,7 +19,7 @@ import javax.swing.table.DefaultTableModel;
 import Function.Albatext;
 import Function.ICT;
 import Function.IPP;
-import Function.crolling;
+import Function.Albamoncrolling;
 import GUI.Internpage.MouseListener;
 import GUI.Internpage.combolistener;
 
@@ -41,7 +41,7 @@ public class Repositorypage extends JFrame {
 	static Object arr[][];
 	MouseListener MouseListener = new MouseListener();
 	public static JComboBox select;
-	crolling crolling = new crolling();
+	Albamoncrolling crolling = new Albamoncrolling();
 	public Repositorypage() {
 		setTitle("일자리 다모아 - 즐겨찾기");
 		setSize(1500, 800);
