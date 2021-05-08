@@ -12,7 +12,8 @@ import org.jsoup.select.Elements;
 
 public class wewe {
 	public static String area = "";
-
+	public static String gender = "";
+	public static String period = "";//근무 기간 코드
 	public Vector<Albatext> crolling() {//알바천국
 		
 		Vector<Albatext> albaheaven = new Vector<>();
@@ -22,7 +23,7 @@ public class wewe {
 		Document doc = null;
 		
 		while (page != 4) { // 3페이지까지 출력
-			url = "http://www.alba.co.kr/job/main.asp?hidSortCnt=30&page=1&strAreaMulti="+area+"&hidSort=FREEORDER&";
+			url = "http://www.alba.co.kr/job/main.asp?hidSortCnt=30&page="+page+"&strAreaMulti="+area+"&hidSort=FREEORDER&gendercd="+gender;
 			try {
 				doc = Jsoup.connect(url).get();
 			} catch (IOException e) {
