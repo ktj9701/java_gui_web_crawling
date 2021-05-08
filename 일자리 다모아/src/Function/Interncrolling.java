@@ -26,7 +26,7 @@ public class Interncrolling {
 		String url = "https://www.ictintern.or.kr/homepage/trainingCompany/companyList.do";
 		Vector<ICT> Interntext = new Vector<>();
 		conn = null;
-		String query = "SELECT * FROM ict";
+		String query = "SELECT * FROM ict2021";
 		try {
 			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb?useSSL=false", "root", "1234");
 			stmt = conn.createStatement();
@@ -42,11 +42,71 @@ public class Interncrolling {
 
 		return Interntext;
 	}
+	public Vector<ICT> ICT2020하반기() throws SQLException { // 로그인
+		String url = "https://www.ictintern.or.kr/homepage/trainingCompany/companyList.do";
+		Vector<ICT> Interntext = new Vector<>();
+		conn = null;
+		String query = "SELECT * FROM ict20202";
+		try {
+			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb?useSSL=false", "root", "1234");
+			stmt = conn.createStatement();
+			rs = stmt.executeQuery(query);
+			while (rs.next()) {
+				Interntext.add(new ICT(rs.getString("NAME"), rs.getString("PROJECT"), rs.getString("SUBJECT"),
+						rs.getString("AREA"), rs.getString("MAX"), rs.getString("NUM"), url));
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		return Interntext;
+	}
+	public Vector<ICT> ICT2020상반기() throws SQLException { // 로그인
+		String url = "https://www.ictintern.or.kr/homepage/trainingCompany/companyList.do";
+		Vector<ICT> Interntext = new Vector<>();
+		conn = null;
+		String query = "SELECT * FROM ict20201";
+		try {
+			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb?useSSL=false", "root", "1234");
+			stmt = conn.createStatement();
+			rs = stmt.executeQuery(query);
+			while (rs.next()) {
+				Interntext.add(new ICT(rs.getString("NAME"), rs.getString("PROJECT"), rs.getString("SUBJECT"),
+						rs.getString("AREA"), rs.getString("MAX"), rs.getString("NUM"), url));
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		return Interntext;
+	}
+	public Vector<IPP> IPP2021상반기() throws SQLException { // 로그인
+		String url = "https://ipp.mju.ac.kr/index.do";
+		Vector<IPP> ipp = new Vector<>();
+		conn = null;
+		String query = "SELECT * FROM ipp2021";
+		try {
+			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb?useSSL=false", "root", "1234");
+			stmt = conn.createStatement();
+			rs = stmt.executeQuery(query);
+			while (rs.next()) {
+				ipp.add(new IPP(rs.getString("NAME"), rs.getString("PROJECT"), rs.getString("AREA"),
+						rs.getString("NUM")+"명", rs.getString("STATE"),url));
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		return ipp;
+	}	
 	public Vector<IPP> IPP2020하반기() throws SQLException { // 로그인
 		String url = "https://ipp.mju.ac.kr/index.do";
 		Vector<IPP> ipp = new Vector<>();
 		conn = null;
-		String query = "SELECT * FROM ipp2020";
+		String query = "SELECT * FROM ipp20202";
 		try {
 			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb?useSSL=false", "root", "1234");
 			stmt = conn.createStatement();
@@ -62,4 +122,63 @@ public class Interncrolling {
 
 		return ipp;
 	}
-}
+	public Vector<IPP> IPP2020상반기() throws SQLException { // 로그인
+		String url = "https://ipp.mju.ac.kr/index.do";
+		Vector<IPP> ipp = new Vector<>();
+		conn = null;
+		String query = "SELECT * FROM ipp20201";
+		try {
+			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb?useSSL=false", "root", "1234");
+			stmt = conn.createStatement();
+			rs = stmt.executeQuery(query);
+			while (rs.next()) {
+				ipp.add(new IPP(rs.getString("NAME"), rs.getString("PROJECT"), rs.getString("AREA"),
+						rs.getString("NUM")+"명", rs.getString("STATE"),url));
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		return ipp;
+	}
+	public Vector<IPP> IPP2019하반기() throws SQLException { // 로그인
+		String url = "https://ipp.mju.ac.kr/index.do";
+		Vector<IPP> ipp = new Vector<>();
+		conn = null;
+		String query = "SELECT * FROM ipp20192";
+		try {
+			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb?useSSL=false", "root", "1234");
+			stmt = conn.createStatement();
+			rs = stmt.executeQuery(query);
+			while (rs.next()) {
+				ipp.add(new IPP(rs.getString("NAME"), rs.getString("PROJECT"), rs.getString("AREA"),
+						rs.getString("NUM")+"명", rs.getString("STATE"),url));
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		return ipp;
+	}
+	public Vector<IPP> IPP2019상반기() throws SQLException { // 로그인
+		String url = "https://ipp.mju.ac.kr/index.do";
+		Vector<IPP> ipp = new Vector<>();
+		conn = null;
+		String query = "SELECT * FROM ipp20191";
+		try {
+			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb?useSSL=false", "root", "1234");
+			stmt = conn.createStatement();
+			rs = stmt.executeQuery(query);
+			while (rs.next()) {
+				ipp.add(new IPP(rs.getString("NAME"), rs.getString("PROJECT"), rs.getString("AREA"),
+						rs.getString("NUM")+"명", rs.getString("STATE"),url));
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		return ipp;
+	}}
