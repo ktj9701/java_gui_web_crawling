@@ -1,5 +1,9 @@
 package Function;
 
+import java.awt.Desktop;
+import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -42,6 +46,7 @@ public class Interncrolling {
 
 		return Interntext;
 	}
+
 	public Vector<ICT> ICT2020하반기() throws SQLException { // 로그인
 		String url = "https://www.ictintern.or.kr/homepage/trainingCompany/companyList.do";
 		Vector<ICT> Interntext = new Vector<>();
@@ -62,6 +67,7 @@ public class Interncrolling {
 
 		return Interntext;
 	}
+
 	public Vector<ICT> ICT2020상반기() throws SQLException { // 로그인
 		String url = "https://www.ictintern.or.kr/homepage/trainingCompany/companyList.do";
 		Vector<ICT> Interntext = new Vector<>();
@@ -82,6 +88,7 @@ public class Interncrolling {
 
 		return Interntext;
 	}
+
 	public Vector<IPP> IPP2021상반기() throws SQLException { // 로그인
 		String url = "https://ipp.mju.ac.kr/index.do";
 		Vector<IPP> ipp = new Vector<>();
@@ -93,7 +100,7 @@ public class Interncrolling {
 			rs = stmt.executeQuery(query);
 			while (rs.next()) {
 				ipp.add(new IPP(rs.getString("NAME"), rs.getString("PROJECT"), rs.getString("AREA"),
-						rs.getString("NUM")+"명", rs.getString("STATE"),url));
+						rs.getString("NUM") + "명", rs.getString("STATE"), url));
 			}
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
@@ -101,7 +108,8 @@ public class Interncrolling {
 		}
 
 		return ipp;
-	}	
+	}
+
 	public Vector<IPP> IPP2020하반기() throws SQLException { // 로그인
 		String url = "https://ipp.mju.ac.kr/index.do";
 		Vector<IPP> ipp = new Vector<>();
@@ -113,7 +121,7 @@ public class Interncrolling {
 			rs = stmt.executeQuery(query);
 			while (rs.next()) {
 				ipp.add(new IPP(rs.getString("NAME"), rs.getString("PROJECT"), rs.getString("AREA"),
-						rs.getString("NUM")+"명", rs.getString("STATE"),url));
+						rs.getString("NUM") + "명", rs.getString("STATE"), url));
 			}
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
@@ -122,6 +130,7 @@ public class Interncrolling {
 
 		return ipp;
 	}
+
 	public Vector<IPP> IPP2020상반기() throws SQLException { // 로그인
 		String url = "https://ipp.mju.ac.kr/index.do";
 		Vector<IPP> ipp = new Vector<>();
@@ -133,7 +142,7 @@ public class Interncrolling {
 			rs = stmt.executeQuery(query);
 			while (rs.next()) {
 				ipp.add(new IPP(rs.getString("NAME"), rs.getString("PROJECT"), rs.getString("AREA"),
-						rs.getString("NUM")+"명", rs.getString("STATE"),url));
+						rs.getString("NUM") + "명", rs.getString("STATE"), url));
 			}
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
@@ -142,6 +151,7 @@ public class Interncrolling {
 
 		return ipp;
 	}
+
 	public Vector<IPP> IPP2019하반기() throws SQLException { // 로그인
 		String url = "https://ipp.mju.ac.kr/index.do";
 		Vector<IPP> ipp = new Vector<>();
@@ -153,7 +163,7 @@ public class Interncrolling {
 			rs = stmt.executeQuery(query);
 			while (rs.next()) {
 				ipp.add(new IPP(rs.getString("NAME"), rs.getString("PROJECT"), rs.getString("AREA"),
-						rs.getString("NUM")+"명", rs.getString("STATE"),url));
+						rs.getString("NUM") + "명", rs.getString("STATE"), url));
 			}
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
@@ -162,6 +172,7 @@ public class Interncrolling {
 
 		return ipp;
 	}
+
 	public Vector<IPP> IPP2019상반기() throws SQLException { // 로그인
 		String url = "https://ipp.mju.ac.kr/index.do";
 		Vector<IPP> ipp = new Vector<>();
@@ -173,7 +184,7 @@ public class Interncrolling {
 			rs = stmt.executeQuery(query);
 			while (rs.next()) {
 				ipp.add(new IPP(rs.getString("NAME"), rs.getString("PROJECT"), rs.getString("AREA"),
-						rs.getString("NUM")+"명", rs.getString("STATE"),url));
+						rs.getString("NUM") + "명", rs.getString("STATE"), url));
 			}
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
@@ -181,4 +192,13 @@ public class Interncrolling {
 		}
 
 		return ipp;
-	}}
+	}
+	public static void explore(Object temp2) throws URISyntaxException {
+		try {
+			Desktop.getDesktop().browse(new URI((String) temp2));
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
+	}
+}
