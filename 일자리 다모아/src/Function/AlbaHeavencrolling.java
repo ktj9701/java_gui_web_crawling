@@ -1,6 +1,9 @@
 package Function;
 
+import java.awt.Desktop;
 import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 import java.util.Vector;
@@ -51,5 +54,13 @@ public class AlbaHeavencrolling {
 			page++;
 		}
 		return albaheaven;
+	}
+	public static void explore(Object temp2) throws URISyntaxException {
+		try {
+			Desktop.getDesktop().browse(new URI((String) temp2));
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
 	}
 }
