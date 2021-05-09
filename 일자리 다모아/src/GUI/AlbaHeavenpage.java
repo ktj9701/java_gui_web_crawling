@@ -34,19 +34,20 @@ public class AlbaHeavenpage extends JFrame {
 
 	public AlbaHeavenpage() {
 		setTitle("일자리 다모아 - 팝업");
-		setSize(1500, 800);
+		setSize(1300, 800);
 		this.setLayout(null);
 		setVisible(true);
 		setResizable(false); // 프로그램 크기 조절 불가 설정
 		setLocationRelativeTo(null); // 화면 중앙에 오도록 하는 설정
-
+		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		table = new JTable(TableModel);
 		table.addMouseListener(MouseListener);
 		Search_AlbaHeaven();
 		scroll = new JScrollPane(table);
-		scroll.setBounds(160, 130, 1325, 633);
+		scroll.setBounds(0, 130, 1300, 633);
 		scroll.setVisible(true);
 		add(scroll);
+		table.getTableHeader().setResizingAllowed(false); // 크기 조절 불가
 	}
 
 	public class MouseListener extends MouseAdapter {
@@ -55,7 +56,7 @@ public class AlbaHeavenpage extends JFrame {
 
 			if (e.getClickCount() == 2) {
 				try {
-					Function.Albamoncrolling.explore(AlbaHeaven.get(table.getSelectedRow()).getURL());
+					Function.AlbaHeavencrolling.explore(AlbaHeaven.get(table.getSelectedRow()).getURL());
 				} catch (URISyntaxException e1) {
 					e1.printStackTrace();
 				}
