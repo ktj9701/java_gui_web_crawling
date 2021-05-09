@@ -83,6 +83,8 @@ public class Mainpage extends JFrame {
 	static Button AlbaHeaven = new Button("알바천국");
 	static Button Intern = new Button("인턴");
 	static Button SAVE = new Button("즐겨찾기");
+	static Button EVENT = new Button("이벤트");
+	static Button INFO = new Button("팁");
 	static DefaultTableModel TableModel = new DefaultTableModel() {// 테이블 내용 수정 불가
 		public boolean isCellEditable(int rowIndex, int mCollndex) {
 			return false;
@@ -91,7 +93,6 @@ public class Mainpage extends JFrame {
 	public static DefaultComboBoxModel ComboModel = new DefaultComboBoxModel();
 
 	static String head[] = { "지역", "급여", "회사명", "내용", "등록 시간" };
-	//static TextField SerchField = new TextField();
 	public static JScrollPane scroll;
 
 	static Vector<Albatext> Alba;
@@ -144,22 +145,17 @@ public class Mainpage extends JFrame {
 		add(scroll);
 
 // ----------------------------------------------------------검색 버튼과 검색 텍스트 필드
-		Search.setBounds(900, 30, 60, 60);
+		Search.setBounds(900, 20, 60, 60);
 		Search.setVisible(true);
 		add(Search);
 		Search.addActionListener(listener);
 
-		/*SerchField.setBounds(30, 40, 850, 40);
-		SerchField.setFont(new Font("맑은 고딕", Font.BOLD, 30));
-		SerchField.setVisible(true);
-		add(SerchField);*/
-
-		Calculator.setBounds(1000, 30, 60, 60);
+		Calculator.setBounds(1000, 20, 60, 60);
 		Calculator.setVisible(true);
 		add(Calculator);
 		Calculator.addActionListener(listener);
 
-		Reset.setBounds(1100, 30, 60, 60);
+		Reset.setBounds(1100, 20, 60, 60);
 		Reset.setVisible(true);
 		add(Reset);
 		Reset.addActionListener(listener);
@@ -211,7 +207,7 @@ public class Mainpage extends JFrame {
 
 		Gender.addActionListener(FilterCombolistener);
 
-		// -----------------------------------성별 필터링
+		// -----------------------------------근무기간 필터링
 		JLabel period_label = new JLabel("근무 기간");
 		period_label.setBounds(40, 90, 70, 30);
 		period_label.setFont(new Font("맑은 고딕", Font.BOLD, 15));
@@ -227,20 +223,32 @@ public class Mainpage extends JFrame {
 
 		// ----------------------------------------------- 알바천국과 잡코리아 팝업창
 
-		AlbaHeaven.setBounds(1300, 30, 60, 60);
+		AlbaHeaven.setBounds(1300, 20, 60, 60);
 		AlbaHeaven.setVisible(true);
 		add(AlbaHeaven);
 		AlbaHeaven.addActionListener(listener);
 
-		Intern.setBounds(1400, 30, 60, 60);
+		Intern.setBounds(1400, 20, 60, 60);
 		Intern.setVisible(true);
 		add(Intern);
 		Intern.addActionListener(listener);
 		// -------------------------------------------------즐겨찾기 버튼
-		SAVE.setBounds(1200, 30, 60, 60);
+		SAVE.setBounds(1200, 20, 60, 60);
 		SAVE.setVisible(true);
 		add(SAVE);
 		SAVE.addActionListener(listener);
+		
+		// -------------------------------------------------이벤트 버튼
+		EVENT.setBounds(800, 20, 60, 60);
+		EVENT.setVisible(true);
+		add(EVENT);
+		EVENT.addActionListener(listener);
+		// -------------------------------------------------팁 버튼
+		INFO.setBounds(700, 20, 60, 60);
+		INFO.setVisible(true);
+		add(INFO);
+		INFO.addActionListener(listener);
+		
 		// -------------------------------필터링 레이블과 필터링 삭제
 		Filterlabel.setBounds(10, 130, 150, 20);
 		Filterlabel.setFont(new Font("맑은 고딕", Font.BOLD, 17));
@@ -372,7 +380,12 @@ public class Mainpage extends JFrame {
 			if (e.getSource() == SAVE) { // ------------------즐겨찾기 버튼 이벤트
 				Repositorypage save = new Repositorypage();
 			}
-
+			if (e.getSource() == EVENT) { // ------------------이벤트 버튼 이벤트
+				Eventpage event = new Eventpage();
+			}
+			if (e.getSource() == INFO) { // ------------------팁 버튼 이벤트
+				
+			}
 		}
 	}
 
