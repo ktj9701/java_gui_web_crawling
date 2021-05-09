@@ -79,14 +79,14 @@ public class Internpage extends JFrame {
 			if (e.getClickCount() == 2) {
 				if (((String) select.getSelectedItem()).substring(0,5).equals("[ICT]")) { //ict 광고 클릭시
 					try {
-						Function.Albamoncrolling.explore(ICT.get(table.getSelectedRow()).getURL());
+						Function.Interncrolling.explore(ICT.get(table.getSelectedRow()).getURL());
 					} catch (URISyntaxException e1) {
 						e1.printStackTrace();
 					}
 				} // 더블클릭
 				else {                                 //ipp광고 클릭시
 					try {
-						Function.Albamoncrolling.explore(IPP.get(table.getSelectedRow()).getURL());
+						Function.Interncrolling.explore(IPP.get(table.getSelectedRow()).getURL());
 					} catch (URISyntaxException e1) {
 						e1.printStackTrace();
 					}
