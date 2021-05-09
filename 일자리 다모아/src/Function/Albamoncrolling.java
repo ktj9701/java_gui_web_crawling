@@ -57,7 +57,6 @@ public class Albamoncrolling {
 	}
 
 	public static void explore(Object temp2) throws URISyntaxException {
-System.out.println(temp2);
 		try {
 			Desktop.getDesktop().browse(new URI((String) temp2));
 		} catch (IOException e) {
