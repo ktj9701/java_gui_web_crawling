@@ -9,6 +9,7 @@ import javax.swing.table.DefaultTableModel;
 
 import Function.Albatext;
 import Function.AlbaHeavencrolling;
+import Function.Albamoncrolling;
 
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
@@ -91,4 +92,5 @@ public class AlbaHeavenpage extends JFrame {
 		} catch (NullPointerException e) {
 		}
 	}
+
 }
