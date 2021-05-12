@@ -32,7 +32,7 @@ public class Eventpage extends JFrame{
 
 	public Eventpage() {
 		setTitle("일자리 다모아 - 이벤트");
-		setSize(800, 700);
+		setSize(800, 500);
 		this.setLayout(null);
 		setVisible(true);
 		setResizable(false); // 프로그램 크기 조절 불가 설정
@@ -42,7 +42,7 @@ public class Eventpage extends JFrame{
 		table.addMouseListener(MouseListener);
 		Search_Event();
 		scroll = new JScrollPane(table);
-		scroll.setBounds(0, 130, 785, 535);
+		scroll.setBounds(0, 130, 785, 335);
 		scroll.setVisible(true);
 		add(scroll);
 	}
@@ -63,7 +63,7 @@ public class Eventpage extends JFrame{
 	public static void Search_Event() { // 광고 검색
 		try {
 			Event = Event_crolling.crolling();
-			arr = new Object[Event.size()][5];
+			arr = new Object[Event.size()][4];
 
 			for (int i = 0; i < Event.size(); i++) {
 				int j = 0;
@@ -83,5 +83,5 @@ public class Eventpage extends JFrame{
 		} catch (NullPointerException e) {
 		}
 	}
-
+	
 }
