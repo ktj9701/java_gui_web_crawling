@@ -14,6 +14,8 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
+import GUI.Eventpage;
+
 public class Albamoncrolling {
 	public static String area = "";  //지역 코드
 	public static String gender = "";//성별 코드
@@ -28,7 +30,7 @@ public class Albamoncrolling {
 			url = "https://www.albamon.com/list/gi/mon_gi_tot_list.asp?page=" + page + "&ps=20&ob=6&lvtype=1&rArea="
 					+ area + "&rWDate=1&Empmnt_Type=&ob=0&gender="+gender+"&sDutyTerm="+period;
 			
-			https://www.albamon.com/list/gi/mon_gi_tot_list.asp?page=2&scd= 
+
 			try {
 				doc = Jsoup.connect(url).get();
 			} catch (IOException e) {
@@ -44,6 +46,7 @@ public class Albamoncrolling {
 			Iterator<Element> ie6 = element.select("p.cName").iterator();// URL뽑아내기1
 			Iterator<Element> ie7 = element.select("p.cName").iterator();// URL뽑아내기2
 			Iterator<Element> ie8 = element.select("p.cName").iterator();// URL뽑아내기3
+
 			while (ie1.hasNext()) {
 				try {
 					albamon.add(new Albatext(ie1.next().text().substring(3), ie2.next().text(), ie3.next().text(),
@@ -64,4 +67,5 @@ public class Albamoncrolling {
 		}
 
 	}
+	
 }
