@@ -2,13 +2,14 @@ package GUI;
 // 메인 화면
 
 import java.awt.Button;
+import java.awt.Color;
 import java.awt.Font;
-import java.awt.TextField;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.net.URISyntaxException;
+import java.sql.SQLException;
 import java.util.Vector;
 
 import javax.swing.DefaultComboBoxModel;
@@ -19,11 +20,13 @@ import javax.swing.JLabel;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
+import javax.swing.table.JTableHeader;
 
+import Function.AlbaHeavencrolling;
+import Function.Albamoncrolling;
 import Function.Albatext;
 import Function.Interncrolling;
-import Function.Albamoncrolling;
-import Function.AlbaHeavencrolling;
+import Function.SaveFunction;
 import region.Busan;
 import region.Chungbuk;
 import region.Chungnam;
@@ -42,12 +45,14 @@ import region.Gyeongnam2;
 import region.Incheon;
 import region.Jeju;
 import region.Jeonbuk;
+import region.Jeonnam;
 import region.Seoul;
 import region.Seoul2;
 import region.Ulsan;
-import region.Jeonnam;
 
 public class Mainpage extends JFrame {
+	JTableHeader header;
+
 	Interncrolling ict = new Interncrolling();
 	public static Object temp;
 	static Object temp2;
@@ -83,6 +88,7 @@ public class Mainpage extends JFrame {
 	static Button AlbaHeaven = new Button("알바천국");
 	static Button Intern = new Button("인턴");
 	static Button SAVE = new Button("즐겨찾기");
+	static Button SAVE2 = new Button("저장");
 	static Button EVENT = new Button("이벤트");
 	static Button INFO = new Button("팁");
 	static DefaultTableModel TableModel = new DefaultTableModel() {// 테이블 내용 수정 불가
@@ -138,6 +144,7 @@ public class Mainpage extends JFrame {
 //----------------------------------------------------------광고 테이블 ------------------------------------------------------
 		table = new JTable(TableModel);
 		table.addMouseListener(MouseListener);
+
 		Search_Albamon();
 		scroll = new JScrollPane(table);
 		scroll.setBounds(160, 130, 1325, 633);
@@ -237,7 +244,11 @@ public class Mainpage extends JFrame {
 		SAVE.setVisible(true);
 		add(SAVE);
 		SAVE.addActionListener(listener);
-		
+
+		SAVE2.setBounds(600, 20, 60, 60);
+		SAVE2.setVisible(true);
+		add(SAVE2);
+		SAVE2.addActionListener(listener);
 		// -------------------------------------------------이벤트 버튼
 		EVENT.setBounds(800, 20, 60, 60);
 		EVENT.setVisible(true);
@@ -248,7 +259,7 @@ public class Mainpage extends JFrame {
 		INFO.setVisible(true);
 		add(INFO);
 		INFO.addActionListener(listener);
-		
+
 		// -------------------------------필터링 레이블과 필터링 삭제
 		Filterlabel.setBounds(10, 130, 150, 20);
 		Filterlabel.setFont(new Font("맑은 고딕", Font.BOLD, 17));
@@ -384,7 +395,16 @@ public class Mainpage extends JFrame {
 				Eventpage event = new Eventpage();
 			}
 			if (e.getSource() == INFO) { // ------------------팁 버튼 이벤트
-				
+
+			}
+			if (e.getSource() == SAVE2) { // ------------------팁 버튼 이벤트
+				try {
+					SaveFunction.savealba(Loginpage.ID_.getText(),Alba.get(table.getSelectedRow()).getArea(),Alba.get(table.getSelectedRow()).getPay()
+							,Alba.get(table.getSelectedRow()).getOffice(),Alba.get(table.getSelectedRow()).getText(),Alba.get(table.getSelectedRow()).getURL());
+				} catch (SQLException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
 			}
 		}
 	}
@@ -823,6 +843,10 @@ public class Mainpage extends JFrame {
 	}
 
 	public void Search_Albamon() { // 광고 검색
+		header = table.getTableHeader();
+		header.setBackground(Color.red);
+		header.setFont(new Font("맑은 고딕", Font.BOLD, 25));
+
 		Albamoncrolling crolling = new Albamoncrolling();
 		Alba = crolling.crolling();
 		arr = new Object[Alba.size()][5];
@@ -836,6 +860,7 @@ public class Mainpage extends JFrame {
 			arr[i][j++] = Alba.get(i).getTime();
 
 		}
+
 		TableModel.setDataVector(arr, head);
 		table.getColumnModel().getColumn(0).setPreferredWidth(170);
 		table.getColumnModel().getColumn(1).setPreferredWidth(170);
