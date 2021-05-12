@@ -10,6 +10,7 @@ import java.sql.SQLException;
 import java.util.Vector;
 
 import javax.swing.DefaultComboBoxModel;
+import javax.swing.JButton;
 import javax.swing.JComboBox;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -17,9 +18,10 @@ import javax.swing.JScrollPane;
 import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
 
-import Function.Interncrolling;
-import Function.IPP;
 import Function.ICT;
+import Function.IPP;
+import Function.Interncrolling;
+import Function.SaveFunction;
 
 public class Internpage extends JFrame {
 	static Interncrolling Intern_crolling = new Interncrolling();
@@ -36,9 +38,10 @@ public class Internpage extends JFrame {
 	static Vector<ICT> ICT;
 	static Vector<IPP> IPP;
 	static Object arr[][];
-
+	JButton SAVE = new JButton("저장");
 	MouseListener MouseListener = new MouseListener();
 	public static JComboBox select;
+	Buttonlistener listener = new Buttonlistener();
 
 	public Internpage() {
 		setTitle("일자리 다모아 - 인턴팝업");
@@ -50,7 +53,7 @@ public class Internpage extends JFrame {
 		setDefaultCloseOperation(DISPOSE_ON_CLOSE);
 		table = new JTable(TableModel);
 		table.addMouseListener(MouseListener);
-		ICT_Search(0);
+		INTERN_Search(0);
 		scroll = new JScrollPane(table);
 		scroll.setBounds(0, 130, 1484, 633);
 		scroll.setVisible(true);
@@ -61,9 +64,14 @@ public class Internpage extends JFrame {
 		label.setFont(new Font("맑은 고딕", Font.BOLD, 15));
 		add(label);
 
+		SAVE.setBounds(600, 20, 60, 60);
+		SAVE.setVisible(true);
+		add(SAVE);
+		SAVE.addActionListener(listener);
+
 		String[] kind = { "[ICT] 2021년 상반기(국내과정)", "[ICT] 2020년 하반기(국내과정)", "[ICT] 2020년 상반기(국내과정)",
-				"=============================","[IPP] 2021년 상반기(국내과정)", "[IPP] 2020년 하반기(국내과정)", "[IPP] 2020년 상반기(국내과정)", "[IPP] 2019년 하반기(국내과정)",
-				"[IPP] 2019년 상반기(국내과정)" };
+				"=============================", "[IPP] 2021년 상반기(국내과정)", "[IPP] 2020년 하반기(국내과정)",
+				"[IPP] 2020년 상반기(국내과정)", "[IPP] 2019년 하반기(국내과정)", "[IPP] 2019년 상반기(국내과정)" };
 		select = new JComboBox(kind);
 		select.setSelectedIndex(0);
 		select.setBounds(100, 90, 250, 30);
@@ -73,18 +81,47 @@ public class Internpage extends JFrame {
 		select.addActionListener(Combolistener);
 	}
 
+	class Buttonlistener implements ActionListener { // 버튼 이벤트
+		public void actionPerformed(ActionEvent e) {
+			if (e.getSource() == SAVE) {
+				if (select.getSelectedIndex() >= 0 && select.getSelectedIndex() <= 2) {
+					try {
+						SaveFunction.saveintern(Loginpage.ID_.getText(), ICT.get(table.getSelectedRow()).getName(),
+								ICT.get(table.getSelectedRow()).getProject(), ICT.get(table.getSelectedRow()).getArea(),
+								ICT.get(table.getSelectedRow()).getNum(), "마감",
+								ICT.get(table.getSelectedRow()).getURL());
+					} catch (SQLException e1) {
+						// TODO Auto-generated catch block
+						e1.printStackTrace();
+					}
+				}
+				else {
+					try {
+						SaveFunction.saveintern(Loginpage.ID_.getText(), IPP.get(table.getSelectedRow()).getName(),
+								IPP.get(table.getSelectedRow()).getProject(), IPP.get(table.getSelectedRow()).getArea(),
+								IPP.get(table.getSelectedRow()).getNum(), IPP.get(table.getSelectedRow()).getState(),
+								IPP.get(table.getSelectedRow()).getURL());
+					} catch (SQLException e1) {
+						// TODO Auto-generated catch block
+						e1.printStackTrace();
+					}
+				}
+			}
+		}
+	}
+
 	public class MouseListener extends MouseAdapter {
 		public void mouseClicked(MouseEvent e) {
 
 			if (e.getClickCount() == 2) {
-				if (((String) select.getSelectedItem()).substring(0,5).equals("[ICT]")) { //ict 광고 클릭시
+				if (((String) select.getSelectedItem()).substring(0, 5).equals("[ICT]")) { // ict 광고 클릭시
 					try {
 						Function.Interncrolling.explore(ICT.get(table.getSelectedRow()).getURL());
 					} catch (URISyntaxException e1) {
 						e1.printStackTrace();
 					}
 				} // 더블클릭
-				else {                                 //ipp광고 클릭시
+				else { // ipp광고 클릭시
 					try {
 						Function.Interncrolling.explore(IPP.get(table.getSelectedRow()).getURL());
 					} catch (URISyntaxException e1) {
@@ -95,7 +132,7 @@ public class Internpage extends JFrame {
 		}
 	}
 
-	public static void ICT_Search(int index) {
+	public static void INTERN_Search(int index) {
 		if (index == 0) {
 			try {
 				ICT = Intern_crolling.ICT2021상반기();
@@ -164,7 +201,7 @@ public class Internpage extends JFrame {
 
 	public class combolistener implements ActionListener { // 콤보박스 선택시 이벤트 발생 클래스
 		public void actionPerformed(ActionEvent e) {
-			ICT_Search(select.getSelectedIndex());
+			INTERN_Search(select.getSelectedIndex());
 		}
 
 	}
