@@ -22,7 +22,7 @@ public class Loginpage extends JFrame {
 	static JLabel ID = new JLabel("아이디");
 	static JLabel PW = new JLabel("비밀번호");
 	static JLabel fail = new JLabel("회원이 아니거나 아이디와 비밀번호가 일치 하지않습니다.");
-	static TextField ID_ = new TextField(10);
+	public static TextField ID_ = new TextField(10);
 	static TextField PW_ = new TextField(10);
 	static Button Login = new Button("로그인");
 	static Button Join = new Button("회원가입");
