@@ -17,13 +17,12 @@ import GUI.Loginpage;
 
 public class Eventcrolling {
 	public Vector<Eventtext> crolling() {
-
 		Vector<Eventtext> alba_event = new Vector<>();
 		String url;
 		
 		int i = 0;
 		Document doc = null;
-		 while (i<2){
+
 			url = "http://www.alba.co.kr/story/event/EventList.asp";
 			try {
 				doc = Jsoup.connect(url).get();
@@ -36,16 +35,12 @@ public class Eventcrolling {
 			Iterator<Element> ie3 = element.select("dd.term").iterator();// 기간
 			Iterator<Element> ie4 = element.select("dd.announce").iterator();// 당첨자발표기간
 			Iterator<Element> ie5 = element.select("p.title").iterator();// url
-	
 
 			while (ie1.hasNext()) {
 				String temp[] = ie5.next().html().split("\"");
 				alba_event.add(new Eventtext(ie1.next().text(), ie2.next().text(), ie3.next().text(), ie4.next().text(),
 						temp[1]));
-
 			}
-			i++;
-		}
 		return alba_event;
 	}
 
