@@ -1,22 +1,22 @@
 package GUI;
 
-import java.util.Vector;
-import javax.swing.DefaultComboBoxModel;
-import javax.swing.JFrame;
-import javax.swing.JScrollPane;
-import javax.swing.JTable;
-import javax.swing.table.DefaultTableModel;
 
-import Function.Albatext;
-import Function.AlbaHeavencrolling;
-import Function.Albamoncrolling;
-
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
-import java.net.URISyntaxException;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import java.net.URISyntaxException;
+import java.sql.SQLException;
+import java.util.Vector;
+
+import javax.swing.DefaultComboBoxModel;
+import javax.swing.*;
+import javax.swing.table.DefaultTableModel;
+
+import Function.AlbaHeavencrolling;
+import Function.Albatext;
+import Function.SaveFunction;
 
 public class AlbaHeavenpage extends JFrame {
 	static AlbaHeavencrolling Albaheaven_crolling = new AlbaHeavencrolling();
@@ -32,13 +32,15 @@ public class AlbaHeavenpage extends JFrame {
 	static Vector<Albatext> AlbaHeaven;
 	static Object arr[][];
 	MouseListener MouseListener = new MouseListener();
+	JButton SAVE = new JButton("저장");
+	ButtonListener ButtonListener = new ButtonListener();
 
 	public AlbaHeavenpage() {
 		setTitle("일자리 다모아 - 팝업");
-		setSize(1300, 800);
+		setSize(1315, 800);
 		this.setLayout(null);
 		setVisible(true);
-		setResizable(false); // 프로그램 크기 조절 불가 설정
+		// setResizable(false); // 프로그램 크기 조절 불가 설정
 		setLocationRelativeTo(null); // 화면 중앙에 오도록 하는 설정
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		table = new JTable(TableModel);
@@ -49,12 +51,30 @@ public class AlbaHeavenpage extends JFrame {
 		scroll.setVisible(true);
 		add(scroll);
 		table.getTableHeader().setResizingAllowed(false); // 크기 조절 불가
+
+		SAVE.setBounds(1200, 20, 100, 100);
+		add(SAVE);
+		SAVE.addActionListener(ButtonListener);
+
+	}
+
+	public class ButtonListener implements ActionListener { // 마우스 클릭 이벤트
+		public void actionPerformed(ActionEvent e) {
+			if (e.getSource() == SAVE) {
+				try {
+					SaveFunction.savealba(Loginpage.ID_.getText()," "+AlbaHeaven.get(table.getSelectedRow()).getArea(),AlbaHeaven.get(table.getSelectedRow()).getPay()
+							,AlbaHeaven.get(table.getSelectedRow()).getOffice(),AlbaHeaven.get(table.getSelectedRow()).getText(),AlbaHeaven.get(table.getSelectedRow()).getURL());
+				} catch (SQLException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
+				Repositorypage.Search_Alba();
+			}
+		}
 	}
 
 	public class MouseListener extends MouseAdapter {
-
 		public void mouseClicked(MouseEvent e) {
-
 			if (e.getClickCount() == 2) {
 				try {
 					Function.AlbaHeavencrolling.explore(AlbaHeaven.get(table.getSelectedRow()).getURL());
@@ -70,7 +90,6 @@ public class AlbaHeavenpage extends JFrame {
 		try {
 			AlbaHeaven = Albaheaven_crolling.crolling();
 			arr = new Object[AlbaHeaven.size()][5];
-
 			for (int i = 0; i < AlbaHeaven.size(); i++) {
 				int j = 0;
 				arr[i][j++] = AlbaHeaven.get(i).getArea();
@@ -78,7 +97,6 @@ public class AlbaHeavenpage extends JFrame {
 				arr[i][j++] = AlbaHeaven.get(i).getOffice();
 				arr[i][j++] = AlbaHeaven.get(i).getText();
 				arr[i][j++] = AlbaHeaven.get(i).getTime();
-
 			}
 			TableModel.setDataVector(arr, head);
 			table.getColumnModel().getColumn(0).setPreferredWidth(170);
