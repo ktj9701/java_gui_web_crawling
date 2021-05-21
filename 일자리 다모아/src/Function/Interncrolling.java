@@ -32,7 +32,7 @@ public class Interncrolling {
 		conn = null;
 		String query = "SELECT * FROM ict2021";
 		try {
-			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb?useSSL=false", "root", "1234");
+			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb?useSSL=false", "--", "--");
 			stmt = conn.createStatement();
 			rs = stmt.executeQuery(query);
 			while (rs.next()) {
@@ -53,7 +53,7 @@ public class Interncrolling {
 		conn = null;
 		String query = "SELECT * FROM ict20202";
 		try {
-			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb?useSSL=false", "root", "1234");
+			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb?useSSL=false", "--", "--");
 			stmt = conn.createStatement();
 			rs = stmt.executeQuery(query);
 			while (rs.next()) {
@@ -74,7 +74,7 @@ public class Interncrolling {
 		conn = null;
 		String query = "SELECT * FROM ict20201";
 		try {
-			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb?useSSL=false", "root", "1234");
+			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb?useSSL=false", "--", "--");
 			stmt = conn.createStatement();
 			rs = stmt.executeQuery(query);
 			while (rs.next()) {
@@ -95,7 +95,7 @@ public class Interncrolling {
 		conn = null;
 		String query = "SELECT * FROM ipp2021";
 		try {
-			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb?useSSL=false", "root", "1234");
+			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb?useSSL=false", "--", "--");
 			stmt = conn.createStatement();
 			rs = stmt.executeQuery(query);
 			while (rs.next()) {
@@ -116,7 +116,7 @@ public class Interncrolling {
 		conn = null;
 		String query = "SELECT * FROM ipp20202";
 		try {
-			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb?useSSL=false", "root", "1234");
+			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb?useSSL=false", "--", "--");
 			stmt = conn.createStatement();
 			rs = stmt.executeQuery(query);
 			while (rs.next()) {
@@ -137,7 +137,7 @@ public class Interncrolling {
 		conn = null;
 		String query = "SELECT * FROM ipp20201";
 		try {
-			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb?useSSL=false", "root", "1234");
+			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb?useSSL=false", "--", "--");
 			stmt = conn.createStatement();
 			rs = stmt.executeQuery(query);
 			while (rs.next()) {
@@ -158,7 +158,7 @@ public class Interncrolling {
 		conn = null;
 		String query = "SELECT * FROM ipp20192";
 		try {
-			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb?useSSL=false", "root", "1234");
+			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb?useSSL=false", "--", "--");
 			stmt = conn.createStatement();
 			rs = stmt.executeQuery(query);
 			while (rs.next()) {
@@ -179,7 +179,7 @@ public class Interncrolling {
 		conn = null;
 		String query = "SELECT * FROM ipp20191";
 		try {
-			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb?useSSL=false", "root", "1234");
+			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb?useSSL=false", "--", "--");
 			stmt = conn.createStatement();
 			rs = stmt.executeQuery(query);
 			while (rs.next()) {
