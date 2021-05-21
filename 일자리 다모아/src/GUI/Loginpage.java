@@ -1,15 +1,11 @@
 package GUI;
-import java.awt.Button;
+
 import java.awt.Color;
 import java.awt.Font;
-import java.awt.TextField;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.sql.SQLException;
-
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-
+import javax.swing.*;
 import Function.DB_Method;
 import Function.dirver;
 
@@ -22,10 +18,10 @@ public class Loginpage extends JFrame {
 	static JLabel ID = new JLabel("아이디");
 	static JLabel PW = new JLabel("비밀번호");
 	static JLabel fail = new JLabel("회원이 아니거나 아이디와 비밀번호가 일치 하지않습니다.");
-	public static TextField ID_ = new TextField(10);
-	static TextField PW_ = new TextField(10);
-	static Button Login = new Button("로그인");
-	static Button Join = new Button("회원가입");
+	public static JTextField ID_ = new JTextField(10);
+	static JTextField PW_ = new JTextField(10);
+	static JButton Login = new JButton("로그인");
+	static JButton Join = new JButton("회원가입");
 
 
 	public Loginpage() {
@@ -41,10 +37,10 @@ public class Loginpage extends JFrame {
 		Title.setFont(Title_Font);
 		Title.setVisible(true);
 
-		ID.setBounds(398, 353, 50, 30); // --------------------------------ID 레이블
+		ID.setBounds(398, 353, 100, 30); // --------------------------------ID 레이블
 		ID.setVisible(true);
 
-		PW.setBounds(398, 396, 50, 30); // ----------------------------PW 레이블
+		PW.setBounds(398, 396, 100, 30); // ----------------------------PW 레이블
 		PW.setVisible(true);
 
 		ID_.setBounds(463, 355, 200, 20); // --------------------------ID & PW 텍스트필드
@@ -53,10 +49,10 @@ public class Loginpage extends JFrame {
 		ID_.setVisible(true);
 		PW_.setVisible(true);
 
-		Login.setBounds(420, 460, 50, 30); // ---------------------로그인 버튼
+		Login.setBounds(420, 460, 100, 30); // ---------------------로그인 버튼
 		Login.setVisible(true);
 
-		Join.setBounds(560, 460, 50, 30); // -----------------------회원 가입 버튼
+		Join.setBounds(560, 460, 100, 30); // -----------------------회원 가입 버튼
 		Join.setVisible(true);
 
 		fail.setBounds(420, 420, 400, 30); // ----------------로그인 실패 레이블
