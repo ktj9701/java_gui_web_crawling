@@ -1,9 +1,7 @@
 package GUI;
 
-import java.awt.Button;
 import java.awt.EventQueue;
 import java.awt.Font;
-import java.awt.TextField;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.sql.SQLException;
@@ -24,13 +22,13 @@ public class Joinpage extends JFrame {
 	static JLabel PW = new JLabel("패스워드");
 	static JLabel fail = new JLabel("");
 	static JLabel PW_Check = new JLabel("패스워드 확인");
-	static TextField ID_ = new TextField(10);
-	static TextField PW_ = new TextField(10);
-	static TextField PW_Check_ = new TextField(10);
+	static JTextField ID_ = new JTextField(10);
+	static JTextField PW_ = new JTextField(10);
+	static JTextField PW_Check_ = new JTextField(10);
 
 	// -----------------------------------------------------------버튼
-	static Button Join = new Button("회원가입");
-	static Button Back = new Button("돌아가기");
+	static JButton Join = new JButton("회원가입");
+	static JButton Back = new JButton("돌아가기");
 
 	Buttonlistener listner = new Buttonlistener();
 
