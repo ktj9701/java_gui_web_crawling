@@ -20,6 +20,8 @@ public class Albamoncrolling {
 	public static String area = "";  //지역 코드
 	public static String gender = "";//성별 코드
 	public static String period = "";//근무 기간 코드
+	public static String dutyweek = "";//근무 요일 코드
+	public static String age = "";//나이 코드
 	public Vector<Albatext> crolling() {
 		Vector<Albatext> albamon = new Vector<>();
 
@@ -28,7 +30,7 @@ public class Albamoncrolling {
 		Document doc = null;
 		while (page != 4) { // 3페이지까지 출력
 			url = "https://www.albamon.com/list/gi/mon_gi_tot_list.asp?page=" + page + "&ps=20&ob=6&lvtype=1&rArea="
-					+ area + "&rWDate=1&Empmnt_Type=&ob=0&gender="+gender+"&sDutyTerm="+period;
+					+ area + "&rWDate=1&Empmnt_Type=&ob=0&gender="+gender+"&sDutyTerm="+period+"&sDutyWeek="+dutyweek+"&rAge="+age;
 			
 
 			try {
@@ -50,7 +52,7 @@ public class Albamoncrolling {
 			while (ie1.hasNext()) {
 				try {
 					albamon.add(new Albatext(ie1.next().text().substring(3), ie2.next().text(), ie3.next().text(),
-							ie4.next().text(), ie5.next().text(),ie6.next().html().substring(9,ie7.next().html().length() - ie8.next().text().length() - 6)));
+							ie4.next().text(), ie5.next().text(),"https://www.albamon.com"+ie6.next().html().substring(9,ie7.next().html().length() - ie8.next().text().length() - 6)));
 				} catch (NoSuchElementException e) {
 				}
 			}
