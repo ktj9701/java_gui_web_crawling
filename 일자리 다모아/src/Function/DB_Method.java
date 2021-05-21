@@ -15,7 +15,7 @@ public class DB_Method{
 		public DB_Method() {
 		
 			try {
-				Class.forName("org.gjt.mm.mysql.Driver");
+				Class.forName("com.mysql.jdbc.Driver");
 			
 			} catch (Exception e) {
 				System.out.println("fail");
@@ -25,7 +25,7 @@ public class DB_Method{
 	public int Login(String ID, String PWD) throws SQLException { // 로그인
 		conn=null;
 		String query = "SELECT * FROM Login";
-		conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/Login?useSSL=false", "root", "1234");
+		conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/Login?useSSL=false", "--", "--");
 		stmt = conn.createStatement();
 		//if (DB.stmt.execute(query)) {
 		//	DB.rs = DB.stmt.getResultSet();
@@ -50,7 +50,7 @@ public class DB_Method{
 
 	public static int Join(String ID, String PWD) throws SQLException { // 회원가입
 		conn=null;
-		conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/Login?useSSL=false", "root", "1234");
+		conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/Login?useSSL=false", "--", "--");
 		stmt = conn.createStatement();
 		String query = "SELECT * FROM Login";
 		stmt = conn.createStatement();
