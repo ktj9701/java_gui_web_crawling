@@ -8,12 +8,13 @@ public class LoadInterntext {
 	private String num;
 	private String url;
 
-	public LoadInterntext(String name, String project, String area, String num,String state) {
+	public LoadInterntext(String name, String project, String area, String num,String state,String URL) {
 		this.name = name;
 		this.project = project;
 		this.area = area;
 		this.num = num;
 		this.state = state;
+		this.url = URL;
 	}
 
 	public String getName() {
@@ -54,6 +55,13 @@ public class LoadInterntext {
 
 	public void setState(String state) {
 		this.state = state;
+	}
+	public String getURL() {
+		return url;
+	}
+
+	public void setURL(String url) {
+		this.url = url;
 	}
 	
 }
