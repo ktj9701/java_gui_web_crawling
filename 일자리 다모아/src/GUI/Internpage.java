@@ -94,6 +94,7 @@ public class Internpage extends JFrame {
 						// TODO Auto-generated catch block
 						e1.printStackTrace();
 					}
+					Repositorypage.Search_Intern();
 				}
 				else {
 					try {
@@ -105,6 +106,7 @@ public class Internpage extends JFrame {
 						// TODO Auto-generated catch block
 						e1.printStackTrace();
 					}
+					Repositorypage.Search_Intern();
 				}
 			}
 		}
