@@ -1,24 +1,23 @@
 package GUI;
 
+
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.net.URISyntaxException;
+import java.sql.SQLException;
 import java.util.Vector;
 
-import javax.swing.DefaultComboBoxModel;
-import javax.swing.JComboBox;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JScrollPane;
-import javax.swing.JTable;
+import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 
 import Function.Albatext;
+import Function.Interncrolling;
 import Function.LoadInterntext;
 import Function.SaveFunction;
-
+import image.images;
 public class Repositorypage extends JFrame {
 	static JTable table; // 테이블
 	static DefaultTableModel TableModel = new DefaultTableModel() {// 테이블 내용 수정 불가
@@ -35,8 +34,11 @@ public class Repositorypage extends JFrame {
 	static Vector<LoadInterntext> intern;
 	static Object arr[][];
 	MouseListener MouseListener = new MouseListener();
+	ButtonListener ButtonListener = new ButtonListener();
 	public static JComboBox select;
-	SaveFunction crolling = new SaveFunction();
+	static SaveFunction crolling = new SaveFunction();
+	JButton delete = new JButton("삭제");
+	JButton back = new JButton("나가기");
 
 	public Repositorypage() {
 		setTitle("일자리 다모아 - 즐겨찾기");
@@ -66,13 +68,61 @@ public class Repositorypage extends JFrame {
 		add(select);
 		combolistener Combolistener = new combolistener();
 		select.addActionListener(Combolistener);
+
+		delete.setBounds(1200, 20, 100, 100);
+		add(delete);
+		delete.addActionListener(ButtonListener);
+		delete.setIcon(images.test);
+		back.setBounds(1350, 20, 100, 100);
+		add(back);
+		back.addActionListener(ButtonListener);
+	}
+
+	public class ButtonListener implements ActionListener { // 마우스 클릭 이벤트
+		public void actionPerformed(ActionEvent e) {
+			if (e.getSource() == delete) {
+				if (((String) select.getSelectedItem()).equals("알바")) {
+					String temp = Alba.get(table.getSelectedRow()).getURL();
+					try {
+						SaveFunction.deletealba(temp);
+					} catch (SQLException e1) {
+						// TODO Auto-generated catch block
+						e1.printStackTrace();
+					}
+					Search_Alba();
+				} else {
+					String temp = intern.get(table.getSelectedRow()).getProject();
+					try {
+						SaveFunction.deleteintern(temp);
+					} catch (SQLException e1) {
+						// TODO Auto-generated catch block
+						e1.printStackTrace();
+					}
+					Search_Intern();
+				}
+			}
+		}
 	}
 
 	public class MouseListener extends MouseAdapter { // 마우스 클릭 이벤트
 		public void mouseClicked(MouseEvent e) {
 
 			if (e.getClickCount() == 2) {
-
+				if (((String) select.getSelectedItem()).equals("알바")) {
+					try {
+						Function.Albamoncrolling.explore(Alba.get(table.getSelectedRow()).getURL());
+					} catch (URISyntaxException e1) {
+						e1.printStackTrace();
+					}
+				} 
+				else {
+					try {
+						System.out.println(intern.get(table.getSelectedRow()).getURL());
+						Interncrolling.explore(intern.get(table.getSelectedRow()).getURL());
+					} catch (URISyntaxException e1) {
+						e1.printStackTrace();
+					}
+				}
 			}
 		}
 	}
@@ -81,14 +131,13 @@ public class Repositorypage extends JFrame {
 		public void actionPerformed(ActionEvent e) {
 			if (0 == select.getSelectedIndex()) {
 				Search_Alba();
-			}
-			else
+			} else
 				Search_Intern();
-			}
 		}
-	
 
-	public void Search_Alba() { // 광고 검색
+	}
+
+	public static void Search_Alba() { // 광고 검색
 		Alba = crolling.loadalba();
 		arr = new Object[Alba.size()][4];
 
@@ -110,7 +159,8 @@ public class Repositorypage extends JFrame {
 		table.setRowHeight(35);
 		table.setFont(new Font("맑은 고딕", Font.BOLD, 25)); // 글자 크기 설정
 	}
-	public void Search_Intern() { // 광고 검색
+
+	public static void Search_Intern() { // 광고 검색
 		intern = crolling.loadintern();
 		arr = new Object[intern.size()][5];
 
