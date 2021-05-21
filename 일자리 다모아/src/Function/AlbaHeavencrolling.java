@@ -14,20 +14,19 @@ import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 public class AlbaHeavencrolling {
-	public static String area = "";
-	public static String gender = "";
+	public static String area = ""; // 지역 코드
+	public static String gender = ""; //성별 코드
 	public static String period = "";//근무 기간 코드
-	public Vector<Albatext> crolling() {//알바천국
-		
+	public static String dutyweek = "";//근무 요일 코드
+	public static String age = "";//나이 코드
+	public Vector<Albatext> crolling() {//알바천국		
 		Vector<Albatext> albaheaven = new Vector<>();
 		String url;
 		int page = 1;
-
 		Document doc = null;
-		
 		while (page != 4) { // 3페이지까지 출력
 			url = "http://www.alba.co.kr/job/main.asp?hidSortCnt=30&page="+page+"&strAreaMulti="+area+"&hidSort=FREEORDER&gendercd="+gender
-					+"&workperiodcd="+period;
+					+"&workperiodcd="+period+"&workweekcd="+dutyweek+"&agelimit="+age;
 			try {
 				doc = Jsoup.connect(url).get();
 			} catch (IOException e) {
