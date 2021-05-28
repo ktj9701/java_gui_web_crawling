@@ -72,7 +72,7 @@ public class Repositorypage extends JFrame {
 		delete.setBounds(1200, 20, 100, 100);
 		add(delete);
 		delete.addActionListener(ButtonListener);
-		delete.setIcon(images.test);
+		//delete.setIcon(images.test);
 		back.setBounds(1350, 20, 100, 100);
 		add(back);
 		back.addActionListener(ButtonListener);
@@ -101,6 +101,8 @@ public class Repositorypage extends JFrame {
 					Search_Intern();
 				}
 			}
+			if(e.getSource()==back)
+				dispose();
 		}
 	}
 
