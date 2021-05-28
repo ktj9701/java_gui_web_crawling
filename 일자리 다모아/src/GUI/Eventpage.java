@@ -24,7 +24,7 @@ public class Eventpage extends JFrame{
 		}
 	}; // 내용 수정 불가
 	public static DefaultComboBoxModel ComboModel = new DefaultComboBoxModel();
-	static String head[] = { "제목", "내용", "기간", "당첨자발표"};
+	static String head[] = { "제목", "내용", "기간", "분류"};
 	public static JScrollPane scroll;
 	static Vector<Eventtext> Event;
 	static Object arr[][];
@@ -38,6 +38,7 @@ public class Eventpage extends JFrame{
 		setResizable(false); // 프로그램 크기 조절 불가 설정
 		setLocationRelativeTo(null); // 화면 중앙에 오도록 하는 설정
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+		
 		table = new JTable(TableModel);
 		table.addMouseListener(MouseListener);
 		Search_Event();
