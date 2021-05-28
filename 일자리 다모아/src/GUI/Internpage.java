@@ -34,6 +34,7 @@ public class Internpage extends JFrame {
 	public static DefaultComboBoxModel ComboModel = new DefaultComboBoxModel();
 	static String ICThead[] = { "회사명", "제목", "관련기술", "지역", "배정 인원", "채용 현황" };
 	static String IPPhead[] = { "회사명", "제목", "지역", "모집 인원", "진행 상태" };
+	static String recent_IPPhead[] = { "회사명", "제목", "지역", "모집 인원", "진행 상태","신청 기간" };
 	public static JScrollPane scroll;
 	static Vector<ICT> ICT;
 	static Vector<IPP> IPP;
@@ -70,7 +71,7 @@ public class Internpage extends JFrame {
 		SAVE.addActionListener(listener);
 
 		String[] kind = { "[ICT] 2021년 상반기(국내과정)", "[ICT] 2020년 하반기(국내과정)", "[ICT] 2020년 상반기(국내과정)",
-				"=============================", "[IPP] 2021년 상반기(국내과정)", "[IPP] 2020년 하반기(국내과정)",
+				"=============================", "[IPP] 2021년 하반기(국내과정)", "[IPP] 2021년 상반기(국내과정)", "[IPP] 2020년 하반기(국내과정)",
 				"[IPP] 2020년 상반기(국내과정)", "[IPP] 2019년 하반기(국내과정)", "[IPP] 2019년 상반기(국내과정)" };
 		select = new JComboBox(kind);
 		select.setSelectedIndex(0);
@@ -90,23 +91,24 @@ public class Internpage extends JFrame {
 								ICT.get(table.getSelectedRow()).getProject(), ICT.get(table.getSelectedRow()).getArea(),
 								ICT.get(table.getSelectedRow()).getNum(), "마감",
 								ICT.get(table.getSelectedRow()).getURL());
+						Repositorypage.Search_Intern();
 					} catch (SQLException e1) {
-						// TODO Auto-generated catch block
-						e1.printStackTrace();
+					} catch (ArrayIndexOutOfBoundsException e2) {
+					} catch (NullPointerException e3) {
 					}
-					Repositorypage.Search_Intern();
-				}
-				else {
+
+				} else {
 					try {
 						SaveFunction.saveintern(Loginpage.ID_.getText(), IPP.get(table.getSelectedRow()).getName(),
 								IPP.get(table.getSelectedRow()).getProject(), IPP.get(table.getSelectedRow()).getArea(),
 								IPP.get(table.getSelectedRow()).getNum(), IPP.get(table.getSelectedRow()).getState(),
 								IPP.get(table.getSelectedRow()).getURL());
+						Repositorypage.Search_Intern();
 					} catch (SQLException e1) {
-						// TODO Auto-generated catch block
-						e1.printStackTrace();
+					} catch (ArrayIndexOutOfBoundsException e2) {
+					} catch (NullPointerException e3) {
 					}
-					Repositorypage.Search_Intern();
+
 				}
 			}
 		}
@@ -161,15 +163,15 @@ public class Internpage extends JFrame {
 		}
 		if (index == 4) {
 			try {
-				IPP = Intern_crolling.IPP2021상반기();
-				arr = new Object[IPP.size()][5];
-				Search_ipp();
+				IPP = Intern_crolling.IPP2021하반기();
+				arr = new Object[IPP.size()][6];
+				Search_ipp_recent();
 			} catch (SQLException e) {
 			}
 		}
 		if (index == 5) {
 			try {
-				IPP = Intern_crolling.IPP2020하반기();
+				IPP = Intern_crolling.IPP2021상반기();
 				arr = new Object[IPP.size()][5];
 				Search_ipp();
 			} catch (SQLException e) {
@@ -177,7 +179,7 @@ public class Internpage extends JFrame {
 		}
 		if (index == 6) {
 			try {
-				IPP = Intern_crolling.IPP2020상반기();
+				IPP = Intern_crolling.IPP2020하반기();
 				arr = new Object[IPP.size()][5];
 				Search_ipp();
 			} catch (SQLException e) {
@@ -185,13 +187,21 @@ public class Internpage extends JFrame {
 		}
 		if (index == 7) {
 			try {
-				IPP = Intern_crolling.IPP2019하반기();
+				IPP = Intern_crolling.IPP2020상반기();
 				arr = new Object[IPP.size()][5];
 				Search_ipp();
 			} catch (SQLException e) {
 			}
 		}
 		if (index == 8) {
+			try {
+				IPP = Intern_crolling.IPP2019하반기();
+				arr = new Object[IPP.size()][5];
+				Search_ipp();
+			} catch (SQLException e) {
+			}
+		}
+		if (index == 9) {
 			try {
 				IPP = Intern_crolling.IPP2019상반기();
 				arr = new Object[IPP.size()][5];
@@ -245,6 +255,27 @@ public class Internpage extends JFrame {
 		table.getColumnModel().getColumn(2).setPreferredWidth(180);
 		table.getColumnModel().getColumn(3).setPreferredWidth(50);
 		table.getColumnModel().getColumn(4).setPreferredWidth(120);
+		table.getTableHeader().setReorderingAllowed(false);
+		table.setRowHeight(35);
+		table.setFont(new Font("맑은 고딕", Font.BOLD, 25)); // 글자 크기 설정
+	}
+	public static void Search_ipp_recent() {
+		for (int i = 0; i < IPP.size(); i++) {
+			int j = 0;
+			arr[i][j++] = IPP.get(i).getName();
+			arr[i][j++] = IPP.get(i).getProject();
+			arr[i][j++] = IPP.get(i).getArea();
+			arr[i][j++] = IPP.get(i).getNum();
+			arr[i][j++] = IPP.get(i).getState();
+			arr[i][j++] = IPP.get(i).getPeriod();
+		}
+		TableModel.setDataVector(arr, recent_IPPhead);
+		table.getColumnModel().getColumn(0).setPreferredWidth(230);
+		table.getColumnModel().getColumn(1).setPreferredWidth(550);
+		table.getColumnModel().getColumn(2).setPreferredWidth(200);
+		table.getColumnModel().getColumn(3).setPreferredWidth(40);
+		table.getColumnModel().getColumn(4).setPreferredWidth(70);
+		table.getColumnModel().getColumn(5).setPreferredWidth(120);
 		table.getTableHeader().setReorderingAllowed(false);
 		table.setRowHeight(35);
 		table.setFont(new Font("맑은 고딕", Font.BOLD, 25)); // 글자 크기 설정
