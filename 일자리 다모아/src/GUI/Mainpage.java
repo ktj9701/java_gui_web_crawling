@@ -1,9 +1,10 @@
 package GUI;
 // 메인 화면
 
-import java.awt.Button;
 import java.awt.Color;
+import java.awt.Component;
 import java.awt.Font;
+import java.awt.Graphics;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
@@ -12,22 +13,28 @@ import java.net.URISyntaxException;
 import java.sql.SQLException;
 import java.util.Vector;
 
+import javax.swing.AbstractButton;
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
+import javax.swing.JComponent;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
 import javax.swing.JTextField;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.JTableHeader;
+import javax.swing.table.TableCellRenderer;
 
 import Function.AlbaHeavencrolling;
 import Function.Albamoncrolling;
 import Function.Albatext;
 import Function.Interncrolling;
 import Function.SaveFunction;
+import image.images;
 import region.Busan;
 import region.Chungbuk;
 import region.Chungnam;
@@ -51,9 +58,18 @@ import region.Seoul;
 import region.Seoul2;
 import region.Ulsan;
 
-public class Mainpage extends JFrame {
-	JTableHeader header;
+public class Mainpage extends JFrame implements Runnable {
+	private static final AbstractButton Albaheaven = null;
 
+	static JPanel background = new JPanel() {
+		public void paintComponent(Graphics g) {
+			g.drawImage(images.Albamon.getImage(), 0, 0, null); // 사진은 나중에 찾기
+			setOpaque(false);
+			super.paintComponent(g);
+		}
+	};
+
+	JTableHeader header;
 	Interncrolling ict = new Interncrolling();
 	public static Object temp;
 	static Object temp2;
@@ -83,15 +99,16 @@ public class Mainpage extends JFrame {
 
 	public static int index = 0; // 적용된 지역 갯수
 	JTable table; // 테이블
+	static JButton AlbaMon = new JButton();
 	static JButton Search = new JButton("검색");
-	static JButton Reset = new JButton("리셋");
+	static JButton Reset = new JButton("필터 리셋");
 	static JButton Calculator = new JButton("급여 계산기");
-	static JButton AlbaHeaven = new JButton("알바천국");
-	static JButton Intern = new JButton("인턴");
-	static JButton SAVE = new JButton("즐겨찾기");
-	static JButton SAVE2 = new JButton("저장");
-	static JButton EVENT = new JButton("이벤트");
-	static JButton INFO = new JButton("팁");
+	static JButton AlbaHeaven = new JButton();
+	static JButton Intern = new JButton();
+	static JButton REPOSITORY = new JButton();
+	static JButton SAVE = new JButton();
+	static JButton INFO = new JButton();
+	static JButton EVENT = new JButton();
 	static JTextField AGE;
 	static String example = "60세 이하 입력";
 	static DefaultTableModel TableModel = new DefaultTableModel() {// 테이블 내용 수정 불가
@@ -119,11 +136,11 @@ public class Mainpage extends JFrame {
 
 	public static JComboBox Dutyweek;
 	// 적용된 필터링 확인 및 필터리 삭제 버튼-----------------------------------------------
-	public static JLabel Filterlabel = new JLabel("-------필터링-------");
+	public static JLabel Filterlabel = new JLabel("--------필터링--------");
 	public static JLabel Filterlabel1 = new JLabel("근무 기간-------");
 	public static JLabel Filterlabel2 = new JLabel("근무 요일-------");
 	public static JLabel Filterlabel3 = new JLabel("성별-------------");
-	public static JLabel Filterlabel4 = new JLabel("지역-------");
+	public static JLabel Filterlabel4 = new JLabel("지역-------------");
 	public static JLabel[] Filtering = new JLabel[5]; // 적용된 지역 레이블
 	public static JButton[] delete = new JButton[5]; // 적용된 지역 삭제 버튼
 	public static JLabel genderlabel = new JLabel(); // 적용된 성별 레이블
@@ -139,8 +156,12 @@ public class Mainpage extends JFrame {
 	MouseListener2 MouseListener2 = new MouseListener2();
 	Areacombolistener AreaCombolistener = new Areacombolistener();
 	Filtercombolistener FilterCombolistener = new Filtercombolistener();
+	int timer = 0;
+	Thread t;
 
 	public Mainpage() {
+		t = new Thread(this);
+		t.start();
 		setTitle("일자리 다모아 - 메인");
 		setSize(1500, 800);
 		this.setLayout(null);
@@ -149,42 +170,61 @@ public class Mainpage extends JFrame {
 		setLocationRelativeTo(null); // 화면 중앙에 오도록 하는 설정
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
+		background.setLayout(null);
+		setContentPane(background);
+		setBackground(Color.WHITE);
 //----------------------------------------------------------광고 테이블 ------------------------------------------------------
-		table = new JTable(TableModel);
+		table = new JTable(TableModel) {
+			public Component prepareRenderer(TableCellRenderer renderer, int row, int column) {
+				JComponent component = (JComponent) super.prepareRenderer(renderer, row, column);
+				if (!isRowSelected(row)) {
+					if (row % 2 == 0)
+						component.setBackground(new Color(255, 191, 147));
+					else
+						component.setBackground(Color.WHITE);
+				}
+				return component;
+
+			}
+		};
 		table.addMouseListener(MouseListener1);
 
 		Search_Albamon();
 		scroll = new JScrollPane(table);
-		scroll.setBounds(160, 130, 1325, 633);
+		scroll.setBounds(160, 200, 1325, 563);
 		scroll.setVisible(true);
 		add(scroll);
 
+		AlbaMon.setBounds(0, 0, 400, 136);
+		AlbaMon.setIcon(images.Albamon);
+		add(AlbaMon);
+		AlbaMon.addActionListener(listener);
 // ----------------------------------------------------------검색 버튼과 검색 텍스트 필드
-		Search.setBounds(900, 20, 60, 60);
+		Search.setBounds(1350, 155, 110, 30);
 		Search.setVisible(true);
 		add(Search);
 		Search.addActionListener(listener);
 
-		Calculator.setBounds(1000, 20, 60, 60);
+		Calculator.setBounds(1350, 75, 110, 30);
 		Calculator.setVisible(true);
 		add(Calculator);
 		Calculator.addActionListener(listener);
 
-		Reset.setBounds(1100, 20, 60, 60);
+		Reset.setBounds(1350, 115, 110, 30);
 		Reset.setVisible(true);
 		add(Reset);
 		Reset.addActionListener(listener);
 // ------------------------------------지역 콤보박스-------------------
 
 		JLabel Province = new JLabel("지역");
-		Province.setBounds(860, 90, 50, 30);
+		Province.setBounds(860, 155, 50, 30);
 		Province.setFont(new Font("맑은 고딕", Font.BOLD, 15));
 		add(Province);
 		String[] Korea_Province = { "선택", "서울", "경기", "인천", "강원", "대전", "세종", "충남", "충북", "부산", "울산", "경남", "경북", "대구",
 				"광주", "전남", "전북", "제주" };
 		Area = new JComboBox(Korea_Province);
 		Area.setSelectedIndex(0);
-		Area.setBounds(900, 90, 70, 30);
+		Area.setBounds(900, 155, 70, 30);
 		Area.setFont(new Font("맑은 고딕", Font.BOLD, 15));
 		add(Area);
 
@@ -193,7 +233,7 @@ public class Mainpage extends JFrame {
 
 		Detail_Area = new JComboBox();
 
-		Detail_Area.setBounds(1000, 90, 150, 30);
+		Detail_Area.setBounds(1000, 155, 150, 30);
 		Detail_Area.setFont(new Font("맑은 고딕", Font.BOLD, 15));
 		Detail_Area.setVisible(false);
 		add(Detail_Area);
@@ -201,7 +241,7 @@ public class Mainpage extends JFrame {
 		Detail_Area.addActionListener(AreaCombolistener);
 
 		City = new JComboBox();
-		City.setBounds(1180, 90, 150, 30);
+		City.setBounds(1180, 155, 150, 30);
 		City.setFont(new Font("맑은 고딕", Font.BOLD, 15));
 		City.setVisible(false);
 		add(City);
@@ -209,13 +249,13 @@ public class Mainpage extends JFrame {
 
 		// -----------------------------------성별 필터링
 		JLabel gender_label = new JLabel("성별");
-		gender_label.setBounds(520, 90, 50, 30);
+		gender_label.setBounds(520, 155, 50, 30);
 		gender_label.setFont(new Font("맑은 고딕", Font.BOLD, 15));
 		add(gender_label);
 
 		String[] gender = { "전체", "남자", "여자" };
 		Gender = new JComboBox(gender);
-		Gender.setBounds(570, 90, 70, 30);
+		Gender.setBounds(570, 155, 70, 30);
 		Gender.setFont(new Font("맑은 고딕", Font.BOLD, 15));
 		Gender.setVisible(true);
 		add(Gender);
@@ -224,13 +264,13 @@ public class Mainpage extends JFrame {
 
 		// -----------------------------------근무기간 필터링
 		JLabel period_label = new JLabel("근무 기간");
-		period_label.setBounds(40, 90, 70, 30);
+		period_label.setBounds(40, 155, 70, 30);
 		period_label.setFont(new Font("맑은 고딕", Font.BOLD, 15));
 		add(period_label);
 
 		String[] periodhead = { "전체", "하루", "1주일이하", "1주일~1개월", "1개월~3개월", "3개월~6개월", "6개월~1년", "1년이상" };
 		Period = new JComboBox(periodhead);
-		Period.setBounds(120, 90, 130, 30);
+		Period.setBounds(120, 155, 130, 30);
 		Period.setFont(new Font("맑은 고딕", Font.BOLD, 15));
 		Period.setVisible(true);
 		add(Period);
@@ -238,13 +278,13 @@ public class Mainpage extends JFrame {
 
 		// -----------------------------------근무요일 필터링
 		JLabel dutyweek_label = new JLabel("근무 요일");
-		dutyweek_label.setBounds(280, 90, 70, 30);
+		dutyweek_label.setBounds(280, 155, 70, 30);
 		dutyweek_label.setFont(new Font("맑은 고딕", Font.BOLD, 15));
 		add(dutyweek_label);
 
 		String[] dutyweekhead = { "전체", "월 ~ 일", "월 ~ 토", "월 ~ 금", "주   말" };
 		Dutyweek = new JComboBox(dutyweekhead);
-		Dutyweek.setBounds(360, 90, 130, 30);
+		Dutyweek.setBounds(360, 155, 130, 30);
 		Dutyweek.setFont(new Font("맑은 고딕", Font.BOLD, 15));
 		Dutyweek.setVisible(true);
 		add(Dutyweek);
@@ -253,99 +293,107 @@ public class Mainpage extends JFrame {
 		// -----------------------------------나이 필터링
 
 		JLabel agelabel = new JLabel("나이");
-		agelabel.setBounds(660, 90, 50, 30);
+		agelabel.setBounds(660, 155, 50, 30);
 		agelabel.setFont(new Font("맑은 고딕", Font.BOLD, 15));
 		add(agelabel);
 
 		AGE = new JTextField(example);
-		AGE.setBounds(700, 90, 130, 30);
+		AGE.setBounds(700, 155, 130, 30);
 		AGE.setFont(new Font("맑은 고딕", Font.BOLD, 15));
 		add(AGE);
 		AGE.addMouseListener(MouseListener2);
 		// ----------------------------------------------- 알바천국과 잡코리아 팝업창
 
-		AlbaHeaven.setBounds(1300, 20, 60, 60);
-		AlbaHeaven.setVisible(true);
+		AlbaHeaven.setBounds(1060, 20, 110, 110);
+		AlbaHeaven.setIcon(images.Albaheaven);
 		add(AlbaHeaven);
 		AlbaHeaven.addActionListener(listener);
+		AlbaHeaven.setContentAreaFilled(false);
 
-		Intern.setBounds(1400, 20, 60, 60);
-		Intern.setVisible(true);
+		Intern.setBounds(900, 20, 110, 110);
+		Intern.setIcon(images.IPP);
 		add(Intern);
 		Intern.addActionListener(listener);
+		Intern.setContentAreaFilled(false);
+
+		EVENT.setBounds(1210, 20, 110, 110);
+		EVENT.setIcon(images.event1);
+		add(EVENT);
+		EVENT.addActionListener(listener);
+		EVENT.setContentAreaFilled(false);
 		// -------------------------------------------------즐겨찾기 버튼
-		SAVE.setBounds(1200, 20, 60, 60);
+		REPOSITORY.setBounds(730, 20, 110, 110);
+		REPOSITORY.setVisible(true);
+		REPOSITORY.setIcon(images.Repasitory);
+		add(REPOSITORY);
+		REPOSITORY.addActionListener(listener);
+		REPOSITORY.setContentAreaFilled(false);
+
+		SAVE.setBounds(450, 20, 110, 110);
+		SAVE.setIcon(images.save);
 		SAVE.setVisible(true);
 		add(SAVE);
 		SAVE.addActionListener(listener);
+		SAVE.setContentAreaFilled(false);
 
-		SAVE2.setBounds(600, 20, 60, 60);
-		SAVE2.setVisible(true);
-		add(SAVE2);
-		SAVE2.addActionListener(listener);
-		// -------------------------------------------------이벤트 버튼
-		EVENT.setBounds(800, 20, 60, 60);
-		EVENT.setVisible(true);
-		add(EVENT);
-		EVENT.addActionListener(listener);
 		// -------------------------------------------------팁 버튼
-		INFO.setBounds(700, 20, 60, 60);
-		INFO.setVisible(true);
+		INFO.setBounds(590, 20, 110, 110);
+		INFO.setIcon(images.tip);
 		add(INFO);
 		INFO.addActionListener(listener);
-
-		// --------------------------------------------------------------------필터링 레이블과
-		// 필터링 삭제
-		Filterlabel.setBounds(10, 130, 150, 20);
+		INFO.setContentAreaFilled(false);
+		// --------------------------------------------------------------------필터링
+		// 레이블과필터링 삭제
+		Filterlabel.setBounds(10, 200, 150, 20);
 		Filterlabel.setFont(new Font("맑은 고딕", Font.BOLD, 15));
 		add(Filterlabel);
 
-		Filterlabel1.setBounds(10, 160, 150, 20);
+		Filterlabel1.setBounds(10, 230, 150, 20);
 		Filterlabel1.setFont(new Font("맑은 고딕", Font.BOLD, 13));
 		add(Filterlabel1);
 
-		periodlabel.setBounds(20, 190, 150, 20);
+		periodlabel.setBounds(20, 260, 150, 20);
 		periodlabel.setFont(new Font("맑은 고딕", Font.BOLD, 12));
 		periodlabel.setText("");
 		add(periodlabel);
 
-		periodbutton.setBounds(130, 190, 20, 20);
+		periodbutton.setBounds(130, 260, 20, 20);
 		periodbutton.setText("");
 		periodbutton.setVisible(false);
 		periodbutton.addActionListener(FilterButtonlistener);
 		add(periodbutton);
 
-		Filterlabel2.setBounds(10, 230, 150, 20); // -----------------근무 요일 레이블
+		Filterlabel2.setBounds(10, 300, 150, 20); // -----------------근무 요일 레이블
 		Filterlabel2.setFont(new Font("맑은 고딕", Font.BOLD, 13));
 		add(Filterlabel2);
 
-		dutyweeklabel.setBounds(20, 260, 150, 20);
+		dutyweeklabel.setBounds(20, 330, 150, 20);
 		dutyweeklabel.setText("");
 		dutyweeklabel.setFont(new Font("맑은 고딕", Font.BOLD, 12));
 		add(dutyweeklabel); // -----------------------------------------근무 요일 레이블
 
-		dutyweekbutton.setBounds(130, 260, 20, 20);// ------------------근무 요일 버튼
+		dutyweekbutton.setBounds(130, 330, 20, 20);// ------------------근무 요일 버튼
 		dutyweekbutton.setText("");
 		dutyweekbutton.setVisible(false);
 		dutyweekbutton.addActionListener(FilterButtonlistener);
 		add(dutyweekbutton);
 
-		Filterlabel3.setBounds(10, 300, 150, 20);
+		Filterlabel3.setBounds(10, 370, 150, 20);
 		Filterlabel3.setFont(new Font("맑은 고딕", Font.BOLD, 13));
 		add(Filterlabel3);
 
-		genderlabel.setBounds(20, 330, 150, 20);
+		genderlabel.setBounds(20, 400, 150, 20);
 		genderlabel.setText("");
 		genderlabel.setFont(new Font("맑은 고딕", Font.BOLD, 12));
 		add(genderlabel); // -----------------------------------------성별 레이블
 
-		genderbutton.setBounds(130, 330, 20, 20);// ------------------성별 버튼
+		genderbutton.setBounds(130, 400, 20, 20);// ------------------성별 버튼
 		genderbutton.setText("");
 		genderbutton.setVisible(false);
 		genderbutton.addActionListener(FilterButtonlistener);
 		add(genderbutton);
 
-		Filterlabel4.setBounds(10, 360, 150, 20);
+		Filterlabel4.setBounds(10, 430, 150, 20);
 		Filterlabel4.setFont(new Font("맑은 고딕", Font.BOLD, 13));
 		add(Filterlabel4);
 
@@ -354,39 +402,39 @@ public class Mainpage extends JFrame {
 			Filtering[i].setFont(new Font("맑은 고딕", Font.BOLD, 12));
 			delete[i] = new JButton();
 		}
-		Filtering[0].setBounds(20, 390, 100, 20);
+		Filtering[0].setBounds(20, 460, 100, 20);
 		Filtering[0].setVisible(false);
 		add(Filtering[0]);
-		Filtering[1].setBounds(20, 420, 100, 20);
+		Filtering[1].setBounds(20, 490, 100, 20);
 		Filtering[1].setVisible(false);
 		add(Filtering[1]);
-		Filtering[2].setBounds(20, 450, 100, 20);
+		Filtering[2].setBounds(20, 520, 100, 20);
 		Filtering[2].setVisible(false);
 		add(Filtering[2]);
-		Filtering[3].setBounds(20, 480, 100, 20);
+		Filtering[3].setBounds(20, 550, 100, 20);
 		Filtering[3].setVisible(false);
 		add(Filtering[3]);
-		Filtering[4].setBounds(20, 510, 100, 20);
+		Filtering[4].setBounds(20, 580, 100, 20);
 		Filtering[4].setVisible(false);
 		add(Filtering[4]);
 
-		delete[0].setBounds(130, 390, 20, 20);
+		delete[0].setBounds(130, 460, 20, 20);
 		delete[0].setVisible(false);
 		add(delete[0]);
 		delete[0].addActionListener(FilterButtonlistener);
-		delete[1].setBounds(130, 420, 20, 20);
+		delete[1].setBounds(130, 490, 20, 20);
 		delete[1].setVisible(false);
 		add(delete[1]);
 		delete[1].addActionListener(FilterButtonlistener);
-		delete[2].setBounds(130, 450, 20, 20);
+		delete[2].setBounds(130, 520, 20, 20);
 		delete[2].setVisible(false);
 		add(delete[2]);
 		delete[2].addActionListener(FilterButtonlistener);
-		delete[3].setBounds(130, 480, 20, 20);
+		delete[3].setBounds(130, 550, 20, 20);
 		delete[3].setVisible(false);
 		add(delete[3]);
 		delete[3].addActionListener(FilterButtonlistener);
-		delete[4].setBounds(130, 510, 20, 20);
+		delete[4].setBounds(130, 580, 20, 20);
 		delete[4].setVisible(false);
 		add(delete[4]);
 		delete[4].addActionListener(FilterButtonlistener);
@@ -396,6 +444,13 @@ public class Mainpage extends JFrame {
 	// ------------------ 내부 클래스 및 메소드 구현
 	class Buttonlistener implements ActionListener { // 버튼 이벤트
 		public void actionPerformed(ActionEvent e) {
+			if (e.getSource() == AlbaMon) {
+				try {
+					Function.Albamoncrolling.explore("https://www.albamon.com");
+				} catch (URISyntaxException e1) {
+					e1.printStackTrace();
+				}
+			}
 			if (e.getSource() == Calculator) { // 계산기 버튼------------------
 				Calculatorpage calculator = new Calculatorpage();
 				calculator.setVisible(true);
@@ -405,16 +460,14 @@ public class Mainpage extends JFrame {
 				if (AGE.getText().equals(example) || AGE.getText().equals("")) {
 					Search_Albamon();
 					AlbaHeavenpage.Search_AlbaHeaven();
-				} 
-				else {
+				} else {
 					try {
 						Integer.parseInt(AGE.getText());
 						Albamoncrolling.age = AGE.getText();
 						AlbaHeavencrolling.age = AGE.getText();
 						Search_Albamon();
 						AlbaHeavenpage.Search_AlbaHeaven();
-					} 
-					catch (NumberFormatException e1) {
+					} catch (NumberFormatException e1) {
 						System.out.println("얘! 그건 숫자가 아니란다!!");
 					}
 				}
@@ -441,20 +494,20 @@ public class Mainpage extends JFrame {
 					Period.setSelectedIndex(0);
 				} catch (IllegalArgumentException e1) {
 				}
-					Albamoncrolling.area = "";
-					Albamoncrolling.gender = "";
-					Albamoncrolling.period = "";
-					Albamoncrolling.dutyweek = "";
-					Albamoncrolling.age = "";
-					AlbaHeavencrolling.area = "";
-					AlbaHeavencrolling.gender = "";
-					AlbaHeavencrolling.period = "";
-					AlbaHeavencrolling.dutyweek = "";
-					AlbaHeavencrolling.age = "";
-					AGE.setText(example);
-					Search_Albamon();
-					AlbaHeavenpage.Search_AlbaHeaven();
-				
+				Albamoncrolling.area = "";
+				Albamoncrolling.gender = "";
+				Albamoncrolling.period = "";
+				Albamoncrolling.dutyweek = "";
+				Albamoncrolling.age = "";
+				AlbaHeavencrolling.area = "";
+				AlbaHeavencrolling.gender = "";
+				AlbaHeavencrolling.period = "";
+				AlbaHeavencrolling.dutyweek = "";
+				AlbaHeavencrolling.age = "";
+				AGE.setText(example);
+				Search_Albamon();
+				AlbaHeavenpage.Search_AlbaHeaven();
+
 			}
 			if (e.getSource() == AlbaHeaven) { // ------------알바천국 버튼 이벤트
 				AlbaHeavenpage popup = new AlbaHeavenpage();
@@ -462,25 +515,26 @@ public class Mainpage extends JFrame {
 			if (e.getSource() == Intern) { // ------------------인턴 버튼 이벤트
 				Internpage ict = new Internpage();
 			}
-			if (e.getSource() == SAVE) { // ------------------즐겨찾기 버튼 이벤트
-				Repositorypage save = new Repositorypage();
-			}
-			if (e.getSource() == EVENT) { // ------------------이벤트 버튼 이벤트
-				Eventpage event = new Eventpage();
+			if (e.getSource() == REPOSITORY) { // ------------------즐겨찾기 버튼 이벤트
+				Repositorypage repository = new Repositorypage();
 			}
 			if (e.getSource() == INFO) { // ------------------팁 버튼 이벤트
-
+				TIPpage tip = new TIPpage();
 			}
-			if (e.getSource() == SAVE2) { // -----------------저장 버튼 이벤트
+			if (e.getSource() == EVENT) {
+				Eventpage event = new Eventpage();
+			}
+			if (e.getSource() == SAVE) { // -----------------저장 버튼 이벤트
 				try {
 					SaveFunction.savealba(Loginpage.ID_.getText(), Alba.get(table.getSelectedRow()).getArea(),
 							Alba.get(table.getSelectedRow()).getPay(), Alba.get(table.getSelectedRow()).getOffice(),
 							Alba.get(table.getSelectedRow()).getText(), Alba.get(table.getSelectedRow()).getURL());
+					Repositorypage.Search_Alba();
 				} catch (SQLException e1) {
-					// TODO Auto-generated catch block
-					e1.printStackTrace();
+				} catch (ArrayIndexOutOfBoundsException e2) {
+				} catch (NullPointerException e3) {
 				}
-				Repositorypage.Search_Alba();
+
 			}
 		}
 	}
@@ -931,18 +985,26 @@ public class Mainpage extends JFrame {
 				}
 			}
 		}
+
 	}
 
 	class MouseListener1 extends MouseAdapter {
 
 		public void mouseClicked(MouseEvent e) {
 			if (e.getClickCount() == 2) {
-				try {
-					System.out.println(Alba.get(table.getSelectedRow()).getURL());
-					Function.Albamoncrolling.explore(Alba.get(table.getSelectedRow()).getURL());
-				} catch (URISyntaxException e1) {
-					e1.printStackTrace();
-				}
+				int connect = JOptionPane.showConfirmDialog(null, "해당 웹페이지로 이동하시겠습니까?", "Notice",
+						JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, images.Dialog_Albamon);
+				if (connect == JOptionPane.CLOSED_OPTION)
+					;
+				else if (connect == JOptionPane.YES_OPTION) {
+					try {
+						System.out.println(Alba.get(table.getSelectedRow()).getURL());
+						Function.Albamoncrolling.explore(Alba.get(table.getSelectedRow()).getURL());
+					} catch (URISyntaxException e1) {
+						e1.printStackTrace();
+					}
+				} else
+					;
 			} // 더블클릭
 
 		}
@@ -959,7 +1021,7 @@ public class Mainpage extends JFrame {
 
 	public void Search_Albamon() { // 광고 검색
 		header = table.getTableHeader();
-		header.setBackground(Color.red);
+		header.setBackground(new Color(255, 102, 0));
 		header.setFont(new Font("맑은 고딕", Font.BOLD, 25));
 
 		Albamoncrolling crolling = new Albamoncrolling();
@@ -979,12 +1041,36 @@ public class Mainpage extends JFrame {
 		TableModel.setDataVector(arr, head);
 		table.getColumnModel().getColumn(0).setPreferredWidth(170);
 		table.getColumnModel().getColumn(1).setPreferredWidth(170);
-		table.getColumnModel().getColumn(2).setPreferredWidth(360);
+		table.getColumnModel().getColumn(2).setPreferredWidth(340);
 		table.getColumnModel().getColumn(3).setPreferredWidth(525);
-		table.getColumnModel().getColumn(4).setPreferredWidth(100);
+		table.getColumnModel().getColumn(4).setPreferredWidth(120);
 		table.getTableHeader().setReorderingAllowed(false);
 
 		table.setRowHeight(35);
 		table.setFont(new Font("맑은 고딕", Font.BOLD, 25)); // 글자 크기 설정
+
 	}
+
+	public void run() { // 시간 메소드
+		while (true) {
+			if (timer % 2 == 0) {
+				Intern.setIcon(images.ICT);
+				EVENT.setIcon(images.event2);
+				INFO.setIcon(images.tip2);
+				AlbaHeaven.setIcon(images.Albaheaven2);
+			} else {
+				Intern.setIcon(images.IPP);
+				EVENT.setIcon(images.event1);	
+				INFO.setIcon(images.tip);
+				AlbaHeaven.setIcon(images.Albaheaven);
+			}
+			timer++;
+			try {
+				Thread.sleep(2500);
+			} catch (InterruptedException e) {
+
+			}
+		}
+	}
+
 }
