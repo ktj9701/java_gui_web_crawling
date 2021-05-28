@@ -6,6 +6,7 @@ public class IPP {
 	private String area;
 	private String state;
 	private String num;
+	private String period;
 	private String url;
 
 	public IPP(String name, String project, String area, String num,  String state,String url) {
@@ -16,7 +17,16 @@ public class IPP {
 		this.num = num;
 		this.url = url;
 	}
-
+	public IPP(String name, String project, String area, String num,  String state,String period,String url) {
+		this.name = name;
+		this.project = project;
+		this.area = area;
+		this.state = state;
+		this.num = num;
+		this.period=period;
+		this.url = url;
+	}
+	
 	public String getName() {
 		return name;
 	}
@@ -56,6 +66,13 @@ public class IPP {
 
 	public void setNum(String num) {
 		this.num = num;
+	}
+	public String getPeriod() {
+		return period;
+	}
+
+	public void setPeriod(String period) {
+		this.period = period;
 	}
 	public String getURL() {
 		return url;
