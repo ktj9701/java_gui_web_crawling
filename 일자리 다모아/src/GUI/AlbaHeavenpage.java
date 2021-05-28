@@ -10,7 +10,6 @@ import java.net.URISyntaxException;
 import java.sql.SQLException;
 import java.util.Vector;
 
-import javax.swing.DefaultComboBoxModel;
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 
@@ -55,7 +54,6 @@ public class AlbaHeavenpage extends JFrame {
 		SAVE.setBounds(1200, 20, 100, 100);
 		add(SAVE);
 		SAVE.addActionListener(ButtonListener);
-
 	}
 
 	public class ButtonListener implements ActionListener { // 마우스 클릭 이벤트
