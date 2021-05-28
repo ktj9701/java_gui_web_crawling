@@ -39,7 +39,7 @@ public class Calculatorpage extends JFrame {
 	DecimalFormat formatter = new DecimalFormat("###,###");
 
 	public Calculatorpage() {
-		setTitle("월급 계산기");
+		setTitle("급여 계산기");
 		setSize(400, 600);
 		this.setLayout(null);
 		setVisible(true);
