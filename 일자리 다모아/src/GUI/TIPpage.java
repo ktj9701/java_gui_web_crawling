@@ -40,11 +40,12 @@ public class TIPpage extends JFrame {
 
 		BACK.setBounds(330, 10, 100, 30);
 		add(BACK);
+		BACK.setBackground(new Color(213, 227, 157));
 		BACK.addActionListener(Buttonlistener);
 		
 		for (int i = 0; i < label.length; i++) {
 			label[i] = new JLabel();
-			label[i].setBounds(30, 50, 450, 500);
+			label[i].setBounds(30, 50, 460, 510);
 			add(label[i]);
 		}
 		label[0].setIcon(images.TIP1);
@@ -59,7 +60,13 @@ public class TIPpage extends JFrame {
 		vision(0);
 
 		left.setBounds(0, 550, 50, 50);
+		left.setIcon(images.left);
+		left.setContentAreaFilled(false);
+		left.setBorderPainted(false);
 		right.setBounds(380, 550, 50, 50);
+		right.setIcon(images.right);
+		right.setContentAreaFilled(false);
+		right.setBorderPainted(false);
 		add(left);
 		left.addActionListener(Buttonlistener);
 		add(right);
