@@ -59,11 +59,10 @@ import region.Seoul2;
 import region.Ulsan;
 
 public class Mainpage extends JFrame implements Runnable {
-	private static final AbstractButton Albaheaven = null;
 
 	static JPanel background = new JPanel() {
 		public void paintComponent(Graphics g) {
-			g.drawImage(images.Albamon.getImage(), 0, 0, null); // 사진은 나중에 찾기
+			g.drawImage(images.ground.getImage(), 0, 0, null); // 사진은 나중에 찾기
 			setOpaque(false);
 			super.paintComponent(g);
 		}
@@ -201,16 +200,19 @@ public class Mainpage extends JFrame implements Runnable {
 		AlbaMon.addActionListener(listener);
 // ----------------------------------------------------------검색 버튼과 검색 텍스트 필드
 		Search.setBounds(1350, 155, 110, 30);
+		Search.setBackground(new Color(255, 221, 221));
 		Search.setVisible(true);
 		add(Search);
 		Search.addActionListener(listener);
 
 		Calculator.setBounds(1350, 75, 110, 30);
+		Calculator.setBackground(new Color(255, 221, 221));
 		Calculator.setVisible(true);
 		add(Calculator);
 		Calculator.addActionListener(listener);
 
 		Reset.setBounds(1350, 115, 110, 30);
+		Reset.setBackground(new Color(255, 221, 221));
 		Reset.setVisible(true);
 		add(Reset);
 		Reset.addActionListener(listener);
@@ -304,44 +306,79 @@ public class Mainpage extends JFrame implements Runnable {
 		AGE.addMouseListener(MouseListener2);
 		// ----------------------------------------------- 알바천국과 잡코리아 팝업창
 
-		AlbaHeaven.setBounds(1060, 20, 110, 110);
+		AlbaHeaven.setBounds(1060, 10, 110, 110);
 		AlbaHeaven.setIcon(images.Albaheaven);
 		add(AlbaHeaven);
 		AlbaHeaven.addActionListener(listener);
 		AlbaHeaven.setContentAreaFilled(false);
-
-		Intern.setBounds(900, 20, 110, 110);
+		AlbaHeaven.setBorderPainted(false);
+		
+		JLabel albaheavenlabel= new JLabel("알바천국");
+		albaheavenlabel.setFont(new Font("맑은 고딕",Font.BOLD,15));
+		albaheavenlabel.setBounds(1090,130,70,15);
+		add(albaheavenlabel);
+		
+		Intern.setBounds(900, 10, 110, 110);
 		Intern.setIcon(images.IPP);
 		add(Intern);
 		Intern.addActionListener(listener);
 		Intern.setContentAreaFilled(false);
-
-		EVENT.setBounds(1210, 20, 110, 110);
+		Intern.setBorderPainted(false);
+		
+		JLabel Internlabel= new JLabel("인턴 공고");
+		Internlabel.setFont(new Font("맑은 고딕",Font.BOLD,15));
+		Internlabel.setBounds(925,130,70,15);
+		add(Internlabel);
+		
+		EVENT.setBounds(1210, 10, 110, 110);
 		EVENT.setIcon(images.event1);
 		add(EVENT);
 		EVENT.addActionListener(listener);
 		EVENT.setContentAreaFilled(false);
+		EVENT.setBorderPainted(false);
+		
+		JLabel Eventlabel= new JLabel("이벤트");
+		Eventlabel.setFont(new Font("맑은 고딕",Font.BOLD,15));
+		Eventlabel.setBounds(1240,130,70,15);
+		add(Eventlabel);
 		// -------------------------------------------------즐겨찾기 버튼
-		REPOSITORY.setBounds(730, 20, 110, 110);
+		REPOSITORY.setBounds(590, 10, 110, 110);
 		REPOSITORY.setVisible(true);
 		REPOSITORY.setIcon(images.Repasitory);
 		add(REPOSITORY);
 		REPOSITORY.addActionListener(listener);
 		REPOSITORY.setContentAreaFilled(false);
+		REPOSITORY.setBorderPainted(false);
 
-		SAVE.setBounds(450, 20, 110, 110);
+		JLabel Repositorylabel= new JLabel("저장목록");
+		Repositorylabel.setFont(new Font("맑은 고딕",Font.BOLD,15));
+		Repositorylabel.setBounds(610,130,70,15);
+		add(Repositorylabel);
+		
+		SAVE.setBounds(450, 10, 110, 110);
 		SAVE.setIcon(images.save);
 		SAVE.setVisible(true);
 		add(SAVE);
 		SAVE.addActionListener(listener);
 		SAVE.setContentAreaFilled(false);
-
+		SAVE.setBorderPainted(false);
+		
+		JLabel Savelabel= new JLabel("저  장");
+		Savelabel.setFont(new Font("맑은 고딕",Font.BOLD,15));
+		Savelabel.setBounds(480,130,70,15);
+		add(Savelabel);
 		// -------------------------------------------------팁 버튼
-		INFO.setBounds(590, 20, 110, 110);
+		INFO.setBounds(750, 10, 110, 110);
 		INFO.setIcon(images.tip);
 		add(INFO);
 		INFO.addActionListener(listener);
 		INFO.setContentAreaFilled(false);
+		INFO.setBorderPainted(false);
+		
+		JLabel Infolabel= new JLabel("팁");
+		Infolabel.setFont(new Font("맑은 고딕",Font.BOLD,15));
+		Infolabel.setBounds(800,130,70,15);
+		add(Infolabel);
 		// --------------------------------------------------------------------필터링
 		// 레이블과필터링 삭제
 		Filterlabel.setBounds(10, 200, 150, 20);
@@ -453,7 +490,6 @@ public class Mainpage extends JFrame implements Runnable {
 			}
 			if (e.getSource() == Calculator) { // 계산기 버튼------------------
 				Calculatorpage calculator = new Calculatorpage();
-				calculator.setVisible(true);
 			}
 			if (e.getSource() == Search) {// 검색 버튼----------------------
 
@@ -525,15 +561,30 @@ public class Mainpage extends JFrame implements Runnable {
 				Eventpage event = new Eventpage();
 			}
 			if (e.getSource() == SAVE) { // -----------------저장 버튼 이벤트
-				try {
-					SaveFunction.savealba(Loginpage.ID_.getText(), Alba.get(table.getSelectedRow()).getArea(),
-							Alba.get(table.getSelectedRow()).getPay(), Alba.get(table.getSelectedRow()).getOffice(),
-							Alba.get(table.getSelectedRow()).getText(), Alba.get(table.getSelectedRow()).getURL());
-					Repositorypage.Search_Alba();
-				} catch (SQLException e1) {
-				} catch (ArrayIndexOutOfBoundsException e2) {
-				} catch (NullPointerException e3) {
-				}
+				if (table.getSelectedRow() != -1) {
+					int connect = JOptionPane.showConfirmDialog(null, "저장 하시겠습니까?", "Notice", JOptionPane.YES_NO_OPTION,
+							JOptionPane.QUESTION_MESSAGE, images.Dialog_save);
+					if (connect == JOptionPane.CLOSED_OPTION)
+						;
+					else if (connect == JOptionPane.YES_OPTION) {
+						try {
+							if (-1 != SaveFunction.savealba(Loginpage.ID_.getText(),
+									Alba.get(table.getSelectedRow()).getArea(),
+									Alba.get(table.getSelectedRow()).getPay(),
+									Alba.get(table.getSelectedRow()).getOffice(),
+									Alba.get(table.getSelectedRow()).getText(),
+									Alba.get(table.getSelectedRow()).getURL())) {
+								JOptionPane.showMessageDialog(null, "저장되었습니다.");
+								Repositorypage.Search_Alba();
+							}
+							else
+								JOptionPane.showMessageDialog(null, "이미 저장된 내용입니다.");
+						} catch (SQLException e1) {
+						} catch (NullPointerException e2) {
+						}
+					}
+				} else
+					JOptionPane.showMessageDialog(null, "광고를 선택하지 않으셨습니다.");
 
 			}
 		}
@@ -1060,7 +1111,7 @@ public class Mainpage extends JFrame implements Runnable {
 				AlbaHeaven.setIcon(images.Albaheaven2);
 			} else {
 				Intern.setIcon(images.IPP);
-				EVENT.setIcon(images.event1);	
+				EVENT.setIcon(images.event1);
 				INFO.setIcon(images.tip);
 				AlbaHeaven.setIcon(images.Albaheaven);
 			}
