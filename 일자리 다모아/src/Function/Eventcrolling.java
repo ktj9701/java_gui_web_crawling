@@ -64,14 +64,21 @@ public class Eventcrolling {
 			e.printStackTrace();
 		}
 		element = doc.select("div.eventList");
-		ie1 = element.select("span.txt").iterator();// 제목
+		ie1 = element.select("span.tit").iterator();// 제목
 		ie2 = element.select("span.txt").iterator();// 내용
 		ie3 = element.select("span.date").iterator();// 기간
 		ie5 = element.iterator();// url
 		String temp[] = ie5.next().html().split("</li>");
 		while (ie1.hasNext()) {
+			
 			String temp2[] = temp[i++].split("'");
+	try {
 			alba_event.add(new Eventtext(ie1.next().text(), ie2.next().text(), ie3.next().text(), "이벤트", temp2[5]));
+	}
+	catch(ArrayIndexOutOfBoundsException e) {
+		break;
+	}
+			
 		}
 
 		return alba_event;
