@@ -19,6 +19,9 @@ public class AlbaHeavencrolling {
 	public static String period = "";//근무 기간 코드
 	public static String dutyweek = "";//근무 요일 코드
 	public static String age = "";//나이 코드
+	public AlbaHeavencrolling() {
+		
+	}
 	public Vector<Albatext> crolling() {//알바천국		
 		Vector<Albatext> albaheaven = new Vector<>();
 		String url;
