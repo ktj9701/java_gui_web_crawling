@@ -2,19 +2,23 @@ package GUI;
 
 import java.awt.Color;
 import java.awt.Font;
+import java.awt.Graphics;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.sql.SQLException;
 import javax.swing.*;
 import Function.DB_Method;
 import Function.dirver;
+import image.images;
 
 public class Loginpage extends JFrame {
 	//public static DB_Method db_method=new DB_Method();
 	Buttonlistener Loginlistener = new Buttonlistener();
 
-	Font Title_Font = new Font("맑은 고딕", Font.BOLD, 30);
-	static JLabel Title = new JLabel("일자리 다모아"); // 프로그램 제목 훗날 사진으로 대체할 예
+	Font Title_Font = new Font("맑은 고딕", Font.BOLD, 50);
+	Font label_Font = new Font("맑은 고딕", Font.BOLD, 15);
+	static JLabel Title = new JLabel("일자리"); // 프로그램 제목 훗날 사진으로 대체할 예
+	static JLabel Title2 = new JLabel("다모아"); 
 	static JLabel ID = new JLabel("아이디");
 	static JLabel PW = new JLabel("비밀번호");
 	static JLabel fail = new JLabel("회원이 아니거나 아이디와 비밀번호가 일치 하지않습니다.");
@@ -23,6 +27,13 @@ public class Loginpage extends JFrame {
 	static JButton Login = new JButton("로그인");
 	static JButton Join = new JButton("회원가입");
 
+	static JPanel background = new JPanel() {
+		public void paintComponent(Graphics g) {
+			g.drawImage(images.start.getImage(), 0, 0, null); // 사진은 나중에 찾기
+			setOpaque(false);
+			super.paintComponent(g);
+		}
+	};
 
 	public Loginpage() {
 		setTitle("로그인");
@@ -33,34 +44,47 @@ public class Loginpage extends JFrame {
 		setLocationRelativeTo(null); // 화면 중앙에 오도록 하는 설정
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-		Title.setBounds(418, 122, 300, 30); // ------------------------------제목
+		background.setLayout(null);
+		setContentPane(background);
+		setBackground(Color.WHITE);
+		
+		Title.setBounds(200, 300, 200, 50); // ------------------------------제목
 		Title.setFont(Title_Font);
 		Title.setVisible(true);
 
-		ID.setBounds(398, 353, 100, 30); // --------------------------------ID 레이블
+		Title2.setBounds(700, 300, 200, 50); // ------------------------------제목
+		Title2.setFont(Title_Font);
+		Title2.setVisible(true);
+		
+		ID.setBounds(398, 550, 100, 30); // --------------------------------ID 레이블
+		ID.setFont(label_Font);
 		ID.setVisible(true);
 
-		PW.setBounds(398, 396, 100, 30); // ----------------------------PW 레이블
+		PW.setBounds(398, 580, 100, 30); // ----------------------------PW 레이블
+		PW.setFont(label_Font);
 		PW.setVisible(true);
 
-		ID_.setBounds(463, 355, 200, 20); // --------------------------ID & PW 텍스트필드
-		PW_.setBounds(463, 398, 200, 20);  
+		ID_.setBounds(463, 553, 200, 20); // --------------------------ID & PW 텍스트필드
+		PW_.setBounds(463, 583, 200, 20);  
 		
 		ID_.setVisible(true);
 		PW_.setVisible(true);
 
-		Login.setBounds(420, 460, 100, 30); // ---------------------로그인 버튼
+		Login.setBounds(420, 625, 100, 30); // ---------------------로그인 버튼
+		Login.setBackground(new Color(196,80,74));
 		Login.setVisible(true);
 
-		Join.setBounds(560, 460, 100, 30); // -----------------------회원 가입 버튼
+		Join.setBounds(560, 625, 100, 30); // -----------------------회원 가입 버튼
+		Join.setBackground(new Color(196,80,74));
 		Join.setVisible(true);
 
-		fail.setBounds(420, 420, 400, 30); // ----------------로그인 실패 레이블
+		fail.setBounds(400, 598, 400, 30); // ----------------로그인 실패 레이블
 		fail.setForeground(Color.red);
 		fail.setFont(new Font("맑은 고딕", Font.BOLD, 11));
 		fail.setVisible(false);
 		add(fail);
 		this.add(Title);
+		this.add(Title2);
 		this.add(ID);
 		this.add(PW);
 		this.add(ID_);
