@@ -1,7 +1,9 @@
 package GUI;
 
+import java.awt.Color;
 import java.awt.EventQueue;
 import java.awt.Font;
+import java.awt.Graphics;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.sql.SQLException;
@@ -10,6 +12,7 @@ import javax.swing.*;
 
 import Function.DB_Method;
 import Function.dirver;
+import image.images;
 
 public class Joinpage extends JFrame {
 	// DB_Method db_method2 = new DB_Method();
@@ -31,7 +34,13 @@ public class Joinpage extends JFrame {
 	static JButton Back = new JButton("돌아가기");
 
 	Buttonlistener listner = new Buttonlistener();
-
+	static JPanel background = new JPanel() {
+		public void paintComponent(Graphics g) {
+			g.drawImage(images.join.getImage(), 0, 0, null); // 사진은 나중에 찾기
+			setOpaque(false);
+			super.paintComponent(g);
+		}
+	};
 	public Joinpage() {
 		setTitle("회원가입");
 		setSize(600,400);
@@ -41,7 +50,11 @@ public class Joinpage extends JFrame {
 		setLocationRelativeTo(null); // 화면 중앙에 오도록 하는 설정
 		setDefaultCloseOperation(DISPOSE_ON_CLOSE);
 
-		Title.setBounds(220, 50, 300, 30); // ----------------------제목 레이블
+		background.setLayout(null);
+		setContentPane(background);
+		setBackground(Color.WHITE);
+		
+		Title.setBounds(240, 100, 300, 30); // ----------------------제목 레이블
 		Title.setFont(Title_Font);
 		Title.setVisible(true);
 		add(Title);
@@ -80,10 +93,12 @@ public class Joinpage extends JFrame {
 
 		Join.setBounds(170, 310, 100, 30); // -----------------------회원 가입 버튼
 		Join.setVisible(true);
+		Join.setBackground(new Color(196,80,74));
 		add(Join);
 
 		Back.setBounds(300, 310, 100, 30); // -----------------------돌아 가기 버튼
 		Back.setVisible(true);
+		Back.setBackground(new Color(196,80,74));
 		add(Back);
 
 		Join.addActionListener(listner);
