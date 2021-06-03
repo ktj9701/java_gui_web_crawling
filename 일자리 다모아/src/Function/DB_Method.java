@@ -25,11 +25,9 @@ public class DB_Method{
 	public int Login(String ID, String PWD) throws SQLException { // 로그인
 		conn=null;
 		String query = "SELECT * FROM Login";
-		conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/Login?useSSL=false", "--", "--");
+		conn = DriverManager.getConnection("jdbc:mysql://172.30.1.45:3306/Login?useSSL=false", "team2", "1Q2w3e4r!!");
 		stmt = conn.createStatement();
-		//if (DB.stmt.execute(query)) {
-		//	DB.rs = DB.stmt.getResultSet();
-		//}
+
 		rs=stmt.executeQuery(query);
 		while (rs.next()) {
 			if (rs.getString("ID").equals(ID) && rs.getString("PWD").equals(PWD)) {
@@ -42,15 +40,16 @@ public class DB_Method{
 		}
 		System.out.println("Login Fail");
 	
-		rs=null;
-		stmt=null;
+		rs.close();
+		stmt.close();
+		conn.close();
 
 		return -1;
 	}
 
 	public static int Join(String ID, String PWD) throws SQLException { // 회원가입
 		conn=null;
-		conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/Login?useSSL=false", "--", "--");
+		conn = DriverManager.getConnection("jdbc:mysql://172.30.1.45:3306/Login?useSSL=false", "team2", "1Q2w3e4r!!");
 		stmt = conn.createStatement();
 		String query = "SELECT * FROM Login";
 		stmt = conn.createStatement();
