@@ -26,10 +26,10 @@ public class Calculatorpage extends JFrame {
 	static JButton Reset = new JButton("ÃÊ±âÈ­");
 	static JButton Calculation = new JButton("°è»ê");
 
-	static JLabel Result_pay__Integer_label = new JLabel("0¿ø");
-	static JLabel Extra_pay_Integer_label = new JLabel("0¿ø");
-	static JLabel Total_pay_Integer_label = new JLabel("0¿ø");
-	static JLabel Tex_pay__Integer_label = new JLabel("0¿ø");
+	static JLabel Result_pay__Integer_label;
+	static JLabel Extra_pay_Integer_label;
+	static JLabel Total_pay_Integer_label;
+	static JLabel Tex_pay__Integer_label;
 
 	Buttonlistener listener = new Buttonlistener();
 	Radiolistener radiolistener = new Radiolistener();
@@ -45,7 +45,7 @@ public class Calculatorpage extends JFrame {
 		setVisible(true);
 		setResizable(false); // ÇÁ·Î±×·¥ Å©±â Á¶Àý ºÒ°¡ ¼³Á¤
 		setLocationRelativeTo(null); // È­¸é Áß¾Ó¿¡ ¿Àµµ·Ï ÇÏ´Â ¼³Á¤
-		dispose();
+
 
 		// ----------------------- ÄÞº¸ ¹Ú½º ----------------------------------
 		String[] kinds = { "½Ã±Þ", "ÀÏ±Þ", "¿ù±Þ", "¿¬ºÀ" };
@@ -123,7 +123,7 @@ public class Calculatorpage extends JFrame {
 		Tex[1] = new JRadioButton();
 		Tex[0].setText("¼Òµæ¼¼ Àû¿ë(3.3%)");
 		Tex[1].setText("Àû¿ë ¾ÈÇÔ");
-		Tex[0].setBounds(50, 290, 150, 30);
+		Tex[0].setBounds(50, 290, 170, 30);
 		Tex[1].setBounds(220, 290, 100, 30);
 		Tex[0].setFont(new Font("¸¼Àº °íµñ", Font.BOLD, 15));
 		Tex[1].setFont(new Font("¸¼Àº °íµñ", Font.BOLD, 15));
@@ -146,6 +146,7 @@ public class Calculatorpage extends JFrame {
 		Result_pay_label.setFont(new Font("¸¼Àº °íµñ", Font.BOLD, 15));
 		add(Result_pay_label);
 
+		Result_pay__Integer_label= new JLabel("0¿ø");
 		Result_pay__Integer_label.setHorizontalAlignment(JLabel.RIGHT);
 		Result_pay__Integer_label.setBounds(250, 400, 100, 30);
 		Result_pay__Integer_label.setFont(new Font("¸¼Àº °íµñ", Font.BOLD, 15));
@@ -156,6 +157,7 @@ public class Calculatorpage extends JFrame {
 		Extra_pay_label.setFont(new Font("¸¼Àº °íµñ", Font.BOLD, 15));
 		add(Extra_pay_label);
 
+		Extra_pay_Integer_label= new JLabel("0¿ø");
 		Extra_pay_Integer_label.setHorizontalAlignment(JLabel.RIGHT);
 		Extra_pay_Integer_label.setBounds(250, 430, 100, 30);
 		Extra_pay_Integer_label.setFont(new Font("¸¼Àº °íµñ", Font.BOLD, 15));
@@ -166,6 +168,7 @@ public class Calculatorpage extends JFrame {
 		Tex_pay_label.setFont(new Font("¸¼Àº °íµñ", Font.BOLD, 15));
 		add(Tex_pay_label);
 
+		Tex_pay__Integer_label= new JLabel("0¿ø");
 		Tex_pay__Integer_label.setHorizontalAlignment(JLabel.RIGHT);
 		Tex_pay__Integer_label.setBounds(250, 460, 100, 30);
 		Tex_pay__Integer_label.setFont(new Font("¸¼Àº °íµñ", Font.BOLD, 15));
@@ -181,6 +184,7 @@ public class Calculatorpage extends JFrame {
 		Total_pay_label.setFont(new Font("¸¼Àº °íµñ", Font.BOLD, 15));
 		add(Total_pay_label);
 
+		Total_pay_Integer_label= new JLabel("0¿ø");
 		Total_pay_Integer_label.setHorizontalAlignment(JLabel.RIGHT);
 		Total_pay_Integer_label.setBounds(250, 510, 100, 30);
 		Total_pay_Integer_label.setFont(new Font("¸¼Àº °íµñ", Font.BOLD, 15));
