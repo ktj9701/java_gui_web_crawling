@@ -32,7 +32,8 @@ public class Interncrolling {
 		conn = null;
 		String query = "SELECT * FROM ict2021";
 		try {
-			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb?useSSL=false", "--", "--");
+			conn = DriverManager.getConnection("jdbc:mysql://172.30.1.45:3306/mydb?useSSL=false", "team2",
+					"1Q2w3e4r!!");
 			stmt = conn.createStatement();
 			rs = stmt.executeQuery(query);
 			while (rs.next()) {
@@ -43,6 +44,9 @@ public class Interncrolling {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		rs.close();
+		stmt.close();
+		conn.close();
 
 		return Interntext;
 	}
@@ -53,7 +57,8 @@ public class Interncrolling {
 		conn = null;
 		String query = "SELECT * FROM ict20202";
 		try {
-			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb?useSSL=false", "--", "--");
+			conn = DriverManager.getConnection("jdbc:mysql://172.30.1.45:3306/mydb?useSSL=false", "team2",
+					"1Q2w3e4r!!");
 			stmt = conn.createStatement();
 			rs = stmt.executeQuery(query);
 			while (rs.next()) {
@@ -64,7 +69,9 @@ public class Interncrolling {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-
+		rs.close();
+		stmt.close();
+		conn.close();
 		return Interntext;
 	}
 
@@ -74,7 +81,8 @@ public class Interncrolling {
 		conn = null;
 		String query = "SELECT * FROM ict20201";
 		try {
-			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb?useSSL=false", "--", "--");
+			conn = DriverManager.getConnection("jdbc:mysql://172.30.1.45:3306/mydb?useSSL=false", "team2",
+					"1Q2w3e4r!!");
 			stmt = conn.createStatement();
 			rs = stmt.executeQuery(query);
 			while (rs.next()) {
@@ -85,17 +93,44 @@ public class Interncrolling {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-
+		rs.close();
+		stmt.close();
+		conn.close();
 		return Interntext;
+	}
+
+	public Vector<IPP> IPP2021하반기() throws SQLException { // 로그인
+		String url = "https://ipp.mju.ac.kr/index.do";
+		Vector<IPP> ipp = new Vector<>();
+		conn = null;
+		String query = "SELECT * FROM ipp20212";
+		try {
+			conn = DriverManager.getConnection("jdbc:mysql://172.30.1.45:3306/mydb?useSSL=false", "team2",
+					"1Q2w3e4r!!");
+			stmt = conn.createStatement();
+			rs = stmt.executeQuery(query);
+			while (rs.next()) {
+				ipp.add(new IPP(rs.getString("NAME"), rs.getString("PROJECT"), rs.getString("AREA"),
+						rs.getString("NUM") + "명", rs.getString("STATE"), rs.getString("period"), url));
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		rs.close();
+		stmt.close();
+		conn.close();
+		return ipp;
 	}
 
 	public Vector<IPP> IPP2021상반기() throws SQLException { // 로그인
 		String url = "https://ipp.mju.ac.kr/index.do";
 		Vector<IPP> ipp = new Vector<>();
 		conn = null;
-		String query = "SELECT * FROM ipp2021";
+		String query = "SELECT * FROM ipp20211";
 		try {
-			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb?useSSL=false", "--", "--");
+			conn = DriverManager.getConnection("jdbc:mysql://172.30.1.45:3306/mydb?useSSL=false", "team2",
+					"1Q2w3e4r!!");
 			stmt = conn.createStatement();
 			rs = stmt.executeQuery(query);
 			while (rs.next()) {
@@ -106,7 +141,9 @@ public class Interncrolling {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-
+		rs.close();
+		stmt.close();
+		conn.close();
 		return ipp;
 	}
 
@@ -116,7 +153,8 @@ public class Interncrolling {
 		conn = null;
 		String query = "SELECT * FROM ipp20202";
 		try {
-			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb?useSSL=false", "--", "--");
+			conn = DriverManager.getConnection("jdbc:mysql://172.30.1.45:3306/mydb?useSSL=false", "team2",
+					"1Q2w3e4r!!");
 			stmt = conn.createStatement();
 			rs = stmt.executeQuery(query);
 			while (rs.next()) {
@@ -127,7 +165,9 @@ public class Interncrolling {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-
+		rs.close();
+		stmt.close();
+		conn.close();
 		return ipp;
 	}
 
@@ -137,7 +177,8 @@ public class Interncrolling {
 		conn = null;
 		String query = "SELECT * FROM ipp20201";
 		try {
-			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb?useSSL=false", "--", "--");
+			conn = DriverManager.getConnection("jdbc:mysql://172.30.1.45:3306/mydb?useSSL=false", "team2",
+					"1Q2w3e4r!!");
 			stmt = conn.createStatement();
 			rs = stmt.executeQuery(query);
 			while (rs.next()) {
@@ -148,7 +189,9 @@ public class Interncrolling {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-
+		rs.close();
+		stmt.close();
+		conn.close();
 		return ipp;
 	}
 
@@ -158,7 +201,8 @@ public class Interncrolling {
 		conn = null;
 		String query = "SELECT * FROM ipp20192";
 		try {
-			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb?useSSL=false", "--", "--");
+			conn = DriverManager.getConnection("jdbc:mysql://172.30.1.45:3306/mydb?useSSL=false", "team2",
+					"1Q2w3e4r!!");
 			stmt = conn.createStatement();
 			rs = stmt.executeQuery(query);
 			while (rs.next()) {
@@ -169,7 +213,9 @@ public class Interncrolling {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-
+		rs.close();
+		stmt.close();
+		conn.close();
 		return ipp;
 	}
 
@@ -179,7 +225,8 @@ public class Interncrolling {
 		conn = null;
 		String query = "SELECT * FROM ipp20191";
 		try {
-			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb?useSSL=false", "--", "--");
+			conn = DriverManager.getConnection("jdbc:mysql://172.30.1.45:3306/mydb?useSSL=false", "team2",
+					"1Q2w3e4r!!");
 			stmt = conn.createStatement();
 			rs = stmt.executeQuery(query);
 			while (rs.next()) {
@@ -190,9 +237,12 @@ public class Interncrolling {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-
+		rs.close();
+		stmt.close();
+		conn.close();
 		return ipp;
 	}
+
 	public static void explore(Object temp2) throws URISyntaxException {
 		try {
 			Desktop.getDesktop().browse(new URI((String) temp2));
