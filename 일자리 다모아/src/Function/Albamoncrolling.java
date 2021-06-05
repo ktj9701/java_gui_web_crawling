@@ -29,8 +29,8 @@ public class Albamoncrolling {
 		int page = 1;
 		Document doc = null;
 		while (page != 4) { // 3페이지까지 출력
-			url = "https://www.albamon.com/list/gi/mon_gi_tot_list.asp?page=" + page + "&ps=20&ob=6&lvtype=1&rArea="
-					+ area + "&rWDate=1&Empmnt_Type=&ob=0&gender="+gender+"&sDutyTerm="+period+"&sDutyWeek="+dutyweek+"&rAge="+age;
+			url = "https://www.albamon.com/list/gi/mon_gi_tot_list.asp?page=" + page + "&ps=20&lvtype=1&rArea="
+					+ area + "&rWDate=1&Empmnt_Type=&gender="+gender+"&sDutyTerm="+period+"&sDutyWeek="+dutyweek+"&rAge="+age+"&ob=0";
 			
 
 			try {
