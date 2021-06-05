@@ -187,11 +187,10 @@ public class Mainpage extends JFrame implements Runnable {
 			}
 		};
 		table.addMouseListener(MouseListener1);
-
 		Search_Albamon();
 		scroll = new JScrollPane(table);
 		scroll.setBounds(160, 200, 1325, 563);
-		scroll.setVisible(true);
+		//scroll.setVisible(true);
 		add(scroll);
 
 		AlbaMon.setBounds(0, 0, 400, 136);
@@ -201,19 +200,19 @@ public class Mainpage extends JFrame implements Runnable {
 // ----------------------------------------------------------검색 버튼과 검색 텍스트 필드
 		Search.setBounds(1350, 155, 110, 30);
 		Search.setBackground(new Color(255, 221, 221));
-		Search.setVisible(true);
+		//Search.setVisible(true);
 		add(Search);
 		Search.addActionListener(listener);
 
 		Calculator.setBounds(1350, 75, 110, 30);
 		Calculator.setBackground(new Color(255, 221, 221));
-		Calculator.setVisible(true);
+		//Calculator.setVisible(true);
 		add(Calculator);
 		Calculator.addActionListener(listener);
 
 		Reset.setBounds(1350, 115, 110, 30);
 		Reset.setBackground(new Color(255, 221, 221));
-		Reset.setVisible(true);
+		//Reset.setVisible(true);
 		add(Reset);
 		Reset.addActionListener(listener);
 // ------------------------------------지역 콤보박스-------------------
@@ -259,7 +258,7 @@ public class Mainpage extends JFrame implements Runnable {
 		Gender = new JComboBox(gender);
 		Gender.setBounds(570, 155, 70, 30);
 		Gender.setFont(new Font("맑은 고딕", Font.BOLD, 15));
-		Gender.setVisible(true);
+		//Gender.setVisible(true);
 		add(Gender);
 
 		Gender.addActionListener(FilterCombolistener);
@@ -274,7 +273,7 @@ public class Mainpage extends JFrame implements Runnable {
 		Period = new JComboBox(periodhead);
 		Period.setBounds(120, 155, 130, 30);
 		Period.setFont(new Font("맑은 고딕", Font.BOLD, 15));
-		Period.setVisible(true);
+		//Period.setVisible(true);
 		add(Period);
 		Period.addActionListener(FilterCombolistener);
 
@@ -288,7 +287,7 @@ public class Mainpage extends JFrame implements Runnable {
 		Dutyweek = new JComboBox(dutyweekhead);
 		Dutyweek.setBounds(360, 155, 130, 30);
 		Dutyweek.setFont(new Font("맑은 고딕", Font.BOLD, 15));
-		Dutyweek.setVisible(true);
+		//Dutyweek.setVisible(true);
 		add(Dutyweek);
 		Dutyweek.addActionListener(FilterCombolistener);
 
@@ -312,60 +311,60 @@ public class Mainpage extends JFrame implements Runnable {
 		AlbaHeaven.addActionListener(listener);
 		AlbaHeaven.setContentAreaFilled(false);
 		AlbaHeaven.setBorderPainted(false);
-		
-		JLabel albaheavenlabel= new JLabel("알바천국");
-		albaheavenlabel.setFont(new Font("맑은 고딕",Font.BOLD,15));
-		albaheavenlabel.setBounds(1090,130,70,15);
+
+		JLabel albaheavenlabel = new JLabel("알바천국");
+		albaheavenlabel.setFont(new Font("맑은 고딕", Font.BOLD, 15));
+		albaheavenlabel.setBounds(1090, 130, 70, 15);
 		add(albaheavenlabel);
-		
+
 		Intern.setBounds(900, 10, 110, 110);
 		Intern.setIcon(images.IPP);
 		add(Intern);
 		Intern.addActionListener(listener);
 		Intern.setContentAreaFilled(false);
 		Intern.setBorderPainted(false);
-		
-		JLabel Internlabel= new JLabel("인턴 공고");
-		Internlabel.setFont(new Font("맑은 고딕",Font.BOLD,15));
-		Internlabel.setBounds(925,130,70,15);
+
+		JLabel Internlabel = new JLabel("인턴 공고");
+		Internlabel.setFont(new Font("맑은 고딕", Font.BOLD, 15));
+		Internlabel.setBounds(925, 130, 70, 15);
 		add(Internlabel);
-		
+
 		EVENT.setBounds(1210, 10, 110, 110);
 		EVENT.setIcon(images.event1);
 		add(EVENT);
 		EVENT.addActionListener(listener);
 		EVENT.setContentAreaFilled(false);
 		EVENT.setBorderPainted(false);
-		
-		JLabel Eventlabel= new JLabel("이벤트");
-		Eventlabel.setFont(new Font("맑은 고딕",Font.BOLD,15));
-		Eventlabel.setBounds(1240,130,70,15);
+
+		JLabel Eventlabel = new JLabel("이벤트");
+		Eventlabel.setFont(new Font("맑은 고딕", Font.BOLD, 15));
+		Eventlabel.setBounds(1240, 130, 70, 15);
 		add(Eventlabel);
 		// -------------------------------------------------즐겨찾기 버튼
 		REPOSITORY.setBounds(590, 10, 110, 110);
-		REPOSITORY.setVisible(true);
+		//REPOSITORY.setVisible(true);
 		REPOSITORY.setIcon(images.Repasitory);
 		add(REPOSITORY);
 		REPOSITORY.addActionListener(listener);
 		REPOSITORY.setContentAreaFilled(false);
 		REPOSITORY.setBorderPainted(false);
 
-		JLabel Repositorylabel= new JLabel("저장목록");
-		Repositorylabel.setFont(new Font("맑은 고딕",Font.BOLD,15));
-		Repositorylabel.setBounds(610,130,70,15);
+		JLabel Repositorylabel = new JLabel("저장목록");
+		Repositorylabel.setFont(new Font("맑은 고딕", Font.BOLD, 15));
+		Repositorylabel.setBounds(610, 130, 70, 15);
 		add(Repositorylabel);
-		
+
 		SAVE.setBounds(450, 10, 110, 110);
 		SAVE.setIcon(images.save);
-		SAVE.setVisible(true);
+	//	SAVE.setVisible(true);
 		add(SAVE);
 		SAVE.addActionListener(listener);
 		SAVE.setContentAreaFilled(false);
 		SAVE.setBorderPainted(false);
-		
-		JLabel Savelabel= new JLabel("저  장");
-		Savelabel.setFont(new Font("맑은 고딕",Font.BOLD,15));
-		Savelabel.setBounds(480,130,70,15);
+
+		JLabel Savelabel = new JLabel("저  장");
+		Savelabel.setFont(new Font("맑은 고딕", Font.BOLD, 15));
+		Savelabel.setBounds(480, 130, 70, 15);
 		add(Savelabel);
 		// -------------------------------------------------팁 버튼
 		INFO.setBounds(750, 10, 110, 110);
@@ -374,10 +373,10 @@ public class Mainpage extends JFrame implements Runnable {
 		INFO.addActionListener(listener);
 		INFO.setContentAreaFilled(false);
 		INFO.setBorderPainted(false);
-		
-		JLabel Infolabel= new JLabel("팁");
-		Infolabel.setFont(new Font("맑은 고딕",Font.BOLD,15));
-		Infolabel.setBounds(800,130,70,15);
+
+		JLabel Infolabel = new JLabel("팁");
+		Infolabel.setFont(new Font("맑은 고딕", Font.BOLD, 15));
+		Infolabel.setBounds(800, 130, 70, 15);
 		add(Infolabel);
 		// --------------------------------------------------------------------필터링
 		// 레이블과필터링 삭제
@@ -399,6 +398,7 @@ public class Mainpage extends JFrame implements Runnable {
 		periodbutton.setVisible(false);
 		periodbutton.addActionListener(FilterButtonlistener);
 		add(periodbutton);
+		periodbutton.setIcon(images.xbox);
 
 		Filterlabel2.setBounds(10, 300, 150, 20); // -----------------근무 요일 레이블
 		Filterlabel2.setFont(new Font("맑은 고딕", Font.BOLD, 13));
@@ -414,6 +414,7 @@ public class Mainpage extends JFrame implements Runnable {
 		dutyweekbutton.setVisible(false);
 		dutyweekbutton.addActionListener(FilterButtonlistener);
 		add(dutyweekbutton);
+		dutyweekbutton.setIcon(images.xbox);
 
 		Filterlabel3.setBounds(10, 370, 150, 20);
 		Filterlabel3.setFont(new Font("맑은 고딕", Font.BOLD, 13));
@@ -429,6 +430,7 @@ public class Mainpage extends JFrame implements Runnable {
 		genderbutton.setVisible(false);
 		genderbutton.addActionListener(FilterButtonlistener);
 		add(genderbutton);
+		genderbutton.setIcon(images.xbox);
 
 		Filterlabel4.setBounds(10, 430, 150, 20);
 		Filterlabel4.setFont(new Font("맑은 고딕", Font.BOLD, 13));
@@ -457,22 +459,27 @@ public class Mainpage extends JFrame implements Runnable {
 
 		delete[0].setBounds(130, 460, 20, 20);
 		delete[0].setVisible(false);
+		delete[0].setIcon(images.xbox);
 		add(delete[0]);
 		delete[0].addActionListener(FilterButtonlistener);
 		delete[1].setBounds(130, 490, 20, 20);
 		delete[1].setVisible(false);
+		delete[1].setIcon(images.xbox);
 		add(delete[1]);
 		delete[1].addActionListener(FilterButtonlistener);
 		delete[2].setBounds(130, 520, 20, 20);
 		delete[2].setVisible(false);
+		delete[2].setIcon(images.xbox);
 		add(delete[2]);
 		delete[2].addActionListener(FilterButtonlistener);
 		delete[3].setBounds(130, 550, 20, 20);
 		delete[3].setVisible(false);
+		delete[3].setIcon(images.xbox);
 		add(delete[3]);
 		delete[3].addActionListener(FilterButtonlistener);
 		delete[4].setBounds(130, 580, 20, 20);
 		delete[4].setVisible(false);
+		delete[4].setIcon(images.xbox);
 		add(delete[4]);
 		delete[4].addActionListener(FilterButtonlistener);
 
@@ -504,7 +511,6 @@ public class Mainpage extends JFrame implements Runnable {
 						Search_Albamon();
 						AlbaHeavenpage.Search_AlbaHeaven();
 					} catch (NumberFormatException e1) {
-						System.out.println("얘! 그건 숫자가 아니란다!!");
 					}
 				}
 			}
@@ -520,12 +526,21 @@ public class Mainpage extends JFrame implements Runnable {
 					Area.setSelectedIndex(0);
 					Detail_Area.setSelectedIndex(0);
 					City.setSelectedIndex(0);
+					Period.setSelectedIndex(0);
+					Dutyweek.setSelectedIndex(0);
+					Gender.setSelectedIndex(0);
+					AGE.setText(example);
 					Detail_Area.setVisible(false);
 					City.setVisible(false);
 					genderlabel.setText("");
 					periodlabel.setText("");
+					genderlabel.setVisible(false);
+					periodlabel.setVisible(false);
 					genderbutton.setVisible(false);
 					periodbutton.setVisible(false);
+					dutyweeklabel.setText("");
+					dutyweeklabel.setVisible(false);
+					dutyweekbutton.setVisible(false);
 					Gender.setSelectedIndex(0);
 					Period.setSelectedIndex(0);
 				} catch (IllegalArgumentException e1) {
@@ -549,10 +564,16 @@ public class Mainpage extends JFrame implements Runnable {
 				AlbaHeavenpage popup = new AlbaHeavenpage();
 			}
 			if (e.getSource() == Intern) { // ------------------인턴 버튼 이벤트
-				Internpage ict = new Internpage();
+				if (Loginpage.TEST_flag != true) {
+					Internpage ict = new Internpage();
+				} else
+					JOptionPane.showMessageDialog(null, "테스트 모드/ 일부 기능이 제한됩니다.");
 			}
 			if (e.getSource() == REPOSITORY) { // ------------------즐겨찾기 버튼 이벤트
-				Repositorypage repository = new Repositorypage();
+				if (Loginpage.TEST_flag != true) {
+					Repositorypage repository = new Repositorypage();
+				} else
+					JOptionPane.showMessageDialog(null, "테스트 모드/ 일부 기능이 제한됩니다.");
 			}
 			if (e.getSource() == INFO) { // ------------------팁 버튼 이벤트
 				TIPpage tip = new TIPpage();
@@ -561,31 +582,32 @@ public class Mainpage extends JFrame implements Runnable {
 				Eventpage event = new Eventpage();
 			}
 			if (e.getSource() == SAVE) { // -----------------저장 버튼 이벤트
-				if (table.getSelectedRow() != -1) {
-					int connect = JOptionPane.showConfirmDialog(null, "저장 하시겠습니까?", "Notice", JOptionPane.YES_NO_OPTION,
-							JOptionPane.QUESTION_MESSAGE, images.Dialog_save);
-					if (connect == JOptionPane.CLOSED_OPTION)
-						;
-					else if (connect == JOptionPane.YES_OPTION) {
-						try {
-							if (-1 != SaveFunction.savealba(Loginpage.ID_.getText(),
-									Alba.get(table.getSelectedRow()).getArea(),
-									Alba.get(table.getSelectedRow()).getPay(),
-									Alba.get(table.getSelectedRow()).getOffice(),
-									Alba.get(table.getSelectedRow()).getText(),
-									Alba.get(table.getSelectedRow()).getURL())) {
-								JOptionPane.showMessageDialog(null, "저장되었습니다.");
-								Repositorypage.Search_Alba();
+				if (Loginpage.TEST_flag != true) {
+					if (table.getSelectedRow() != -1) {
+						int connect = JOptionPane.showConfirmDialog(null, "저장 하시겠습니까?", "Notice",
+								JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, images.Dialog_save);
+						if (connect == JOptionPane.CLOSED_OPTION)
+							;
+						else if (connect == JOptionPane.YES_OPTION) {
+							try {
+								if (-1 != SaveFunction.savealba(Loginpage.ID_.getText(),
+										Alba.get(table.getSelectedRow()).getArea(),
+										Alba.get(table.getSelectedRow()).getPay(),
+										Alba.get(table.getSelectedRow()).getOffice(),
+										Alba.get(table.getSelectedRow()).getText(),
+										Alba.get(table.getSelectedRow()).getURL())) {
+									JOptionPane.showMessageDialog(null, "저장되었습니다.");
+									Repositorypage.Search_Alba();
+								} else
+									JOptionPane.showMessageDialog(null, "이미 저장된 내용입니다.");
+							} catch (SQLException e1) {
+							} catch (NullPointerException e2) {
 							}
-							else
-								JOptionPane.showMessageDialog(null, "이미 저장된 내용입니다.");
-						} catch (SQLException e1) {
-						} catch (NullPointerException e2) {
 						}
-					}
+					} else
+						JOptionPane.showMessageDialog(null, "광고를 선택하지 않으셨습니다.");
 				} else
-					JOptionPane.showMessageDialog(null, "광고를 선택하지 않으셨습니다.");
-
+					JOptionPane.showMessageDialog(null, "테스트 모드/ 일부 기능이 제한됩니다.");
 			}
 		}
 	}
@@ -707,6 +729,14 @@ public class Mainpage extends JFrame implements Runnable {
 				AlbaHeavencrolling.period = "";
 				periodlabel.setText("");
 				periodbutton.setVisible(false);
+				Search_Albamon();
+				AlbaHeavenpage.Search_AlbaHeaven();
+			}
+			if (e.getSource() == dutyweekbutton) {
+				Albamoncrolling.dutyweek = "";
+				AlbaHeavencrolling.dutyweek = "";
+				dutyweeklabel.setText("");
+				dutyweekbutton.setVisible(false);
 				Search_Albamon();
 				AlbaHeavenpage.Search_AlbaHeaven();
 			}
@@ -940,66 +970,78 @@ public class Mainpage extends JFrame implements Runnable {
 			if (e.getSource() == Gender) {
 				if (Gender.getSelectedItem().equals("전체")) {
 					genderlabel.setText("");
+					genderlabel.setVisible(false);
 					genderbutton.setVisible(false);
 					Albamoncrolling.gender = "";
 					AlbaHeavencrolling.gender = "";
 				}
 				if (Gender.getSelectedItem().equals("남자")) {
 					genderlabel.setText("남자");
+					genderlabel.setVisible(true);
 					genderbutton.setVisible(true);
 					Albamoncrolling.gender = "M";
 					AlbaHeavencrolling.gender = "C01";
 				}
 				if (Gender.getSelectedItem().equals("여자")) {
 					genderlabel.setText("여자");
+					genderlabel.setVisible(true);
 					genderbutton.setVisible(true);
-					Albamoncrolling.gender = "W";
+					Albamoncrolling.gender = "F";
 					AlbaHeavencrolling.gender = "C02";
 				}
 			}
 			if (e.getSource() == Period) {
 				if (Period.getSelectedItem().equals("전체")) {
+					periodlabel.setVisible(false);
+					periodbutton.setVisible(false);
 					Albamoncrolling.period = "";
 					AlbaHeavencrolling.period = "";
 				}
 				if (Period.getSelectedItem().equals("하루")) {
 					periodlabel.setText("하루");
+					periodlabel.setVisible(true);
 					periodbutton.setVisible(true);
 					Albamoncrolling.period = "5";
 					AlbaHeavencrolling.period = "H01";
 				}
 				if (Period.getSelectedItem().equals("1주일이하")) {
 					periodlabel.setText("1주일이하");
+					periodlabel.setVisible(true);
 					periodbutton.setVisible(true);
 					Albamoncrolling.period = "10";
 					AlbaHeavencrolling.period = "H02";
 				}
 				if (Period.getSelectedItem().equals("1주일~1개월")) {
 					periodlabel.setText("1주일~1개월");
+					periodlabel.setVisible(true);
 					periodbutton.setVisible(true);
 					Albamoncrolling.period = "20";
 					AlbaHeavencrolling.period = "H03";
 				}
 				if (Period.getSelectedItem().equals("1개월~3개월")) {
 					periodlabel.setText("1개월~3개월");
+					periodlabel.setVisible(true);
 					periodbutton.setVisible(true);
 					Albamoncrolling.period = "30";
 					AlbaHeavencrolling.period = "H04";
 				}
 				if (Period.getSelectedItem().equals("3개월~6개월")) {
 					periodlabel.setText("3개월~6개월");
+					periodlabel.setVisible(true);
 					periodbutton.setVisible(true);
 					Albamoncrolling.period = "40";
 					AlbaHeavencrolling.period = "H05";
 				}
 				if (Period.getSelectedItem().equals("6개월~1년")) {
 					periodlabel.setText("6개월~1년");
+					periodlabel.setVisible(true);
 					periodbutton.setVisible(true);
 					Albamoncrolling.period = "45";
 					AlbaHeavencrolling.period = "H06";
 				}
 				if (Period.getSelectedItem().equals("1년이상")) {
 					periodlabel.setText("1년이상");
+					periodlabel.setVisible(true);
 					periodbutton.setVisible(true);
 					Albamoncrolling.period = "48";
 					AlbaHeavencrolling.period = "H09";
@@ -1007,29 +1049,35 @@ public class Mainpage extends JFrame implements Runnable {
 			}
 			if (e.getSource() == Dutyweek) {
 				if (Dutyweek.getSelectedItem().equals("전체")) {
+					dutyweeklabel.setVisible(false);
+					dutyweekbutton.setVisible(false);
 					Albamoncrolling.dutyweek = "";
 					AlbaHeavencrolling.dutyweek = "";
 				}
 				if (Dutyweek.getSelectedItem().equals("월 ~ 일")) {
 					dutyweeklabel.setText("월 ~ 일");
+					dutyweeklabel.setVisible(true);
 					dutyweekbutton.setVisible(true);
 					Albamoncrolling.dutyweek = "10";
 					AlbaHeavencrolling.dutyweek = "D03";
 				}
 				if (Dutyweek.getSelectedItem().equals("월 ~ 토")) {
 					dutyweeklabel.setText("월 ~ 토");
+					dutyweeklabel.setVisible(true);
 					dutyweekbutton.setVisible(true);
 					Albamoncrolling.dutyweek = "20";
 					AlbaHeavencrolling.dutyweek = "D02";
 				}
 				if (Dutyweek.getSelectedItem().equals("월 ~ 금")) {
 					dutyweeklabel.setText("월 ~ 금");
+					dutyweeklabel.setVisible(true);
 					dutyweekbutton.setVisible(true);
 					Albamoncrolling.dutyweek = "30";
 					AlbaHeavencrolling.dutyweek = "D01";
 				}
 				if (Dutyweek.getSelectedItem().equals("주   말")) {
 					dutyweeklabel.setText("주   말");
+					dutyweeklabel.setVisible(true);
 					dutyweekbutton.setVisible(true);
 					Albamoncrolling.dutyweek = "40";
 					AlbaHeavencrolling.dutyweek = "D04";
@@ -1049,7 +1097,6 @@ public class Mainpage extends JFrame implements Runnable {
 					;
 				else if (connect == JOptionPane.YES_OPTION) {
 					try {
-						System.out.println(Alba.get(table.getSelectedRow()).getURL());
 						Function.Albamoncrolling.explore(Alba.get(table.getSelectedRow()).getURL());
 					} catch (URISyntaxException e1) {
 						e1.printStackTrace();
