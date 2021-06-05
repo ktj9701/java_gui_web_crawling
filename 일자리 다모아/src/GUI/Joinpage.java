@@ -15,8 +15,7 @@ import Function.dirver;
 import image.images;
 
 public class Joinpage extends JFrame {
-	// DB_Method db_method2 = new DB_Method();
-	// -----------------------------------------------------------폰토
+	// -----------------------------------------------------------폰트
 	Font Title_Font = new Font("맑은 고딕", Font.BOLD, 30);
 	Font Point15_Font = new Font("맑은 고딕", Font.BOLD, 15);
 	// -----------------------------------------------------------레이블 및 텍스트 필드

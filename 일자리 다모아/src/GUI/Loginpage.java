@@ -12,7 +12,6 @@ import Function.dirver;
 import image.images;
 
 public class Loginpage extends JFrame {
-	//public static DB_Method db_method=new DB_Method();
 	Buttonlistener Loginlistener = new Buttonlistener();
 
 	Font Title_Font = new Font("¸¼Àº °íµñ", Font.BOLD, 50);
