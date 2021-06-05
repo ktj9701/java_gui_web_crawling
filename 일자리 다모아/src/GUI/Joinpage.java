@@ -40,9 +40,10 @@ public class Joinpage extends JFrame {
 			super.paintComponent(g);
 		}
 	};
+
 	public Joinpage() {
 		setTitle("회원가입");
-		setSize(600,400);
+		setSize(600, 400);
 		this.setLayout(null);
 		setVisible(true);
 		setResizable(false); // 프로그램 크기 조절 불가 설정
@@ -52,52 +53,52 @@ public class Joinpage extends JFrame {
 		background.setLayout(null);
 		setContentPane(background);
 		setBackground(Color.WHITE);
-		
+
 		Title.setBounds(240, 100, 300, 30); // ----------------------제목 레이블
 		Title.setFont(Title_Font);
-		Title.setVisible(true);
+		// Title.setVisible(true);
 		add(Title);
 
 		ID.setBounds(80, 150, 50, 30); // --------------------------ID 레이블
 		ID.setFont(Point15_Font);
-		ID.setVisible(true);
+		// ID.setVisible(true);
 		add(ID);
 
 		PW.setBounds(80, 190, 100, 30); // ------------------------패스워드 레이블
 		PW.setFont(Point15_Font);
-		PW.setVisible(true);
+		// PW.setVisible(true);
 		add(PW);
 
 		PW_Check.setBounds(80, 230, 100, 30); // ----------------패스워드 확인 레이블
 		PW_Check.setFont(Point15_Font);
-		PW_Check.setVisible(true);
+		// PW_Check.setVisible(true);
 		add(PW_Check);
 
 		fail.setBounds(80, 270, 200, 30);
 		fail.setFont(Point15_Font);
-		fail.setVisible(true);
+		// fail.setVisible(true);
 		add(fail);
 
 		ID_.setBounds(200, 150, 200, 30); // ---------------------아이디 텍스트필드
-		ID_.setVisible(true);
+		// ID_.setVisible(true);
 		add(ID_);
 
 		PW_.setBounds(200, 190, 200, 30); // ----------------------비밀번호 텍스트필드
-		PW_.setVisible(true);
+		// PW_.setVisible(true);
 		add(PW_);
 
 		PW_Check_.setBounds(200, 230, 200, 30); // ----------------비밀번호 확인 텍스트필드
-		PW_Check_.setVisible(true);
+		// PW_Check_.setVisible(true);
 		add(PW_Check_);
 
 		Join.setBounds(170, 310, 100, 30); // -----------------------회원 가입 버튼
-		Join.setVisible(true);
-		Join.setBackground(new Color(196,80,74));
+		// Join.setVisible(true);
+		Join.setBackground(new Color(196, 80, 74));
 		add(Join);
 
 		Back.setBounds(300, 310, 100, 30); // -----------------------돌아 가기 버튼
-		Back.setVisible(true);
-		Back.setBackground(new Color(196,80,74));
+		// Back.setVisible(true);
+		Back.setBackground(new Color(196, 80, 74));
 		add(Back);
 
 		Join.addActionListener(listner);
@@ -111,18 +112,16 @@ public class Joinpage extends JFrame {
 				if (PW_.getText().equals(PW_Check_.getText())) {
 
 					DB_Method db_method2 = new DB_Method();
-					int result=0;
+					int result = 0;
 					try {
 						result = db_method2.Join(ID_.getText(), PW_.getText());
 					} catch (SQLException e1) {
-						// TODO Auto-generated catch block
 						e1.printStackTrace();
 					}
 					if (result == 1) {
 						JOptionPane.showMessageDialog(null, "회원등록 완료");
-						//Loginpage login = new Loginpage();
 						dispose();
-						
+
 					} else {
 						JOptionPane.showMessageDialog(null, "중복아이디 / 회원동록 실패");
 						ID_.setText("");
@@ -130,8 +129,7 @@ public class Joinpage extends JFrame {
 						PW_Check_.setText("");
 					}
 
-				} 
-				else
+				} else
 					fail.setText("비밀번호가 다릅니다.");
 			}
 
