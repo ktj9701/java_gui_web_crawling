@@ -18,7 +18,6 @@ public class DB_Method{
 				Class.forName("com.mysql.jdbc.Driver");
 			
 			} catch (Exception e) {
-				System.out.println("fail");
 			}
 	}
 
@@ -31,14 +30,12 @@ public class DB_Method{
 		rs=stmt.executeQuery(query);
 		while (rs.next()) {
 			if (rs.getString("ID").equals(ID) && rs.getString("PWD").equals(PWD)) {
-				System.out.println("Login Success");	
 				rs.close();
 				stmt.close();
 				conn.close();
 				return 1;
 			}
 		}
-		System.out.println("Login Fail");
 	
 		rs.close();
 		stmt.close();
@@ -56,7 +53,6 @@ public class DB_Method{
 		rs=stmt.executeQuery(query);
 		while (rs.next()) {
 			if (rs.getString("ID").equals(ID)) {
-				System.out.println("Join Fail");
 				return -1;
 			}
 		}
