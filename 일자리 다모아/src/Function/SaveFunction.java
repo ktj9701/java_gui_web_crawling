@@ -22,7 +22,6 @@ public class SaveFunction {
 			Class.forName("com.mysql.jdbc.Driver");
 
 		} catch (Exception e) {
-			System.out.println("fail");
 		}
 	}
 
@@ -35,7 +34,6 @@ public class SaveFunction {
 		rs = stmt.executeQuery(query);
 		while (rs.next()) {
 			if (rs.getString("URL").equals(URL) && rs.getString("ID").equals(ID)) {
-				System.out.println("SAVE FAIL");
 				return -1;
 			}
 		}
@@ -125,7 +123,6 @@ public class SaveFunction {
 		rs = stmt.executeQuery(query);
 		while (rs.next()) {
 			if (rs.getString("PROJECT").equals(PROJECT) && rs.getString("ID").equals(ID)) {
-				System.out.println("SAVE FAIL");
 				return -1;
 			}
 		}
