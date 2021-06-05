@@ -22,7 +22,6 @@ public class Interncrolling {
 			Class.forName("org.gjt.mm.mysql.Driver");
 
 		} catch (Exception e) {
-			System.out.println("fail");
 		}
 	}
 
