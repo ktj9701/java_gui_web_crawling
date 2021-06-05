@@ -77,7 +77,7 @@ public class AlbaHeavenpage extends JFrame {
 		Search_AlbaHeaven();
 		scroll = new JScrollPane(table);
 		scroll.setBounds(0, 130, 1300, 633);
-		scroll.setVisible(true);
+		//scroll.setVisible(true);
 		add(scroll);
 		
 		ButtonListener ButtonListener = new ButtonListener();
