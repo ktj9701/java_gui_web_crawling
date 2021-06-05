@@ -134,11 +134,11 @@ public class Calculatorpage extends JFrame {
 		add(Tex[1]);
 
 		Reset.setBounds(80, 340, 100, 30); // -----------------------초기화 버튼
-		Reset.setVisible(true);
+		//Reset.setVisible(true);
 		add(Reset);
 
 		Calculation.setBounds(230, 340, 100, 30); // -----------------------초기화 버튼
-		Calculation.setVisible(true);
+		//Calculation.setVisible(true);
 		add(Calculation);
 		// ----------------------------------------결과 레이블-----------------------------
 		JLabel Result_pay_label = new JLabel("예상 급여(+)");
