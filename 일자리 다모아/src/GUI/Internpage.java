@@ -91,7 +91,7 @@ public class Internpage extends JFrame {
 		INTERN_Search(0);
 		scroll = new JScrollPane(table);
 		scroll.setBounds(0, 130, 1484, 633);
-		scroll.setVisible(true);
+		//scroll.setVisible(true);
 		add(scroll);
 
 		title.setIcon(images.title_ict);
@@ -137,7 +137,6 @@ public class Internpage extends JFrame {
 
 	public class Buttonlistener implements ActionListener { // 버튼 이벤트
 		public void actionPerformed(ActionEvent e) {
-			System.out.println("Test");
 			if (e.getSource() == SAVE) {
 				if (table.getSelectedRow() != -1) {
 					int connect = JOptionPane.showConfirmDialog(null, "저장 하시겠습니까?", "Notice", JOptionPane.YES_NO_OPTION,
