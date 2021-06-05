@@ -12,6 +12,7 @@ import Function.dirver;
 import image.images;
 
 public class Loginpage extends JFrame {
+	
 	Buttonlistener Loginlistener = new Buttonlistener();
 
 	Font Title_Font = new Font("맑은 고딕", Font.BOLD, 50);
@@ -25,7 +26,9 @@ public class Loginpage extends JFrame {
 	static JTextField PW_ = new JTextField(10);
 	static JButton Login = new JButton("로그인");
 	static JButton Join = new JButton("회원가입");
-
+	static JButton TEST = new JButton("테스트");
+	static boolean TEST_flag= false;
+	
 	static JPanel background = new JPanel() {
 		public void paintComponent(Graphics g) {
 			g.drawImage(images.start.getImage(), 0, 0, null); // 사진은 나중에 찾기
@@ -49,50 +52,56 @@ public class Loginpage extends JFrame {
 		
 		Title.setBounds(200, 300, 200, 50); // ------------------------------제목
 		Title.setFont(Title_Font);
-		Title.setVisible(true);
+		//Title.setVisible(true);
 
 		Title2.setBounds(700, 300, 200, 50); // ------------------------------제목
 		Title2.setFont(Title_Font);
-		Title2.setVisible(true);
+		//Title2.setVisible(true);
 		
 		ID.setBounds(398, 550, 100, 30); // --------------------------------ID 레이블
 		ID.setFont(label_Font);
-		ID.setVisible(true);
+		//ID.setVisible(true);
 
 		PW.setBounds(398, 580, 100, 30); // ----------------------------PW 레이블
 		PW.setFont(label_Font);
-		PW.setVisible(true);
+		//PW.setVisible(true);
 
 		ID_.setBounds(463, 553, 200, 20); // --------------------------ID & PW 텍스트필드
 		PW_.setBounds(463, 583, 200, 20);  
 		
-		ID_.setVisible(true);
-		PW_.setVisible(true);
+		//ID_.setVisible(true);
+		//PW_.setVisible(true);
 
 		Login.setBounds(420, 625, 100, 30); // ---------------------로그인 버튼
 		Login.setBackground(new Color(196,80,74));
-		Login.setVisible(true);
+		//Login.setVisible(true);
 
 		Join.setBounds(560, 625, 100, 30); // -----------------------회원 가입 버튼
 		Join.setBackground(new Color(196,80,74));
-		Join.setVisible(true);
+		//Join.setVisible(true);
 
+		TEST.setBounds(700, 625, 100, 30); // ---------------------로그인 버튼
+		TEST.setBackground(new Color(196,80,74));
+		//TEST.setVisible(true);
+		
 		fail.setBounds(400, 598, 400, 30); // ----------------로그인 실패 레이블
 		fail.setForeground(Color.red);
 		fail.setFont(new Font("맑은 고딕", Font.BOLD, 11));
 		fail.setVisible(false);
 		add(fail);
-		this.add(Title);
-		this.add(Title2);
-		this.add(ID);
-		this.add(PW);
-		this.add(ID_);
-		this.add(PW_);
-		this.add(Login);
-		this.add(Join);
+		add(Title);
+		add(Title2);
+		add(ID);
+		add(PW);
+		add(ID_);
+		add(PW_);
+		add(Login);
+		add(Join);
+		add(TEST);
 
 		Login.addActionListener(Loginlistener); // -------------------------이벤트처리
 		Join.addActionListener(Loginlistener);
+		TEST.addActionListener(Loginlistener);
 	}
 	class Buttonlistener implements ActionListener { // 버튼 이벤트
 		public void actionPerformed(ActionEvent event) {
@@ -116,25 +125,15 @@ public class Loginpage extends JFrame {
 				ID_.setText("");
 				PW_.setText("");
 				Joinpage JoinPage = new Joinpage();
-				
 			}
-
+			else if(event.getSource()==TEST) {
+				JOptionPane.showMessageDialog(null, "테스트 전용 모드입니다. 데이터베이스를 사용하는 인턴, 저장목록, 저장 기능은 사용할 수 없습니다.");
+				TEST_flag=true;
+				Mainpage mainPage = new Mainpage();	
+				dispose(); // 프레임삭제	
+			}
 		}
 	}
 
 }
-/*if (ID_.getText().equals("admin") && (PW_.getText().equals("1234"))) {
-System.out.println("로그인 중");
-Mainpage mainPage = new Mainpage();
-dispose(); // 프레임삭제
-mainPage.setVisible(true); // 새로운 프레임
-}
-if (ID_.getText().equals(name) && (PW_.getText().equals("1234"))) { // -----------회원가입 시험을 위한 테스트 나중에
-																// 삭제해야함
-Mainpage mainPage = new Mainpage();
-dispose(); // 프레임삭제
-mainPage.setVisible(true); // 새로운 프레임
-} else { // ---------------------------------로그인 실패
-ID_.setText("");
-PW_.setText("");
-fail.setVisible(true);*/
+
