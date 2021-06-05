@@ -74,7 +74,7 @@ public class Eventpage extends JFrame {
 		Search_Event();
 		scroll = new JScrollPane(table);
 		scroll.setBounds(0, 130, 785, 335);
-		scroll.setVisible(true);
+		//scroll.setVisible(true);
 		background.add(scroll);
 
 		JLabel title = new JLabel();
