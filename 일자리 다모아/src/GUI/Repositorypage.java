@@ -92,7 +92,7 @@ public class Repositorypage extends JFrame {
 		Search_Alba();
 		scroll = new JScrollPane(table);
 		scroll.setBounds(0, 130, 1200, 400);
-		scroll.setVisible(true);
+		//scroll.setVisible(true);
 		add(scroll);
 
 		JLabel label = new JLabel("Á¾·ù");
@@ -205,7 +205,6 @@ public class Repositorypage extends JFrame {
 					}
 				} else {
 					try {
-						System.out.println(intern.get(table.getSelectedRow()).getURL());
 						Interncrolling.explore(intern.get(table.getSelectedRow()).getURL());
 					} catch (URISyntaxException e1) {
 						e1.printStackTrace();
