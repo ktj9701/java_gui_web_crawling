@@ -77,9 +77,9 @@ public class AlbaHeavenpage extends JFrame {
 		Search_AlbaHeaven();
 		scroll = new JScrollPane(table);
 		scroll.setBounds(0, 130, 1300, 633);
-		//scroll.setVisible(true);
+		// scroll.setVisible(true);
 		add(scroll);
-		
+
 		ButtonListener ButtonListener = new ButtonListener();
 		title = new JButton();
 		title.setIcon(images.title_Albaheaven);
@@ -111,29 +111,32 @@ public class AlbaHeavenpage extends JFrame {
 	public class ButtonListener implements ActionListener { // 마우스 클릭 이벤트
 		public void actionPerformed(ActionEvent e) {
 			if (e.getSource() == SAVE) {
-				if (table.getSelectedRow() != -1) {
-					int connect = JOptionPane.showConfirmDialog(null, "저장 하시겠습니까?", "Notice", JOptionPane.YES_NO_OPTION,
-							JOptionPane.QUESTION_MESSAGE, images.Dialog_save);
-					if (connect == JOptionPane.CLOSED_OPTION)
-						;
-					else if (connect == JOptionPane.YES_OPTION) {
-						try {
-							if (-1 != SaveFunction.savealba(Loginpage.ID_.getText(),
-									" " + AlbaHeaven.get(table.getSelectedRow()).getArea(),
-									AlbaHeaven.get(table.getSelectedRow()).getPay(),
-									AlbaHeaven.get(table.getSelectedRow()).getOffice(),
-									AlbaHeaven.get(table.getSelectedRow()).getText(),
-									AlbaHeaven.get(table.getSelectedRow()).getURL())) {
-								JOptionPane.showMessageDialog(null, "저장되었습니다.");
-								Repositorypage.Search_Alba();
-							} else
-								JOptionPane.showMessageDialog(null, "이미 저장된 내용입니다.");
-						} catch (SQLException e1) {
-						} catch (NullPointerException e2) {
+				if (Loginpage.TEST_flag != true) {
+					if (table.getSelectedRow() != -1) {
+						int connect = JOptionPane.showConfirmDialog(null, "저장 하시겠습니까?", "Notice",
+								JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, images.Dialog_save);
+						if (connect == JOptionPane.CLOSED_OPTION)
+							;
+						else if (connect == JOptionPane.YES_OPTION) {
+							try {
+								if (-1 != SaveFunction.savealba(Loginpage.ID_.getText(),
+										" " + AlbaHeaven.get(table.getSelectedRow()).getArea(),
+										AlbaHeaven.get(table.getSelectedRow()).getPay(),
+										AlbaHeaven.get(table.getSelectedRow()).getOffice(),
+										AlbaHeaven.get(table.getSelectedRow()).getText(),
+										AlbaHeaven.get(table.getSelectedRow()).getURL())) {
+									JOptionPane.showMessageDialog(null, "저장되었습니다.");
+									Repositorypage.Search_Alba();
+								} else
+									JOptionPane.showMessageDialog(null, "이미 저장된 내용입니다.");
+							} catch (SQLException e1) {
+							} catch (NullPointerException e2) {
+							}
 						}
-					}
+					} else
+						JOptionPane.showMessageDialog(null, "광고를 선택하지 않으셨습니다.");
 				} else
-					JOptionPane.showMessageDialog(null, "광고를 선택하지 않으셨습니다.");
+					JOptionPane.showMessageDialog(null, "테스트 모드/ 일부 기능이 제한됩니다.");
 			}
 			if (e.getSource() == BACK)
 				dispose();
@@ -148,13 +151,18 @@ public class AlbaHeavenpage extends JFrame {
 	public class MouseListener extends MouseAdapter {
 		public void mouseClicked(MouseEvent e) {
 			if (e.getClickCount() == 2) {
-				try {
-					Function.AlbaHeavencrolling.explore(AlbaHeaven.get(table.getSelectedRow()).getURL());
-				} catch (URISyntaxException e1) {
-					e1.printStackTrace();
-				}
-			} // 더블클릭
-
+				int connect = JOptionPane.showConfirmDialog(null, "해당 웹페이지로 이동하시겠습니까?", "Notice",
+						JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, images.Dialog_Albaheaven);
+				if (connect == JOptionPane.CLOSED_OPTION)
+					;
+				else if (connect == JOptionPane.YES_OPTION) {
+					try {
+						Function.AlbaHeavencrolling.explore(AlbaHeaven.get(table.getSelectedRow()).getURL());
+					} catch (URISyntaxException e1) {
+						e1.printStackTrace();
+					}
+				} // 더블클릭
+			}
 		}
 	}
 
