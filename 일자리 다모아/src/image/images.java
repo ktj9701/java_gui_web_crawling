@@ -13,6 +13,7 @@ public class images {
 	public static ImageIcon ground4 = new ImageIcon(dirver.class.getResource("../images/ground4.jpg"));
 	public static ImageIcon repository = new ImageIcon(dirver.class.getResource("../images/repository.png"));
 	public static ImageIcon Dialog_Albamon = new ImageIcon(dirver.class.getResource("../images/다이얼로그_알바몬.png"));
+	public static ImageIcon Dialog_Albaheaven = new ImageIcon(dirver.class.getResource("../images/Dialog_Albaheaven.png"));
 	public static ImageIcon xbox = new ImageIcon(dirver.class.getResource("../images/XBOX.png"));
 	public static ImageIcon Albaheaven = new ImageIcon(dirver.class.getResource("../images/알바천국.png"));
 	public static ImageIcon Albaheaven2 = new ImageIcon(dirver.class.getResource("../images/알바천국2.jpg"));
